@@ -1,0 +1,2 @@
+<134>Sep 9 14:02:11 asa-fw01 %ASA-6-106100: access-list cached type TCP connection from 10.0.0.100/41234 to 172.16.0.5/80
+<134>Sep 9 14:10:05 asa-fw01 %ASA-4-106023: Deny TCP connection from 192.168.2.10/58990 to 10.0.1.1/22

@@ -1,0 +1,30 @@
+{
+  "name": "paloalto",
+  "version": "1.0",
+  "vendor": "Palo Alto Networks",
+  "product": "PA-Series NGFW",
+  "device_type": "firewall",
+  "format": "key-value",
+  "match_criteria": {
+    "contains": ["TRAFFIC,", "THREAT,", "type=TRAFFIC", "type=THREAT"]
+  },
+  "extraction": {
+    "type": "key-value",
+    "delimiter": ",",
+    "kv_separator": "="
+  },
+  "field_mappings": {
+    "src": "network.source_ip",
+    "sport": "network.source_port",
+    "dst": "network.destination_ip",
+    "dport": "network.destination_port",
+    "proto": "network.protocol",
+    "action": "event.action",
+    "severity": "event.severity",
+    "threatid": "threat.signature",
+    "threatname": "threat.name",
+    "category": "event.category",
+    "srcuser": "identity.username",
+    "rulename": "threat.rule_id"
+  }
+}

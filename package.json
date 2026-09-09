@@ -1,0 +1,31 @@
+{
+  "name": "sih-universal-log-normalization-framework",
+  "version": "1.0.0",
+  "description": "SIH 2026 Universal Lossless Security Event Normalization Framework built in pure JavaScript following Hitesh Choudhary's Chai Backend architectural style",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "node tests/pipeline.test.js",
+    "seed": "node scripts/seed_sample_logs.js"
+  },
+  "keywords": [
+    "sih2026",
+    "security-logs",
+    "normalization",
+    "lossless",
+    "syslog",
+    "chai-backend",
+    "javascript"
+  ],
+  "author": "SIH Team",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

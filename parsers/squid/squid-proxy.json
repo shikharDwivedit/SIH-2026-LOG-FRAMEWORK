@@ -1,0 +1,25 @@
+{
+  "name": "squid-proxy",
+  "version": "1.0",
+  "vendor": "Squid",
+  "product": "Squid Proxy / WAF",
+  "device_type": "proxy",
+  "format": "regex",
+  "match_criteria": {
+    "regex": "squid\\[|TCP_|UDP_|CONNECT|GET http|POST http"
+  },
+  "extraction": {
+    "type": "regex",
+    "pattern": "^(?<timestamp>[\\d.]+)\\s+(?<response_time>\\d+)\\s+(?<src_ip>[\\d.]+)\\s+(?<status_code>TCP_\\w+|UDP_\\w+)\\/(\\d+)\\s+(?<bytes>\\d+)\\s+(?<method>GET|POST|PUT|DELETE|CONNECT|HEAD|OPTIONS)\\s+(?<url>\\S+)\\s+(?<username>\\S+)\\s+(?<dst_hostname>[^/]+)\\/(?<dst_ip>[\\d.]+|-)\\s+(?<content_type>\\S+)"
+  },
+  "field_mappings": {
+    "src_ip": "network.source_ip",
+    "dst_ip": "network.destination_ip",
+    "dst_hostname": "network.direction",
+    "method": "event.action",
+    "status_code": "event.outcome",
+    "username": "identity.username",
+    "url": "event.message",
+    "timestamp": "event.timestamp"
+  }
+}

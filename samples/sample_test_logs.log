@@ -1,0 +1,28 @@
+# ==============================================================================
+# SIH 2026 Universal Log Normalization Framework — Sample Test Logs File
+# Use this file to test ingestion via UI, API (/api/v1/events/ingest-file), or CLI script
+# ==============================================================================
+
+# 1. Fortinet FortiGate Firewall Log (Key-Value) — Denied Traffic
+<185>date=2026-09-09 time=14:02:11 devname="fw01" devid="FGT60D4614000001" logid="0000000013" type="traffic" subtype="forward" level="notice" vd="root" srcip=10.0.0.5 srcport=54321 dstip=8.8.8.8 dstport=443 proto=6 action="deny" status="blocked" msg="Access denied by security policy 10" user="admin" policyid=10
+
+# 2. Fortinet FortiGate Firewall Log (Key-Value) — Allowed Traffic
+<185>date=2026-09-09 time=14:05:22 devname="fw01" devid="FGT60D4614000001" logid="0000000014" type="traffic" subtype="forward" level="information" vd="root" srcip=192.168.1.50 srcport=49152 dstip=1.1.1.1 dstport=80 proto=6 action="accept" status="allowed" msg="Session allowed" user="shikhar" policyid=1
+
+# 3. Palo Alto Networks Next-Gen Firewall (CSV Log)
+1,2026/09/09 14:10:00,001606000123,TRAFFIC,drop,1,2026/09/09 14:09:59,192.168.2.10,10.10.10.50,192.168.2.10,10.10.10.50,Rule-Block-Internal,,,web-browsing,vsys1,trust,untrust,ethernet1/1,ethernet1/2,Log-Forward-SIEM,2026/09/09 14:10:00,62341,1,53210,80,0,0,0x0,tcp,deny,1024,0,1024,1,2026/09/09 14:09:59,0,any,0,981234,0x0,10.0.0.0-10.255.255.255,US,0,1,0,policy-drop,0,0,0,0,,PA-3020,from-policy
+
+# 4. Cisco ASA Firewall Syslog (RFC 3164 Syslog)
+<134>Sep 09 14:15:33 asa-fw01 %ASA-6-106100: access-list OUTSIDE-IN denied tcp OUTSIDE/198.51.100.44(41234) -> INSIDE/10.0.1.100(22) hit-cnt 1 first-hit [0x12345678, 0x0]
+
+# 5. Snort Intrusion Detection System (CEF Log)
+CEF:0|Snort|Snort IDS|2.9.16|122:1|MALWARE-BACKDOOR SQL injection attempt|8|src=192.168.1.105 spt=38291 dst=10.0.2.15 dpt=80 proto=tcp cat=Attempted Administrator Privilege Gain msg=Possible SQL injection attack payload detected in HTTP URI request
+
+# 6. Squid Forward Proxy Log (Key-Value)
+1725890400.123 145 192.168.1.75 TCP_DENIED/403 3820 GET http://malicious-site.test/payload.exe user_shikhar HIER_NONE/- text/html action=block reason=malware_domain category=security_threat srcip=192.168.1.75 srcport=51200 dstip=203.0.113.50 dstport=80 user=user_shikhar
+
+# 7. OpenVPN Access Server Log (Key-Value)
+2026-09-09T14:25:00+05:30 vpn-server-01 openvpn[1024]: user=dev_user srcip=203.0.113.99 srcport=61234 status=connected bytes_sent=1048576 bytes_rcvd=2097152 action=vpn_login device=openvpn-as-01
+
+# 8. Unregistered / Unknown Vendor Log (for Dead-Letter Store Testing)
+2026-09-09 14:30:00 UNKNOWN_VENDOR_LOG_FORMAT data="custom_vendor_unknown" code=999 err="No matching parser registered for this format"

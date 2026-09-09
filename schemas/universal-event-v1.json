@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UniversalEventSchemaV1",
+  "type": "object",
+  "required": ["event_id", "schema_version", "raw_ref", "source", "event", "processing"],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Unique identifier for the normalized event"
+    },
+    "schema_version": {
+      "type": "string",
+      "default": "1.0"
+    },
+    "raw_ref": {
+      "type": "object",
+      "required": ["raw_event_id", "hash", "ingested_at"],
+      "properties": {
+        "raw_event_id": { "type": "string" },
+        "hash": { "type": "string", "description": "SHA-256 hash of original raw log bytes" },
+        "ingested_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "vendor": { "type": "string" },
+        "product": { "type": "string" },
+        "device_type": { "type": "string" },
+        "device_ip": { "type": "string" },
+        "hostname": { "type": "string" },
+        "log_format": { "type": "string" },
+        "transport": { "type": "string" }
+      }
+    },
+    "event": {
+      "type": "object",
+      "required": ["timestamp"],
+      "properties": {
+        "timestamp": { "type": "string" },
+        "category": { "type": "string" },
+        "type": { "type": "string" },
+        "action": { "type": "string" },
+        "outcome": { "type": "string" },
+        "severity": { "type": "string" },
+        "message": { "type": "string" }
+      }
+    },
+    "network": {
+      "type": "object",
+      "properties": {
+        "source_ip": { "type": ["string", "null"] },
+        "source_port": { "type": ["integer", "null"] },
+        "destination_ip": { "type": ["string", "null"] },
+        "destination_port": { "type": ["integer", "null"] },
+        "protocol": { "type": ["string", "null"] },
+        "direction": { "type": ["string", "null"] }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "properties": {
+        "username": { "type": ["string", "null"] },
+        "user_id": { "type": ["string", "null"] },
+        "domain": { "type": ["string", "null"] },
+        "session_id": { "type": ["string", "null"] }
+      }
+    },
+    "threat": {
+      "type": "object",
+      "properties": {
+        "name": { "type": ["string", "null"] },
+        "type": { "type": ["string", "null"] },
+        "signature": { "type": ["string", "null"] },
+        "rule_id": { "type": ["string", "null"] },
+        "risk_score": { "type": ["number", "null"] }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "description": "Preserves unmapped vendor-specific key-value pairs to guarantee 100% Lossless requirement",
+      "properties": {
+        "vendor_specific": { "type": "object" }
+      }
+    },
+    "trace": {
+      "type": "object",
+      "properties": {
+        "parser_name": { "type": "string" },
+        "parser_version": { "type": "string" },
+        "transformation_id": { "type": "string" },
+        "mapped_fields": { "type": "object" }
+      }
+    },
+    "processing": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["PROCESSED", "PARTIALLY_PROCESSED", "UNSUPPORTED", "PARSER_ERROR", "VALIDATION_ERROR"]
+        },
+        "errors": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

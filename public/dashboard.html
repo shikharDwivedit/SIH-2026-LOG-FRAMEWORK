@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIH 2026 — Universal Log Normalization Framework</title>
+  <meta name="description" content="SIH 2026 Universal Perimeter Log Normalization Framework — Plug-and-Play SIEM-ready event normalization dashboard." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Design Tokens ─────────────────────────────────────────────── */
+    :root {
+      --bg:          #0a0e1a;
+      --surface:     #111827;
+      --surface2:    #1a2236;
+      --border:      rgba(99,102,241,0.18);
+      --accent:      #6366f1;
+      --accent2:     #22d3ee;
+      --accent3:     #f59e0b;
+      --success:     #10b981;
+      --danger:      #ef4444;
+      --warn:        #f59e0b;
+      --text:        #e2e8f0;
+      --muted:       #64748b;
+      --radius:      12px;
+      --glow:        0 0 24px rgba(99,102,241,0.25);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; min-height: 100vh; display: flex; }
+
+    /* ── Sidebar ────────────────────────────────────────────────────── */
+    .sidebar {
+      width: 240px; min-height: 100vh; background: var(--surface);
+      border-right: 1px solid var(--border); display: flex; flex-direction: column;
+      position: sticky; top: 0; height: 100vh; overflow-y: auto; flex-shrink: 0;
+    }
+    .sidebar-logo { padding: 20px 20px 12px; border-bottom: 1px solid var(--border); }
+    .sidebar-logo .brand { font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; }
+    .sidebar-logo .sub   { font-size: 10px; color: var(--muted); margin-top: 2px; }
+    .sidebar-status { margin: 12px 16px; padding: 8px 12px; background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.3); border-radius: 8px; font-size: 11px; display: flex; align-items: center; gap: 6px; }
+    .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--success); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    .nav { flex: 1; padding: 8px 8px; }
+    .nav-group { font-size: 10px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; padding: 12px 12px 4px; }
+    .nav-item {
+      display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-radius: 8px;
+      cursor: pointer; color: var(--muted); font-size: 13px; font-weight: 500;
+      transition: all 0.2s; margin-bottom: 2px; border: 1px solid transparent;
+    }
+    .nav-item:hover { background: rgba(99,102,241,0.1); color: var(--text); border-color: var(--border); }
+    .nav-item.active { background: rgba(99,102,241,0.15); color: var(--accent); border-color: rgba(99,102,241,0.3); }
+    .nav-item .icon { font-size: 16px; width: 20px; text-align: center; }
+    .nav-badge { margin-left: auto; background: var(--accent); color: white; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 10px; }
+    .nav-badge.red { background: var(--danger); }
+
+    /* ── Main area ──────────────────────────────────────────────────── */
+    .main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+    .topbar { padding: 16px 28px; border-bottom: 1px solid var(--border); background: var(--surface); display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 10; }
+    .page-title { font-size: 18px; font-weight: 700; }
+    .page-sub   { font-size: 12px; color: var(--muted); margin-top: 1px; }
+    .topbar-actions { display: flex; gap: 10px; align-items: center; }
+    .btn { padding: 7px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; transition: all 0.2s; }
+    .btn-primary { background: var(--accent); color: white; }
+    .btn-primary:hover { background: #818cf8; box-shadow: var(--glow); }
+    .btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+    .btn-ghost:hover { color: var(--text); border-color: var(--accent); }
+    .btn-success { background: var(--success); color: white; }
+    .btn-danger  { background: var(--danger); color: white; }
+    .content { flex: 1; padding: 24px 28px; overflow-y: auto; }
+
+    /* ── Pages ─────────────────────────────────────────────────────── */
+    .page { display: none; }
+    .page.active { display: block; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+
+    /* ── KPI Cards ─────────────────────────────────────────────────── */
+    .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .kpi-card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 20px; position: relative; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .kpi-card:hover { transform: translateY(-2px); box-shadow: var(--glow); }
+    .kpi-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--accent); }
+    .kpi-card.green::before { background: var(--success); }
+    .kpi-card.red::before   { background: var(--danger); }
+    .kpi-card.yellow::before { background: var(--warn); }
+    .kpi-card.cyan::before  { background: var(--accent2); }
+    .kpi-label { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .kpi-value { font-size: 32px; font-weight: 800; margin: 6px 0 2px; font-family: 'JetBrains Mono', monospace; }
+    .kpi-sub   { font-size: 11px; color: var(--muted); }
+    .kpi-icon  { position: absolute; right: 16px; top: 16px; font-size: 28px; opacity: 0.25; }
+
+    /* ── Grid Panels ─────────────────────────────────────────────────── */
+    .panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 20px; overflow: hidden; }
+    .panel-header { padding: 14px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+    .panel-title { font-weight: 600; font-size: 14px; }
+    .panel-body { padding: 16px 20px; }
+
+    /* ── Tables ──────────────────────────────────────────────────────── */
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { text-align: left; padding: 10px 12px; color: var(--muted); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02); }
+    td { padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.04); vertical-align: middle; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: rgba(99,102,241,0.05); }
+    .mono { font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+    .truncate { max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    /* ── Badges ──────────────────────────────────────────────────────── */
+    .badge { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 20px; font-size: 11px; font-weight: 600; white-space: nowrap; }
+    .badge-green  { background: rgba(16,185,129,0.15); color: #10b981; }
+    .badge-red    { background: rgba(239,68,68,0.15);  color: #ef4444; }
+    .badge-yellow { background: rgba(245,158,11,0.15); color: #f59e0b; }
+    .badge-blue   { background: rgba(99,102,241,0.15); color: #818cf8; }
+    .badge-cyan   { background: rgba(34,211,238,0.15); color: #22d3ee; }
+    .badge-gray   { background: rgba(100,116,139,0.15);color: #94a3b8; }
+
+    /* ── Forms ────────────────────────────────────────────────────────── */
+    .form-group { margin-bottom: 16px; }
+    label { display: block; font-size: 12px; font-weight: 600; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+    input, textarea, select {
+      width: 100%; background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 8px; color: var(--text); font-family: 'Inter', sans-serif; font-size: 13px;
+      padding: 9px 12px; outline: none; transition: border-color 0.2s;
+    }
+    input:focus, textarea:focus, select:focus { border-color: var(--accent); }
+    textarea { resize: vertical; min-height: 90px; font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+    .field-map-row { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
+    .field-map-row input { flex: 1; }
+    .field-arrow { color: var(--muted); font-size: 16px; }
+    .btn-sm { padding: 5px 10px; font-size: 12px; border-radius: 6px; }
+
+    /* ── Code / Trace View ────────────────────────────────────────────── */
+    .code-block { background: #060a14; border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; font-family: 'JetBrains Mono', monospace; font-size: 11px; overflow-x: auto; white-space: pre-wrap; word-break: break-all; color: #a5f3fc; max-height: 320px; overflow-y: auto; }
+    .code-block.green { color: #6ee7b7; }
+    .code-block.yellow { color: #fde68a; }
+
+    /* ── Pipeline Animation ───────────────────────────────────────────── */
+    .pipeline-wrap { display: flex; align-items: stretch; gap: 0; overflow-x: auto; padding: 20px 0; }
+    .pipe-stage { flex: 1; min-width: 110px; display: flex; flex-direction: column; align-items: center; }
+    .pipe-box {
+      width: 100px; padding: 14px 8px; text-align: center; border-radius: 10px; font-size: 12px; font-weight: 600;
+      border: 1px solid var(--border); background: var(--surface2);
+      transition: all 0.4s; position: relative;
+    }
+    .pipe-box.active { background: rgba(99,102,241,0.2); border-color: var(--accent); box-shadow: 0 0 16px rgba(99,102,241,0.3); }
+    .pipe-box .pipe-icon { font-size: 22px; display: block; margin-bottom: 6px; }
+    .pipe-arrow { flex: 0 0 30px; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 18px; }
+    .pipe-count { margin-top: 8px; font-size: 20px; font-weight: 800; font-family: 'JetBrains Mono', monospace; }
+    .pipe-label { font-size: 10px; color: var(--muted); margin-top: 2px; }
+
+    /* ── Search / Filter bar ──────────────────────────────────────────── */
+    .filter-bar { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+    .filter-bar input, .filter-bar select { flex: 1; min-width: 140px; }
+    .filter-bar .btn { flex-shrink: 0; }
+
+    /* ── Wizard Steps ─────────────────────────────────────────────────── */
+    .wizard-steps { display: flex; gap: 0; margin-bottom: 28px; }
+    .wizard-step { flex: 1; padding: 12px 8px; text-align: center; font-size: 12px; font-weight: 600; border-bottom: 2px solid var(--border); color: var(--muted); cursor: default; }
+    .wizard-step.active { border-color: var(--accent); color: var(--accent); }
+    .wizard-step.done   { border-color: var(--success); color: var(--success); }
+    .wizard-body > div { display: none; }
+    .wizard-body > div.active { display: block; animation: fadeIn 0.25s; }
+
+    /* ── Tabs ─────────────────────────────────────────────────────────── */
+    .tabs { display: flex; border-bottom: 1px solid var(--border); margin-bottom: 16px; gap: 2px; }
+    .tab { padding: 8px 18px; font-size: 13px; font-weight: 500; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; transition: all 0.2s; }
+    .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+    .tab:hover:not(.active) { color: var(--text); }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; animation: fadeIn 0.2s; }
+
+    /* ── Alert / Toast ────────────────────────────────────────────────── */
+    #toast { position: fixed; bottom: 24px; right: 24px; z-index: 9999; display: flex; flex-direction: column; gap: 8px; }
+    .toast-msg { padding: 12px 18px; border-radius: 10px; font-size: 13px; font-weight: 500; box-shadow: 0 4px 24px rgba(0,0,0,0.4); animation: slideIn 0.3s ease; max-width: 320px; }
+    .toast-msg.success { background: rgba(16,185,129,0.9); color: white; }
+    .toast-msg.error   { background: rgba(239,68,68,0.9);  color: white; }
+    .toast-msg.info    { background: rgba(99,102,241,0.9); color: white; }
+    @keyframes slideIn { from{transform:translateX(60px);opacity:0} to{transform:translateX(0);opacity:1} }
+
+    /* ── Misc ─────────────────────────────────────────────────────────── */
+    .empty { text-align: center; padding: 40px; color: var(--muted); }
+    .empty .empty-icon { font-size: 36px; margin-bottom: 10px; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    @media(max-width:900px) { .two-col { grid-template-columns:1fr; } .form-row,.form-row-3{grid-template-columns:1fr;} }
+    .tag { display: inline-block; padding: 1px 7px; border-radius: 4px; font-size: 10px; font-weight: 700; background: rgba(99,102,241,0.15); color: #a5b4fc; margin: 1px; }
+    .spacer { flex: 1; }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- SIDEBAR                                                                  -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<nav class="sidebar">
+  <div class="sidebar-logo">
+    <div class="brand">LogNorm</div>
+    <div class="sub">SIH 2026 · Universal Framework</div>
+  </div>
+  <div class="sidebar-status">
+    <span class="status-dot"></span>
+    <span id="sys-status-label">System Online</span>
+  </div>
+  <div class="nav">
+    <div class="nav-group">Dashboard</div>
+    <div class="nav-item active" data-page="overview">
+      <span class="icon">📊</span> Overview
+    </div>
+    <div class="nav-item" data-page="pipeline">
+      <span class="icon">⚡</span> Pipeline View
+    </div>
+
+    <div class="nav-group">Events</div>
+    <div class="nav-item" data-page="explorer">
+      <span class="icon">🔍</span> Event Explorer
+      <span class="nav-badge" id="badge-events">0</span>
+    </div>
+    <div class="nav-item" data-page="deadletter">
+      <span class="icon">💀</span> Dead Letter
+      <span class="nav-badge red" id="badge-dead">0</span>
+    </div>
+
+    <div class="nav-group">Parsers</div>
+    <div class="nav-item" data-page="parsers">
+      <span class="icon">⚙️</span> Parser Manager
+      <span class="nav-badge" id="badge-parsers">0</span>
+    </div>
+    <div class="nav-item" data-page="wizard">
+      <span class="icon">✨</span> Parser Wizard
+    </div>
+    <div class="nav-item" data-page="tester">
+      <span class="icon">🧪</span> Test Console
+    </div>
+
+    <div class="nav-group">Sources & Output</div>
+    <div class="nav-item" data-page="sources">
+      <span class="icon">🖧</span> Source Registry
+      <span class="nav-badge" id="badge-sources">0</span>
+    </div>
+    <div class="nav-item" data-page="output">
+      <span class="icon">📤</span> Export / Output
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- MAIN                                                                      -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<div class="main">
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div>
+      <div class="page-title" id="topbar-title">Overview</div>
+      <div class="page-sub" id="topbar-sub">SIH 2026 Universal Lossless Security Event Normalization Framework</div>
+    </div>
+    <div class="topbar-actions">
+      <button class="btn btn-ghost btn-sm" onclick="refreshAll()">↻ Refresh</button>
+      <button class="btn btn-primary btn-sm" onclick="navigate('wizard')">+ New Parser</button>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- ══════════════════════════ OVERVIEW PAGE ══════════════════════════ -->
+    <div class="page active" id="page-overview">
+      <div class="kpi-grid" id="kpi-grid">
+        <div class="kpi-card"><div class="kpi-label">Events Received</div><div class="kpi-value kpi-received">—</div><div class="kpi-sub">Total ingested</div><div class="kpi-icon">📥</div></div>
+        <div class="kpi-card green"><div class="kpi-label">Processed</div><div class="kpi-value kpi-processed">—</div><div class="kpi-sub">Successfully normalized</div><div class="kpi-icon">✅</div></div>
+        <div class="kpi-card red"><div class="kpi-label">Failed</div><div class="kpi-value kpi-failed">—</div><div class="kpi-sub">Parse / validation errors</div><div class="kpi-icon">❌</div></div>
+        <div class="kpi-card yellow"><div class="kpi-label">Dead Lettered</div><div class="kpi-value kpi-dead">—</div><div class="kpi-sub">No parser found</div><div class="kpi-icon">💀</div></div>
+        <div class="kpi-card cyan"><div class="kpi-label">Events / Sec</div><div class="kpi-value kpi-eps">—</div><div class="kpi-sub">Sustained EPS</div><div class="kpi-icon">⚡</div></div>
+        <div class="kpi-card"><div class="kpi-label">Avg Latency</div><div class="kpi-value kpi-latency">—</div><div class="kpi-sub">ms per event</div><div class="kpi-icon">⏱️</div></div>
+        <div class="kpi-card"><div class="kpi-label">Parsers</div><div class="kpi-value kpi-parsers">—</div><div class="kpi-sub">Registered</div><div class="kpi-icon">⚙️</div></div>
+        <div class="kpi-card"><div class="kpi-label">Sources</div><div class="kpi-value kpi-sources">—</div><div class="kpi-sub">Registered devices</div><div class="kpi-icon">🖧</div></div>
+      </div>
+
+      <div class="two-col">
+        <div class="panel">
+          <div class="panel-header"><span class="panel-title">Events by Parser</span></div>
+          <div class="panel-body" id="parser-hits-list"><div class="empty"><div class="empty-icon">⚙️</div>No data yet</div></div>
+        </div>
+        <div class="panel">
+          <div class="panel-header"><span class="panel-title">Format Distribution</span></div>
+          <div class="panel-body" id="format-dist-list"><div class="empty"><div class="empty-icon">📋</div>No data yet</div></div>
+        </div>
+      </div>
+
+      <!-- Quick Ingest Panel -->
+      <div class="panel">
+        <div class="panel-header"><span class="panel-title">Quick Ingest</span><span style="font-size:11px;color:var(--muted)">POST a raw log directly</span></div>
+        <div class="panel-body">
+          <div class="form-group">
+            <label>Raw Log Line</label>
+            <textarea id="quick-log" placeholder='Paste any raw firewall / IDS / VPN / proxy log here...'></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="quickIngest()">⚡ Ingest & Normalize</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════ PIPELINE PAGE ══════════════════════════ -->
+    <div class="page" id="page-pipeline">
+      <div class="panel">
+        <div class="panel-header"><span class="panel-title">Live Pipeline View</span><span style="font-size:11px;color:var(--muted)">Real-time normalization stages</span></div>
+        <div class="panel-body">
+          <div class="pipeline-wrap" id="pipeline-viz">
+            <div class="pipe-stage"><div class="pipe-box" id="ps-ingest"><span class="pipe-icon">📥</span>Ingestion</div><div class="pipe-count" id="pc-ingest">0</div><div class="pipe-label">received</div></div>
+            <div class="pipe-arrow">→</div>
+            <div class="pipe-stage"><div class="pipe-box" id="ps-raw"><span class="pipe-icon">💾</span>Raw Store</div><div class="pipe-count" id="pc-raw">0</div><div class="pipe-label">preserved</div></div>
+            <div class="pipe-arrow">→</div>
+            <div class="pipe-stage"><div class="pipe-box" id="ps-detect"><span class="pipe-icon">🔎</span>Format Detect</div><div class="pipe-count" id="pc-detect">0</div><div class="pipe-label">detected</div></div>
+            <div class="pipe-arrow">→</div>
+            <div class="pipe-stage"><div class="pipe-box" id="ps-parse"><span class="pipe-icon">⚙️</span>Parse</div><div class="pipe-count" id="pc-parse">0</div><div class="pipe-label">parsed</div></div>
+            <div class="pipe-arrow">→</div>
+            <div class="pipe-stage"><div class="pipe-box" id="ps-norm"><span class="pipe-icon">🗺️</span>Normalize</div><div class="pipe-count" id="pc-norm">0</div><div class="pipe-label">normalized</div></div>
+            <div class="pipe-arrow">→</div>
+            <div class="pipe-stage"><div class="pipe-box" id="ps-valid"><span class="pipe-icon">✅</span>Validate</div><div class="pipe-count" id="pc-valid">0</div><div class="pipe-label">validated</div></div>
+            <div class="pipe-arrow">→</div>
+            <div class="pipe-stage"><div class="pipe-box" id="ps-out"><span class="pipe-icon">📤</span>Output</div><div class="pipe-count" id="pc-out">0</div><div class="pipe-label">delivered</div></div>
+            <div class="pipe-arrow" style="color:var(--danger)">⤵</div>
+            <div class="pipe-stage"><div class="pipe-box" id="ps-dead" style="border-color:var(--danger)"><span class="pipe-icon">💀</span>Dead Letter</div><div class="pipe-count" id="pc-dead" style="color:var(--danger)">0</div><div class="pipe-label">no parser</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header"><span class="panel-title">Source Counts by Vendor</span></div>
+        <div class="panel-body" id="source-counts-list"><div class="empty"><div class="empty-icon">📊</div>Ingest some logs to see vendor breakdown</div></div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════ EVENT EXPLORER ══════════════════════════ -->
+    <div class="page" id="page-explorer">
+      <div class="filter-bar">
+        <input id="filter-search" type="text" placeholder="Search event ID, IP, parser, vendor…" oninput="filterEvents()" />
+        <select id="filter-status" onchange="filterEvents()">
+          <option value="">All Statuses</option>
+          <option value="PROCESSED">PROCESSED</option>
+          <option value="PARTIALLY_PROCESSED">PARTIALLY_PROCESSED</option>
+          <option value="UNSUPPORTED">UNSUPPORTED</option>
+          <option value="PARSER_ERROR">PARSER_ERROR</option>
+          <option value="VALIDATION_ERROR">VALIDATION_ERROR</option>
+        </select>
+        <select id="filter-vendor" onchange="filterEvents()">
+          <option value="">All Vendors</option>
+        </select>
+        <button class="btn btn-ghost btn-sm" onclick="loadEvents()">↻</button>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Normalized Events</span>
+          <span id="events-count" style="font-size:12px;color:var(--muted)">0 events</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Event ID</th><th>Vendor</th><th>Parser</th><th>Format</th><th>Src IP</th><th>Dst IP</th><th>Action</th><th>Severity</th><th>Status</th><th></th></tr>
+            </thead>
+            <tbody id="events-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+      <!-- Event Detail Modal -->
+      <div id="event-detail" style="display:none">
+        <div class="panel">
+          <div class="panel-header">
+            <span class="panel-title">Event Detail</span>
+            <button class="btn btn-ghost btn-sm" onclick="closeDetail()">✕ Close</button>
+          </div>
+          <div class="panel-body">
+            <div class="tabs">
+              <div class="tab active" data-tab="tab-normalized" onclick="switchTab(this,'tab-normalized')">Normalized</div>
+              <div class="tab" data-tab="tab-raw" onclick="switchTab(this,'tab-raw')">Raw</div>
+              <div class="tab" data-tab="tab-trace" onclick="switchTab(this,'tab-trace')">Traceability</div>
+              <div class="tab" data-tab="tab-vendor" onclick="switchTab(this,'tab-vendor')">Vendor Extensions</div>
+            </div>
+            <div class="tab-panel active" id="tab-normalized">
+              <div class="code-block green" id="detail-normalized"></div>
+            </div>
+            <div class="tab-panel" id="tab-raw">
+              <div class="code-block yellow" id="detail-raw"></div>
+            </div>
+            <div class="tab-panel" id="tab-trace">
+              <div class="code-block" id="detail-trace"></div>
+            </div>
+            <div class="tab-panel" id="tab-vendor">
+              <div class="code-block" id="detail-vendor"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════ DEAD LETTER ═══════════════════════════ -->
+    <div class="page" id="page-deadletter">
+      <div class="panel" style="border-color:rgba(239,68,68,0.3)">
+        <div class="panel-header">
+          <span class="panel-title" style="color:var(--danger)">💀 Dead Letter Store</span>
+          <span style="font-size:11px;color:var(--muted)">Events with no matching parser — preserved, never dropped</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Raw Event ID</th><th>Detected Format</th><th>Error Code</th><th>Error Message</th><th>Ingested At</th><th>Preview</th></tr></thead>
+            <tbody id="dead-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════ PARSER MANAGER ═════════════════════════ -->
+    <div class="page" id="page-parsers">
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Registered Parsers</span>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-ghost btn-sm" onclick="reloadParsers()">↻ Reload from Disk</button>
+            <button class="btn btn-primary btn-sm" onclick="navigate('wizard')">+ New Parser</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Name</th><th>Version</th><th>Vendor</th><th>Product</th><th>Device Type</th><th>Format</th><th>Match Criteria</th><th>Fields Mapped</th></tr></thead>
+            <tbody id="parsers-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════ PARSER WIZARD ══════════════════════════ -->
+    <div class="page" id="page-wizard">
+      <div class="panel">
+        <div class="panel-header"><span class="panel-title">✨ Plug-and-Play Parser Builder</span><span style="font-size:11px;color:var(--muted)">No code required — fill the form, click Register</span></div>
+        <div class="panel-body">
+          <div class="wizard-steps">
+            <div class="wizard-step active" id="ws-1">1 · Identity</div>
+            <div class="wizard-step" id="ws-2">2 · Detection</div>
+            <div class="wizard-step" id="ws-3">3 · Field Mapping</div>
+            <div class="wizard-step" id="ws-4">4 · Test & Register</div>
+          </div>
+          <div class="wizard-body">
+            <!-- Step 1: Identity -->
+            <div class="active" id="wstep-1">
+              <div class="form-row">
+                <div class="form-group"><label>Parser Name *</label><input id="w-name" placeholder="e.g. my-vendor-fw" /></div>
+                <div class="form-group"><label>Parser Version</label><input id="w-version" placeholder="1.0" value="1.0" /></div>
+              </div>
+              <div class="form-row-3">
+                <div class="form-group"><label>Vendor *</label><input id="w-vendor" placeholder="e.g. Fortinet" /></div>
+                <div class="form-group"><label>Product</label><input id="w-product" placeholder="e.g. FortiGate 60E" /></div>
+                <div class="form-group"><label>Device Type</label>
+                  <select id="w-device-type">
+                    <option value="firewall">Firewall</option>
+                    <option value="ids">IDS/IPS</option>
+                    <option value="vpn">VPN Gateway</option>
+                    <option value="proxy">Proxy / WAF</option>
+                    <option value="router">Router / Switch</option>
+                    <option value="load-balancer">Load Balancer</option>
+                    <option value="perimeter-device">Other Perimeter</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group"><label>Description</label><input id="w-desc" placeholder="Brief description of this parser (optional)" /></div>
+              <div style="display:flex;justify-content:flex-end;margin-top:16px"><button class="btn btn-primary" onclick="wizardNext(1)">Next →</button></div>
+            </div>
+
+            <!-- Step 2: Detection -->
+            <div id="wstep-2">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Log Format *</label>
+                  <select id="w-format" onchange="updateFormatHelp()">
+                    <option value="key-value">Key-Value (field=value)</option>
+                    <option value="json">JSON</option>
+                    <option value="syslog">Syslog (RFC 3164)</option>
+                    <option value="cef">CEF</option>
+                    <option value="regex">Custom Regex</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Match Strategy</label>
+                  <select id="w-match-type">
+                    <option value="contains">Contains All Strings</option>
+                    <option value="regex">Regex Pattern</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Match Criteria (one per line)</label>
+                <textarea id="w-match" placeholder="devname=&#10;type=traffic&#10;(Each line is a required substring OR a single regex if Regex match type)" style="min-height:70px"></textarea>
+              </div>
+              <div class="form-group" id="w-pattern-group" style="display:none">
+                <label>Extraction Regex Pattern (named groups)</label>
+                <textarea id="w-pattern" placeholder="^(?<timestamp>[A-Za-z]{3}\s+\d+\s+\d{2}:\d{2}:\d{2})\s+(?<hostname>\S+)..." style="min-height:70px"></textarea>
+              </div>
+              <div id="format-help" style="font-size:12px;color:var(--muted);margin-top:8px;padding:10px;background:var(--surface2);border-radius:8px;"></div>
+              <div style="display:flex;justify-content:space-between;margin-top:16px">
+                <button class="btn btn-ghost" onclick="wizardPrev(2)">← Back</button>
+                <button class="btn btn-primary" onclick="wizardNext(2)">Next →</button>
+              </div>
+            </div>
+
+            <!-- Step 3: Field Mappings -->
+            <div id="wstep-3">
+              <p style="font-size:12px;color:var(--muted);margin-bottom:16px">Map vendor field names to the Universal Schema. Unmapped fields are automatically preserved under <code>extensions.vendor_specific</code>.</p>
+              <div id="field-mappings-editor">
+                <div class="field-map-row">
+                  <input placeholder="Vendor field (e.g. srcip)" class="fmap-vendor" />
+                  <span class="field-arrow">→</span>
+                  <select class="fmap-target">
+                    <option value="network.source_ip">network.source_ip</option>
+                    <option value="network.source_port">network.source_port</option>
+                    <option value="network.destination_ip">network.destination_ip</option>
+                    <option value="network.destination_port">network.destination_port</option>
+                    <option value="network.protocol">network.protocol</option>
+                    <option value="network.direction">network.direction</option>
+                    <option value="event.action">event.action</option>
+                    <option value="event.outcome">event.outcome</option>
+                    <option value="event.severity">event.severity</option>
+                    <option value="event.category">event.category</option>
+                    <option value="event.message">event.message</option>
+                    <option value="event.timestamp">event.timestamp</option>
+                    <option value="identity.username">identity.username</option>
+                    <option value="identity.user_id">identity.user_id</option>
+                    <option value="identity.domain">identity.domain</option>
+                    <option value="identity.session_id">identity.session_id</option>
+                    <option value="threat.name">threat.name</option>
+                    <option value="threat.type">threat.type</option>
+                    <option value="threat.signature">threat.signature</option>
+                    <option value="threat.rule_id">threat.rule_id</option>
+                    <option value="threat.risk_score">threat.risk_score</option>
+                    <option value="source.hostname">source.hostname</option>
+                  </select>
+                  <button class="btn btn-ghost btn-sm" onclick="removeMapRow(this)">✕</button>
+                </div>
+              </div>
+              <button class="btn btn-ghost btn-sm" style="margin-top:8px" onclick="addMapRow()">+ Add Field Mapping</button>
+              <div style="display:flex;justify-content:space-between;margin-top:16px">
+                <button class="btn btn-ghost" onclick="wizardPrev(3)">← Back</button>
+                <button class="btn btn-primary" onclick="wizardNext(3)">Next →</button>
+              </div>
+            </div>
+
+            <!-- Step 4: Test & Register -->
+            <div id="wstep-4">
+              <div class="form-group">
+                <label>Paste a Sample Log to Test</label>
+                <textarea id="w-test-log" placeholder="Paste a real sample log line from your device…"></textarea>
+              </div>
+              <div style="display:flex;gap:10px;margin-bottom:16px">
+                <button class="btn btn-ghost" onclick="wizardTestParser()">🧪 Test Parser</button>
+                <button class="btn btn-success" onclick="wizardRegister()">✅ Register Parser</button>
+              </div>
+              <div id="wizard-test-result" class="code-block" style="display:none"></div>
+              <div class="panel" style="margin-top:16px">
+                <div class="panel-header"><span class="panel-title">Generated Parser Config (JSON)</span></div>
+                <div class="panel-body"><div class="code-block green" id="wizard-config-preview">Fill the steps above to see config…</div></div>
+              </div>
+              <div style="display:flex;justify-content:space-between;margin-top:16px">
+                <button class="btn btn-ghost" onclick="wizardPrev(4)">← Back</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════ TEST CONSOLE ═══════════════════════════ -->
+    <div class="page" id="page-tester">
+      <div class="panel">
+        <div class="panel-header"><span class="panel-title">🧪 Parser Test Console</span><span style="font-size:11px;color:var(--muted)">Test any raw log against any parser without ingesting</span></div>
+        <div class="panel-body">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Raw Log (any format)</label>
+              <textarea id="test-log-input" placeholder="Paste a raw log line here…" style="min-height:120px"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Parser (optional — leave blank for auto-detect)</label>
+              <select id="test-parser-select"><option value="">— Auto Detect —</option></select>
+              <div style="margin-top:8px;font-size:11px;color:var(--muted)">
+                Auto-detect will try all registered parsers and pick the best match.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" onclick="runParserTest()">🚀 Run Test</button>
+          <hr class="divider" />
+          <div id="test-results" style="display:none">
+            <div class="kpi-grid" style="grid-template-columns:repeat(4,1fr);margin-bottom:16px">
+              <div class="kpi-card"><div class="kpi-label">Detected Format</div><div class="kpi-value" id="tr-format" style="font-size:18px">—</div></div>
+              <div class="kpi-card"><div class="kpi-label">Matched Parser</div><div class="kpi-value" id="tr-parser" style="font-size:18px">—</div></div>
+              <div class="kpi-card"><div class="kpi-label">Fields Mapped</div><div class="kpi-value" id="tr-mapped" style="font-size:18px">—</div></div>
+              <div class="kpi-card"><div class="kpi-label">Status</div><div class="kpi-value" id="tr-status" style="font-size:18px">—</div></div>
+            </div>
+            <div class="tabs">
+              <div class="tab active" data-tab="trt-extracted" onclick="switchTab(this,'trt-extracted')">Extracted Fields</div>
+              <div class="tab" data-tab="trt-normalized" onclick="switchTab(this,'trt-normalized')">Normalized Event</div>
+              <div class="tab" data-tab="trt-vendor" onclick="switchTab(this,'trt-vendor')">Vendor Extensions</div>
+            </div>
+            <div class="tab-panel active" id="trt-extracted"><div class="code-block yellow" id="trt-extracted-content"></div></div>
+            <div class="tab-panel" id="trt-normalized"><div class="code-block green" id="trt-normalized-content"></div></div>
+            <div class="tab-panel" id="trt-vendor"><div class="code-block" id="trt-vendor-content"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════ SOURCE REGISTRY ═════════════════════════ -->
+    <div class="page" id="page-sources">
+      <div class="two-col">
+        <div class="panel">
+          <div class="panel-header"><span class="panel-title">Register New Source</span></div>
+          <div class="panel-body">
+            <div class="form-group"><label>Source Name *</label><input id="src-name" placeholder="e.g. Office-Firewall-01" /></div>
+            <div class="form-row">
+              <div class="form-group"><label>Vendor *</label><input id="src-vendor" placeholder="e.g. Fortinet" /></div>
+              <div class="form-group"><label>Product</label><input id="src-product" placeholder="e.g. FortiGate" /></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Device IP</label><input id="src-ip" placeholder="10.0.0.1" /></div>
+              <div class="form-group"><label>Hostname</label><input id="src-hostname" placeholder="fw01.local" /></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Device Type</label>
+                <select id="src-device-type">
+                  <option value="firewall">Firewall</option>
+                  <option value="ids">IDS/IPS</option>
+                  <option value="vpn">VPN Gateway</option>
+                  <option value="proxy">Proxy / WAF</option>
+                  <option value="router">Router / Switch</option>
+                  <option value="load-balancer">Load Balancer</option>
+                  <option value="perimeter-device">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Preferred Parser</label>
+                <select id="src-parser"><option value="">— Auto Detect —</option></select>
+              </div>
+            </div>
+            <div class="form-group"><label>Transport</label>
+              <select id="src-transport">
+                <option value="file">File</option>
+                <option value="syslog-udp">Syslog UDP</option>
+                <option value="syslog-tcp">Syslog TCP</option>
+                <option value="http">HTTP</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" onclick="registerSource()">Register Source</button>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-header"><span class="panel-title">Registered Sources</span></div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Name</th><th>Vendor</th><th>Device Type</th><th>IP</th><th>Parser</th><th>Status</th></tr></thead>
+              <tbody id="sources-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════ OUTPUT / EXPORT ═════════════════════════ -->
+    <div class="page" id="page-output">
+      <div class="two-col">
+        <div class="panel">
+          <div class="panel-header"><span class="panel-title">📤 Export Events</span></div>
+          <div class="panel-body">
+            <p style="font-size:12px;color:var(--muted);margin-bottom:16px">Export all normalized events in your preferred format for SIEM or Data Lake ingestion.</p>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div style="padding:16px;background:var(--surface2);border-radius:10px;border:1px solid var(--border)">
+                <div style="font-weight:600;margin-bottom:4px">🔒 CEF (Common Event Format)</div>
+                <div style="font-size:12px;color:var(--muted);margin-bottom:10px">For ArcSight, IBM QRadar, and most enterprise SIEMs</div>
+                <button class="btn btn-primary btn-sm" onclick="window.open('/api/v1/output/cef','_blank')">Download .cef</button>
+              </div>
+              <div style="padding:16px;background:var(--surface2);border-radius:10px;border:1px solid var(--border)">
+                <div style="font-weight:600;margin-bottom:4px">📁 JSON Lines (JSONL)</div>
+                <div style="font-size:12px;color:var(--muted);margin-bottom:10px">Newline-delimited JSON for Kafka, Elasticsearch, S3 Data Lake</div>
+                <button class="btn btn-primary btn-sm" onclick="window.open('/api/v1/output/jsonl','_blank')">Download .jsonl</button>
+              </div>
+              <div style="padding:16px;background:var(--surface2);border-radius:10px;border:1px solid var(--border)">
+                <div style="font-weight:600;margin-bottom:4px">🤖 Flat JSON (ML-Ready)</div>
+                <div style="font-size:12px;color:var(--muted);margin-bottom:10px">Fully flat key-value records — no nested objects, ready for pandas/sklearn</div>
+                <button class="btn btn-primary btn-sm" onclick="window.open('/api/v1/output/flat','_blank')">Download flat.jsonl</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-header"><span class="panel-title">Single Event CEF Preview</span></div>
+          <div class="panel-body">
+            <div class="form-group"><label>Event ID</label><input id="cef-event-id" placeholder="Paste an event_id…" /></div>
+            <button class="btn btn-ghost btn-sm" onclick="previewCEF()" style="margin-bottom:12px">Preview CEF</button>
+            <div class="code-block" id="cef-preview-output" style="min-height:60px">CEF output will appear here…</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /content -->
+</div><!-- /main -->
+
+<div id="toast"></div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!-- JAVASCRIPT                                                                -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<script>
+const API = '/api/v1';
+let allEvents = [];
+let wizardStep = 1;
+
+function escapeHtml(str) {
+  if (str === null || str === undefined) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+/* ── Navigation ─────────────────────────────────────────────────────────── */
+const pageMap = {
+  overview:   { title:'Overview',          sub:'System health and KPIs' },
+  pipeline:   { title:'Pipeline View',     sub:'Live normalization stage counters' },
+  explorer:   { title:'Event Explorer',    sub:'Browse and inspect normalized events' },
+  deadletter: { title:'Dead Letter Store', sub:'Events with no matching parser' },
+  parsers:    { title:'Parser Manager',    sub:'All registered parsers and field mappings' },
+  wizard:     { title:'Parser Wizard',     sub:'Create a new vendor parser — zero code required' },
+  tester:     { title:'Test Console',      sub:'Test any log against any parser without ingesting' },
+  sources:    { title:'Source Registry',   sub:'Register and manage log source devices' },
+  output:     { title:'Export / Output',   sub:'Download events in CEF, JSONL, or flat ML format' }
+};
+
+function navigate(page) {
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.toggle('active', n.dataset.page === page));
+  document.querySelectorAll('.page').forEach(p => p.classList.toggle('active', p.id === 'page-' + page));
+  const info = pageMap[page] || {};
+  document.getElementById('topbar-title').textContent = info.title || page;
+  document.getElementById('topbar-sub').textContent   = info.sub   || '';
+  if (page === 'overview')    { loadMetrics(); }
+  if (page === 'explorer')    { loadEvents(); }
+  if (page === 'parsers')     { loadParsers(); }
+  if (page === 'deadletter')  { loadDeadLetter(); }
+  if (page === 'sources')     { loadSources(); }
+  if (page === 'pipeline')    { loadPipelineData(); }
+  if (page === 'tester')      { populateParserSelect('test-parser-select'); }
+  if (page === 'sources')     { populateParserSelect('src-parser'); }
+}
+
+document.querySelectorAll('.nav-item').forEach(n => n.addEventListener('click', () => navigate(n.dataset.page)));
+
+/* ── Toast ──────────────────────────────────────────────────────────────── */
+function toast(msg, type='info') {
+  const el = document.createElement('div');
+  el.className = `toast-msg ${type}`;
+  el.textContent = msg;
+  const container = document.getElementById('toast');
+  if (container) container.appendChild(el);
+  setTimeout(() => el.remove(), 3500);
+}
+
+/* ── Generic API helpers ─────────────────────────────────────────────────── */
+async function apiFetch(path, opts={}, silent=false) {
+  try {
+    const r = await fetch(API + path, opts);
+    const contentType = r.headers.get("content-type") || "";
+    if (!contentType.includes("application/json")) {
+      const text = await r.text();
+      if (!silent) toast(`Unexpected server response (${r.status})`, 'error');
+      return null;
+    }
+    const j = await r.json();
+    if (!r.ok && !silent) {
+      toast(j.message || `API error ${r.status}`, 'error');
+    }
+    return j;
+  } catch(e) {
+    if (!silent) toast('Network error: ' + e.message, 'error');
+    return null;
+  }
+}
+
+/* ── Status helpers ─────────────────────────────────────────────────────── */
+function statusBadge(status) {
+  const map = {
+    PROCESSED:'badge-green', PARTIALLY_PROCESSED:'badge-yellow',
+    UNSUPPORTED:'badge-gray', PARSER_ERROR:'badge-red', VALIDATION_ERROR:'badge-red'
+  };
+  return `<span class="badge ${map[status]||'badge-gray'}">${escapeHtml(status||'—')}</span>`;
+}
+
+/* ── Refresh All ─────────────────────────────────────────────────────────── */
+function refreshAll() {
+  const active = document.querySelector('.nav-item.active');
+  if (active) navigate(active.dataset.page);
+  loadMetrics();
+  toast('Refreshed', 'info');
+}
+
+/* ── Metrics & KPIs ─────────────────────────────────────────────────────── */
+async function loadMetrics(silent=false) {
+  const r = await apiFetch('/healthcheck/metrics', {}, silent);
+  if (!r || !r.data) return;
+  const d = r.data;
+  const c = d.counters || {};
+
+  document.querySelectorAll('.kpi-received').forEach(el => el.textContent = c.eventsReceived ?? '—');
+  document.querySelectorAll('.kpi-processed').forEach(el => el.textContent = c.eventsProcessed ?? '—');
+  document.querySelectorAll('.kpi-failed').forEach(el => el.textContent = c.eventsFailed ?? '—');
+  document.querySelectorAll('.kpi-dead').forEach(el => el.textContent = c.deadLettered ?? '—');
+  document.querySelectorAll('.kpi-eps').forEach(el => el.textContent = d.events_per_second ?? '—');
+  document.querySelectorAll('.kpi-latency').forEach(el => el.textContent = (d.avg_processing_latency_ms ?? '—') + 'ms');
+
+  const pr = await apiFetch('/parsers', {}, silent);
+  const pc = pr?.data?.length ?? 0;
+  document.querySelectorAll('.kpi-parsers').forEach(el => el.textContent = pc);
+  const bp = document.getElementById('badge-parsers');
+  if (bp) bp.textContent = pc;
+
+  const sr = await apiFetch('/sources', {}, silent);
+  const sc = sr?.data?.length ?? 0;
+  document.querySelectorAll('.kpi-sources').forEach(el => el.textContent = sc);
+  const bs = document.getElementById('badge-sources');
+  if (bs) bs.textContent = sc;
+
+  // Parser hit list
+  const hits = d.parser_hits || {};
+  const hl = document.getElementById('parser-hits-list');
+  if (hl) {
+    if (Object.keys(hits).length) {
+      hl.innerHTML = Object.entries(hits).sort((a,b)=>b[1]-a[1]).map(([k,v]) =>
+        `<div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">
+          <span class="tag">${escapeHtml(k)}</span><span style="font-weight:700;font-family:JetBrains Mono,monospace">${v}</span>
+         </div>`).join('');
+    } else {
+      hl.innerHTML = '<div class="empty"><div class="empty-icon">⚙️</div>No parser hits yet</div>';
+    }
+  }
+
+  // Format distribution
+  const fmts = d.format_counts || {};
+  const fl = document.getElementById('format-dist-list');
+  if (fl) {
+    if (Object.keys(fmts).length) {
+      fl.innerHTML = Object.entries(fmts).sort((a,b)=>b[1]-a[1]).map(([k,v]) =>
+        `<div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">
+          <span class="tag">${escapeHtml(k)}</span><span style="font-weight:700;font-family:JetBrains Mono,monospace">${v}</span>
+         </div>`).join('');
+    } else {
+      fl.innerHTML = '<div class="empty"><div class="empty-icon">📋</div>No format data yet</div>';
+    }
+  }
+}
+
+/* ── Pipeline View ─────────────────────────────────────────────────────── */
+async function loadPipelineData() {
+  const r = await apiFetch('/healthcheck/metrics');
+  if (!r?.data) return;
+  const c = r.data.counters || {};
+  const total = c.eventsReceived || 0;
+  const processed = c.eventsProcessed || 0;
+  const dead = c.deadLettered || 0;
+
+  const setTxt = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+  setTxt('pc-ingest', total);
+  setTxt('pc-raw', total);
+  setTxt('pc-detect', total);
+  setTxt('pc-parse', Math.max(0, total - dead));
+  setTxt('pc-norm', processed + (c.eventsPartial||0));
+  setTxt('pc-valid', processed);
+  setTxt('pc-out', processed);
+  setTxt('pc-dead', dead);
+
+  const stages = ['ps-ingest','ps-raw','ps-detect','ps-parse','ps-norm','ps-valid','ps-out'];
+  stages.forEach(id => document.getElementById(id)?.classList.toggle('active', total > 0));
+
+  // Source counts
+  const sources = r.data.source_counts || {};
+  const sl = document.getElementById('source-counts-list');
+  if (sl) {
+    if (Object.keys(sources).length) {
+      sl.innerHTML = Object.entries(sources).sort((a,b)=>b[1]-a[1]).map(([k,v]) =>
+        `<div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">
+          <span>${escapeHtml(k)}</span><span style="font-weight:700;font-family:JetBrains Mono,monospace">${v} events</span>
+         </div>`).join('');
+    } else {
+      sl.innerHTML = '<div class="empty"><div class="empty-icon">📊</div>Ingest some logs to see vendor breakdown</div>';
+    }
+  }
+}
+
+/* ── Events ─────────────────────────────────────────────────────────────── */
+async function loadEvents() {
+  const r = await apiFetch('/events');
+  allEvents = r?.data || [];
+  const be = document.getElementById('badge-events');
+  if (be) be.textContent = allEvents.length;
+  const ec = document.getElementById('events-count');
+  if (ec) ec.textContent = `${allEvents.length} events`;
+
+  // Populate vendor filter
+  const vendors = [...new Set(allEvents.map(e=>e.source?.vendor).filter(Boolean))];
+  const vf = document.getElementById('filter-vendor');
+  if (vf) vf.innerHTML = '<option value="">All Vendors</option>' + vendors.map(v=>`<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join('');
+
+  renderEvents(allEvents);
+}
+
+function filterEvents() {
+  const qEl   = document.getElementById('filter-search');
+  const stEl  = document.getElementById('filter-status');
+  const vndEl = document.getElementById('filter-vendor');
+  const q   = qEl ? qEl.value.toLowerCase() : '';
+  const st  = stEl ? stEl.value : '';
+  const vnd = vndEl ? vndEl.value : '';
+  const filtered = allEvents.filter(e => {
+    const match = !q || JSON.stringify(e).toLowerCase().includes(q);
+    const stMatch = !st || e.processing?.status === st;
+    const vMatch  = !vnd || e.source?.vendor === vnd;
+    return match && stMatch && vMatch;
+  });
+  const ec = document.getElementById('events-count');
+  if (ec) ec.textContent = `${filtered.length} of ${allEvents.length} events`;
+  renderEvents(filtered);
+}
+
+function renderEvents(events) {
+  const tbody = document.getElementById('events-tbody');
+  if (!tbody) return;
+  if (!events.length) {
+    tbody.innerHTML = '<tr><td colspan="10"><div class="empty"><div class="empty-icon">🔍</div>No events found</div></td></tr>';
+    return;
+  }
+  tbody.innerHTML = events.map(e => {
+    const net = e.network || {};
+    const evtId = e.event_id || '';
+    const shortId = evtId.substring(0, 8);
+    return `<tr>
+      <td><code class="mono truncate" style="max-width:120px;display:block">${escapeHtml(shortId)}…</code></td>
+      <td>${escapeHtml(e.source?.vendor || '—')}</td>
+      <td><span class="tag">${escapeHtml(e.trace?.parser_name || '—')}</span></td>
+      <td><span class="tag">${escapeHtml(e.source?.log_format || '—')}</span></td>
+      <td class="mono">${escapeHtml(net.source_ip || '—')}</td>
+      <td class="mono">${escapeHtml(net.destination_ip || '—')}</td>
+      <td>${escapeHtml(e.event?.action || '—')}</td>
+      <td>${escapeHtml(e.event?.severity || '—')}</td>
+      <td>${statusBadge(e.processing?.status)}</td>
+      <td><button class="btn btn-ghost btn-sm" data-id="${escapeHtml(evtId)}" onclick="showEventDetail(this.getAttribute('data-id'))">Detail</button></td>
+    </tr>`;
+  }).join('');
+}
+
+async function showEventDetail(id) {
+  const event = allEvents.find(e => e.event_id === id);
+  if (!event) return;
+  const detailEl = document.getElementById('event-detail');
+  if (detailEl) detailEl.style.display = 'block';
+  document.getElementById('detail-normalized').textContent = JSON.stringify(event, null, 2);
+  document.getElementById('detail-vendor').textContent = JSON.stringify(event.extensions?.vendor_specific || {}, null, 2);
+
+  const tr = await apiFetch(`/events/${encodeURIComponent(id)}/trace`);
+  if (tr?.data) {
+    document.getElementById('detail-raw').textContent    = tr.data.raw_content || '(not found)';
+    document.getElementById('detail-trace').textContent  = JSON.stringify(tr.data, null, 2);
+  } else {
+    document.getElementById('detail-raw').textContent    = '(raw event content unavailable)';
+    document.getElementById('detail-trace').textContent  = '(trace details unavailable)';
+  }
+  if (detailEl) detailEl.scrollIntoView({ behavior: 'smooth' });
+}
+
+function closeDetail() {
+  const detailEl = document.getElementById('event-detail');
+  if (detailEl) detailEl.style.display = 'none';
+}
+
+function switchTab(el, targetId) {
+  const container = el.closest('.panel-body') || el.closest('.page');
+  if (!container) return;
+  container.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  container.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById(targetId)?.classList.add('active');
+}
+
+/* ── Dead Letter ─────────────────────────────────────────────────────────── */
+async function loadDeadLetter() {
+  const r = await apiFetch('/healthcheck/dead-letter');
+  const events = r?.data || [];
+  const bd = document.getElementById('badge-dead');
+  if (bd) bd.textContent = events.length;
+  const tbody = document.getElementById('dead-tbody');
+  if (!tbody) return;
+  if (!events.length) {
+    tbody.innerHTML = '<tr><td colspan="6"><div class="empty" style="color:var(--success)"><div class="empty-icon">✅</div>No dead-lettered events — all logs were parsed successfully!</div></td></tr>';
+    return;
+  }
+  tbody.innerHTML = events.map(e => {
+    const rawId = e.raw_event_id ? e.raw_event_id.substring(0, 12) + '…' : '—';
+    const preview = e.diagnostics?.sample_preview ? e.diagnostics.sample_preview.substring(0, 60) + '…' : '—';
+    return `<tr>
+      <td class="mono">${escapeHtml(rawId)}</td>
+      <td><span class="tag">${escapeHtml(e.detected_format || 'unknown')}</span></td>
+      <td><span class="badge badge-red">${escapeHtml(e.error_code || 'ERROR')}</span></td>
+      <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escapeHtml(e.error_message || '')}</td>
+      <td class="mono">${escapeHtml(e.ingested_at || '')}</td>
+      <td class="mono truncate">${escapeHtml(preview)}</td>
+    </tr>`;
+  }).join('');
+}
+
+/* ── Parsers ─────────────────────────────────────────────────────────────── */
+async function loadParsers() {
+  const r = await apiFetch('/parsers');
+  const parsers = r?.data || [];
+  const bp = document.getElementById('badge-parsers');
+  if (bp) bp.textContent = parsers.length;
+  const tbody = document.getElementById('parsers-tbody');
+  if (!tbody) return;
+  if (!parsers.length) {
+    tbody.innerHTML = '<tr><td colspan="8"><div class="empty"><div class="empty-icon">⚙️</div>No parsers registered</div></td></tr>';
+    return;
+  }
+  tbody.innerHTML = parsers.map(p => {
+    const maps = Object.keys(p.field_mappings || {}).length;
+    const match = p.match_criteria?.contains
+      ? p.match_criteria.contains.map(s=>`<span class="tag">${escapeHtml(s)}</span>`).join(' ')
+      : (p.match_criteria?.regex ? `<span class="tag">/${escapeHtml(p.match_criteria.regex)}/</span>` : '—');
+    return `<tr>
+      <td><strong>${escapeHtml(p.name)}</strong></td>
+      <td class="mono">${escapeHtml(p.version || '—')}</td>
+      <td>${escapeHtml(p.vendor || '—')}</td>
+      <td>${escapeHtml(p.product || '—')}</td>
+      <td><span class="badge badge-cyan">${escapeHtml(p.device_type || '—')}</span></td>
+      <td><span class="badge badge-blue">${escapeHtml(p.format || '—')}</span></td>
+      <td style="max-width:200px;">${match}</td>
+      <td>${maps} fields</td>
+    </tr>`;
+  }).join('');
+}
+
+async function reloadParsers() {
+  const r = await apiFetch('/parsers/reload', { method:'POST' });
+  if (r?.data) {
+    toast(`Reloaded ${r.data.count} parsers from disk`, 'success');
+    loadParsers();
+  }
+}
+
+async function populateParserSelect(selectId) {
+  const r = await apiFetch('/parsers', {}, true);
+  const parsers = r?.data || [];
+  const el = document.getElementById(selectId);
+  if (!el) return;
+  const curr = el.value;
+  el.innerHTML = '<option value="">— Auto Detect —</option>' + parsers.map(p => `<option value="${escapeHtml(p.name)}">${escapeHtml(p.name)} (${escapeHtml(p.vendor)})</option>`).join('');
+  if (curr) el.value = curr;
+}
+
+/* ── Sources ─────────────────────────────────────────────────────────────── */
+async function loadSources() {
+  const r = await apiFetch('/sources');
+  const sources = r?.data || [];
+  const bs = document.getElementById('badge-sources');
+  if (bs) bs.textContent = sources.length;
+  const tbody = document.getElementById('sources-tbody');
+  if (!tbody) return;
+  if (!sources.length) {
+    tbody.innerHTML = '<tr><td colspan="6"><div class="empty"><div class="empty-icon">🖧</div>No sources registered</div></td></tr>';
+    return;
+  }
+  tbody.innerHTML = sources.map(s => `<tr>
+    <td><strong>${escapeHtml(s.name)}</strong></td>
+    <td>${escapeHtml(s.vendor)}</td>
+    <td><span class="badge badge-cyan">${escapeHtml(s.device_type)}</span></td>
+    <td class="mono">${escapeHtml(s.device_ip || '—')}</td>
+    <td><span class="tag">${escapeHtml(s.preferred_parser || 'auto')}</span></td>
+    <td>${s.active ? '<span class="badge badge-green">Active</span>' : '<span class="badge badge-gray">Inactive</span>'}</td>
+  </tr>`).join('');
+}
+
+async function registerSource() {
+  const body = {
+    name: document.getElementById('src-name').value.trim(),
+    vendor: document.getElementById('src-vendor').value.trim(),
+    product: document.getElementById('src-product').value.trim(),
+    device_ip: document.getElementById('src-ip').value.trim(),
+    hostname: document.getElementById('src-hostname').value.trim(),
+    device_type: document.getElementById('src-device-type').value,
+    preferred_parser: document.getElementById('src-parser').value || null,
+    transport: document.getElementById('src-transport').value
+  };
+  if (!body.name || !body.vendor) { toast('Name and Vendor are required', 'error'); return; }
+  const r = await apiFetch('/sources', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body) });
+  if (r?.success) { toast(`Source '${body.name}' registered!`, 'success'); loadSources(); }
+  else toast(r?.message || 'Registration failed', 'error');
+}
+
+/* ── Quick Ingest ────────────────────────────────────────────────────────── */
+async function quickIngest() {
+  const logEl = document.getElementById('quick-log');
+  const log = logEl ? logEl.value.trim() : '';
+  if (!log) { toast('Paste a log line first', 'error'); return; }
+  const r = await apiFetch('/events/ingest', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ log, transport:'http' })
+  });
+  if (r?.success) {
+    toast('Event ingested & normalized!', 'success');
+    if (logEl) logEl.value = '';
+    loadMetrics();
+  } else toast(r?.message || 'Ingestion failed', 'error');
+}
+
+/* ── Parser Test Console ─────────────────────────────────────────────────── */
+async function runParserTest() {
+  const logEl = document.getElementById('test-log-input');
+  const log = logEl ? logEl.value.trim() : '';
+  const parser = document.getElementById('test-parser-select').value || null;
+  if (!log) { toast('Paste a log line to test', 'error'); return; }
+
+  const r = await apiFetch('/parsers/test', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ log, parser_name: parser })
+  });
+  if (!r?.success) { toast(r?.message || 'Test failed', 'error'); return; }
+  const d = r.data;
+  const resEl = document.getElementById('test-results');
+  if (resEl) resEl.style.display = 'block';
+  document.getElementById('tr-format').textContent  = d.detected_format || '—';
+  document.getElementById('tr-parser').textContent  = d.matched_parser?.name || 'none';
+  document.getElementById('tr-mapped').textContent  = Object.keys(d.mapped_fields||{}).length;
+  document.getElementById('tr-status').textContent  = d.processing_status || '—';
+  document.getElementById('trt-extracted-content').textContent = JSON.stringify(d.extracted_fields || {}, null, 2);
+  document.getElementById('trt-normalized-content').textContent = JSON.stringify(d.normalized_event || {}, null, 2);
+  document.getElementById('trt-vendor-content').textContent = JSON.stringify(d.vendor_specific_retained || {}, null, 2);
+}
+
+/* ── CEF Preview ─────────────────────────────────────────────────────────── */
+async function previewCEF() {
+  const id = document.getElementById('cef-event-id').value.trim();
+  if (!id) { toast('Paste an event_id first', 'error'); return; }
+  const r = await apiFetch(`/output/cef/${encodeURIComponent(id)}`);
+  document.getElementById('cef-preview-output').textContent = r?.data?.cef || r?.message || 'Not found';
+}
+
+/* ── Parser Wizard ───────────────────────────────────────────────────────── */
+function updateFormatHelp() {
+  const fmt = document.getElementById('w-format').value;
+  const pg = document.getElementById('w-pattern-group');
+  if (pg) pg.style.display = (fmt === 'regex') ? 'block' : 'none';
+  const hints = {
+    'key-value': 'Key-value logs use `field=value` pairs (e.g. FortiGate, pfSense). The engine auto-extracts all pairs.',
+    'json': 'Full JSON object logs. The engine parses JSON keys directly.',
+    'syslog': 'RFC 3164 syslog: `<priority>Mmm DD HH:MM:SS host message`. Provide a named-group regex for extraction.',
+    'cef': 'CEF logs start with `CEF:0|Vendor|Product|…`. Header fields auto-extracted.',
+    'regex': 'Custom log format. Provide a named-group regex pattern below.'
+  };
+  const fh = document.getElementById('format-help');
+  if (fh) fh.textContent = hints[fmt] || '';
+}
+
+function addMapRow() {
+  const editor = document.getElementById('field-mappings-editor');
+  if (!editor) return;
+  const firstSelect = editor.querySelector('.fmap-target');
+  const options = firstSelect ? firstSelect.innerHTML : '<option value="event.action">event.action</option>';
+  const row = document.createElement('div');
+  row.className = 'field-map-row';
+  row.innerHTML = `<input placeholder="Vendor field (e.g. srcip)" class="fmap-vendor" /><span class="field-arrow">→</span><select class="fmap-target">${options}</select><button class="btn btn-ghost btn-sm" onclick="removeMapRow(this)">✕</button>`;
+  editor.appendChild(row);
+}
+
+function removeMapRow(btn) {
+  const rows = document.querySelectorAll('#field-mappings-editor .field-map-row');
+  if (rows.length <= 1) return;
+  btn.closest('.field-map-row').remove();
+}
+
+function buildParserConfig() {
+  const matchType = document.getElementById('w-match-type').value;
+  const matchLines = (document.getElementById('w-match').value || '').split('\n').map(s=>s.trim()).filter(Boolean);
+  const matchCriteria = matchType === 'contains' ? { contains: matchLines } : { regex: matchLines[0] || '' };
+
+  const fmt = document.getElementById('w-format').value;
+  const extraction = { type: fmt === 'syslog' ? 'regex' : fmt };
+  if (fmt === 'regex' || fmt === 'syslog') {
+    const pat = document.getElementById('w-pattern').value.trim();
+    if (pat) extraction.pattern = pat;
+  }
+
+  const fieldMappings = {};
+  document.querySelectorAll('#field-mappings-editor .field-map-row').forEach(row => {
+    const k = row.querySelector('.fmap-vendor').value.trim();
+    const v = row.querySelector('.fmap-target').value;
+    if (k && v) fieldMappings[k] = v;
+  });
+
+  return {
+    name: document.getElementById('w-name').value.trim(),
+    version: document.getElementById('w-version').value.trim() || '1.0',
+    vendor: document.getElementById('w-vendor').value.trim(),
+    product: document.getElementById('w-product').value.trim(),
+    device_type: document.getElementById('w-device-type').value,
+    format: fmt,
+    description: document.getElementById('w-desc').value.trim(),
+    match_criteria: matchCriteria,
+    extraction,
+    field_mappings: fieldMappings
+  };
+}
+
+function wizardNext(fromStep) {
+  if (fromStep === 1) {
+    if (!document.getElementById('w-name').value.trim()) { toast('Parser name is required', 'error'); return; }
+    if (!document.getElementById('w-vendor').value.trim()) { toast('Vendor is required', 'error'); return; }
+  }
+  if (fromStep === 4) return;
+  setWizardStep(fromStep + 1);
+  const cfgPreview = document.getElementById('wizard-config-preview');
+  if (cfgPreview) cfgPreview.textContent = JSON.stringify(buildParserConfig(), null, 2);
+}
+
+function wizardPrev(fromStep) {
+  if (fromStep <= 1) return;
+  setWizardStep(fromStep - 1);
+}
+
+function setWizardStep(step) {
+  wizardStep = step;
+  for (let i=1;i<=4;i++) {
+    const ws = document.getElementById('ws-'+i);
+    const wd = document.getElementById('wstep-'+i);
+    if (ws) {
+      ws.classList.toggle('active', i===step);
+      ws.classList.toggle('done', i<step);
+    }
+    if (wd) wd.classList.toggle('active', i===step);
+  }
+  if (step === 4) {
+    const cfgPreview = document.getElementById('wizard-config-preview');
+    if (cfgPreview) cfgPreview.textContent = JSON.stringify(buildParserConfig(), null, 2);
+    updateFormatHelp();
+  }
+}
+
+async function wizardTestParser() {
+  const log = document.getElementById('w-test-log').value.trim();
+  if (!log) { toast('Paste a sample log in Step 4', 'error'); return; }
+  const cfg = buildParserConfig();
+  if (!cfg.name || !cfg.vendor) { toast('Parser name and vendor are required (Step 1)', 'error'); return; }
+  const rDiv = document.getElementById('wizard-test-result');
+  if (rDiv) {
+    rDiv.style.display = 'block';
+    rDiv.textContent = 'Testing…';
+  }
+
+  // Register configuration then test
+  await apiFetch('/parsers', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(cfg) });
+  const r = await apiFetch('/parsers/test', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ log, parser_name: cfg.name })
+  });
+  if (r?.success) {
+    const d = r.data;
+    if (rDiv) rDiv.textContent = `✅ Parser matched!\nFormat: ${d.detected_format}\nFields extracted: ${Object.keys(d.extracted_fields||{}).length}\nFields mapped: ${Object.keys(d.mapped_fields||{}).length}\nStatus: ${d.processing_status}\n\n${JSON.stringify(d.normalized_event?.network || d.normalized_event,null,2)}`;
+    toast('Test passed!', 'success');
+  } else {
+    if (rDiv) rDiv.textContent = '❌ ' + (r?.message || 'Test failed');
+    toast('Test failed', 'error');
+  }
+}
+
+async function wizardRegister() {
+  const cfg = buildParserConfig();
+  if (!cfg.name || !cfg.vendor) { toast('Complete Steps 1 and 2 first', 'error'); return; }
+  const r = await apiFetch('/parsers', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(cfg) });
+  if (r?.success) {
+    toast(`Parser '${cfg.name}' registered successfully! 🎉`, 'success');
+    setTimeout(() => navigate('parsers'), 1200);
+  } else toast(r?.message || 'Registration failed', 'error');
+}
+
+/* ── Auto-refresh metrics silently in background ─────────────────────────── */
+setInterval(() => loadMetrics(true), 8000);
+
+/* ── Initial load ────────────────────────────────────────────────────────── */
+(async function init() {
+  updateFormatHelp();
+  await loadMetrics(true);
+  await populateParserSelect('test-parser-select');
+  await populateParserSelect('src-parser');
+  const ws1 = document.getElementById('ws-1');
+  const wst1 = document.getElementById('wstep-1');
+  if (ws1) ws1.classList.add('active');
+  if (wst1) wst1.classList.add('active');
+})();
+</script>
+</body>
+</html>

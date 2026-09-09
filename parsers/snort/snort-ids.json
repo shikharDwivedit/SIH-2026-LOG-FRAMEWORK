@@ -1,0 +1,25 @@
+{
+  "name": "snort-ids",
+  "version": "1.0",
+  "vendor": "Snort",
+  "product": "Snort IDS/IPS",
+  "device_type": "ids",
+  "format": "regex",
+  "match_criteria": {
+    "regex": "\\[\\d+:\\d+:\\d+\\]|snort\\[\\d+\\]"
+  },
+  "extraction": {
+    "type": "regex",
+    "pattern": "^(?<timestamp>[A-Za-z]{3}\\s+\\d+\\s+\\d{2}:\\d{2}:\\d{2})?\\s*(?<hostname>\\S+)?\\s*snort\\[\\d+\\]:\\s*\\[(?<sid>\\d+:\\d+:\\d+)\\]\\s*(?<alert_msg>[^\\[]+)?\\{(?<protocol>TCP|UDP|ICMP)\\}\\s*(?<src_ip>[\\d.]+):?(?<src_port>\\d+)?\\s*->\\s*(?<dst_ip>[\\d.]+):?(?<dst_port>\\d+)?"
+  },
+  "field_mappings": {
+    "src_ip": "network.source_ip",
+    "src_port": "network.source_port",
+    "dst_ip": "network.destination_ip",
+    "dst_port": "network.destination_port",
+    "protocol": "network.protocol",
+    "alert_msg": "event.message",
+    "sid": "threat.signature",
+    "hostname": "source.hostname"
+  }
+}

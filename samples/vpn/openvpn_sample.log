@@ -1,0 +1,4 @@
+Sep  9 14:10:01 vpn-gw01 ovpn-server[3421]: TLS: Initial packet from [AF_INET]203.0.113.55:41234, sid=abc1234
+Sep  9 14:10:02 vpn-gw01 ovpn-server[3421]: VERIFY OK: depth=1, C=IN, CN=SIH-CA
+Sep  9 14:10:05 vpn-gw01 ovpn-server[3421]: MULTI: Learn: 10.8.0.2 -> shikhar/203.0.113.55:41234
+Sep  9 14:20:11 vpn-gw01 ovpn-server[3421]: shikhar/203.0.113.55:41234 SIGTERM received, client-instance exiting

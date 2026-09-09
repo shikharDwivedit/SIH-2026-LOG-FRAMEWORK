@@ -1,0 +1,21 @@
+{
+  "name": "generic-syslog",
+  "version": "1.0",
+  "vendor": "Generic",
+  "product": "Syslog Gateway",
+  "device_type": "router",
+  "format": "syslog",
+  "match_criteria": {
+    "regex": "^<\\d{1,3}>[A-Za-z]{3}\\s+\\d+"
+  },
+  "extraction": {
+    "type": "regex",
+    "pattern": "^<(?<pri>\\d{1,3})>(?<timestamp>[A-Za-z]{3}\\s+\\d+\\s+\\d{2}:\\d{2}:\\d{2})\\s+(?<hostname>\\S+)\\s+(?<message>.*)$"
+  },
+  "field_mappings": {
+    "timestamp": "event.timestamp",
+    "hostname": "source.hostname",
+    "message": "event.message",
+    "pri": "event.severity"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "fortigate",
+  "version": "1.0",
+  "vendor": "Fortinet",
+  "product": "FortiGate",
+  "device_type": "firewall",
+  "format": "key-value",
+  "match_criteria": {
+    "contains": ["type=utm", "type=traffic", "devname=", "devid="]
+  },
+  "extraction": {
+    "type": "key-value",
+    "delimiter": " ",
+    "kv_separator": "="
+  },
+  "field_mappings": {
+    "srcip": "network.source_ip",
+    "srcport": "network.source_port",
+    "dstip": "network.destination_ip",
+    "dstport": "network.destination_port",
+    "proto": "network.protocol",
+    "action": "event.action",
+    "status": "event.outcome",
+    "level": "event.severity",
+    "msg": "event.message",
+    "user": "identity.username",
+    "policyid": "threat.rule_id",
+    "service": "network.direction"
+  }
+}
