@@ -1,0 +1,28 @@
+{
+  "name": "checkpoint-fw",
+  "version": "1.0",
+  "vendor": "Check Point",
+  "product": "Check Point Firewall-1",
+  "device_type": "firewall",
+  "format": "key-value",
+  "description": "Check Point Security Gateway log parser",
+  "match_criteria": {
+    "contains": [
+      "product=VPN-1"
+    ]
+  },
+  "extraction": {
+    "type": "key-value"
+  },
+  "field_mappings": {
+    "src": "network.source_ip",
+    "s_port": "network.source_port",
+    "dst": "network.destination_ip",
+    "service": "network.destination_port",
+    "proto": "network.protocol",
+    "action": "event.action",
+    "user": "identity.username",
+    "rule_name": "threat.rule_id",
+    "origin": "source.hostname"
+  }
+}

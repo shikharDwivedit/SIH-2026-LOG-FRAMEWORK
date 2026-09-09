@@ -1,0 +1,11 @@
+{
+  "eventId": "2463ae2b-5c6c-4da5-a9bc-7a9c40f3958c",
+  "rawContent": "<185>date=2026-09-09 time=14:02:11 devname=\"fw01\" devid=\"FGT60D4614000001\" logid=\"0000000013\" type=\"traffic\" subtype=\"forward\" level=\"notice\" vd=\"root\" srcip=10.0.0.5 srcport=54321 dstip=8.8.8.8 dstport=443 proto=6 action=\"deny\" status=\"blocked\" msg=\"Access denied by security policy 10\" user=\"admin\" policyid=10",
+  "rawHash": "5c7529d0e9c3e45b4e9742a3cb33f1466c84c8e92bf5cae08e407e7370c6913c",
+  "ingestedAt": "2026-09-09T17:00:37.183Z",
+  "sourceId": "unknown",
+  "transport": "auto-seed",
+  "metadata": {
+    "transport": "auto-seed"
+  }
+}

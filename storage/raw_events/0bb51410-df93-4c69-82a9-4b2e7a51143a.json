@@ -1,0 +1,11 @@
+{
+  "eventId": "0bb51410-df93-4c69-82a9-4b2e7a51143a",
+  "rawContent": "1,2026/09/09 14:10:00,001606000123,TRAFFIC,drop,1,2026/09/09 14:09:59,192.168.2.10,10.10.10.50,192.168.2.10,10.10.10.50,Rule-Block-Internal,,,web-browsing,vsys1,trust,untrust,ethernet1/1,ethernet1/2,Log-Forward-SIEM,2026/09/09 14:10:00,62341,1,53210,80,0,0,0x0,tcp,deny,1024,0,1024,1,2026/09/09 14:09:59,0,any,0,981234,0x0,10.0.0.0-10.255.255.255,US,0,1,0,policy-drop,0,0,0,0,,PA-3020,from-policy",
+  "rawHash": "baf75b4fa7bfd28600c22f07a2fa1d672d7d522531dbecad43c4f53ff3695f3d",
+  "ingestedAt": "2026-09-09T17:01:04.818Z",
+  "sourceId": "unknown",
+  "transport": "auto-seed",
+  "metadata": {
+    "transport": "auto-seed"
+  }
+}

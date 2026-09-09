@@ -29,32 +29,54 @@ class ParserRegistryService {
     return Array.from(new Set(this.parsersMap.values()));
   }
 
-  findMatchingParser(rawContent, formatHint) {
-    const detectedFormat = formatHint || formatDetectorService.detectFormat(rawContent);
+  findMatchingParser(rawContent, formatHint, options = {}) {
+    const allParsers = this.getAllParsers();
 
-    for (const parser of this.getAllParsers()) {
+    // Priority 1: Explicit parser name requested
+    if (options.parserName) {
+      const explicit = this.parsersMap.get(options.parserName);
+      if (explicit) return explicit;
+    }
+
+    // Priority 2: Vendor + Product hint matching
+    if (options.vendor) {
+      const vendorMatch = allParsers.find(p => 
+        p.vendor?.toLowerCase() === options.vendor.toLowerCase() &&
+        (!options.product || p.product?.toLowerCase() === options.product.toLowerCase())
+      );
+      if (vendorMatch) return vendorMatch;
+    }
+
+    // Priority 3: Strong message fingerprint (contains array / regex pattern)
+    for (const parser of allParsers) {
       if (parser.match_criteria) {
-        // Contains check
-        if (Array.isArray(parser.match_criteria.contains)) {
+        if (Array.isArray(parser.match_criteria.contains) && parser.match_criteria.contains.length > 0) {
           const allMatch = parser.match_criteria.contains.every((substr) =>
             rawContent.includes(substr)
           );
           if (allMatch) return parser;
         }
 
-        // Regex match criteria
         if (parser.match_criteria.regex) {
-          const re = new RegExp(parser.match_criteria.regex, "i");
-          if (re.test(rawContent)) return parser;
+          try {
+            const re = new RegExp(parser.match_criteria.regex, "i");
+            if (re.test(rawContent)) return parser;
+          } catch (e) {}
         }
-      }
-
-      // Format-based fallback
-      if (parser.format === detectedFormat) {
-        return parser;
       }
     }
 
+    // Priority 4: Format-based generic fallback
+    const detectedFormat = formatHint || formatDetectorService.detectFormat(rawContent);
+    if (detectedFormat) {
+      const formatMatch = allParsers.find(p => 
+        p.format === detectedFormat && 
+        (!p.match_criteria?.contains?.length || p.match_criteria.contains.every(s => rawContent.includes(s)))
+      );
+      if (formatMatch) return formatMatch;
+    }
+
+    // Priority 5: Unknown
     return null;
   }
 }

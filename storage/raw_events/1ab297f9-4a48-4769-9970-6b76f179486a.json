@@ -1,0 +1,11 @@
+{
+  "eventId": "1ab297f9-4a48-4769-9970-6b76f179486a",
+  "rawContent": "<185>date=2026-09-09 time=14:05:22 devname=\"fw01\" devid=\"FGT60D4614000001\" logid=\"0000000014\" type=\"traffic\" subtype=\"forward\" level=\"information\" vd=\"root\" srcip=192.168.1.50 srcport=49152 dstip=1.1.1.1 dstport=80 proto=6 action=\"accept\" status=\"allowed\" msg=\"Session allowed\" user=\"shikhar\" policyid=1",
+  "rawHash": "e28a0082e62b10e35d9d0268f3dab37ebff280dc2a2e495dca4ebcb300802510",
+  "ingestedAt": "2026-09-09T16:54:21.195Z",
+  "sourceId": "unknown",
+  "transport": "auto-seed",
+  "metadata": {
+    "transport": "auto-seed"
+  }
+}

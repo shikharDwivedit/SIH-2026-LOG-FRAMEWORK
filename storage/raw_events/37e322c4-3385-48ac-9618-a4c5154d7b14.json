@@ -1,0 +1,11 @@
+{
+  "eventId": "37e322c4-3385-48ac-9618-a4c5154d7b14",
+  "rawContent": "CEF:0|Snort|Snort IDS|2.9.16|122:1|MALWARE-BACKDOOR SQL injection attempt|8|src=192.168.1.105 spt=38291 dst=10.0.2.15 dpt=80 proto=tcp cat=Attempted Administrator Privilege Gain msg=Possible SQL injection attack payload detected in HTTP URI request",
+  "rawHash": "59f67c612a76ec34dfd176c50ad21fac528a2c68ea9133c2cc4753baed3d63d7",
+  "ingestedAt": "2026-09-09T17:03:30.263Z",
+  "sourceId": "unknown",
+  "transport": "live-stream",
+  "metadata": {
+    "transport": "live-stream"
+  }
+}

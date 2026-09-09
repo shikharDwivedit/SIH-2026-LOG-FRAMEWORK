@@ -1,0 +1,11 @@
+{
+  "eventId": "4ec646f2-f9a2-4b65-8054-147bac2b51be",
+  "rawContent": "2026-09-09T14:25:00+05:30 vpn-server-01 openvpn[1024]: user=dev_user srcip=203.0.113.99 srcport=61234 status=connected bytes_sent=1048576 bytes_rcvd=2097152 action=vpn_login device=openvpn-as-01",
+  "rawHash": "113c301af6c4e2c197ea3b696e7bca59dca8f7844e613afcf4cf61dc17c96625",
+  "ingestedAt": "2026-09-09T17:02:41.038Z",
+  "sourceId": "unknown",
+  "transport": "auto-seed",
+  "metadata": {
+    "transport": "auto-seed"
+  }
+}

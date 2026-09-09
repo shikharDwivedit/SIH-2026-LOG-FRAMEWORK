@@ -1,0 +1,9 @@
+{
+  "eventId": "dac16ea6-31ac-4e11-b21a-6761e78d6078",
+  "rawContent": "<134>Sep 9 14:02:11 asa-fw01 %ASA-6-106100: access-list cached type TCP connection from 10.0.0.100/41234 to 172.16.0.5/80",
+  "rawHash": "a62ad903fc59d2b4f048def832b1faf725ec7eab11967c819f2425142873e64c",
+  "ingestedAt": "2026-09-09T17:00:01.026Z",
+  "sourceId": "unknown",
+  "transport": "file",
+  "metadata": {}
+}

@@ -5,6 +5,7 @@ const { errorHandler }   = require("./middlewares/error.middleware");
 const { notFoundHandler }= require("./middlewares/notFound.middleware");
 
 const healthcheckRouter = require("./routes/healthcheck.routes");
+const authRouter        = require("./routes/auth.routes");
 const eventRouter       = require("./routes/event.routes");
 const parserRouter      = require("./routes/parser.routes");
 const sourceRouter      = require("./routes/source.routes");
@@ -26,6 +27,7 @@ app.get("/", (req, res) => {
 
 // ── API Routes ───────────────────────────────────────────────────────────────
 app.use("/api/v1/healthcheck", healthcheckRouter);
+app.use("/api/v1/auth",        authRouter);
 app.use("/api/v1/events",      eventRouter);
 app.use("/api/v1/parsers",     parserRouter);
 app.use("/api/v1/sources",     sourceRouter);

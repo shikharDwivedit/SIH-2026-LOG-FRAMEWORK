@@ -1,0 +1,11 @@
+{
+  "eventId": "6f159e1e-6b4a-4e38-9fa3-d522f9e07270",
+  "rawContent": "date=2026-09-10 time=12:00:00 devname=\"jury-fw\" devid=\"FGT-JURY-01\" type=traffic level=notice srcip=10.10.10.5 srcport=51515 dstip=8.8.8.8 dstport=443 proto=6 action=\"deny\" status=\"blocked\" msg=\"Jury demo event\" user=\"demo\" policyid=42 custom_field_x=\"retained\"",
+  "rawHash": "1db426612cd557db85dc783844e79a4ca2d4e404585836f784a0c9e47ed50551",
+  "ingestedAt": "2026-09-09T19:26:05.264Z",
+  "sourceId": "unknown",
+  "transport": "http",
+  "metadata": {
+    "transport": "http"
+  }
+}

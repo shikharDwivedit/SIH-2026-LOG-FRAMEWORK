@@ -1,0 +1,12 @@
+{
+  "eventId": "3cb64e36-8384-423b-a2da-b6d565f7b6cf",
+  "rawContent": "2026-09-09 15:00:00 NEW_CUSTOM_VENDOR data=\"device_status_ok\" code=777 action=\"permit\" src=10.5.5.5 dst=10.5.5.1",
+  "rawHash": "79573cfc083114e1e958b3c859a11335363d4fed758d7d135178c2992142cd5d",
+  "ingestedAt": "2026-09-09T17:02:50.416Z",
+  "sourceId": "unknown",
+  "transport": "replay",
+  "metadata": {
+    "source_id": "unknown",
+    "transport": "replay"
+  }
+}

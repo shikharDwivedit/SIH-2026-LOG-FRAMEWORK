@@ -1,0 +1,11 @@
+{
+  "eventId": "15930409-0c31-42c5-8497-d47469574466",
+  "rawContent": "2026-09-09 14:30:00 UNKNOWN_VENDOR_LOG_FORMAT data=\"custom_vendor_unknown\" code=999 err=\"No matching parser registered for this format\"",
+  "rawHash": "eaece4e45fe65565cc67f2728b63718becfa43c5477df4d8bec782073a64118a",
+  "ingestedAt": "2026-09-09T16:53:54.179Z",
+  "sourceId": "unknown",
+  "transport": "auto-seed",
+  "metadata": {
+    "transport": "auto-seed"
+  }
+}

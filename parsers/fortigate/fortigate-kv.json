@@ -6,7 +6,7 @@
   "device_type": "firewall",
   "format": "key-value",
   "match_criteria": {
-    "contains": ["type=utm", "type=traffic", "devname=", "devid="]
+    "contains": ["devname="]
   },
   "extraction": {
     "type": "key-value",

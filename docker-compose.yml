@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  lognorm-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sih-lognorm-framework
+    ports:
+      - "8000:8000"
+      - "5140:5140/udp"
+    environment:
+      - PORT=8000
+      - NODE_ENV=production
+    volumes:
+      - ./storage:/app/storage
+      - ./parsers:/app/parsers
+    restart: unless-stopped

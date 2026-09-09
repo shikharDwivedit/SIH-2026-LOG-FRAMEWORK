@@ -1,0 +1,11 @@
+{
+  "eventId": "ccfd0aab-c4eb-4c87-861e-39ed3c589e4c",
+  "rawContent": "<134>Sep 09 14:15:33 asa-fw01 %ASA-6-106100: access-list OUTSIDE-IN denied tcp OUTSIDE/198.51.100.44(41234) -> INSIDE/10.0.1.100(22) hit-cnt 1 first-hit [0x12345678, 0x0]",
+  "rawHash": "62ca4ac757fa86a962503b2b7553c160a85842def260f7fbd817f03ce9569105",
+  "ingestedAt": "2026-09-09T19:09:21.898Z",
+  "sourceId": "unknown",
+  "transport": "auto-seed",
+  "metadata": {
+    "transport": "auto-seed"
+  }
+}
