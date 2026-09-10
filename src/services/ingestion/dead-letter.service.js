@@ -3,10 +3,19 @@
 // Pattern: raw event → PARSER_ERROR → dead-letter store (never dropped)
 
 const { generateUuid } = require("../../utils/hash");
+const fs = require("fs");
+const path = require("path");
 
 class DeadLetterService {
   constructor() {
     this.store = new Map(); // deadLetterId -> dead-letter record
+    this.storagePath = path.join(process.cwd(), "storage", "dead_letters.json");
+    try {
+      const saved = JSON.parse(fs.readFileSync(this.storagePath, "utf8"));
+      saved.forEach(record => this.store.set(record.dead_letter_id, record));
+    } catch {
+      // A first run starts with an empty dead-letter store.
+    }
   }
 
   record(rawEvent, errorInfo = {}) {
@@ -35,6 +44,8 @@ class DeadLetterService {
     };
 
     this.store.set(id, record);
+    fs.mkdirSync(path.dirname(this.storagePath), { recursive: true });
+    fs.writeFileSync(this.storagePath, JSON.stringify(this.getAll(), null, 2));
     return record;
   }
 

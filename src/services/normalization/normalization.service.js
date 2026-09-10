@@ -6,6 +6,7 @@ class NormalizationService {
     const extracted = parseResult.extracted || {};
     const fieldMappings = parseResult.field_mappings || {};
 
+    const ingestTime = rawEvent.ingested_at || new Date().toISOString();
     const universalEvent = {
       event_id: generateUuid(),
       schema_version: "1.0",
@@ -24,7 +25,10 @@ class NormalizationService {
         transport: rawEvent.transport || "file"
       },
       event: {
-        timestamp: extracted.timestamp || new Date().toISOString(),
+        event_time: extracted.timestamp || null,
+        ingest_time: ingestTime,
+        processing_time: new Date().toISOString(),
+        timestamp: extracted.timestamp || null,
         category: extracted.category || extracted.type || "network",
         type: extracted.subtype || "connection",
         action: extracted.action || extracted.act || "observed",
@@ -60,7 +64,8 @@ class NormalizationService {
         parser_name: parseResult.parser_name || "unparsed",
         parser_version: parseResult.parser_version || "0.0",
         transformation_id: generateUuid(),
-        mapped_fields: {}
+        mapped_fields: {},
+        field_lineage: {}
       },
       processing: {
         status: parseResult.success ? ProcessingStatus.PROCESSED : ProcessingStatus.PARTIALLY_PROCESSED,
@@ -79,6 +84,12 @@ class NormalizationService {
       if (targetPath) {
         this.setDeepProperty(universalEvent, targetPath, vendorVal);
         universalEvent.trace.mapped_fields[vendorKey] = targetPath;
+        universalEvent.trace.field_lineage[targetPath] = {
+          source_field: vendorKey,
+          raw_event_id: rawEvent.raw_event_id,
+          parser: parseResult.parser_name || "unparsed",
+          parser_version: parseResult.parser_version || "0.0"
+        };
         mappedVendorKeys.add(vendorKey);
       }
     }

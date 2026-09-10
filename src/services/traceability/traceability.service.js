@@ -14,6 +14,10 @@ class TraceabilityService {
       parser_version: normalizedEvent.trace.parser_version,
       transformation_id: normalizedEvent.trace.transformation_id,
       mapped_fields: normalizedEvent.trace.mapped_fields,
+      field_lineage: normalizedEvent.trace.field_lineage || {},
+      schema_version: normalizedEvent.schema_version,
+      processing_status: normalizedEvent.processing?.status,
+      processing_errors: normalizedEvent.processing?.errors || [],
       vendor_specific_extensions: normalizedEvent.extensions.vendor_specific
     };
   }

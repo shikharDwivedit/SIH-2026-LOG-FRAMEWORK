@@ -9,10 +9,13 @@ const { traceabilityService }   = require("../traceability/traceability.service"
 const { metricsService }        = require("../metrics/metrics.service");
 const { ProcessingStatus }      = require("../../constants/status.constants");
 const { logger }                = require("../../utils/logger");
+const { LocalNormalizedEventStore } = require("../../../packages/storage/normalized-event-store");
 
 class EventProcessingService {
   constructor() {
     this.normalizedEventsMap = new Map();
+    this.store = new LocalNormalizedEventStore();
+    this.store.loadAll().forEach(event => this.normalizedEventsMap.set(event.event_id, event));
   }
 
   processSingleRawLog(rawLogContent, metadata = {}) {
@@ -27,7 +30,11 @@ class EventProcessingService {
     metricsService.recordFormat(detectedFormat);
 
     // ── 3. Parser Match ──────────────────────────────────────────────────────
-    const parserConfig = parserRegistryService.findMatchingParser(rawEvent.raw_content, detectedFormat);
+    const parserConfig = parserRegistryService.findMatchingParser(
+      rawEvent.raw_content,
+      detectedFormat,
+      { parserName: metadata.parserName, sourceId: metadata.source_id }
+    );
 
     // ── 4. Parse ─────────────────────────────────────────────────────────────
     const parseResult = parserService.parse(rawEvent.raw_content, parserConfig);
@@ -54,12 +61,15 @@ class EventProcessingService {
 
     // ── 8. Store normalized event ─────────────────────────────────────────────
     this.normalizedEventsMap.set(normalizedEvent.event_id, normalizedEvent);
+    this.store.save(normalizedEvent).catch(err => {
+      logger.error(`Failed to persist normalized event ${normalizedEvent.event_id}: ${err.message}`);
+    });
 
     // ── 9. Metrics ────────────────────────────────────────────────────────────
     const durationMs = Date.now() - t0;
     metricsService.recordProcessed(normalizedEvent, durationMs);
 
-    logger.debug(
+    logger.info(
       `Processed event ${normalizedEvent.event_id} ` +
       `(Format: ${detectedFormat}, Parser: ${normalizedEvent.trace.parser_name}, ` +
       `Status: ${normalizedEvent.processing.status}, ${durationMs}ms)`

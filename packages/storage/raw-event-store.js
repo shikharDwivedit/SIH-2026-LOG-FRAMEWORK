@@ -42,6 +42,13 @@ class LocalRawEventStore {
     await fs.promises.writeFile(filePath, JSON.stringify(event, null, 2), "utf-8");
   }
 
+  saveSync(event) {
+    this.cache.set(event.eventId, event);
+    if (event.rawHash) this.cache.set(`hash:${event.rawHash}`, event);
+    const filePath = path.join(this.baseDir, `${event.eventId}.json`);
+    fs.writeFileSync(filePath, JSON.stringify(event, null, 2), "utf-8");
+  }
+
   getSync(eventId) {
     return this.cache.get(eventId) || null;
   }

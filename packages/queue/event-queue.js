@@ -9,6 +9,22 @@ class LocalEventQueue {
     }
     this.memoryQueue = [];
     this.isConsuming = false;
+    this.recoverPendingJobs();
+  }
+
+  recoverPendingJobs() {
+    for (const file of fs.readdirSync(this.queueDir)) {
+      if (!file.endsWith(".json")) continue;
+      try {
+        const job = JSON.parse(fs.readFileSync(path.join(this.queueDir, file), "utf8"));
+        if (job.status === "PENDING" || job.status === "PROCESSING") {
+          job.status = "PENDING";
+          this.memoryQueue.push(job);
+        }
+      } catch {
+        // Ignore an incomplete queue file; the raw event remains durable.
+      }
+    }
   }
 
   async publish(data) {
@@ -67,6 +83,8 @@ class LocalEventQueue {
   async retry(job) {
     job.status = 'PENDING';
     this.memoryQueue.push(job);
+    const filePath = path.join(this.queueDir, `${job.jobId}.json`);
+    await fs.promises.writeFile(filePath, JSON.stringify(job, null, 2), "utf-8");
   }
 
   async getPendingCount() {

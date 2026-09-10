@@ -25,8 +25,9 @@ class RawStoreService {
       source_ip: metadata.source_ip || null
     };
 
-    // Save to durable store asynchronously
-    this.store.save({
+    // Persist before parsing so a process failure cannot create a normalized
+    // event without its source record.
+    this.store.saveSync({
       eventId: rawEventId,
       rawContent,
       rawHash: hash,
@@ -34,8 +35,6 @@ class RawStoreService {
       sourceId: rawEvent.source_id,
       transport: rawEvent.transport,
       metadata
-    }).catch(err => {
-      console.error(`Failed to persist raw event ${rawEventId}:`, err);
     });
 
     return rawEvent;

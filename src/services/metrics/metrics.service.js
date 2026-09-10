@@ -1,10 +1,10 @@
-// Metrics service — tracks events received, processed, failed, EPS, parser hit counts
-// This is a simple in-memory singleton; pluggable into a real metrics store later
+const fs = require("fs");
+const path = require("path");
 
 class MetricsService {
   constructor() {
     this.reset();
-    this._startTime = Date.now();
+    this.load();
   }
 
   reset() {
@@ -25,8 +25,38 @@ class MetricsService {
     this._startTime = Date.now();
   }
 
+  get storagePath() {
+    return path.join(process.cwd(), "storage", "metrics.json");
+  }
+
+  load() {
+    try {
+      const saved = JSON.parse(fs.readFileSync(this.storagePath, "utf8"));
+      this.counters = { ...this.counters, ...(saved.counters || {}) };
+      this.parserHits = saved.parserHits || {};
+      this.formatCounts = saved.formatCounts || {};
+      this.sourceCounts = saved.sourceCounts || {};
+      this._processingTimes = saved.processingTimes || [];
+      this._startTime = Date.now();
+    } catch {
+      // A first run starts with an empty metrics snapshot.
+    }
+  }
+
+  persist() {
+    fs.mkdirSync(path.dirname(this.storagePath), { recursive: true });
+    fs.writeFileSync(this.storagePath, JSON.stringify({
+      counters: this.counters,
+      parserHits: this.parserHits,
+      formatCounts: this.formatCounts,
+      sourceCounts: this.sourceCounts,
+      processingTimes: this._processingTimes
+    }, null, 2));
+  }
+
   recordReceived() {
     this.counters.eventsReceived++;
+    this.persist();
   }
 
   recordProcessed(normalizedEvent, durationMs) {
@@ -47,15 +77,18 @@ class MetricsService {
       this._processingTimes.push(durationMs);
       if (this._processingTimes.length > 1000) this._processingTimes.shift();
     }
+    this.persist();
   }
 
   recordDeadLettered() {
     this.counters.deadLettered++;
     this.counters.eventsFailed++;
+    this.persist();
   }
 
   recordFormat(format) {
     this.formatCounts[format] = (this.formatCounts[format] || 0) + 1;
+    this.persist();
   }
 
   getEPS() {

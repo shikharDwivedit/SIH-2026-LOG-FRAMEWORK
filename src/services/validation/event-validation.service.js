@@ -25,9 +25,7 @@ class EventValidationService {
     if (!universalEvent.raw_ref || !universalEvent.raw_ref.hash) {
       errors.push("Missing raw reference hash");
     }
-    if (!universalEvent.event || !universalEvent.event.timestamp) {
-      errors.push("Missing event timestamp");
-    }
+    if (!universalEvent.event) errors.push("Missing event section");
 
     // IP address validation
     const net = universalEvent.network || {};

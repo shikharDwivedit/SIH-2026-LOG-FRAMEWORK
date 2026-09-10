@@ -38,6 +38,14 @@ class ParserRegistryService {
       if (explicit) return explicit;
     }
 
+    if (options.sourceId) {
+      const source = require("../source/source-registry.service").sourceRegistryService.getById(options.sourceId);
+      if (source?.preferred_parser) {
+        const configured = this.parsersMap.get(source.preferred_parser);
+        if (configured) return configured;
+      }
+    }
+
     // Priority 2: Vendor + Product hint matching
     if (options.vendor) {
       const vendorMatch = allParsers.find(p => 

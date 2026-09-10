@@ -1,0 +1,4 @@
+{
+  "watch": ["src", "packages", "parsers"],
+  "ignore": ["storage/**", "frontend/dist/**", "node_modules/**"]
+}

@@ -1,0 +1,11 @@
+{
+  "eventId": "071a0ad8-2bb2-422f-ae8f-8e36e63fa764",
+  "rawContent": "<185>date=2026-09-10 time=15:00:00 devname=restart-check type=traffic srcip=10.1.1.1 dstip=8.8.8.8 action=deny",
+  "rawHash": "dcf54b010c4702402944380fb46234fdffb7f2ffddb8fad66c77159bcb0ff467",
+  "ingestedAt": "2026-09-10T05:03:38.859Z",
+  "sourceId": "unknown",
+  "transport": "local-test",
+  "metadata": {
+    "transport": "local-test"
+  }
+}

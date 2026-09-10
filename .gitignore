@@ -1,0 +1,5 @@
+node_modules/
+frontend/dist/
+storage/normalized_events/
+storage/metrics.json
+storage/dead_letters.json

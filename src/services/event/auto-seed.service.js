@@ -8,7 +8,12 @@ const SAMPLE_FILE = path.join(__dirname, "..", "..", "..", "samples", "sample_te
 
 function seedInitialData() {
   try {
-    logger.info("🌱 Seeding initial sample logs into normalization framework...");
+    if (eventProcessingService.getAllNormalizedEvents().length > 0) {
+      logger.info("Existing event history found; skipping initial sample seed.");
+      return;
+    }
+
+    logger.info("Seeding initial sample logs into normalization framework...");
 
     // Register default sources
     sourceRegistryService.register({
@@ -67,14 +72,7 @@ function seedInitialData() {
       eventProcessingService.processSingleRawLog(line, { transport: "auto-seed" });
     });
 
-    logger.info(`✅ Initialized dashboard with ${lines.length} initial normalized events.`);
-
-    // Periodically generate sample events (every 4 seconds) to keep pipeline & EPS live
-    setInterval(() => {
-      const randomIndex = Math.floor(Math.random() * (lines.length - 1)); // exclude the dead letter one mostly
-      const sampleLine = lines[randomIndex];
-      eventProcessingService.processSingleRawLog(sampleLine, { transport: "live-stream" });
-    }, 4000);
+    logger.info(`Initialized dashboard with ${lines.length} initial normalized events.`);
 
   } catch (err) {
     logger.error(`Error during auto-seeding: ${err.message}`);

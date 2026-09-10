@@ -3,6 +3,7 @@ const { ApiResponse } = require("../utils/ApiResponse");
 const { ApiError } = require("../utils/ApiError");
 const { eventProcessingService } = require("../services/event/event-processing.service");
 const { fileIngestionService } = require("../services/ingestion/file-ingestion.service");
+const { replayService } = require("../services/event/replay.service");
 
 const ingestLog = asyncHandler(async (req, res) => {
   const { log, source_ip, transport } = req.body;
@@ -54,6 +55,12 @@ const getEventTraceability = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, traceData, "Event traceability retrieved successfully"));
 });
 
+const replayEvent = asyncHandler(async (req, res) => {
+  const { id } = req.params;
+  const event = replayService.replayRawEvent(id, { parserName: req.body?.parser_name });
+  return res.status(200).json(new ApiResponse(200, event, "Raw event replayed successfully"));
+});
+
 const ingestLogFile = asyncHandler(async (req, res) => {
   const { filePath } = req.body;
 
@@ -86,5 +93,6 @@ module.exports = {
   getAllEvents,
   getEventById,
   getEventTraceability,
+  replayEvent,
   ingestLogFile
 };

@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Copy package files & install dependencies
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm ci
 
 # Copy application source code & configurations
 COPY packages/ ./packages/
@@ -15,7 +15,9 @@ COPY parsers/ ./parsers/
 COPY schemas/ ./schemas/
 COPY samples/ ./samples/
 COPY scripts/ ./scripts/
-COPY tsconfig.json ./
+COPY frontend/ ./frontend/
+
+RUN npm run build && npm prune --omit=dev
 
 EXPOSE 8000 5140
 

@@ -31,7 +31,9 @@ assert.ok(event.raw_ref.ingested_at, "raw_ref.ingested_at timestamp must exist")
 
 assert.ok(event.source, "source object must exist");
 assert.ok(event.event, "event object must exist");
-assert.ok(event.event.timestamp, "event.timestamp must exist");
+assert.ok(Object.prototype.hasOwnProperty.call(event.event, "event_time"), "event.event_time must exist");
+assert.ok(event.event.ingest_time, "event.ingest_time must exist");
+assert.ok(event.event.processing_time, "event.processing_time must exist");
 
 assert.ok(event.processing, "processing metadata must exist");
 assert.ok(["PROCESSED", "PARTIALLY_PROCESSED", "UNSUPPORTED", "PARSER_ERROR", "VALIDATION_ERROR", "OUTPUT_ERROR"].includes(event.processing.status), "processing.status must be valid status enum");
