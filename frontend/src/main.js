@@ -1,7 +1,7 @@
 import './styles.css';
 
 const API = '/api/v1';
-const state = { events: [], metrics: null, parsers: [], sources: [], deadLetters: [] };
+const state = { events: [], eventPagination: null, eventQuery: { page: 1, limit: 25, search: '' }, metrics: null, parsers: [], sources: [], deadLetters: [], deadPagination: null, deadQuery: { page: 1, limit: 25, search: '' }, systemLogJob: null };
 
 const sampleLog = '<185>date=2026-09-09 time=14:02:11 devname="fw01" type=traffic level=notice srcip=10.0.0.5 srcport=54321 dstip=8.8.8.8 dstport=443 proto=6 action="deny" status=blocked msg="Access denied"';
 
@@ -25,31 +25,31 @@ function statusClass(status) {
 
 function render() {
   const root = document.querySelector('#root');
-  root.innerHTML = `
-    <div class="shell">
-      <aside class="sidebar">
-        <div class="brand"><span class="brand-mark">LN</span><div><strong>LogNorm</strong><small>security event console</small></div></div>
-        <div class="connection"><span class="pulse"></span><span id="connection-label">Checking API...</span></div>
-        <nav>
-          <span class="nav-label">Monitor</span>
-          <a href="#overview" data-route="overview">Overview</a>
-          <a href="#pipeline" data-route="pipeline">Pipeline view</a>
-          <a href="#events" data-route="events">Event history <b id="nav-count">0</b></a>
-          <a href="#dead-letter" data-route="dead-letter">Dead letter <b id="dead-count">0</b></a>
-          <span class="nav-label">Plug and play</span>
-          <a href="#parsers" data-route="parsers">Parser registry <b id="parser-count">0</b></a>
-          <a href="#sources" data-route="sources">Source registry <b id="source-count">0</b></a>
-          <a href="#test" data-route="test">Test bench</a>
-          <a href="#output" data-route="output">Output center</a>
-        </nav>
-        <div class="sidebar-foot">Vite client<br><span>Durable local history enabled</span></div>
-      </aside>
-      <main class="main">
-        <header class="topbar"><div><p class="eyebrow">Universal normalization framework</p><h1 id="page-title">Overview</h1></div><button class="button secondary" id="refresh">Refresh data</button></header>
-        <div id="content"></div>
-      </main>
-    </div>
-    <div id="toast" role="status"></div>`;
+    root.innerHTML = `
+      <div class="shell">
+        <aside class="sidebar">
+          <div class="brand"><span class="brand-mark">LN</span><div><strong>LogNorm</strong><small>security event console</small></div></div>
+          <div class="connection"><span class="pulse"></span><span id="connection-label">Checking API...</span></div>
+          <nav>
+            <span class="nav-label">Monitor</span>
+            <a href="#overview" data-route="overview">Overview</a>
+            <a href="#pipeline" data-route="pipeline">Pipeline view</a>
+            <a href="#events" data-route="events">Event history <b id="nav-count">0</b></a>
+            <a href="#dead-letter" data-route="dead-letter">Dead letter <b id="dead-count">0</b></a>
+            <span class="nav-label">Plug and play</span>
+            <a href="#parsers" data-route="parsers">Parser registry <b id="parser-count">0</b></a>
+            <a href="#sources" data-route="sources">Source registry <b id="source-count">0</b></a>
+            <a href="#test" data-route="test">Test bench</a>
+            <a href="#output" data-route="output">Output center</a>
+          </nav>
+          <div class="sidebar-foot">Vite client<br><span>Durable local history enabled</span></div>
+        </aside>
+        <main class="main">
+          <header class="topbar"><div><p class="eyebrow">Universal normalization framework</p><h1 id="page-title">Overview</h1></div><button class="button secondary" id="refresh">Refresh data</button></header>
+          <div id="content"></div>
+        </main>
+      </div>
+      <div id="toast" role="status"></div>`;
   document.querySelectorAll('[data-route]').forEach(link => link.addEventListener('click', () => route(link.dataset.route)));
   document.querySelector('#refresh').addEventListener('click', () => refresh(true));
   window.addEventListener('hashchange', () => route(location.hash.slice(1) || 'overview'));
@@ -58,18 +58,20 @@ function render() {
 
 async function refresh(showToast = false) {
   try {
-    const [metrics, events, health, parsers, sources, deadLetters] = await Promise.all([
-      request('/healthcheck/metrics'), request('/events'), request('/healthcheck'),
-      request('/parsers'), request('/sources'), request('/healthcheck/dead-letter')
+    const [metrics, eventPage, health, parsers, sources, deadLetters] = await Promise.all([
+      request('/healthcheck/metrics'), request('/events?limit=25'), request('/healthcheck'),
+      request('/parsers'), request('/sources'), request('/healthcheck/dead-letter?limit=25')
     ]);
     state.metrics = metrics;
-    state.events = [...events].sort((a, b) => (b.raw_ref?.ingested_at || '').localeCompare(a.raw_ref?.ingested_at || ''));
+    state.events = eventPage.events;
+    state.eventPagination = eventPage.pagination;
     state.parsers = parsers;
     state.sources = sources;
-    state.deadLetters = deadLetters;
+    state.deadLetters = deadLetters.events;
+    state.deadPagination = deadLetters.pagination;
     document.querySelector('#connection-label').textContent = `${health.status} - API connected`;
     document.querySelector('#nav-count').textContent = state.events.length;
-    document.querySelector('#dead-count').textContent = state.deadLetters.length;
+    document.querySelector('#dead-count').textContent = state.deadPagination?.total || 0;
     document.querySelector('#parser-count').textContent = state.parsers.length;
     document.querySelector('#source-count').textContent = state.sources.length;
     renderRoute();
@@ -101,6 +103,7 @@ function renderRoute() {
   }
   document.querySelector('#content').innerHTML = (pages[page] || overviewPage)();
   if (page === 'events') bindEventsPage();
+  if (page === 'dead-letter') bindDeadLetterPage();
   if (page === 'parsers') bindParsersPage();
   if (page === 'sources') bindSourcesPage();
   if (page === 'test') bindTestPage();
@@ -142,7 +145,8 @@ function distributionRows(values = {}) {
 }
 
 function eventsPage() {
-  return `<section class="page-copy"><p class="eyebrow">Durable event store</p><h2>Every normalized event, in order</h2><p class="muted">The list survives backend restarts. New events appear here after ingestion without synthetic background traffic.</p></section><section class="panel"><div class="toolbar"><input id="event-search" placeholder="Search vendor, parser, action, IP, or event ID" /><span class="muted" id="event-total">${state.events.length} events</span></div><div class="table-wrap"><table><thead><tr><th>Event</th><th>Vendor</th><th>Parser</th><th>Action</th><th>Status</th><th>Ingested</th></tr></thead><tbody id="event-list">${eventRows(state.events)}</tbody></table></div></section>`;
+  const pagination = state.eventPagination || { page: 1, total: 0, total_pages: 1, has_previous: false, has_next: false };
+  return `<section class="page-copy"><p class="eyebrow">Durable event store</p><h2>Every normalized event, in order</h2><p class="muted">The list survives backend restarts. Only the current page is loaded into the browser.</p></section><section class="panel"><div class="toolbar"><div class="event-search"><input id="event-search" value="${escapeHtml(state.eventQuery.search)}" placeholder="Search vendor, parser, action, IP, or event ID" /><button class="button secondary" id="event-search-button">Search</button></div><span class="muted" id="event-total">${pagination.total} events</span></div><div class="table-wrap"><table><thead><tr><th>Event</th><th>Vendor</th><th>Parser</th><th>Action</th><th>Status</th><th>Ingested</th></tr></thead><tbody id="event-list">${eventRows(state.events)}</tbody></table></div><div class="pagination"><button class="button secondary" id="events-previous" ${pagination.has_previous ? '' : 'disabled'}>Previous</button><span class="muted">Page ${pagination.page} of ${pagination.total_pages}</span><button class="button secondary" id="events-next" ${pagination.has_next ? '' : 'disabled'}>Next</button></div></section>`;
 }
 
 function eventRows(events) {
@@ -151,12 +155,23 @@ function eventRows(events) {
 }
 
 function bindEventsPage() {
-  document.querySelector('#event-search')?.addEventListener('input', event => {
-    const query = event.target.value.toLowerCase();
-    const filtered = state.events.filter(item => JSON.stringify(item).toLowerCase().includes(query));
-    document.querySelector('#event-list').innerHTML = eventRows(filtered);
-    document.querySelector('#event-total').textContent = `${filtered.length} of ${state.events.length} events`;
-  });
+  document.querySelector('#event-search-button')?.addEventListener('click', () => loadEventPage(1));
+  document.querySelector('#event-search')?.addEventListener('keydown', event => { if (event.key === 'Enter') loadEventPage(1); });
+  document.querySelector('#events-previous')?.addEventListener('click', () => loadEventPage((state.eventPagination?.page || 1) - 1));
+  document.querySelector('#events-next')?.addEventListener('click', () => loadEventPage((state.eventPagination?.page || 1) + 1));
+}
+
+async function loadEventPage(page) {
+  const search = document.querySelector('#event-search')?.value.trim() ?? state.eventQuery.search;
+  const query = new URLSearchParams({ page: String(page), limit: String(state.eventQuery.limit) });
+  if (search) query.set('search', search);
+  try {
+    const eventPage = await request(`/events?${query.toString()}`);
+    state.events = eventPage.events;
+    state.eventPagination = eventPage.pagination;
+    state.eventQuery = { page: eventPage.pagination.page, limit: eventPage.pagination.limit, search };
+    renderRoute();
+  } catch (error) { toast(error.message, 'bad'); }
 }
 
 function eventDetailPage(id) {
@@ -176,11 +191,35 @@ async function bindEventDetailPage(id) {
 }
 
 function deadLetterPage() {
-  return `<section class="page-copy"><div><p class="eyebrow">Never dropped</p><h2>Dead letter store</h2><p class="muted">Unsupported and unparseable input remains available for parser onboarding and investigation.</p></div><span class="status ${state.deadLetters.length ? 'warn' : 'good'}">${state.deadLetters.length} retained</span></section><section class="panel"><div class="table-wrap"><table><thead><tr><th>Raw event</th><th>Format</th><th>Error</th><th>Message</th><th>Preview</th><th>Recorded</th></tr></thead><tbody>${state.deadLetters.length ? state.deadLetters.map(item => `<tr><td><code>${escapeHtml((item.raw_event_id || '').slice(0, 12))}</code></td><td><span class="tag">${escapeHtml(item.detected_format || 'unknown')}</span></td><td><span class="status bad">${escapeHtml(item.error_code || 'ERROR')}</span></td><td>${escapeHtml(item.error_message)}</td><td class="truncate-cell">${escapeHtml(item.diagnostics?.sample_preview || item.raw_content)}</td><td class="muted">${escapeHtml(item.ingested_at)}</td></tr>`).join('') : '<tr><td colspan="6" class="empty">No dead-lettered events. All received logs have a route.</td></tr>'}</tbody></table></div></section>`;
+  const pagination = state.deadPagination || { page: 1, total: 0, total_pages: 1, has_previous: false, has_next: false };
+  return `<section class="page-copy"><div><p class="eyebrow">Never dropped</p><h2>Dead letter store</h2><p class="muted">Unsupported and unparseable input remains available for parser onboarding and investigation. Only the current page is loaded.</p></div><span class="status ${pagination.total ? 'warn' : 'good'}">${pagination.total} retained</span></section><section class="panel"><div class="toolbar"><div class="event-search"><input id="dead-search" value="${escapeHtml(state.deadQuery.search)}" placeholder="Search error, format, source, or raw content" /><button class="button secondary" id="dead-search-button">Search</button></div><span class="muted">${pagination.total} events</span></div><div class="table-wrap"><table><thead><tr><th>Raw event</th><th>Format</th><th>Error</th><th>Message</th><th>Preview</th><th>Recorded</th></tr></thead><tbody>${state.deadLetters.length ? state.deadLetters.map(item => `<tr><td><code>${escapeHtml((item.raw_event_id || '').slice(0, 12))}</code></td><td><span class="tag">${escapeHtml(item.detected_format || 'unknown')}</span></td><td><span class="status bad">${escapeHtml(item.error_code || 'ERROR')}</span></td><td>${escapeHtml(item.error_message)}</td><td class="truncate-cell">${escapeHtml(item.diagnostics?.sample_preview || item.raw_content)}</td><td class="muted">${escapeHtml(item.ingested_at)}</td></tr>`).join('') : '<tr><td colspan="6" class="empty">No dead-lettered events. All received logs have a route.</td></tr>'}</tbody></table></div><div class="pagination"><button class="button secondary" id="dead-previous" ${pagination.has_previous ? '' : 'disabled'}>Previous</button><span class="muted">Page ${pagination.page} of ${pagination.total_pages}</span><button class="button secondary" id="dead-next" ${pagination.has_next ? '' : 'disabled'}>Next</button></div></section>`;
+}
+
+function bindDeadLetterPage() {
+  document.querySelector('#dead-search-button')?.addEventListener('click', () => loadDeadLetterPage(1));
+  document.querySelector('#dead-search')?.addEventListener('keydown', event => { if (event.key === 'Enter') loadDeadLetterPage(1); });
+  document.querySelector('#dead-previous')?.addEventListener('click', () => loadDeadLetterPage((state.deadPagination?.page || 1) - 1));
+  document.querySelector('#dead-next')?.addEventListener('click', () => loadDeadLetterPage((state.deadPagination?.page || 1) + 1));
+}
+
+async function loadDeadLetterPage(page) {
+  const search = document.querySelector('#dead-search')?.value.trim() ?? state.deadQuery.search;
+  const query = new URLSearchParams({ page: String(page), limit: String(state.deadQuery.limit) });
+  if (search) query.set('search', search);
+  try {
+    const result = await request(`/healthcheck/dead-letter?${query.toString()}`);
+    state.deadLetters = result.events;
+    state.deadPagination = result.pagination;
+    state.deadQuery = { page: result.pagination.page, limit: result.pagination.limit, search };
+    renderRoute();
+  } catch (error) { toast(error.message, 'bad'); }
 }
 
 function parsersPage() {
-  return `<section class="page-copy"><div><p class="eyebrow">Plug and play</p><h2>Parser registry</h2><p class="muted">Add a parser definition through the UI, test it against a real log, and make it available to the normalization pipeline.</p></div><button class="button primary" id="reload-parsers">Reload from disk</button></section><div class="grid two"><section class="panel"><div class="panel-head"><div><p class="eyebrow">Installed</p><h3>${state.parsers.length} active definitions</h3></div></div><div class="parser-list">${state.parsers.map(parser => `<article class="parser-card"><div><strong>${escapeHtml(parser.name)}</strong><span>${escapeHtml(parser.vendor || 'Generic')} / ${escapeHtml(parser.format || 'auto')}</span></div><small>${Object.keys(parser.field_mappings || {}).length} mapped fields</small></article>`).join('')}</div></section><section class="panel form-panel"><div class="panel-head"><div><p class="eyebrow">Register</p><h3>New parser definition</h3></div></div><form id="parser-form"><label>Name<input name="name" required placeholder="vendor-firewall"></label><label>Vendor<input name="vendor" required placeholder="Acme Security"></label><label>Format<select name="format"><option>key-value</option><option>syslog</option><option>json</option><option>regex</option></select></label><label>Match text<input name="match" placeholder="optional fingerprint text"></label><button class="button primary" type="submit">Register parser</button></form></section></div>`;
+  return `<section class="page-copy"><div><p class="eyebrow">Plug and play</p><h2>Parser registry</h2><p class="muted">Define how a vendor log is identified, extracted, and mapped to the universal event. The onboarding guide has a complete example.</p></div><div class="form-actions"><a class="button secondary" href="/PARSER_ONBOARDING.md" target="_blank">Open onboarding guide</a><button class="button primary" id="reload-parsers">Reload from disk</button></div></section><div class="grid two"><section class="panel"><div class="panel-head"><div><p class="eyebrow">Installed</p><h3>${state.parsers.length} active definitions</h3></div></div><div class="parser-list">${state.parsers.map(parser => `<article class="parser-card"><div><strong>${escapeHtml(parser.name)}</strong><span>${escapeHtml(parser.vendor || 'Generic')} / ${escapeHtml(parser.format || 'auto')}</span></div><small>${Object.keys(parser.field_mappings || {}).length} mapped fields</small></article>`).join('')}</div></section><section class="panel form-panel"><div class="panel-head"><div><p class="eyebrow">Register</p><h3>New parser definition</h3></div></div><form id="parser-form"><label>Name<input name="name" required placeholder="vendor-firewall"></label><label>Vendor<input name="vendor" required placeholder="Acme Security"></label><label>Product<input name="product" placeholder="Acme Firewall"></label><label>Device type<input name="device_type" value="firewall"></label><label>Format<select name="format"><option>key-value</option><option>json</option><option>regex</option></select></label><label>Extraction type<select name="extraction_type"><option>key-value</option><option>json</option><option>regex</option></select></label><label>Match text<input name="match" placeholder="optional fingerprint text"></label><label>Regex extraction pattern<textarea name="extraction_pattern" placeholder="Only for regex extraction"></textarea></label><label>Field mappings (JSON)<textarea name="field_mappings">{
+  "src_ip": "network.source_ip",
+  "action": "event.action"
+}</textarea></label><button class="button primary" type="submit">Register parser</button></form></section></div>`;
 }
 
 function bindParsersPage() {
@@ -191,7 +230,12 @@ function bindParsersPage() {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
     const match = form.get('match').trim();
-    const parser = { name: form.get('name').trim(), vendor: form.get('vendor').trim(), format: form.get('format'), version: '1.0', match_criteria: match ? { contains: [match] } : {}, field_mappings: {} };
+    let fieldMappings;
+    try { fieldMappings = JSON.parse(form.get('field_mappings')); } catch (error) { return toast('Field mappings must be valid JSON', 'bad'); }
+    const extractionType = form.get('extraction_type');
+    const extraction = { type: extractionType };
+    if (extractionType === 'regex') extraction.pattern = form.get('extraction_pattern').trim();
+    const parser = { name: form.get('name').trim(), vendor: form.get('vendor').trim(), product: form.get('product').trim(), device_type: form.get('device_type').trim(), format: form.get('format'), version: '1.0', extraction, match_criteria: match ? { contains: [match] } : {}, field_mappings: fieldMappings };
     try { await request('/parsers', { method: 'POST', body: JSON.stringify(parser) }); await refresh(); route('parsers'); toast('Parser registered and ready', 'good'); } catch (error) { toast(error.message, 'bad'); }
   });
 }
@@ -222,17 +266,41 @@ function bindOutputPage() {
 }
 
 function testPage() {
-  return `<section class="page-copy"><div><p class="eyebrow">Local verification</p><h2>Test before you ingest</h2><p class="muted">Run a parser-only check or send one log through ingestion. Results stay readable and the ingest response is saved to history.</p></div></section><div class="grid test-grid"><section class="panel form-panel"><label for="log-input">Raw log line</label><textarea id="log-input">${sampleLog}</textarea><div class="form-actions"><button class="button primary" id="ingest">Ingest and normalize</button><button class="button secondary" id="parser-test">Test parser only</button><button class="button secondary" id="load-sample">Restore sample</button></div><p class="hint">Parser-only checks never create history. Ingest creates exactly one durable event.</p></section><section class="panel result-panel"><div class="panel-head"><div><p class="eyebrow">Structured response</p><h3 id="result-title">Waiting for a test</h3></div></div><pre id="result">Submit a log to inspect the normalized response.</pre></section></div>`;
+  return `<section class="page-copy"><div><p class="eyebrow">Local verification</p><h2>Test before you ingest</h2><p class="muted">Run a parser-only check or send one log through ingestion. Results stay readable and the ingest response is saved to history.</p></div></section><div class="grid test-grid"><section class="panel form-panel"><label for="log-input">Raw log line</label><textarea id="log-input">${sampleLog}</textarea><div class="form-actions"><button class="button primary" id="ingest">Ingest and normalize</button><button class="button secondary" id="parser-test">Test parser only</button><button class="button secondary" id="load-sample">Restore sample</button></div><p class="hint">Parser-only checks never create history. Ingest creates exactly one durable event.</p></section><section class="panel result-panel"><div class="panel-head"><div><p class="eyebrow">Structured response</p><h3 id="result-title">Waiting for a test</h3></div></div><pre id="result">Submit a log to inspect the normalized response.</pre></section></div>
+    <section class="panel system-log-panel"><div class="panel-head"><div><p class="eyebrow">Ubuntu system logs</p><h3>Process a real local log file</h3><p class="muted">The backend reads this path in small batches, yields between batches, preserves each raw line, and lets you stop safely.</p></div><span class="tag">batch size: 25</span></div><div class="system-log-body"><label for="system-log-path">Log file path<input id="system-log-path" value="/var/log/syslog" placeholder="/var/log/syslog"></label><div class="form-actions"><button class="button primary" id="ingest-system-log">Process system log</button><button class="button secondary" id="stop-system-log" disabled>Stop ingestion</button><button class="button secondary" id="load-journal-command">Show journal command</button></div><p class="hint">If Ubuntu does not have <code>/var/log/syslog</code>, export readable journald lines with <code>journalctl -o short-iso --no-pager -n 100 &gt; /tmp/ubuntu-system.log</code>, then process <code>/tmp/ubuntu-system.log</code>.</p><div id="system-log-result" class="system-log-result" aria-live="polite">No system log run yet.</div></div></section>`;
 }
 
 function bindTestPage() {
-  document.querySelector('#load-sample').addEventListener('click', () => { document.querySelector('#log-input').value = sampleLog; });
-  document.querySelector('#parser-test').addEventListener('click', async () => {
+  document.querySelector('#load-sample')?.addEventListener('click', () => { document.querySelector('#log-input').value = sampleLog; });
+  document.querySelector('#load-journal-command')?.addEventListener('click', () => {
+    const result = document.querySelector('#system-log-result');
+    result.innerHTML = '<strong>Run in a terminal:</strong><pre>journalctl -o short-iso --no-pager -n 100 &gt; /tmp/ubuntu-system.log</pre><span>Then set the path above to <code>/tmp/ubuntu-system.log</code> and process it.</span>';
+  });
+  document.querySelector('#ingest-system-log')?.addEventListener('click', async () => {
+    const filePath = document.querySelector('#system-log-path').value.trim();
+    const result = document.querySelector('#system-log-result');
+    const button = document.querySelector('#ingest-system-log');
+    const stopButton = document.querySelector('#stop-system-log');
+    if (!filePath) return toast('Enter a system log file path', 'bad');
+    button.disabled = true;
+    stopButton.disabled = false;
+    result.textContent = 'Starting a cancellable batch job...';
+    try {
+      const job = await request('/events/ingest-file/start', { method: 'POST', body: JSON.stringify({ filePath, batchSize: 25, source_vendor: 'Canonical', source_product: 'Ubuntu Linux', source_device_type: 'operating-system', source_name: 'This laptop' }) });
+      state.systemLogJob = job;
+      await pollSystemLogJob(job.jobId);
+    } catch (error) { result.textContent = error.message; button.disabled = false; stopButton.disabled = true; toast(error.message, 'bad'); }
+  });
+  document.querySelector('#stop-system-log')?.addEventListener('click', async () => {
+    if (!state.systemLogJob?.jobId) return;
+    try { await request(`/events/ingest-file/${state.systemLogJob.jobId}/stop`, { method: 'POST' }); toast('Stop requested; finishing the current batch', 'warn'); } catch (error) { toast(error.message, 'bad'); }
+  });
+  document.querySelector('#parser-test')?.addEventListener('click', async () => {
     const log = document.querySelector('#log-input').value.trim();
     if (!log) return toast('Enter a raw log first', 'bad');
     try { const result = await request('/parsers/test', { method: 'POST', body: JSON.stringify({ log }) }); document.querySelector('#result-title').textContent = 'Parser-only result'; document.querySelector('#result').textContent = JSON.stringify(result, null, 2); toast('Parser test completed without ingesting', 'good'); } catch (error) { toast(error.message, 'bad'); }
   });
-  document.querySelector('#ingest').addEventListener('click', async () => {
+  document.querySelector('#ingest')?.addEventListener('click', async () => {
     const log = document.querySelector('#log-input').value.trim();
     if (!log) return toast('Enter a raw log first', 'bad');
     const button = document.querySelector('#ingest');
@@ -245,6 +313,32 @@ function bindTestPage() {
       await refresh();
     } catch (error) { toast(error.message, 'bad'); } finally { button.disabled = false; }
   });
+}
+
+async function pollSystemLogJob(jobId) {
+  const result = document.querySelector('#system-log-result');
+  const startButton = document.querySelector('#ingest-system-log');
+  const stopButton = document.querySelector('#stop-system-log');
+  try {
+    const job = await request(`/events/ingest-file/${jobId}`);
+    state.systemLogJob = job;
+    result.innerHTML = `<strong>${escapeHtml(job.status)}</strong><p>Processed ${job.processed} lines in batches of ${job.batchSize}. Source: Canonical / Ubuntu Linux / This laptop.</p>`;
+    if (['QUEUED', 'RUNNING'].includes(job.status)) return setTimeout(() => pollSystemLogJob(jobId), 300);
+    startButton.disabled = false;
+    stopButton.disabled = true;
+    if (job.status === 'COMPLETED' || job.status === 'STOPPED') {
+      await refresh();
+      toast(job.status === 'STOPPED' ? `Stopped after ${job.processed} lines` : `Processed ${job.processed} system log lines`, job.status === 'STOPPED' ? 'warn' : 'good');
+    } else {
+      result.textContent = job.error || 'System log job failed';
+      toast(result.textContent, 'bad');
+    }
+  } catch (error) {
+    startButton.disabled = false;
+    stopButton.disabled = true;
+    result.textContent = error.message;
+    toast(error.message, 'bad');
+  }
 }
 
 function toast(message, tone) { const node = document.createElement('div'); node.className = `toast ${tone}`; node.textContent = message; document.querySelector('#toast').append(node); setTimeout(() => node.remove(), 3500); }

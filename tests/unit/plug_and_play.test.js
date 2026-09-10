@@ -9,6 +9,33 @@ console.log("==================================================================\
 // Reload parser registry from disk to pick up new Check Point parser
 parserRegistryService.init();
 
+// Runtime registration uses the same definition shape as a parsers/*.json file.
+parserRegistryService.registerParser({
+	name: "acme-edge-firewall",
+	version: "1.0",
+	vendor: "Acme Security",
+	product: "Edge Firewall",
+	device_type: "firewall",
+	format: "key-value",
+	match_criteria: { contains: ["acme_edge="] },
+	extraction: { type: "key-value" },
+	field_mappings: {
+		src: "network.source_ip",
+		dst: "network.destination_ip",
+		action: "event.action"
+	}
+});
+const acmeEvent = eventProcessingService.processSingleRawLog(
+	"acme_edge=1 src=192.0.2.10 dst=198.51.100.20 action=allow ticket=INC-42",
+	{ parserName: "acme-edge-firewall", transport: "plug-and-play-test" }
+);
+assert.strictEqual(acmeEvent.processing.status, "PROCESSED");
+assert.strictEqual(acmeEvent.source.vendor, "Acme Security");
+assert.strictEqual(acmeEvent.network.source_ip, "192.0.2.10");
+assert.strictEqual(acmeEvent.event.action, "allow");
+assert.strictEqual(acmeEvent.extensions.vendor_specific.ticket, "INC-42");
+console.log("  ✅ Runtime parser registration, mappings, and vendor-field retention verified!");
+
 const parsers = parserRegistryService.getAllParsers();
 const checkPointParser = parsers.find(p => p.name === "checkpoint-fw");
 assert.ok(checkPointParser, "Check Point parser must be dynamically loaded from parsers/ directory!");

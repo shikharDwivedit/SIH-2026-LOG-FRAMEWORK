@@ -23,10 +23,10 @@ const getMetrics = asyncHandler(async (req, res) => {
 
 // GET /api/v1/metrics/dead-letter — all dead-lettered events
 const getDeadLetterEvents = asyncHandler(async (req, res) => {
-  const events = deadLetterService.getAll();
+  const events = deadLetterService.getPage({ page: req.query.page, limit: req.query.limit, search: req.query.search });
   return res
     .status(200)
-    .json(new ApiResponse(200, events, `${events.length} dead-lettered events retrieved`));
+    .json(new ApiResponse(200, events, `${events.pagination.total} dead-lettered events retrieved`));
 });
 
 module.exports = { getHealthStatus, getMetrics, getDeadLetterEvents };

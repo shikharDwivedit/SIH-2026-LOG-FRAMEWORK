@@ -5,6 +5,30 @@ const { parserRegistryService }  = require("../services/parser/parser-registry.s
 const { parserLoaderService }    = require("../services/parser/parser-loader.service");
 const { eventProcessingService } = require("../services/event/event-processing.service");
 
+function validateParserConfig(parserConfig) {
+  const errors = [];
+  const extractionTypes = ["key-value", "json", "regex"];
+
+  if (!parserConfig || typeof parserConfig !== "object" || Array.isArray(parserConfig)) {
+    return ["Parser config must be a JSON object"];
+  }
+  if (!parserConfig.name || typeof parserConfig.name !== "string") errors.push("'name' must be a non-empty string");
+  if (!parserConfig.format || typeof parserConfig.format !== "string") errors.push("'format' must be a non-empty string");
+  if (parserConfig.extraction?.type && !extractionTypes.includes(parserConfig.extraction.type)) {
+    errors.push(`'extraction.type' must be one of: ${extractionTypes.join(", ")}`);
+  }
+  if (parserConfig.extraction?.type === "regex" && !parserConfig.extraction.pattern) {
+    errors.push("Regex parsers require 'extraction.pattern'");
+  }
+  if (parserConfig.field_mappings !== undefined && (typeof parserConfig.field_mappings !== "object" || Array.isArray(parserConfig.field_mappings))) {
+    errors.push("'field_mappings' must be an object of source fields to universal paths");
+  }
+  if (parserConfig.match_criteria !== undefined && (typeof parserConfig.match_criteria !== "object" || Array.isArray(parserConfig.match_criteria))) {
+    errors.push("'match_criteria' must be an object with 'contains' and/or 'regex'");
+  }
+  return errors;
+}
+
 // GET /api/v1/parsers — list all registered parsers
 const getAllParsers = asyncHandler(async (req, res) => {
   const parsers = parserRegistryService.getAllParsers();
@@ -17,15 +41,25 @@ const getAllParsers = asyncHandler(async (req, res) => {
 const registerCustomParser = asyncHandler(async (req, res) => {
   const parserConfig = req.body;
 
-  if (!parserConfig || !parserConfig.name || !parserConfig.format) {
-    throw new ApiError(400, "Parser config must include at least 'name' and 'format' fields");
+  const validationErrors = validateParserConfig(parserConfig);
+  if (validationErrors.length) {
+    throw new ApiError(400, validationErrors.join("; "));
   }
 
-  parserRegistryService.registerParser(parserConfig);
+  const defaultExtractionType = parserConfig.format === "json" || parserConfig.format === "regex"
+    ? parserConfig.format
+    : "key-value";
+  const registeredParser = {
+    version: "1.0",
+    extraction: { type: defaultExtractionType, ...(parserConfig.extraction || {}) },
+    field_mappings: {},
+    ...parserConfig
+  };
+  parserRegistryService.registerParser(registeredParser);
 
   return res
     .status(201)
-    .json(new ApiResponse(201, parserConfig, `Parser '${parserConfig.name}' registered (Plug-and-Play active)`));
+    .json(new ApiResponse(201, registeredParser, `Parser '${registeredParser.name}' registered (Plug-and-Play active)`));
 });
 
 // POST /api/v1/parsers/test — test a raw log against a parser without ingesting

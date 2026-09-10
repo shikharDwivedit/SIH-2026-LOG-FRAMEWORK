@@ -22,7 +22,11 @@ class RawStoreService {
       ingested_at: ingestedAt,
       source_id: metadata.source_id || "unknown",
       transport: metadata.transport || "file",
-      source_ip: metadata.source_ip || null
+      source_ip: metadata.source_ip || null,
+      source_vendor: metadata.source_vendor || null,
+      source_product: metadata.source_product || null,
+      source_device_type: metadata.source_device_type || null,
+      source_name: metadata.source_name || null
     };
 
     // Persist before parsing so a process failure cannot create a normalized

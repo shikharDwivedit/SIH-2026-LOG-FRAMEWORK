@@ -122,6 +122,33 @@ class EventProcessingService {
     return Array.from(this.normalizedEventsMap.values());
   }
 
+  getNormalizedEventsPage({ page = 1, limit = 25, search = "" } = {}) {
+    const normalizedPage = Math.max(1, Number.parseInt(page, 10) || 1);
+    const normalizedLimit = Math.min(100, Math.max(1, Number.parseInt(limit, 10) || 25));
+    const query = String(search || "").trim().toLowerCase();
+    const allEvents = this.getAllNormalizedEvents()
+      .sort((left, right) => (right.raw_ref?.ingested_at || "").localeCompare(left.raw_ref?.ingested_at || ""));
+    const filteredEvents = query
+      ? allEvents.filter(event => JSON.stringify(event).toLowerCase().includes(query))
+      : allEvents;
+    const total = filteredEvents.length;
+    const totalPages = Math.max(1, Math.ceil(total / normalizedLimit));
+    const currentPage = Math.min(normalizedPage, totalPages);
+    const start = (currentPage - 1) * normalizedLimit;
+
+    return {
+      events: filteredEvents.slice(start, start + normalizedLimit),
+      pagination: {
+        page: currentPage,
+        limit: normalizedLimit,
+        total,
+        total_pages: totalPages,
+        has_next: currentPage < totalPages,
+        has_previous: currentPage > 1
+      }
+    };
+  }
+
   getEventTraceability(eventId) {
     const event = this.getNormalizedEventById(eventId);
     if (!event) return null;

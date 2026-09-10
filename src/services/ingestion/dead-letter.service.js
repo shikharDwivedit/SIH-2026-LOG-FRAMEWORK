@@ -60,6 +60,22 @@ class DeadLetterService {
   getCount() {
     return this.store.size;
   }
+
+  getPage({ page = 1, limit = 25, search = "" } = {}) {
+    const currentPage = Math.max(1, Number.parseInt(page, 10) || 1);
+    const pageSize = Math.min(100, Math.max(1, Number.parseInt(limit, 10) || 25));
+    const query = String(search || "").trim().toLowerCase();
+    const allRecords = this.getAll().sort((left, right) => (right.recorded_at || "").localeCompare(left.recorded_at || ""));
+    const filtered = query ? allRecords.filter(record => JSON.stringify(record).toLowerCase().includes(query)) : allRecords;
+    const total = filtered.length;
+    const totalPages = Math.max(1, Math.ceil(total / pageSize));
+    const pageNumber = Math.min(currentPage, totalPages);
+    const start = (pageNumber - 1) * pageSize;
+    return {
+      events: filtered.slice(start, start + pageSize),
+      pagination: { page: pageNumber, limit: pageSize, total, total_pages: totalPages, has_next: pageNumber < totalPages, has_previous: pageNumber > 1 }
+    };
+  }
 }
 
 const deadLetterService = new DeadLetterService();

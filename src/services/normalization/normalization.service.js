@@ -16,11 +16,11 @@ class NormalizationService {
         ingested_at: rawEvent.ingested_at
       },
       source: {
-        vendor: parseResult.vendor || "Generic",
-        product: parseResult.product || "Unknown",
-        device_type: parseResult.device_type || "perimeter-device",
+        vendor: rawEvent.source_vendor || parseResult.vendor || "Generic",
+        product: rawEvent.source_product || parseResult.product || "Unknown",
+        device_type: rawEvent.source_device_type || parseResult.device_type || "perimeter-device",
         device_ip: rawEvent.source_ip || extracted.devip || null,
-        hostname: extracted.hostname || extracted.devname || null,
+        hostname: rawEvent.source_name || extracted.hostname || extracted.devname || null,
         log_format: parseResult.parser_name ? "parsed" : "raw",
         transport: rawEvent.transport || "file"
       },

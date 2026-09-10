@@ -21,6 +21,7 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 const frontendDist = path.join(__dirname, "..", "frontend", "dist");
 app.use(express.static(frontendDist));
 app.use(express.static(path.join(__dirname, "..", "public")));
+app.use(express.static(path.join(__dirname, "..", "docs")));
 
 // ── Redirect root to dashboard ───────────────────────────────────────────────
 app.get("/", (req, res) => {
