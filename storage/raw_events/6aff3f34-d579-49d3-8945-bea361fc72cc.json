@@ -1,0 +1,16 @@
+{
+  "eventId": "6aff3f34-d579-49d3-8945-bea361fc72cc",
+  "rawContent": "2026-09-06T08:07:39.199138+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: NVRM: loading NVIDIA UNIX Open Kernel Module for x86_64  595.84  Release Build  (dvs-builder@U22-I3-AM25-26-2)  Wed Jun 10 21:06:37 UTC 2026",
+  "rawHash": "4ea1361eb988f476a8c4f05cdb430011628fb6c3187cdb05d92349cef4880c5a",
+  "ingestedAt": "2026-09-11T04:36:50.025Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

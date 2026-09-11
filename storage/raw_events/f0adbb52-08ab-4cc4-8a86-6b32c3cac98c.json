@@ -1,0 +1,17 @@
+{
+  "eventId": "f0adbb52-08ab-4cc4-8a86-6b32c3cac98c",
+  "rawContent": "2026-09-07T09:13:45.381668+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: crashkernel reserved: 0x0000000012000000 - 0x0000000032000000 (512 MB)",
+  "rawHash": "1b9c5e4dbc0cd6cd42fad55b9922f26dc1b4e12d9bfe38dc0deadcbc7bbb602c",
+  "ingestedAt": "2026-09-11T04:36:54.338Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

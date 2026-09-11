@@ -1,0 +1,16 @@
+{
+  "eventId": "89c1cefb-e7c1-47e8-b51c-77361a7e7056",
+  "rawContent": "2026-09-07T09:13:45.384100+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: i915 0000:00:02.0: [drm] Protected Xe Path (PXP) protected content support initialized",
+  "rawHash": "94aed8026a11dfdae7a9eb02982e3b34e243966f7da6f57c45b14509193c18a3",
+  "ingestedAt": "2026-09-11T04:36:55.064Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

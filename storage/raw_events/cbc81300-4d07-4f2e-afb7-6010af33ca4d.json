@@ -1,0 +1,17 @@
+{
+  "eventId": "cbc81300-4d07-4f2e-afb7-6010af33ca4d",
+  "rawContent": "2026-09-07T09:13:45.381373+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: DMI: Memory slots populated: 2/2",
+  "rawHash": "4ca8b0a51db9cc6fb4ee443bc4aacee4712f1ab026896cf004317831fa675d5c",
+  "ingestedAt": "2026-09-11T04:36:54.268Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

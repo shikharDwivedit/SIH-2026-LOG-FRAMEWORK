@@ -1,0 +1,17 @@
+{
+  "eventId": "0d00dff3-ab1b-4596-8ee0-d99d9c6f41cc",
+  "rawContent": "2026-09-06T08:07:39.198053+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: DMAR: No SATC found",
+  "rawHash": "be1bc4fcb5f33a4d80f73120a274eede2ae60a1701797b4a068ace093897cec9",
+  "ingestedAt": "2026-09-11T04:36:49.828Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

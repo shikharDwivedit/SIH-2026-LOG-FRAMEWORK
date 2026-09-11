@@ -1,0 +1,16 @@
+{
+  "eventId": "b5dd5ac4-8e5f-49ca-ab69-eb91629cd6ee",
+  "rawContent": "2026-09-06T08:07:39.196183+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounting snap-webkitgtk\\x2d6\\x2dgnome\\x2d2404-63.mount - Mount unit for webkitgtk-6-gnome-2404, revision 63...",
+  "rawHash": "256c4dcf860d3e381d53a54e17634112e496003a7e3070bd5d4cb3c2318c184f",
+  "ingestedAt": "2026-09-11T04:36:49.548Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

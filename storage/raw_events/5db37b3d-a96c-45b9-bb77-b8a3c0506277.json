@@ -1,0 +1,16 @@
+{
+  "eventId": "5db37b3d-a96c-45b9-bb77-b8a3c0506277",
+  "rawContent": "2026-09-06T08:07:39.198237+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting systemd-logind.service - User Login Management...",
+  "rawHash": "19020cf43cdf55b0b07cce6face24080f26def533581c547470abcb8bc43722f",
+  "ingestedAt": "2026-09-11T04:36:49.865Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

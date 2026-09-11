@@ -1,0 +1,17 @@
+{
+  "eventId": "3ed215d0-0f2b-4e2d-8182-7e56b20e1b54",
+  "rawContent": "2026-09-06T21:52:09.132974+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Started org.gnome.SettingsDaemon.Color.service - GNOME color management service.",
+  "rawHash": "4d4018e317b97b880cc184a83249814ceab1e384775de0a5280cd569cd3c1cfd",
+  "ingestedAt": "2026-09-11T04:36:53.306Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

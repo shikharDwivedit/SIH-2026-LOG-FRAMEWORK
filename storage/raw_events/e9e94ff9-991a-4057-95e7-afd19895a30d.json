@@ -1,0 +1,16 @@
+{
+  "eventId": "e9e94ff9-991a-4057-95e7-afd19895a30d",
+  "rawContent": "2026-09-06T21:51:46.566069+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: ubuntu-advantage.service - Ubuntu Pro Background Auto Attach skipped, unmet condition check ConditionPathExists=!/var/lib/ubuntu-advantage/private/machine-token.json",
+  "rawHash": "31c5f0a88401f0fc96556545c0e4383730161bf842b362b42837513b760d4612",
+  "ingestedAt": "2026-09-11T04:36:52.527Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

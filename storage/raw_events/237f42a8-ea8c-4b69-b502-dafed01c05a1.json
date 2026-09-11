@@ -1,0 +1,16 @@
+{
+  "eventId": "237f42a8-ea8c-4b69-b502-dafed01c05a1",
+  "rawContent": "2026-09-06T21:52:05.452190+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7084]: Thread 'KMS thread' will be using high priority scheduling",
+  "rawHash": "3dd1a9400487645421698fdecb6093b776a8d753315c374d2b1980f9e01ddbc5",
+  "ingestedAt": "2026-09-11T04:36:53.218Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

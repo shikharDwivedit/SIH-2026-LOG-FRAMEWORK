@@ -1,0 +1,16 @@
+{
+  "eventId": "7987a82b-4aef-4764-a176-dfad41cc1a84",
+  "rawContent": "2026-09-06T21:51:46.307888+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Key type psk registered",
+  "rawHash": "29ee89abe76847866b77fab94250693f9690cb0258ca4f77afb53b2de2ffcbb8",
+  "ingestedAt": "2026-09-11T04:36:52.282Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

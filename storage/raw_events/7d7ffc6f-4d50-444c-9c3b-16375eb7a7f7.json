@@ -1,0 +1,17 @@
+{
+  "eventId": "7d7ffc6f-4d50-444c-9c3b-16375eb7a7f7",
+  "rawContent": "2026-09-06T23:29:47.540444+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx AptDaemon.Worker: INFO: Simulating trans: /org/debian/apt/transaction/51d7d725c3eb459582418ca2d36c4a21",
+  "rawHash": "2bcc21e0b0faa3228ff4f129a6cf2fead077feaff2ec3a514a5038b02a7bac30",
+  "ingestedAt": "2026-09-11T04:36:54.028Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

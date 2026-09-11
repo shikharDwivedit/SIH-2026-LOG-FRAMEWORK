@@ -1,0 +1,17 @@
+{
+  "eventId": "99d2c1f1-2d57-4cf2-b332-16ac29b16342",
+  "rawContent": "2026-09-06T21:51:46.302445+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Faking a node at [mem 0x0000000000000000-0x0000000497bfffff]",
+  "rawHash": "c6d3be321f77300ab42e1ee7f48250bb8497dbbd6e19e0f2d03e21c796cf0d38",
+  "ingestedAt": "2026-09-11T04:36:51.694Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

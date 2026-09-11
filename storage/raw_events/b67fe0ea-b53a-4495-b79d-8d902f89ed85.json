@@ -1,0 +1,17 @@
+{
+  "eventId": "b67fe0ea-b53a-4495-b79d-8d902f89ed85",
+  "rawContent": "2026-09-06T08:08:05.346707+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <warn>  [1788662285.3466] device (p2p-dev-wlo1): error setting IPv4 forwarding to '1': Resource temporarily unavailable",
+  "rawHash": "609f25fd63e23dad9cb22fdcd58b22c0c222e88aa2f40a0e9fe257e8be1cef6d",
+  "ingestedAt": "2026-09-11T04:36:50.863Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

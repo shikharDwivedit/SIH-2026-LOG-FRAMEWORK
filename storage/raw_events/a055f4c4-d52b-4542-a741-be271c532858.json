@@ -1,0 +1,16 @@
+{
+  "eventId": "a055f4c4-d52b-4542-a741-be271c532858",
+  "rawContent": "2026-09-06T21:53:43.569928+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788711823.5696] policy: set 'A34' (wlo1) as default for IPv4 routing and DNS",
+  "rawHash": "ad8139f9db53370b8ec8b97b5fa098890690bf2c19fe3f2228b32f2b395d8491",
+  "ingestedAt": "2026-09-11T04:36:53.843Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

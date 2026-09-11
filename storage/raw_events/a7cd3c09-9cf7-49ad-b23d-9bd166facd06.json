@@ -1,0 +1,17 @@
+{
+  "eventId": "a7cd3c09-9cf7-49ad-b23d-9bd166facd06",
+  "rawContent": "2026-09-06T21:51:46.307572+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Reached target initrd-usr-fs.target - Initrd /usr File System.",
+  "rawHash": "5556dd380d250375b153f5932a8cae0777c9c3bba2cdcd0f9aa502c1e6a63571",
+  "ingestedAt": "2026-09-11T04:36:52.243Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

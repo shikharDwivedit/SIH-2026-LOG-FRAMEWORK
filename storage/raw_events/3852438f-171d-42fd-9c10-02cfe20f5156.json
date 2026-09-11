@@ -1,0 +1,16 @@
+{
+  "eventId": "3852438f-171d-42fd-9c10-02cfe20f5156",
+  "rawContent": "2026-09-06T08:07:39.198536+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx bluetoothd[2181]: Bluetooth management interface 1.23 initialized",
+  "rawHash": "347d2be55d205568cc3ce1f93056b6fb1809cc693d6f9101c84367c400953ea0",
+  "ingestedAt": "2026-09-11T04:36:49.910Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

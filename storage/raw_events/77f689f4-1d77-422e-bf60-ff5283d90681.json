@@ -1,0 +1,16 @@
+{
+  "eventId": "77f689f4-1d77-422e-bf60-ff5283d90681",
+  "rawContent": "2026-09-06T21:51:46.309138+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Initialized Local Variables for Method [WHCM]:",
+  "rawHash": "0e32c223d19853f159848899bc4471dd60eb808d8356ccc79550bd9ad415af94",
+  "ingestedAt": "2026-09-11T04:36:52.387Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

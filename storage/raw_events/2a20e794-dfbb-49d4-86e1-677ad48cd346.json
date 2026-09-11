@@ -1,0 +1,16 @@
+{
+  "eventId": "2a20e794-dfbb-49d4-86e1-677ad48cd346",
+  "rawContent": "2026-09-06T21:52:10.900342+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx org.gnome.Nautilus[9395]: Connecting to org.freedesktop.Tracker3.Miner.Files",
+  "rawHash": "3d6e17cf68d32fa072f60936f59ba8f3a5f0231b0fbe19287220b581a19a99f2",
+  "ingestedAt": "2026-09-11T04:36:53.536Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "cc2b7b97-33d1-4982-973b-fcc71df0c47a",
+  "rawContent": "2026-09-06T21:51:49.269392+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[2785]: Added device '/dev/dri/card2' (i915) using atomic mode setting.",
+  "rawHash": "003a5cdef7f457fe576973beadc63a7d1250b66cafc094a00c6f2dd03b2a4397",
+  "ingestedAt": "2026-09-11T04:36:52.580Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

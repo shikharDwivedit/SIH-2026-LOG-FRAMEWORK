@@ -1,0 +1,17 @@
+{
+  "eventId": "9325f608-47a3-4a46-903a-f6239d069648",
+  "rawContent": "2026-09-07T09:13:48.194075+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2551]: Reached target org.gnome.SettingsDaemon.A11ySettings.target - GNOME accessibility target.",
+  "rawHash": "4cbf21fc1beced76c94530eacdb750de582beca30956fc226af0cd121ddcd273",
+  "ingestedAt": "2026-09-11T04:36:55.734Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

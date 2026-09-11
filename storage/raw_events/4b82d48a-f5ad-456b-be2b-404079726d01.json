@@ -1,0 +1,16 @@
+{
+  "eventId": "4b82d48a-f5ad-456b-be2b-404079726d01",
+  "rawContent": "2026-09-06T08:07:54.848875+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...",
+  "rawHash": "b7ec94c196759e951ec35f9687333746f40aa52483f9b60f5dbfa22aa680e437",
+  "ingestedAt": "2026-09-11T04:36:50.537Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

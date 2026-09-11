@@ -1,0 +1,16 @@
+{
+  "eventId": "4d60f3c9-afec-42d1-beca-b865bf9411f7",
+  "rawContent": "2026-09-06T21:53:39.628300+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2369]: wlo1: SME: Trying to authenticate with b8:50:01:6b:23:80 (SSID='VITAP-HOSTEL' freq=5220 MHz)",
+  "rawHash": "89442bab4b9f2841a87ddac2bafd51119c36198a564e976bca843e731f4ac68a",
+  "ingestedAt": "2026-09-11T04:36:53.760Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

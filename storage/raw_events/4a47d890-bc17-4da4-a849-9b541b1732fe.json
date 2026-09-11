@@ -1,0 +1,17 @@
+{
+  "eventId": "4a47d890-bc17-4da4-a849-9b541b1732fe",
+  "rawContent": "2026-09-07T09:13:45.383567+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx chronyd[2265]: Loaded 0 symmetric keys",
+  "rawHash": "6bd886aefc8270648bf692e884070a7aaad3859a797caa0783ef46b2349f7d87",
+  "ingestedAt": "2026-09-11T04:36:54.877Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

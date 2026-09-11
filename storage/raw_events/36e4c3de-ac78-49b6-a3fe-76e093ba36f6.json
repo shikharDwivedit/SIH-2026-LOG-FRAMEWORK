@@ -1,0 +1,16 @@
+{
+  "eventId": "36e4c3de-ac78-49b6-a3fe-76e093ba36f6",
+  "rawContent": "2026-09-07T09:13:48.185307+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-session-service[2667]: Entering running state",
+  "rawHash": "7deb08164636ad694d9ce2162458a33369768b93596a86b6b18c4b46fb06c2bc",
+  "ingestedAt": "2026-09-11T04:36:55.737Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

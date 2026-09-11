@@ -1,0 +1,17 @@
+{
+  "eventId": "50994338-cce4-4e23-bada-0eef825e6fda",
+  "rawContent": "2026-09-07T09:13:45.382321+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Freeing SMP alternatives memory: 56K",
+  "rawHash": "9aa78c157f022c506245bd526484195b9d45513068051fbc59c67a0edfa861ec",
+  "ingestedAt": "2026-09-11T04:36:54.439Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

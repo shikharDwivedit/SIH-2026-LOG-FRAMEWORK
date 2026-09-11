@@ -1,0 +1,16 @@
+{
+  "eventId": "244b9503-0e05-48ed-af02-a595cfbf274a",
+  "rawContent": "2026-09-06T21:51:46.305937+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Monitor-Mwait will be used to enter C-3 state",
+  "rawHash": "8b4fd24cbf5c19c9c8b2a8aa55db93cbb3e63d5fc5b9d0d6711c589166fa21de",
+  "ingestedAt": "2026-09-11T04:36:52.059Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

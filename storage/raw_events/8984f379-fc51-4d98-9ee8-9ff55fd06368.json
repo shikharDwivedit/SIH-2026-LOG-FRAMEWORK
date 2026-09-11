@@ -1,0 +1,17 @@
+{
+  "eventId": "8984f379-fc51-4d98-9ee8-9ff55fd06368",
+  "rawContent": "2026-09-07T09:13:45.381856+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Created slice system-systemd\\x2dbacklight.slice - Slice /system/systemd-backlight.",
+  "rawHash": "08c425a68569fe1c2a0e75da7e97de0f82430975bb4096fc54ee0a03845d2a4c",
+  "ingestedAt": "2026-09-11T04:36:54.368Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "a5d926ce-c0c4-456c-8b35-94874710cb51",
+  "rawContent": "2026-09-06T21:51:46.308277+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: initrd-switch-root.service: Deactivated successfully.",
+  "rawHash": "16f7c97d274ca49364c7b9e4dea55fc0970c612329126fdcf7c5d2f395d78c9c",
+  "ingestedAt": "2026-09-11T04:36:52.315Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

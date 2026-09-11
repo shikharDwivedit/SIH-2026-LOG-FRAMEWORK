@@ -1,0 +1,16 @@
+{
+  "eventId": "e83f85ad-54d8-4630-a580-3c5521decf2a",
+  "rawContent": "2026-09-06T08:07:39.198902+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...",
+  "rawHash": "aa2d89275ea52e9393fbd9e15f350699215ff6cf37b719d91cd0568d8d3b9bd7",
+  "ingestedAt": "2026-09-11T04:36:49.984Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

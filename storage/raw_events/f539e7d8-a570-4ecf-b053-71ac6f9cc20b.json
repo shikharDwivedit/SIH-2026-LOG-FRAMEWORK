@@ -1,0 +1,16 @@
+{
+  "eventId": "f539e7d8-a570-4ecf-b053-71ac6f9cc20b",
+  "rawContent": "2026-09-07T09:13:45.381393+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: e820: update [mem 0x42ee9000-0x42ee9fff] System RAM ==> device reserved",
+  "rawHash": "efba816cfc939f076697dfac43395b98ac6a7346f0baff10b213f291586a355c",
+  "ingestedAt": "2026-09-11T04:36:54.287Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

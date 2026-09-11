@@ -1,0 +1,17 @@
+{
+  "eventId": "0fe4714a-452e-49a2-b008-5151221c6211",
+  "rawContent": "2026-09-06T08:07:39.197097+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: systemd-hibernate-clear.service - Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67",
+  "rawHash": "45d9ff4234dfc8fd01e89da05208eea558afe9d80af20b7581e025a9d4d6532b",
+  "ingestedAt": "2026-09-11T04:36:49.662Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

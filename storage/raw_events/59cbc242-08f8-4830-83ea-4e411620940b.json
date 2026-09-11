@@ -1,0 +1,16 @@
+{
+  "eventId": "59cbc242-08f8-4830-83ea-4e411620940b",
+  "rawContent": "2026-09-06T08:07:39.887159+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Startup finished in 242ms.",
+  "rawHash": "b94b91f7dcc5989cf9e2a132822f9eaf217839aff20c881cc1db7d34900b564a",
+  "ingestedAt": "2026-09-11T04:36:50.243Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

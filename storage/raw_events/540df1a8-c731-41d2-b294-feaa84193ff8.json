@@ -1,0 +1,16 @@
+{
+  "eventId": "540df1a8-c731-41d2-b294-feaa84193ff8",
+  "rawContent": "2026-09-06T21:52:10.936306+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Stopped target graphical-session.target - Current graphical user session.",
+  "rawHash": "a21bfa1f8c593103e32f9dd2a7dbbca1c6d910458fea38f099f6bb83ef457603",
+  "ingestedAt": "2026-09-11T04:36:53.568Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

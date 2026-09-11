@@ -1,0 +1,16 @@
+{
+  "eventId": "c1ee2d0d-5140-4cc8-a837-1655f8741da9",
+  "rawContent": "2026-09-07T09:13:45.384106+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: i915 0000:00:02.0: [drm] Registered 4 planes with drm panic",
+  "rawHash": "e0e29e519de94d6a4246d964f5e667bb7d1416cb9ae9182aaf9fcfdd75e09fd3",
+  "ingestedAt": "2026-09-11T04:36:55.066Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

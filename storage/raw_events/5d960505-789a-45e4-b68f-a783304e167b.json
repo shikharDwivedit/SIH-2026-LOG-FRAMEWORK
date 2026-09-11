@@ -1,0 +1,17 @@
+{
+  "eventId": "5d960505-789a-45e4-b68f-a783304e167b",
+  "rawContent": "2026-09-06T21:51:46.307280+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: evm: Initialising EVM extended attributes:",
+  "rawHash": "2ea546e76b1cbebb432a81ad2586397e9d4f677e01fdde5b2cfc0303e6b9abc4",
+  "ingestedAt": "2026-09-11T04:36:52.221Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

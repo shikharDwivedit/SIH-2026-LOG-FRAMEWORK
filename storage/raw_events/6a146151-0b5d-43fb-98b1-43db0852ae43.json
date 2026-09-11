@@ -1,0 +1,16 @@
+{
+  "eventId": "6a146151-0b5d-43fb-98b1-43db0852ae43",
+  "rawContent": "2026-09-06T09:43:32.726875+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx fwupd[15304]: 04:13:32.726 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-8c2f4425-77d6-4755-aca3-891fdbc66a58: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened",
+  "rawHash": "86601bb662ce079b32abdb3e0d65db321a453b10c6e17e58e0bf55d5191a08b7",
+  "ingestedAt": "2026-09-11T04:36:51.261Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "0b126bb8-8040-46e1-8ccb-a8d34f801ec5",
+  "rawContent": "2026-09-06T21:51:46.307960+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: usb 1-6: Manufacturer: Quanta",
+  "rawHash": "8dbef1f31b257dc9e9ec1bb7ddcba5219e61dd720d5044d623ade1b5ad7e7d6b",
+  "ingestedAt": "2026-09-11T04:36:52.293Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

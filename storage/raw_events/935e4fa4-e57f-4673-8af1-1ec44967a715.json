@@ -1,0 +1,16 @@
+{
+  "eventId": "935e4fa4-e57f-4673-8af1-1ec44967a715",
+  "rawContent": "2026-09-06T09:34:00.318746+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx brave-browser.desktop[11983]: [11984:11984:0906/093400.318074:ERROR:ui/ozone/platform/wayland/host/wayland_frame_manager.cc:692] The server has buggy presentation feedback. Discarding all presentation feedback requests in all frames except the last 3.",
+  "rawHash": "4d22612707aa44dd662a87c6c7f2f697ebd26dc89d0c9ef81d6e2f95fdf95aad",
+  "ingestedAt": "2026-09-11T04:36:51.195Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

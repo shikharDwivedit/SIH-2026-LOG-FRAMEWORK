@@ -1,0 +1,16 @@
+{
+  "eventId": "88df79e5-c370-44b6-b1df-0d8f7585eb4c",
+  "rawContent": "2026-09-07T09:13:45.381210+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx rsyslogd: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2512.0]",
+  "rawHash": "fb4e29ec109f50cde33639b123cd68e7ce31b0367df656bd006db045a8de4888",
+  "ingestedAt": "2026-09-11T04:36:54.956Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

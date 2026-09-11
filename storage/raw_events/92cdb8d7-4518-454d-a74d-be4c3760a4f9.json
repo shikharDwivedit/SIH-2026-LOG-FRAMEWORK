@@ -1,0 +1,16 @@
+{
+  "eventId": "92cdb8d7-4518-454d-a74d-be4c3760a4f9",
+  "rawContent": "2026-09-06T23:30:27.670156+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx nvidia-persistenced: Received signal 15",
+  "rawHash": "6c594c05d48c8c085dd3f0d6f13bb3fe5a71f1c85f33426885494477d4625047",
+  "ingestedAt": "2026-09-11T04:36:54.163Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

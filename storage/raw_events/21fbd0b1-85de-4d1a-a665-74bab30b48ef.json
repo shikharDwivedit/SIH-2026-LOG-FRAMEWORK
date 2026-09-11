@@ -1,0 +1,16 @@
+{
+  "eventId": "21fbd0b1-85de-4d1a-a665-74bab30b48ef",
+  "rawContent": "2026-09-06T08:07:47.491379+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.dockerd[5324]: time=\"2026-09-06T08:07:47+05:30\" level=warning msg=\"Configuration migrated from version 2, use `containerd config migrate` to avoid migration\" t=\"16.682µs\"",
+  "rawHash": "ec98a4a7fb88e2648ae269a9ae971ffecda17aea2efb3973fc5a665fbd73e28f",
+  "ingestedAt": "2026-09-11T04:36:50.488Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

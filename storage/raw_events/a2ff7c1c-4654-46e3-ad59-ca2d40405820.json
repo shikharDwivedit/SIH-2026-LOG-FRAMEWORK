@@ -1,0 +1,16 @@
+{
+  "eventId": "a2ff7c1c-4654-46e3-ad59-ca2d40405820",
+  "rawContent": "2026-09-06T21:51:46.301917+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Activated swap swap.img.swap - /swap.img.",
+  "rawHash": "5c251f7d61e2c251c00d59567ac42353cef7162643d9328d9101578fa1d41901",
+  "ingestedAt": "2026-09-11T04:36:51.630Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

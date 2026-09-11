@@ -1,0 +1,16 @@
+{
+  "eventId": "49744324-be9f-4c55-98be-c0045c607886",
+  "rawContent": "2026-09-06T08:07:55.154751+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wireplumber[7380]: [0:00:23.149027296] [7533] ERROR MediaDevice media_device.cpp:511 /dev/media0[]: Failed to open media device at /dev/media0: Permission denied",
+  "rawHash": "c229e2ba94ef2b4d329b93be6061e45d9bbc4a6ff86d827d8739d9f420c407ea",
+  "ingestedAt": "2026-09-11T04:36:50.551Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

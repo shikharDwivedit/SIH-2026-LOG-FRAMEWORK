@@ -1,0 +1,17 @@
+{
+  "eventId": "7f35a27f-668d-4a5e-8708-271035dffd8c",
+  "rawContent": "2026-09-06T08:08:02.004445+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[7363]: [session uid=1000 pid=7363 pidfd=5] Successfully activated service 'org.gnome.Settings.GlobalShortcutsProvider'",
+  "rawHash": "a859557d1812281c01172c24645fc6810553c41f7aca297c49d9bfdb310dcd3a",
+  "ingestedAt": "2026-09-11T04:36:50.809Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "cb0fcf89-c8e1-402c-80cf-dd18ce0c1352",
+  "rawContent": "2026-09-06T08:08:12.237896+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Closed keyboxd.socket - GnuPG public key management service.",
+  "rawHash": "825290c455e511d5c0306c22803cb41f6c4c54901039f9608406190fde55106b",
+  "ingestedAt": "2026-09-11T04:36:50.943Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

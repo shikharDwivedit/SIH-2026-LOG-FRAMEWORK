@@ -1,0 +1,16 @@
+{
+  "eventId": "e32729b1-2c6f-4d1f-87e3-805e6bee9827",
+  "rawContent": "2026-09-07T09:13:45.383840+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for x86_64  595.84  Release Build  (dvs-builder@U22-I3-AM25-26-2)  Wed Jun 10 20:53:33 UTC 2026",
+  "rawHash": "3326417fdb05ee5bccbd6c2876180066d6fb0e5d5b1928b5fed2c046c7a4ca87",
+  "ingestedAt": "2026-09-11T04:36:54.971Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

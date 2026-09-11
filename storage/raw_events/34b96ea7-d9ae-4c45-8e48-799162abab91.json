@@ -1,0 +1,16 @@
+{
+  "eventId": "34b96ea7-d9ae-4c45-8e48-799162abab91",
+  "rawContent": "2026-09-06T21:56:27.772034+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx brave-browser.desktop[10053]: [13623:236:0906/215627.771042:ERROR:third_party/blink/renderer/bindings/core/v8/v8_initializer.cc:971] V8 javascript OOM (MarkCompactCollector: young object promotion failed).",
+  "rawHash": "4cc64cc3c47756e92922a07b242fc216f69dea8afb184ea1fc768212287632f5",
+  "ingestedAt": "2026-09-11T04:36:53.878Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

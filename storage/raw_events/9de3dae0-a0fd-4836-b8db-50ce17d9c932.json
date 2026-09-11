@@ -1,0 +1,16 @@
+{
+  "eventId": "9de3dae0-a0fd-4836-b8db-50ce17d9c932",
+  "rawContent": "2026-09-06T21:51:46.305853+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>",
+  "rawHash": "75100c89288c089dc33ecd45d7014df435fff11cb35d4a41c6ff352f40f41a1b",
+  "ingestedAt": "2026-09-11T04:36:52.048Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

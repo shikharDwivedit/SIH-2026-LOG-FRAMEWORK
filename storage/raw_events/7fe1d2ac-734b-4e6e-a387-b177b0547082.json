@@ -1,0 +1,16 @@
+{
+  "eventId": "7fe1d2ac-734b-4e6e-a387-b177b0547082",
+  "rawContent": "2026-09-06T21:53:41.922915+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2369]: wlo1: CTRL-EVENT-EAP-FAILURE EAP authentication failed",
+  "rawHash": "646cc64f8e41f6d02678aa5e84dbfcf8f5d3d10284000fc91a95457f9e064e99",
+  "ingestedAt": "2026-09-11T04:36:53.801Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "18c0cf38-ef64-49fc-aa0c-c7d34afdbfc9",
+  "rawContent": "2026-09-07T09:13:45.383650+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Hostname set to <shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx>.",
+  "rawHash": "62650724404373249c568fa74a2c7b42ed471b3b6d76a0db9aba9e739622e400",
+  "ingestedAt": "2026-09-11T04:36:54.894Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "9ef5709b-f0d1-447a-bc97-f97bf4287f55",
+  "rawContent": "2026-09-06T21:51:46.301880+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: e820: remove [mem 0xff680000-0xffffffff] device reserved",
+  "rawHash": "d95f383c3c23c10b14ab78372aebc993ad679fc7be33e2f5c011e63d74b28c5c",
+  "ingestedAt": "2026-09-11T04:36:51.626Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

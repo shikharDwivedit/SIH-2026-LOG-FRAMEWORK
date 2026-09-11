@@ -1,0 +1,16 @@
+{
+  "eventId": "182ad92b-7c3d-4a8e-9e27-bd83f727987b",
+  "rawContent": "2026-09-07T09:13:45.382965+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished ufw.service - Uncomplicated firewall.",
+  "rawHash": "54e546a3eb7c3f1d338375ab9831c1a5988b19b7fec7ff11e1a0a68ca74a0535",
+  "ingestedAt": "2026-09-11T04:36:54.636Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

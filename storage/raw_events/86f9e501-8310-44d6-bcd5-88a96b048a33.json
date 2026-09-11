@@ -1,0 +1,16 @@
+{
+  "eventId": "86f9e501-8310-44d6-bcd5-88a96b048a33",
+  "rawContent": "2026-09-06T08:37:04.798272+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: apt-daily-upgrade.service: Consumed 2.039s CPU time over 2.119s wall clock time, 60.6M memory peak.",
+  "rawHash": "44f65acade1125aee02777ef27dfedec30c11b84f7cb61672b26ab66824e6845",
+  "ingestedAt": "2026-09-11T04:36:51.099Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "4069a30e-a10a-4278-ad73-88904db36a08",
+  "rawContent": "2026-09-06T09:43:55.793890+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped update-notifier-motd.timer - Check to see whether there is a new version of Ubuntu available.",
+  "rawHash": "6e92ceb578bac93628ef4d9f7f06ac14f9298f827213c0abd02ef612cfe8823b",
+  "ingestedAt": "2026-09-11T04:36:51.518Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "5a555694-9adf-4d8b-88a7-c050df310637",
+  "rawContent": "2026-09-07T09:13:49.814383+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx tlp[4770]: Setting battery charge thresholds...done.",
+  "rawHash": "7a595bc12310b30c1fe805f382f650968cdb36423698c6d3cab5e1f811142d2c",
+  "ingestedAt": "2026-09-11T04:36:55.807Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

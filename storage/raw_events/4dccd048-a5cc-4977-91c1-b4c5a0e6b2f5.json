@@ -1,0 +1,17 @@
+{
+  "eventId": "4dccd048-a5cc-4977-91c1-b4c5a0e6b2f5",
+  "rawContent": "2026-09-06T21:53:35.859311+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788711815.8592] manager: (p2p-dev-wlo1): new 802.11 Wi-Fi P2P device (/org/freedesktop/NetworkManager/Devices/8)",
+  "rawHash": "89b65ac41c12857b209f889610e82d43bc3486628aea96f7304ace80a87e889c",
+  "ingestedAt": "2026-09-11T04:36:53.722Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

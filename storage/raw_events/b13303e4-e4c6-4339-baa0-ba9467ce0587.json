@@ -1,0 +1,16 @@
+{
+  "eventId": "b13303e4-e4c6-4339-baa0-ba9467ce0587",
+  "rawContent": "2026-09-06T08:07:53.300068+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788662273.3000] manager: (br-700ae45351f2): new Bridge device (/org/freedesktop/NetworkManager/Devices/7)",
+  "rawHash": "9bd979f14c19411717576ac9b3f778c7c9f1d4a702fc4b004a23d45673aec15d",
+  "ingestedAt": "2026-09-11T04:36:50.512Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

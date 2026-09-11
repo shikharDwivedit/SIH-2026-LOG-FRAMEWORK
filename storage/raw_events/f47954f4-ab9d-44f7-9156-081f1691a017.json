@@ -1,0 +1,16 @@
+{
+  "eventId": "f47954f4-ab9d-44f7-9156-081f1691a017",
+  "rawContent": "2026-09-06T08:07:58.970907+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Started evolution-addressbook-factory.service - Evolution address book service.",
+  "rawHash": "36192b9a67b762ef8f7a40cb216e6db8d0b50bab76b80fd1a940c60040fec9b1",
+  "ingestedAt": "2026-09-11T04:36:50.723Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

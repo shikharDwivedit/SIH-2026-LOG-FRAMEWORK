@@ -1,0 +1,16 @@
+{
+  "eventId": "ac8d0af6-353d-487a-aad0-ab46eef7f9d7",
+  "rawContent": "2026-09-07T09:13:45.381952+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: On node 0, zone DMA: 97 pages in unavailable ranges",
+  "rawHash": "96fcd2e1e97797ef1ba54b9c3db6beab4eaac4a88280608d0b540ddc51e4bac7",
+  "ingestedAt": "2026-09-11T04:36:54.390Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "cc5fb290-6a8c-4159-9c66-172966ddbd13",
+  "rawContent": "2026-09-06T08:07:39.198712+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx chronyd[2335]: Frequency -8.749 +/- 3.202 ppm read from /var/lib/chrony/chrony.drift",
+  "rawHash": "ef6791463d174486f9590c13df5645819b47393a270c22caf626791c40b81d5c",
+  "ingestedAt": "2026-09-11T04:36:49.944Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

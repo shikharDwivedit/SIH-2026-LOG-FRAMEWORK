@@ -1,0 +1,16 @@
+{
+  "eventId": "ad8752c5-0f5e-4a92-9770-fbc0d00ace88",
+  "rawContent": "2026-09-06T08:07:39.198055+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: DMAR: dmar1: Using Queued invalidation",
+  "rawHash": "7f098185fab9ae0d54bf5177ea42da0dbfb59a1546fc64c0b61f5dc8053cd437",
+  "ingestedAt": "2026-09-11T04:36:49.833Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

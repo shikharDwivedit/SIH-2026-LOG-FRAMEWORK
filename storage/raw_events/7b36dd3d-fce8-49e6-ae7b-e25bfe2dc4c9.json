@@ -1,0 +1,16 @@
+{
+  "eventId": "7b36dd3d-fce8-49e6-ae7b-e25bfe2dc4c9",
+  "rawContent": "2026-09-06T23:30:27.709222+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: alsa-restore.service: Deactivated successfully.",
+  "rawHash": "d0539d6470536b5b49432acbf7792289a7daadfb788f8db3d367ae1aeaa1de0b",
+  "ingestedAt": "2026-09-11T04:36:54.219Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

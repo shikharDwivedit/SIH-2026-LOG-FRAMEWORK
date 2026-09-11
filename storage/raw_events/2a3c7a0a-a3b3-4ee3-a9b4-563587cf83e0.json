@@ -1,0 +1,16 @@
+{
+  "eventId": "2a3c7a0a-a3b3-4ee3-a9b4-563587cf83e0",
+  "rawContent": "2026-09-06T09:43:55.794631+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopping accounts-daemon.service - Accounts Service...",
+  "rawHash": "7fe8c6428fab5dafb5bddfbbced5746b326a2bb9b51e56140f84bf5a2a180962",
+  "ingestedAt": "2026-09-11T04:36:51.520Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

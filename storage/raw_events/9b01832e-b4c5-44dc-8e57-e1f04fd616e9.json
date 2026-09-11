@@ -1,0 +1,16 @@
+{
+  "eventId": "9b01832e-b4c5-44dc-8e57-e1f04fd616e9",
+  "rawContent": "2026-09-06T21:51:46.305174+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx nvidia-persistenced: Local RPC services initialized",
+  "rawHash": "44b4ce6bb1b8f9bb280327fdc9d788a698bcbc68bb87e5775f5dae800e54ab2d",
+  "ingestedAt": "2026-09-11T04:36:51.952Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "56163ef3-f7f3-41ca-b77d-e5741dde21b7",
+  "rawContent": "2026-09-06T08:07:39.198415+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[2192]: [system] AppArmor D-Bus mediation is enabled",
+  "rawHash": "16c4b0375c5b1f9582b284e0e2ea4f24ea7c47d71d4532b440d9accf6bc6529c",
+  "ingestedAt": "2026-09-11T04:36:49.893Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

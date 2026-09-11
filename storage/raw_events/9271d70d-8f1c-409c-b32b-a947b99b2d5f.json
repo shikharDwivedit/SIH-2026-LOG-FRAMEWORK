@@ -1,0 +1,16 @@
+{
+  "eventId": "9271d70d-8f1c-409c-b32b-a947b99b2d5f",
+  "rawContent": "2026-09-06T09:43:52.846027+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-resolved[684]: wlo1: Bus client reset DNS server list.",
+  "rawHash": "b2afe7c761b8a064f97b823ee2441ef881c55c8432387826738d3b812f55f975",
+  "ingestedAt": "2026-09-11T04:36:51.433Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

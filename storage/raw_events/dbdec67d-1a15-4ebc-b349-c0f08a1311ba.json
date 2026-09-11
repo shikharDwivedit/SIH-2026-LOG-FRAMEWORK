@@ -1,0 +1,16 @@
+{
+  "eventId": "dbdec67d-1a15-4ebc-b349-c0f08a1311ba",
+  "rawContent": "2026-09-06T08:07:39.198847+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788662259.1733] manager[0x569d48b909c0]: monitoring kernel firmware directory '/lib/firmware'.",
+  "rawHash": "3d396f4ac9869ae32441c05a8be7581492a004ef4cc18b229adcc8f8e1434e12",
+  "ingestedAt": "2026-09-11T04:36:49.974Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

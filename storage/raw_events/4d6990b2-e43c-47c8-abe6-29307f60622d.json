@@ -1,0 +1,16 @@
+{
+  "eventId": "4d6990b2-e43c-47c8-abe6-29307f60622d",
+  "rawContent": "2026-09-06T00:50:13.943356+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: rsyslog.service: Sent signal SIGHUP to main process 6584 (rsyslogd) on client request.",
+  "rawHash": "aae7be6a2c73a8f07eae56efccb577518374ab668d332eeb0c946c27114f71b7",
+  "ingestedAt": "2026-09-11T04:36:49.346Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

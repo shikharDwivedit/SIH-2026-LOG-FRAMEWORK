@@ -1,0 +1,16 @@
+{
+  "eventId": "a6677ed3-c8b8-401a-a67f-0b109f162546",
+  "rawContent": "2026-09-06T21:51:46.309175+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: video: [Firmware Bug]: ACPI(PEGP) defines _DOD but not _DOS",
+  "rawHash": "6bb580c183ebadc0e89a0197716cab32bf247e39e353e73fd12f64e6744d287e",
+  "ingestedAt": "2026-09-11T04:36:52.397Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

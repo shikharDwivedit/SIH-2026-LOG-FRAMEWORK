@@ -1,0 +1,16 @@
+{
+  "eventId": "5bb85b41-4b79-4168-92d1-ab40ab4e6512",
+  "rawContent": "2026-09-06T21:53:40.043004+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: r8169 0000:43:00.0 eno1: Link is Down",
+  "rawHash": "44b405db40d5fdef87e6d6a4687f2de96a2869eeeebf021093d2ffa12345def9",
+  "ingestedAt": "2026-09-11T04:36:53.800Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "af1e1851-8132-451f-9b3c-dce63bd9bbe1",
+  "rawContent": "2026-09-06T08:07:57.816816+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx at-spi-bus-launcher[7931]: dbus-daemon[7931]: Successfully activated service 'org.a11y.atspi.Registry'",
+  "rawHash": "caf8f1fb67ecb82ce13bb23d23f188e6a07dff264ee3b2db1bec864571739d9b",
+  "ingestedAt": "2026-09-11T04:36:50.622Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

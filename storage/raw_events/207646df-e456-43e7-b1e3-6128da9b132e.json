@@ -1,0 +1,16 @@
+{
+  "eventId": "207646df-e456-43e7-b1e3-6128da9b132e",
+  "rawContent": "2026-09-06T08:07:39.198758+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Freeing unused kernel image (text/rodata gap) memory: 768K",
+  "rawHash": "82e95c5d4d9140851fc34b0c749aba5c1bf5b45597819131240e3ce361de22a6",
+  "ingestedAt": "2026-09-11T04:36:49.960Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

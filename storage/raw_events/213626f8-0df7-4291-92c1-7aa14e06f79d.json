@@ -1,0 +1,17 @@
+{
+  "eventId": "213626f8-0df7-4291-92c1-7aa14e06f79d",
+  "rawContent": "2026-09-06T23:30:27.709615+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped alsa-restore.service - Save/Restore Sound Card State.",
+  "rawHash": "c05d52836ff4d2054f1cdf66f85c33055b735c3f124164324a6cf7b35f11e9cd",
+  "ingestedAt": "2026-09-11T04:36:54.202Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

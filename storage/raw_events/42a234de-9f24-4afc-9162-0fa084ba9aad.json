@@ -1,0 +1,17 @@
+{
+  "eventId": "42a234de-9f24-4afc-9162-0fa084ba9aad",
+  "rawContent": "2026-09-06T21:51:46.304050+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Received SIGRTMIN+20 from PID 431 (plymouthd).",
+  "rawHash": "67cc3862faa3fbdb9900df5cf2ca700dff2e508343b749dda3021fcfaca339d8",
+  "ingestedAt": "2026-09-11T04:36:51.828Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

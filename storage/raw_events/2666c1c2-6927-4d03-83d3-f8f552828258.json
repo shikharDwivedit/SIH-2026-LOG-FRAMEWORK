@@ -1,0 +1,16 @@
+{
+  "eventId": "2666c1c2-6927-4d03-83d3-f8f552828258",
+  "rawContent": "2026-09-06T21:51:46.306746+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Asymmetric key parser 'x509' registered",
+  "rawHash": "007151babeea9043687e29b370966dc2e95960a46915edc4e0215e6b1b0fb335",
+  "ingestedAt": "2026-09-11T04:36:52.164Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

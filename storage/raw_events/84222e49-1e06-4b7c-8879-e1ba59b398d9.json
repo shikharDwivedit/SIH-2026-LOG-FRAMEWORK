@@ -1,0 +1,16 @@
+{
+  "eventId": "84222e49-1e06-4b7c-8879-e1ba59b398d9",
+  "rawContent": "2026-09-07T09:13:46.843425+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx snapd[2167]: overlord.go:318: Acquired state lock file",
+  "rawHash": "9685cf932d927ad69e13132ea674ca8aa1b39ae8a2e685dc894dee222489c439",
+  "ingestedAt": "2026-09-11T04:36:55.259Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

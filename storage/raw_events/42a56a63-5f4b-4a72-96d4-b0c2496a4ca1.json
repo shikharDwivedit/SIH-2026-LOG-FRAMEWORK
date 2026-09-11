@@ -1,0 +1,17 @@
+{
+  "eventId": "42a56a63-5f4b-4a72-96d4-b0c2496a4ca1",
+  "rawContent": "2026-09-06T08:07:39.198224+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting switcheroo-control.service - Switcheroo Control Proxy service...",
+  "rawHash": "b3fb69ef6089b05c0e7be93b1597b737d4050b4e6f009766f38fc9a1cbe72f16",
+  "ingestedAt": "2026-09-11T04:36:49.860Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

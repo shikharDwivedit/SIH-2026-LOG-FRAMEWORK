@@ -1,0 +1,16 @@
+{
+  "eventId": "57cd1eba-d6c7-44e2-bbe9-0bd3e6e25eee",
+  "rawContent": "2026-09-06T21:51:46.307056+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: rtc_cmos rtc_cmos: RTC can wake from S4",
+  "rawHash": "64112e713a2f87d177638194882370eeb453c943457d7acbf8016c562d0fa2d7",
+  "ingestedAt": "2026-09-11T04:36:52.205Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

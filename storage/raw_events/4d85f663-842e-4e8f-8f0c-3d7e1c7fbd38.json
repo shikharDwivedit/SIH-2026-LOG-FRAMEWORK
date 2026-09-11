@@ -1,0 +1,17 @@
+{
+  "eventId": "4d85f663-842e-4e8f-8f0c-3d7e1c7fbd38",
+  "rawContent": "2026-09-06T21:52:04.884612+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gsd-media-keys[3027]: Unable to get default sink",
+  "rawHash": "73535a1f6e1e35dbe91a84eaa5cea6c1c7ebac72e8d1098012d0473c296583bd",
+  "ingestedAt": "2026-09-11T04:36:53.178Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "63a1405e-728b-4595-abd4-bca7a674a935",
+  "rawContent": "2026-09-07T09:13:45.935225+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting gdm.service - GNOME Display Manager...",
+  "rawHash": "8531bc7b8ecf753485800800a5c9d800677f66bf6fc65010c438108845ce0d22",
+  "ingestedAt": "2026-09-11T04:36:55.200Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

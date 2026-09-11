@@ -1,0 +1,17 @@
+{
+  "eventId": "c4dd9b86-3019-4ac3-acf7-71b1182ee5a7",
+  "rawContent": "2026-09-06T08:07:39.826101+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Created slice app.slice - User Application Slice.",
+  "rawHash": "16718ecceed34930e2eb61dc32a5f3c0dc9ea44aeec14413a06e21db6f9c9876",
+  "ingestedAt": "2026-09-11T04:36:50.221Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

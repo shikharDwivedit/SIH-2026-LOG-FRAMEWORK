@@ -1,0 +1,16 @@
+{
+  "eventId": "801b9d50-3ce6-4bc4-8279-dce6dc9fee55",
+  "rawContent": "2026-09-06T09:01:44.215069+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: DING: DBus interface for Switcheroo control (net.hadess.SwitcherooControl) is now available.",
+  "rawHash": "aeda2250bc806cd057c6e31cd50219fc8aff649161b6dd08acaf213e40d9803f",
+  "ingestedAt": "2026-09-11T04:36:51.138Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

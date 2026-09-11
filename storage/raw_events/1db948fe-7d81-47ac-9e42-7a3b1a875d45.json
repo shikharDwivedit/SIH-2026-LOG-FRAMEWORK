@@ -1,0 +1,17 @@
+{
+  "eventId": "1db948fe-7d81-47ac-9e42-7a3b1a875d45",
+  "rawContent": "2026-09-06T08:42:37.892113+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished modprobe@sd_mod.service - Load Kernel Module sd_mod.",
+  "rawHash": "7628ebbd6e2d50d43e016ed260fd94b5db3ab05851da1e54daa450d6df77fc9f",
+  "ingestedAt": "2026-09-11T04:36:51.097Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

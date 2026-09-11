@@ -1,0 +1,17 @@
+{
+  "eventId": "ade7de60-39c0-4941-935c-2c6d28254670",
+  "rawContent": "2026-09-06T09:43:38.271166+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2337]: EAP-TLV: TLV Result - Success - EAP-TLV/Phase2 Completed",
+  "rawHash": "a3b2b839d9261b8164e60082a0ace53753f437f1c38904f7ae72b6560b0f044f",
+  "ingestedAt": "2026-09-11T04:36:51.334Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

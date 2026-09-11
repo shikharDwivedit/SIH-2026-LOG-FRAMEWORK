@@ -1,0 +1,16 @@
+{
+  "eventId": "ffa37df8-e3bb-4626-b6fc-3a7bf0c3cc0c",
+  "rawContent": "2026-09-06T09:01:43.525516+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Launching DING process",
+  "rawHash": "cfdc6a859a18620a0fbbea65d36de5aabf7cced24f51260ddfd5aefa254945c3",
+  "ingestedAt": "2026-09-11T04:36:51.128Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "7f45cc76-8ea2-45f4-81e7-983a320f3474",
+  "rawContent": "2026-09-06T09:43:33.483317+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting grub2-common.service - Record successful boot for GRUB...",
+  "rawHash": "b71085c2d993161c6121ba62bdcbe8e97a68eb8f95125cc6a961b5b1f088229f",
+  "ingestedAt": "2026-09-11T04:36:51.273Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

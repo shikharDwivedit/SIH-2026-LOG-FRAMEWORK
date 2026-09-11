@@ -1,0 +1,17 @@
+{
+  "eventId": "d18dc200-d527-409d-8cad-e51a6c7939f1",
+  "rawContent": "2026-09-06T21:51:46.307860+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: usb 1-6: new high-speed USB device number 4 using xhci_hcd",
+  "rawHash": "09dfa511f3c5e63e6c4f884e185d91e734839bc37a839bdb34c81abd18fb02af",
+  "ingestedAt": "2026-09-11T04:36:52.267Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

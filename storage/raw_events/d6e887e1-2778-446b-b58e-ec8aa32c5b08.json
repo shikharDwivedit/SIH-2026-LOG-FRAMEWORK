@@ -1,0 +1,16 @@
+{
+  "eventId": "d6e887e1-2778-446b-b58e-ec8aa32c5b08",
+  "rawContent": "2026-09-06T09:43:55.842894+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx fwupd[15304]: 04:13:55.842 FuPluginUpower       failed to query lid state",
+  "rawHash": "2f4f5031e5af6c09f89bc9ba9be6dc7c84a445c96f17941aa3fd6ddf8809e065",
+  "ingestedAt": "2026-09-11T04:36:51.574Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

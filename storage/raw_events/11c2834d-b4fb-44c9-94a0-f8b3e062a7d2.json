@@ -1,0 +1,16 @@
+{
+  "eventId": "11c2834d-b4fb-44c9-94a0-f8b3e062a7d2",
+  "rawContent": "2026-09-06T08:07:39.198903+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: systemd-pcrphase-initrd.service - TPM PCR Barrier (initrd) skipped, unmet condition check ConditionSecurity=measured-uki",
+  "rawHash": "43149ce39d5ba575a664ab7a1f2cb73897e0e1541d0b995845f7e320c9f63515",
+  "ingestedAt": "2026-09-11T04:36:49.984Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

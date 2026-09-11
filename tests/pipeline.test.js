@@ -31,6 +31,18 @@ async function runTests() {
   assert.strictEqual(event1.extensions.vendor_specific.devid, "FGT60D4614000001");
   console.log("  ✅ FortiGate Log parsed, canonicalized, and vendor extension retained!");
 
+  // Short key-value records must still use the configuration-driven KV parser.
+  console.log("\n▶ Test 1b: Short Key-Value Format Detection");
+  const shortKeyValueEvent = eventProcessingService.processSingleRawLog(
+    "srcip=192.0.2.10 action=deny",
+    { parserName: "fortigate", transport: "unit-test" }
+  );
+  assert.strictEqual(shortKeyValueEvent.trace.parser_name, "fortigate");
+  assert.strictEqual(shortKeyValueEvent.event.action, "deny");
+  assert.strictEqual(shortKeyValueEvent.network.source_ip, "192.0.2.10");
+  assert.strictEqual(shortKeyValueEvent.processing.status, "PROCESSED");
+  console.log("  ✅ Two-pair key-value record detected and parsed successfully!");
+
   // Test 2: Traceability Verification
   console.log("\n▶ Test 2: Raw-to-Normalized Traceability Lineage");
   const trace = eventProcessingService.getEventTraceability(event1.event_id);
@@ -67,6 +79,25 @@ async function runTests() {
 
   assert.ok(fileEvents.length >= 2);
   console.log(`  ✅ Processed ${fileEvents.length} events from stream log file!`);
+
+  // Test 5: Generic JSON and CEF parser definitions
+  console.log("\n▶ Test 5: Generic JSON and CEF Formats");
+  const jsonEvent = eventProcessingService.processSingleRawLog(JSON.stringify({
+    vendor: "Acme",
+    action: "allow",
+    src_ip: "192.0.2.10",
+    dst_ip: "198.51.100.20"
+  }));
+  assert.strictEqual(jsonEvent.processing.status, "PROCESSED");
+  assert.strictEqual(jsonEvent.network.source_ip, "192.0.2.10");
+
+  const cefEvent = eventProcessingService.processSingleRawLog(
+    "CEF:0|Acme|Edge|1.0|42|Blocked request|7|src=192.0.2.10 dst=198.51.100.20 act=deny"
+  );
+  assert.strictEqual(cefEvent.processing.status, "PROCESSED");
+  assert.strictEqual(cefEvent.network.destination_ip, "198.51.100.20");
+  assert.strictEqual(cefEvent.event.action, "deny");
+  console.log("  ✅ Generic JSON and CEF events parsed and normalized successfully!");
 
   console.log("\n==================================================================");
   console.log("🎉 ALL TESTS PASSED SUCCESSFULLY! FRAMEWORK READY.");

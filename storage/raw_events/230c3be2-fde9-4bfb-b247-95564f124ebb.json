@@ -1,0 +1,16 @@
+{
+  "eventId": "230c3be2-fde9-4bfb-b247-95564f124ebb",
+  "rawContent": "2026-09-06T21:51:54.824861+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Starting xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...",
+  "rawHash": "217aae3633e60504b96993d20f5ec435bd7cdf8bc383f7778da7ce76dc608a66",
+  "ingestedAt": "2026-09-11T04:36:53.070Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

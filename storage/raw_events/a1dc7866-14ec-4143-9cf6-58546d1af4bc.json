@@ -1,0 +1,17 @@
+{
+  "eventId": "a1dc7866-14ec-4143-9cf6-58546d1af4bc",
+  "rawContent": "2026-09-07T09:13:45.383784+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: dw-apb-uart.2: ttyS5 at MMIO 0x4017002000 (irq = 17, base_baud = 6250000) is a 16550A",
+  "rawHash": "2a70cc5d02692e63675a14155608661668fbeaaa6386950a0b4f748d3cd1633a",
+  "ingestedAt": "2026-09-11T04:36:54.950Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

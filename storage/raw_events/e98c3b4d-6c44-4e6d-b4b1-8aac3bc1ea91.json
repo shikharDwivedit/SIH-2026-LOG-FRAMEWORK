@@ -1,0 +1,16 @@
+{
+  "eventId": "e98c3b4d-6c44-4e6d-b4b1-8aac3bc1ea91",
+  "rawContent": "2026-09-06T23:30:27.697129+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: bolt.service: Deactivated successfully.",
+  "rawHash": "38b9b7530a8a293184b94b734014c8d8117e0231ad81aa66e88d79065c73ca37",
+  "ingestedAt": "2026-09-11T04:36:54.197Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

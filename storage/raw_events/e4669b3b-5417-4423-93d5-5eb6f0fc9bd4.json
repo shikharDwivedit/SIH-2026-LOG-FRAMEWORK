@@ -1,0 +1,16 @@
+{
+  "eventId": "e4669b3b-5417-4423-93d5-5eb6f0fc9bd4",
+  "rawContent": "2026-09-06T09:43:32.551666+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: i915 0000:00:02.0: [drm] GT0: GUC: SLPC disabled",
+  "rawHash": "de9654f205108c63b2b9993102d74884b6b7ea35d2978b6b65ce6300379d3e18",
+  "ingestedAt": "2026-09-11T04:36:51.249Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

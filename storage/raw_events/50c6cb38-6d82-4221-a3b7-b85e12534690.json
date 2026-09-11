@@ -1,0 +1,17 @@
+{
+  "eventId": "50c6cb38-6d82-4221-a3b7-b85e12534690",
+  "rawContent": "2026-09-07T09:13:45.383078+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: MPTCP token hash table entries: 16384 (order: 7, 393216 bytes, linear)",
+  "rawHash": "b3820106eb806bcb039c62569fdad4a610e303a497684062f709863a44b3378e",
+  "ingestedAt": "2026-09-11T04:36:54.692Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

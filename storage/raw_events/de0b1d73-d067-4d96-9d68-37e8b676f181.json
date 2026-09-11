@@ -1,0 +1,16 @@
+{
+  "eventId": "de0b1d73-d067-4d96-9d68-37e8b676f181",
+  "rawContent": "2026-09-06T08:08:01.356256+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: DING: ** Message: 08:08:01.145: Connecting to org.freedesktop.Tracker3.Miner.Files",
+  "rawHash": "2c3fb8636ef0e407326afe5566bade123197fd07f17062def77a84f63328fe83",
+  "ingestedAt": "2026-09-11T04:36:50.817Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

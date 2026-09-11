@@ -1,0 +1,17 @@
+{
+  "eventId": "45aa889d-dc0b-44d4-ac27-b9b21e709c7b",
+  "rawContent": "2026-09-06T08:37:04.797923+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: apt-daily-upgrade.service: Deactivated successfully.",
+  "rawHash": "b3986744766bd0e7c7113dc9f08e67681211994a991170b647edc95754272941",
+  "ingestedAt": "2026-09-11T04:36:51.097Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

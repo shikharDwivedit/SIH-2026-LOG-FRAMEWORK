@@ -1,0 +1,17 @@
+{
+  "eventId": "110a4071-3c50-4097-bee4-662deb7883bb",
+  "rawContent": "2026-09-06T21:51:51.409355+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[2271]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.Avahi.service': Unit dbus-org.freedesktop.Avahi.service not found.",
+  "rawHash": "9b036745076d32900873de1712ae402542cad9405b3ed51bdcd4052ac1835ff0",
+  "ingestedAt": "2026-09-11T04:36:52.602Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

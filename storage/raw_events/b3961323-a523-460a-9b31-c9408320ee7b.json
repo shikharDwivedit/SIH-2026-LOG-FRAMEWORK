@@ -1,0 +1,16 @@
+{
+  "eventId": "b3961323-a523-460a-9b31-c9408320ee7b",
+  "rawContent": "2026-09-06T21:53:39.685974+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2369]: wlo1: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0",
+  "rawHash": "5f7c2712a231a7ea93e7b386eb2aaf9a481bf6db1cdff0e7a8d9a25be288bfbb",
+  "ingestedAt": "2026-09-11T04:36:53.771Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

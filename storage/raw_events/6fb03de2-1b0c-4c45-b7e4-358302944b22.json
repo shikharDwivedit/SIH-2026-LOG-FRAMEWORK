@@ -1,0 +1,16 @@
+{
+  "eventId": "6fb03de2-1b0c-4c45-b7e4-358302944b22",
+  "rawContent": "2026-09-06T08:07:41.738781+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started systemd-localed.service - Locale Service.",
+  "rawHash": "6ecfeebee9bb8774c763541fd18b0959927f3a7d5a3baea1f2ebe36f4e0b938e",
+  "ingestedAt": "2026-09-11T04:36:50.302Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

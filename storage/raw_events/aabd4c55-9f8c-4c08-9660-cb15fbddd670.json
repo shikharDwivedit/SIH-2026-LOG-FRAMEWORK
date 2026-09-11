@@ -1,0 +1,16 @@
+{
+  "eventId": "aabd4c55-9f8c-4c08-9660-cb15fbddd670",
+  "rawContent": "2026-09-06T21:51:46.307709+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...",
+  "rawHash": "8bb76b330efdb7e9bf3f326dc085fd8ef3519c4fcf204c8ee814a6f9444bdb21",
+  "ingestedAt": "2026-09-11T04:36:52.263Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

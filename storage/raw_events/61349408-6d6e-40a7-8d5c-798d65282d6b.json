@@ -1,0 +1,16 @@
+{
+  "eventId": "61349408-6d6e-40a7-8d5c-798d65282d6b",
+  "rawContent": "2026-09-06T08:07:39.196144+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: x86/fpu: Enabled xstate features 0x1a07, context size is 880 bytes, using 'compacted' format.",
+  "rawHash": "f525f8258bf42e2aa739434e58fc9d66515c2230e15b29a1c59ef8193a4eee28",
+  "ingestedAt": "2026-09-11T04:36:49.544Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "973df143-b8e4-4e01-8a5c-9b00a8e7826f",
+  "rawContent": "2026-09-06T21:51:46.301939+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting systemd-oomd.service - Userspace Out-Of-Memory (OOM) Killer...",
+  "rawHash": "44a7116bb0447644fffbae3c17031ee7d7b6e1ae4683447f722f16d4b22dc131",
+  "ingestedAt": "2026-09-11T04:36:51.638Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

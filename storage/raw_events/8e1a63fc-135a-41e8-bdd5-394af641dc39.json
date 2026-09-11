@@ -1,0 +1,16 @@
+{
+  "eventId": "8e1a63fc-135a-41e8-bdd5-394af641dc39",
+  "rawContent": "2026-09-06T08:08:00.181687+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Stopped xdg-desktop-portal.service - Portal service.",
+  "rawHash": "d0ad9e352a0eabb9915988f32da4beb15883de4278368fa79180f93c1bac7137",
+  "ingestedAt": "2026-09-11T04:36:50.778Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

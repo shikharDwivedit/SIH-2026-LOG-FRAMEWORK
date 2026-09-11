@@ -1,0 +1,17 @@
+{
+  "eventId": "a53ab03e-fd2b-4e06-83cc-3614268d6fd3",
+  "rawContent": "2026-09-06T08:07:39.198238+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Key type asymmetric registered",
+  "rawHash": "e6f38ff0390f8f6f19a5b2364d284e1e38b6bc40dce97a5ce5d6ce1879f1cfe3",
+  "ingestedAt": "2026-09-11T04:36:49.860Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

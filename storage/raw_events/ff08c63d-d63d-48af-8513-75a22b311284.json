@@ -1,0 +1,16 @@
+{
+  "eventId": "ff08c63d-d63d-48af-8513-75a22b311284",
+  "rawContent": "2026-09-06T08:07:39.953669+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Finished xdg-user-dirs.service - User folders update.",
+  "rawHash": "5a510ce688e2bf0f5fc9475537a8067f52ca887b73ee8d318760d9b04f281107",
+  "ingestedAt": "2026-09-11T04:36:50.254Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

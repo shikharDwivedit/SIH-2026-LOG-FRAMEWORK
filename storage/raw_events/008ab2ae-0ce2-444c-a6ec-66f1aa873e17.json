@@ -1,0 +1,16 @@
+{
+  "eventId": "008ab2ae-0ce2-444c-a6ec-66f1aa873e17",
+  "rawContent": "2026-09-06T21:53:43.375396+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2369]: wlo1: CTRL-EVENT-CONNECTED - Connection to be:63:52:a2:ff:44 completed [id=0 id_str=]",
+  "rawHash": "e67db67812b8193e3eb6318580483897186961c65a56eb76866f9f10ab5b8c94",
+  "ingestedAt": "2026-09-11T04:36:53.840Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

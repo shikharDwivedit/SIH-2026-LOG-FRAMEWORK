@@ -1,0 +1,16 @@
+{
+  "eventId": "3860f8bc-07c6-4467-92a0-022089c012dd",
+  "rawContent": "2026-09-06T08:07:39.199141+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: [drm] [nvidia-drm] [GPU ID 0x00000100] Loading driver",
+  "rawHash": "d963e4151a9a0c82c97890af15df55a3787a2e2048fc331344d8a19dea54545b",
+  "ingestedAt": "2026-09-11T04:36:50.025Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "6e8baf2f-713e-40be-892f-6255c26a86cb",
+  "rawContent": "2026-09-06T08:07:39.199537+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: RAPL PMU: API unit is 2^-32 Joules, 2 fixed counters, 655360 ms ovfl timer",
+  "rawHash": "f279beefb9aabe82851947d13960fdd4c47c9294e2a47cfa56b665961c7eb80b",
+  "ingestedAt": "2026-09-11T04:36:50.070Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

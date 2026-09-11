@@ -1,0 +1,17 @@
+{
+  "eventId": "c8ef8873-f55e-49ec-9408-d7193b90b9a6",
+  "rawContent": "2026-09-07T09:13:45.383845+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: EXT4-fs (nvme0n1p5): orphan cleanup on readonly fs",
+  "rawHash": "4630c294c7eceda2ebc2174c8d16930f7a9b212b3655222adf4501202b5bd676",
+  "ingestedAt": "2026-09-11T04:36:54.962Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

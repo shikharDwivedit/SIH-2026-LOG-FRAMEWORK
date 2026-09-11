@@ -1,0 +1,17 @@
+{
+  "eventId": "674e03f8-b1c9-45cd-89f5-61cc0dbc6489",
+  "rawContent": "2026-09-06T09:43:55.793489+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped logrotate.timer - Daily rotation of log files.",
+  "rawHash": "857218afba2ee7b3f6c25c06773b3d89bd615d7dc2fd224f0a9a2240b45f91ef",
+  "ingestedAt": "2026-09-11T04:36:51.506Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "6a5fb777-b935-42d3-b8a9-f10c7ef2fdac",
+  "rawContent": "2026-09-06T08:07:39.199192+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.",
+  "rawHash": "4b95d096ddc0c7f9bcbcbdc7c01f70368126ea99eafddda22e7b3be79efa7216",
+  "ingestedAt": "2026-09-11T04:36:50.028Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "605600de-c498-4f87-a91e-44334e2a005c",
+  "rawContent": "2026-09-07T09:13:45.382021+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: KHO: Failed to reserve lowmem scratch buffer",
+  "rawHash": "993a41ab6a005eb01848525231bd12584ade8ec2da0ac7deda0b918d9dccee47",
+  "ingestedAt": "2026-09-11T04:36:54.402Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

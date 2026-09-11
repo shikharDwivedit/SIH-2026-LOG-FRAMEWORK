@@ -1,0 +1,16 @@
+{
+  "eventId": "3bd88929-de0f-4934-ba17-ce88aa984b2e",
+  "rawContent": "2026-09-06T08:07:39.199228+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Reached target cryptsetup.target - Local Encrypted Volumes.",
+  "rawHash": "d29ee83bada2a242229c4538a49209e9cef8a712f7ae6db0ffb2d083294d366f",
+  "ingestedAt": "2026-09-11T04:36:50.040Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "87a12a85-dd4d-4361-8577-4839a9b23324",
+  "rawContent": "2026-09-07T09:13:46.807874+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx snapd[2167]: seclog.go:174: security logger enabled",
+  "rawHash": "c1bdba21e084085eea0b032c3060fea57eb7a2beec5d4769b26c4c844f413ca1",
+  "ingestedAt": "2026-09-11T04:36:55.258Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

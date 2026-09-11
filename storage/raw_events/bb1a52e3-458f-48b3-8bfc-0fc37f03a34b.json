@@ -1,0 +1,17 @@
+{
+  "eventId": "bb1a52e3-458f-48b3-8bfc-0fc37f03a34b",
+  "rawContent": "2026-09-06T09:43:55.742657+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: unattended-upgrades.service: Deactivated successfully.",
+  "rawHash": "99b8913aa8ccd2a4fc9837e33121d51c823e9f5293686af30b4aac845a92353e",
+  "ingestedAt": "2026-09-11T04:36:51.441Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "9e3a0374-6b29-4110-add6-cca2f6793dcd",
+  "rawContent": "2026-09-06T08:07:39.237523+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx boltd[2182]: [74b98780-002c-OMEN by HP Gaming Laptop 16] labeling device: HP OMEN by HP Gaming Laptop 16-wf (INTEL RPL+Nvidia RTX 4080)",
+  "rawHash": "db9c544714fae35b53ca6ffab6c3ef41cdbcdf6e1ac45f86becec77722d2bd5b",
+  "ingestedAt": "2026-09-11T04:36:50.191Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

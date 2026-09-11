@@ -1,0 +1,16 @@
+{
+  "eventId": "493d6e06-6da0-41e2-b328-30b7019e534e",
+  "rawContent": "2026-09-06T21:51:53.533281+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[4861]: time=\"2026-09-06T21:51:53+05:30\" level=info msg=\"It is recommended that docker daemon be restarted.\"",
+  "rawHash": "51c96ab0dafdd62e09fb124f2f23e919df24a33fef62f8bb652e5f666ff8ec9f",
+  "ingestedAt": "2026-09-11T04:36:53.016Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

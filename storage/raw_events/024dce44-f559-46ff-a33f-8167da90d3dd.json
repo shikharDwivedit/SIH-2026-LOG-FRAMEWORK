@@ -1,0 +1,16 @@
+{
+  "eventId": "024dce44-f559-46ff-a33f-8167da90d3dd",
+  "rawContent": "2026-09-07T09:13:45.384063+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI BIOS Error (bug): Attempt to CreateField of length zero (20251212/dsopcode-133)",
+  "rawHash": "6313b7bf73561ccfe251765ad990b9608feede9fb6b3dbd548346ea067154227",
+  "ingestedAt": "2026-09-11T04:36:55.045Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

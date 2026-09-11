@@ -1,0 +1,16 @@
+{
+  "eventId": "195e6254-138f-46ce-a6a1-c8e08f1d98e9",
+  "rawContent": "2026-09-06T09:43:56.089118+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped tlp.service - TLP system startup/shutdown.",
+  "rawHash": "181e59dffad00c80aeb1837388c6445ed8e0da9148d13aeaf0c714b6dd3346a9",
+  "ingestedAt": "2026-09-11T04:36:51.598Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

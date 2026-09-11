@@ -1,0 +1,17 @@
+{
+  "eventId": "5056b033-0db2-48b7-9772-276775061cb4",
+  "rawContent": "2026-09-06T08:07:39.197057+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounted proc-sys-fs-binfmt_misc.mount - Arbitrary Executable File Formats File System.",
+  "rawHash": "40effac790294da8b558b4d02df1a9c5d98600975a727446d6cf992531de45aa",
+  "ingestedAt": "2026-09-11T04:36:49.650Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

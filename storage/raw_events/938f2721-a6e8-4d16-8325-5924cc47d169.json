@@ -1,0 +1,16 @@
+{
+  "eventId": "938f2721-a6e8-4d16-8325-5924cc47d169",
+  "rawContent": "2026-09-07T09:13:45.382064+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: \tTracing variant of Tasks RCU enabled.",
+  "rawHash": "5664a0b62a8d0fd2972bd59ae0cf64c6a5484eb9e44595fab3731fd88ae23996",
+  "ingestedAt": "2026-09-11T04:36:54.413Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

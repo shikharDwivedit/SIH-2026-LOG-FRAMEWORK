@@ -1,0 +1,16 @@
+{
+  "eventId": "719f1e14-7eaf-4955-a157-0b4df3db2ea7",
+  "rawContent": "2026-09-06T09:43:55.764518+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Stopping gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor...",
+  "rawHash": "606b916af984a86ae5243082f8b9727297258aaa00bdf4588f145cd295e3abd1",
+  "ingestedAt": "2026-09-11T04:36:51.449Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "bd7f0d19-ccfe-40f7-9afa-f3a0b158332f",
+  "rawContent": "2026-09-06T08:07:39.196150+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: landlock: Up and running.",
+  "rawHash": "b5e89d9da01c640dd7b1d957c71c75742d71f9e24bd6d2cd45a585ae6b96997d",
+  "ingestedAt": "2026-09-11T04:36:49.540Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

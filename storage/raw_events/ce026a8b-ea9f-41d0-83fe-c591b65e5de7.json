@@ -1,0 +1,16 @@
+{
+  "eventId": "ce026a8b-ea9f-41d0-83fe-c591b65e5de7",
+  "rawContent": "2026-09-06T08:07:39.195073+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting systemd-journal-flush.service - Flush Journal to Persistent Storage...",
+  "rawHash": "b271c4b6b12f3f74c1c7437126a0fd1590fea72438ea5ec85de1e788afce3aee",
+  "ingestedAt": "2026-09-11T04:36:49.381Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

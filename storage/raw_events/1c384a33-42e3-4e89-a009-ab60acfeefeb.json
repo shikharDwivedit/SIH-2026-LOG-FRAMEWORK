@@ -1,0 +1,17 @@
+{
+  "eventId": "1c384a33-42e3-4e89-a009-ab60acfeefeb",
+  "rawContent": "2026-09-06T08:07:54.819419+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Listening on pipewire.socket - PipeWire Multimedia System Sockets.",
+  "rawHash": "c29604441da3beb880d2ce0e3d878a29d6774c41de17ea772ceaf5a66b0d5f31",
+  "ingestedAt": "2026-09-11T04:36:50.529Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

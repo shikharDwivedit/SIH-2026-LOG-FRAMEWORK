@@ -1,0 +1,16 @@
+{
+  "eventId": "48b58528-75a0-4045-8084-c7f1175c5eca",
+  "rawContent": "2026-09-06T09:43:34.330865+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[18994]: >                   X11 cannot support keycodes above 255.",
+  "rawHash": "9847f5c2ec81d4b18e3cfbae8aa605a220eb87db42cea2c747b505cfc7311350",
+  "ingestedAt": "2026-09-11T04:36:51.305Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "f4403927-8da5-4ac7-a8f5-8f4640224f7e",
+  "rawContent": "2026-09-06T21:51:46.307259+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Loading compiled-in module X.509 certificates",
+  "rawHash": "fbe24305f374598da0a0ba4be4074be07670b166dd6bf5bdaf5ba99948610598",
+  "ingestedAt": "2026-09-11T04:36:52.227Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

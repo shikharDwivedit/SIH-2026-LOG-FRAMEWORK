@@ -1,0 +1,17 @@
+{
+  "eventId": "60c0f20c-3e66-49df-9ae6-28ce749e6e8d",
+  "rawContent": "2026-09-06T08:07:39.200078+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Bluetooth: hci0: Waiting for device to boot",
+  "rawHash": "2ed93b9d31c394c3fcdd4f40a14404a2f1cce2f89db2006ee58c6a043e75f00a",
+  "ingestedAt": "2026-09-11T04:36:50.151Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

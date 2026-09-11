@@ -1,0 +1,16 @@
+{
+  "eventId": "760ad8b1-9423-42bf-8108-e508995505df",
+  "rawContent": "2026-09-06T21:51:53.431154+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[4672]: time=\"2026-09-06T21:51:53+05:30\" level=warning msg=\"Could not locate nvidia-imex-ctl: nvidia-imex-ctl: not found\"",
+  "rawHash": "d42f2b8cff9b337618893d8a9d238b73ad83ed3664e540902e911b3ae4587106",
+  "ingestedAt": "2026-09-11T04:36:52.997Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

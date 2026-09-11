@@ -1,0 +1,16 @@
+{
+  "eventId": "893d25ac-8275-448f-86c2-1911173eadcd",
+  "rawContent": "2026-09-06T08:07:39.195547+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: PM-Timer IO Port: 0x1808",
+  "rawHash": "bad004f0d2ba9ad59400383b573277bb4da51a44780dbf4bd5e6d66cbfdbf495",
+  "ingestedAt": "2026-09-11T04:36:49.459Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

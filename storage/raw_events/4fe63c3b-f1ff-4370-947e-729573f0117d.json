@@ -1,0 +1,17 @@
+{
+  "eventId": "4fe63c3b-f1ff-4370-947e-729573f0117d",
+  "rawContent": "2026-09-06T08:07:39.237458+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx boltd[2182]: [74b98780-002c-OMEN by HP Gaming Laptop 16] device added, status: authorized, at /sys/devices/pci0000:00/0000:00:1b.0/0000:02:00.0/0000:03:00.0/0000:04:00.0/domain0/0-0",
+  "rawHash": "eee2b6b9cae4fa6c5258b7f09bb90ec54c1f6124d0504d6df2b3804423ffe517",
+  "ingestedAt": "2026-09-11T04:36:50.188Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

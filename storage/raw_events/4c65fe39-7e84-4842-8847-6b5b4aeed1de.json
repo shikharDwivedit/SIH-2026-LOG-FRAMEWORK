@@ -1,0 +1,17 @@
+{
+  "eventId": "4c65fe39-7e84-4842-8847-6b5b4aeed1de",
+  "rawContent": "2026-09-06T08:07:53.891111+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788662273.8910] device (br-700ae45351f2): state change: prepare -> config (reason 'none', managed-type: 'external')",
+  "rawHash": "3358de0a07efd6d94f492db91d7b28c4f3768d47fa833bfe09edfa6e14486a01",
+  "ingestedAt": "2026-09-11T04:36:50.517Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

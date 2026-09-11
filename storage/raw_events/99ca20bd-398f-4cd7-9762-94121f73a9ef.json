@@ -1,0 +1,16 @@
+{
+  "eventId": "99ca20bd-398f-4cd7-9762-94121f73a9ef",
+  "rawContent": "2026-09-07T09:13:45.383328+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: sssd-pac.socket: Bound to unit sssd.service, but unit isn't active.",
+  "rawHash": "0a597e1b2ae64ade23ae752b8db5384a8896cbdf85da3ae694a7198d0b2b3461",
+  "ingestedAt": "2026-09-11T04:36:54.760Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

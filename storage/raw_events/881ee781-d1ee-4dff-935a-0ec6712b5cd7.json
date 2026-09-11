@@ -1,0 +1,16 @@
+{
+  "eventId": "881ee781-d1ee-4dff-935a-0ec6712b5cd7",
+  "rawContent": "2026-09-06T21:51:46.305964+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788711706.1907] Read config: /etc/NetworkManager/NetworkManager.conf, /usr/lib/NetworkManager/conf.d/{10-default-firewall-use-iptables.conf,20-connectivity-ubuntu.conf,no-mac-addr-change.conf}, /run/NetworkManager/conf.d/10-globally-managed-devices.conf, /etc/NetworkManager/conf.d/{10-ubuntu-fan.conf,default-wifi-powersave-on.conf}",
+  "rawHash": "fe627fae62ff73fd34496d6cca1a5065b341d0bf82cd21654fefab8886be1a36",
+  "ingestedAt": "2026-09-11T04:36:52.072Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

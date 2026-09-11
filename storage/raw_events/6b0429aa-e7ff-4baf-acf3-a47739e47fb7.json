@@ -1,0 +1,16 @@
+{
+  "eventId": "6b0429aa-e7ff-4baf-acf3-a47739e47fb7",
+  "rawContent": "2026-09-06T08:07:39.198941+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Bridge firewalling registered",
+  "rawHash": "7f18872d3d743498cfb746b67b727f88654949d45d69a9450f9dccdb85a70977",
+  "ingestedAt": "2026-09-11T04:36:49.993Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

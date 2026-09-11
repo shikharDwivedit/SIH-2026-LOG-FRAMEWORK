@@ -1,0 +1,16 @@
+{
+  "eventId": "4cf92ce0-0e18-4d03-a8a2-8efb9d626465",
+  "rawContent": "2026-09-06T21:53:35.687956+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: iwlwifi 0000:00:14.3: WFPM_UMAC_PD_NOTIFICATION: 0x20",
+  "rawHash": "9f2c88fe995eaee600c6694755c5d33906ee0a61b2d3c0adb9575af7962d593f",
+  "ingestedAt": "2026-09-11T04:36:53.728Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

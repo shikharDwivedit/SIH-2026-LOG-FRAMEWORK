@@ -1,0 +1,16 @@
+{
+  "eventId": "a30b3628-29b1-4228-b9e0-a498f2dec5e8",
+  "rawContent": "2026-09-06T09:43:52.786258+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2337]: wlo1: Added BSSID b8:50:01:6b:23:80 into ignore list, ignoring for 10 seconds",
+  "rawHash": "23f920c1f391eaa1b49d31a54040cf65ccf04f0c96ea317922d2f5eb69154310",
+  "ingestedAt": "2026-09-11T04:36:51.422Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

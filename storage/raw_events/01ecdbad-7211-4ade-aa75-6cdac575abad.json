@@ -1,0 +1,16 @@
+{
+  "eventId": "01ecdbad-7211-4ade-aa75-6cdac575abad",
+  "rawContent": "2026-09-06T08:07:39.199475+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.",
+  "rawHash": "0724c0b817e82faa26ea1a56c9b55f7fc1dc4dc4c76612dffb0dee47fd316390",
+  "ingestedAt": "2026-09-11T04:36:50.068Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

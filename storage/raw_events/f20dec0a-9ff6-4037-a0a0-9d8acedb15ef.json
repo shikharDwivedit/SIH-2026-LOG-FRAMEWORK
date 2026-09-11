@@ -1,0 +1,16 @@
+{
+  "eventId": "f20dec0a-9ff6-4037-a0a0-9d8acedb15ef",
+  "rawContent": "2026-09-06T21:57:11.552848+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: audit: type=1400 audit(1788712031.551:331): apparmor=\"DENIED\" operation=\"getattr\" class=\"file\" info=\"Failed name lookup - disconnected path\" error=-13 profile=\"unprivileged_userns\" name=\"\" pid=14053 comm=\"systemd-detect-\" requested_mask=\"r\" denied_mask=\"r\" fsuid=1000 ouid=0",
+  "rawHash": "a6a1cb9f3c704f8f4d2534d583f5b134f001a7f08b457058fe6f355b3a8c7f0d",
+  "ingestedAt": "2026-09-11T04:36:53.911Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

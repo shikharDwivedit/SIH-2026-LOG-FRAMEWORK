@@ -1,0 +1,16 @@
+{
+  "eventId": "8570a4b5-c069-43be-a878-8d76a7bd309f",
+  "rawContent": "2026-09-06T21:51:51.516951+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Starting org.gnome.SettingsDaemon.UsbProtection.service - GNOME USB protection service...",
+  "rawHash": "3c27fb50fd6bab15a61ef1dd67c794e2ffe16705eaf2cca98770396fd3ffce3d",
+  "ingestedAt": "2026-09-11T04:36:52.636Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

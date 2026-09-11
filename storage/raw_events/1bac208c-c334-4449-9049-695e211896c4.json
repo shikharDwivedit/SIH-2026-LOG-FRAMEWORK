@@ -1,0 +1,16 @@
+{
+  "eventId": "1bac208c-c334-4449-9049-695e211896c4",
+  "rawContent": "2026-09-07T09:13:45.383041+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started ua-timer.timer - Ubuntu Pro Timer for running repeated jobs.",
+  "rawHash": "2cbc7ce02c13f8dc3bfc36c6aae4c26eee7e7ee6e9d84daafcb4e8cb32a1e324",
+  "ingestedAt": "2026-09-11T04:36:54.673Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "3f6f62ec-25e7-4ec3-b6f7-65f4f0575f21",
+  "rawContent": "2026-09-07T09:13:49.818675+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2311]: <info>  [1788752629.8183] Config: added 'key_mgmt' value 'WPA-EAP FT-EAP FT-EAP-SHA384 WPA-EAP-SHA256'",
+  "rawHash": "428be98b12dee47bfda46c4cf7e5c34a51f0848aeb925d5109e6e86a664093e6",
+  "ingestedAt": "2026-09-11T04:36:55.827Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

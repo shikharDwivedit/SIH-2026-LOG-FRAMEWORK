@@ -1,0 +1,16 @@
+{
+  "eventId": "5e425a3a-6c4a-4617-8721-5f50881bd869",
+  "rawContent": "2026-09-06T21:51:46.304930+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: ssl-cert.service - Generate snakeoil SSL keypair skipped, unmet condition check ConditionPathExists=!/etc/ssl/private/ssl-cert-snakeoil.key",
+  "rawHash": "e8092b381ec2ef3bbe909be2acfaefa193d7e1b67296728b618c24277634051d",
+  "ingestedAt": "2026-09-11T04:36:51.922Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

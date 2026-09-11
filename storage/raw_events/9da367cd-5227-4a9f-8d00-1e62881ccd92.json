@@ -1,0 +1,17 @@
+{
+  "eventId": "9da367cd-5227-4a9f-8d00-1e62881ccd92",
+  "rawContent": "2026-09-06T21:51:46.304309+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Listening on uuidd.socket - UUID daemon activation socket.",
+  "rawHash": "eedaf2854d1640eeb5a09086bc0fb0dfab52465bc65823c00b737545eb22cbc3",
+  "ingestedAt": "2026-09-11T04:36:51.849Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

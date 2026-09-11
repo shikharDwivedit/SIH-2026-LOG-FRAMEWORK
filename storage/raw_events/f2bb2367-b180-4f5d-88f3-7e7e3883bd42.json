@@ -1,0 +1,16 @@
+{
+  "eventId": "f2bb2367-b180-4f5d-88f3-7e7e3883bd42",
+  "rawContent": "2026-09-06T09:29:24.376275+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2337]: wlo1: PMKSA-CACHE-ADDED b8:50:01:bf:30:31 0",
+  "rawHash": "54edec34e0d88b9b2cc46887b1044ffb1cdcd2632575fc8168b2e40d760e1014",
+  "ingestedAt": "2026-09-11T04:36:51.192Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

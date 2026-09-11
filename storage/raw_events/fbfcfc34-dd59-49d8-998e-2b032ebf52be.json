@@ -1,0 +1,17 @@
+{
+  "eventId": "fbfcfc34-dd59-49d8-998e-2b032ebf52be",
+  "rawContent": "2026-09-06T21:51:46.303947+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated",
+  "rawHash": "f10c8ba3274bfb548c003fa83cb6c4cd2ae7c3c2691abe021a4ff6d167fe9115",
+  "ingestedAt": "2026-09-11T04:36:51.817Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

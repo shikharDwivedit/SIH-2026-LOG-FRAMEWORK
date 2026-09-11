@@ -1,0 +1,17 @@
+{
+  "eventId": "e0f04ef9-0380-406e-8205-189a89207474",
+  "rawContent": "2026-09-07T09:13:45.384196+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: Topology: ABI 3:22:1 Kernel ABI 3:23:1",
+  "rawHash": "7a38f8306cd5c4a05fdda87aa6def2327b32c11ed17dac7cb734300cec27b850",
+  "ingestedAt": "2026-09-11T04:36:55.119Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

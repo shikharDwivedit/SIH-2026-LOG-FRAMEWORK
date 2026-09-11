@@ -1,0 +1,16 @@
+{
+  "eventId": "b1c735ac-71c1-4db5-a0df-83ed7abab586",
+  "rawContent": "2026-09-06T09:43:32.551562+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Freezing user space processes",
+  "rawHash": "08ae9260f3642dc59b3b3cf8e0d5fec4613a22782d7502ca8643e6e341bcb746",
+  "ingestedAt": "2026-09-11T04:36:51.245Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

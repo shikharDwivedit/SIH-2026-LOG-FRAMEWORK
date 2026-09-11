@@ -1,0 +1,16 @@
+{
+  "eventId": "1ffc68b6-adae-4fff-bc64-b85300151fb7",
+  "rawContent": "2026-09-06T08:07:39.196456+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: smp: Bringing up secondary CPUs ...",
+  "rawHash": "f9839f765c5b014068c03e8d0590214840a32abc9ba668ff97c140959f2b7bfe",
+  "ingestedAt": "2026-09-11T04:36:49.565Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

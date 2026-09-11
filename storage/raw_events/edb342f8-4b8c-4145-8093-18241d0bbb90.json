@@ -1,0 +1,16 @@
+{
+  "eventId": "edb342f8-4b8c-4145-8093-18241d0bbb90",
+  "rawContent": "2026-09-06T09:43:55.800618+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: systemd-udev-load-credentials.service: Deactivated successfully.",
+  "rawHash": "525c3cafe134c7b791b78d0e4df48c2030455c010dcbeebf4a72eefaffd645b2",
+  "ingestedAt": "2026-09-11T04:36:51.533Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

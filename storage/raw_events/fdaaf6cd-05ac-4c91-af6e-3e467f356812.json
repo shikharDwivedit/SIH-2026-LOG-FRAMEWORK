@@ -1,0 +1,16 @@
+{
+  "eventId": "fdaaf6cd-05ac-4c91-af6e-3e467f356812",
+  "rawContent": "2026-09-06T09:43:40.645490+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: DING: GNOME nautilus 50.2.2",
+  "rawHash": "e9594f6f1b8bff30105a1f0c4be55f17daa93558b93f684af42eaee9229295d6",
+  "ingestedAt": "2026-09-11T04:36:51.392Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

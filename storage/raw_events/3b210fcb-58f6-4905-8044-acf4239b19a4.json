@@ -1,0 +1,16 @@
+{
+  "eventId": "3b210fcb-58f6-4905-8044-acf4239b19a4",
+  "rawContent": "2026-09-06T21:51:46.308821+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Finished keyboard-setup.service - Set the console keyboard layout.",
+  "rawHash": "ac7537dd51b56ca503b8751190af9e3889eeb529766b46fc6e7e443c7ad3b227",
+  "ingestedAt": "2026-09-11T04:36:52.339Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

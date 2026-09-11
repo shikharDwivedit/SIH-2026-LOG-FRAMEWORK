@@ -1,0 +1,16 @@
+{
+  "eventId": "4ef351a6-6ba9-4d3e-a055-bb2246a12e2d",
+  "rawContent": "2026-09-06T09:43:56.090133+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped target multi-user.target - Multi-User System.",
+  "rawHash": "f8a6a9940ef940cc1bb0ff88885a00e1ab7ee4c797a6eeb36dc57cb0f887eb4b",
+  "ingestedAt": "2026-09-11T04:36:51.598Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

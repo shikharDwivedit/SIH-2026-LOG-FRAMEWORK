@@ -1,0 +1,17 @@
+{
+  "eventId": "cc3be607-0830-495f-88b9-a5e70728cf42",
+  "rawContent": "2026-09-07T09:13:45.383941+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Mounted sys-fs-fuse-connections.mount - FUSE Control File System.",
+  "rawHash": "64a6f71f071bf68d345eeef3943aed37775ffb811323a25baa8082edbb74824d",
+  "ingestedAt": "2026-09-11T04:36:55.003Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

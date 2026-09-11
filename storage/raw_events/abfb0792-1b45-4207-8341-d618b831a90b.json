@@ -1,0 +1,17 @@
+{
+  "eventId": "abfb0792-1b45-4207-8341-d618b831a90b",
+  "rawContent": "2026-09-06T21:51:46.303911+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: hpet: HPET dysfunctional in PC10. Force disabled.",
+  "rawHash": "e40815fa8f57a376eaafcb24992a6a8c748bdbe37096cd2d14fe610e02d3600c",
+  "ingestedAt": "2026-09-11T04:36:51.806Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

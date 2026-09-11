@@ -1,0 +1,16 @@
+{
+  "eventId": "7ad69979-0bde-4b1f-a1b8-680c8334a2ab",
+  "rawContent": "2026-09-07T09:13:45.382988+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished plymouth-read-write.service - Tell Plymouth To Write Out Runtime Data.",
+  "rawHash": "2a070e37e3630fbab4e5db5e5dc354bd6c39bd803918cbcb106d6bbbbc37c994",
+  "ingestedAt": "2026-09-11T04:36:54.652Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

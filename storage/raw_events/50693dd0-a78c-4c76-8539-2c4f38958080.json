@@ -1,0 +1,16 @@
+{
+  "eventId": "50693dd0-a78c-4c76-8539-2c4f38958080",
+  "rawContent": "2026-09-06T21:52:04.884484+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gsd-media-keys[3027]: Unable to get default source",
+  "rawHash": "4d55fbda29728a030024a5b9b1a93c86505e9e3ea23bfe694ef1c67835c4a302",
+  "ingestedAt": "2026-09-11T04:36:53.180Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

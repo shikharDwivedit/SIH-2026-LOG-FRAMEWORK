@@ -1,0 +1,16 @@
+{
+  "eventId": "08324e85-e22f-4dac-a085-1f96ef39f352",
+  "rawContent": "2026-09-06T08:15:48.718394+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Starting ubuntu-insights-upload.service - \"Upload collected and matured platform reports using Ubuntu Insights while respecting consent\"...",
+  "rawHash": "8a9f6d09513c306ef235a1be9a34489139c150a191033a122cc1622a35ac878b",
+  "ingestedAt": "2026-09-11T04:36:51.082Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

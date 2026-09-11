@@ -1,0 +1,16 @@
+{
+  "eventId": "2ad916cd-de66-49a9-b711-4e18acb5042b",
+  "rawContent": "2026-09-06T08:07:39.198485+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: usb usb3: SerialNumber: 0000:23:00.0",
+  "rawHash": "05f43fba81b82cd49ba5cf7b928ae0b95a77c605a5fb3f98a52e7ec76a4e4f82",
+  "ingestedAt": "2026-09-11T04:36:49.905Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "e79ef714-d003-487b-9c1c-c40cbfbe9b38",
+  "rawContent": "2026-09-06T08:07:41.787621+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Reached target org.gnome.SettingsDaemon.Rfkill.target - GNOME RFKill support target.",
+  "rawHash": "66be3e76b7507e30534f3de34a38a2848ae956a080aaaaf2cfe449bbb5fa600d",
+  "ingestedAt": "2026-09-11T04:36:50.315Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

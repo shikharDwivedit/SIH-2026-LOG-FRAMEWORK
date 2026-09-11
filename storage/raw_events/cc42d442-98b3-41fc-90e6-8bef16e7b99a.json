@@ -1,0 +1,16 @@
+{
+  "eventId": "cc42d442-98b3-41fc-90e6-8bef16e7b99a",
+  "rawContent": "2026-09-07T09:13:45.381478+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-resolved[647]: Negative trust anchors: home.arpa 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 170.0.0.192.in-addr.arpa 171.0.0.192.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa ipv4only.arpa resolver.arpa corp home internal intranet lan local private test",
+  "rawHash": "9bcb4c6c2989ccaff0ff13cc7726191cea45631ee8b16ccab24dd32aa9177fb6",
+  "ingestedAt": "2026-09-11T04:36:54.311Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

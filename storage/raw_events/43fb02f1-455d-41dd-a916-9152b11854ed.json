@@ -1,0 +1,16 @@
+{
+  "eventId": "43fb02f1-455d-41dd-a916-9152b11854ed",
+  "rawContent": "2026-09-06T08:07:43.680128+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Starting xdg-document-portal.service - flatpak document portal service...",
+  "rawHash": "b83fd0acc57a0ebd0f5047c7f4704853fa7cc599b86f86c919d14db077098dd2",
+  "ingestedAt": "2026-09-11T04:36:50.463Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "1f9e7af2-03ff-4ff9-9cf4-4656f8fa74ca",
+  "rawContent": "2026-09-06T21:51:46.308983+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: i915 0000:00:02.0: [drm] Finished loading DMC firmware i915/adls_dmc_ver2_01.bin (v2.1)",
+  "rawHash": "5f1b8f7aca2b2d79ea2a6f92d6d1ac150b15733541abc10be8dec933a34eb403",
+  "ingestedAt": "2026-09-11T04:36:52.370Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

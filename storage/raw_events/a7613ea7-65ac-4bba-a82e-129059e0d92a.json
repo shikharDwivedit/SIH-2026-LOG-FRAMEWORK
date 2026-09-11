@@ -1,0 +1,16 @@
+{
+  "eventId": "a7613ea7-65ac-4bba-a82e-129059e0d92a",
+  "rawContent": "2026-09-06T08:07:39.195766+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Early memory node ranges",
+  "rawHash": "96cbb75b9e052ecfec58678418b6b490c62f56da3a390ad5765d659ed054f1fa",
+  "ingestedAt": "2026-09-11T04:36:49.493Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

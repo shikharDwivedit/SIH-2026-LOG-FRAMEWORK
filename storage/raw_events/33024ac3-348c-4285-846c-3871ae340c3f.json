@@ -1,0 +1,16 @@
+{
+  "eventId": "33024ac3-348c-4285-846c-3871ae340c3f",
+  "rawContent": "2026-09-06T21:52:04.733485+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wireplumber[6518]: [0:00:26.761316881] [6665]  WARN DeviceEnumerator device_enumerator_udev.cpp:198 Failed to add device for '/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.0/media0', skipping",
+  "rawHash": "5376a179631959889c6d2dc90c425dfd2e87b43552b3e992491deec5a9de5da9",
+  "ingestedAt": "2026-09-11T04:36:53.169Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

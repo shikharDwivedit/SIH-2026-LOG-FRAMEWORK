@@ -1,0 +1,16 @@
+{
+  "eventId": "6a258a0b-7139-4951-aca0-ebd3ae1c5e9d",
+  "rawContent": "2026-09-06T08:07:39.196941+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx apparmor.systemd[1645]: Restarting AppArmor",
+  "rawHash": "4a13cc5a992ada9916026447d29925258978af9250ca406cc3df00279bc1d310",
+  "ingestedAt": "2026-09-11T04:36:49.636Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

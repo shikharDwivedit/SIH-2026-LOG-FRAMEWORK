@@ -1,0 +1,16 @@
+{
+  "eventId": "57a729cb-dcab-41d4-b699-b2a176b9ea5b",
+  "rawContent": "2026-09-06T21:52:04.447198+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Starting gpg-agent.socket - GnuPG cryptographic agent and passphrase cache...",
+  "rawHash": "0924be3f39a590e95e86e60753c8331e13d466ba1f505f4aeda846131aec484a",
+  "ingestedAt": "2026-09-11T04:36:53.144Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

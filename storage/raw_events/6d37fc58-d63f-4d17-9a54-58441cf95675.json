@@ -1,0 +1,16 @@
+{
+  "eventId": "6d37fc58-d63f-4d17-9a54-58441cf95675",
+  "rawContent": "2026-09-06T09:43:52.881962+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2337]: nl80211: deinit ifname=wlo1 disabled_11b_rates=0",
+  "rawHash": "53a45d005a4cd2c9cbb0a5ff6c8dd851c8dfec91825e681ce17853b654dece80",
+  "ingestedAt": "2026-09-11T04:36:51.441Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

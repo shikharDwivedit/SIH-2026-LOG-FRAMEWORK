@@ -1,0 +1,16 @@
+{
+  "eventId": "173eba15-ec1e-4671-9be0-db85c091d48c",
+  "rawContent": "2026-09-06T21:51:46.303884+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished systemd-tmpfiles-setup.service - Create System Files and Directories.",
+  "rawHash": "3d37deedba174695764a64532f6e3029df935e5c4e4cfd3f9c3b26e9dbdedada",
+  "ingestedAt": "2026-09-11T04:36:51.809Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

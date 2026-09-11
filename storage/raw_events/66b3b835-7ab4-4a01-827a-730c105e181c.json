@@ -1,0 +1,17 @@
+{
+  "eventId": "66b3b835-7ab4-4a01-827a-730c105e181c",
+  "rawContent": "2026-09-07T09:13:45.383563+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx chronyd[2265]: chronyd version 4.8 starting (+CMDMON +REFCLOCK +RTC +PRIVDROP +SCFILTER +SIGND +NTS +SECHASH +IPV6 -DEBUG)",
+  "rawHash": "c24574b1f72c6522db4a15f934fc10fa293fa4390a2b2858c2abebaf3b4a523c",
+  "ingestedAt": "2026-09-11T04:36:54.876Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

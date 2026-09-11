@@ -1,0 +1,17 @@
+{
+  "eventId": "abe2a434-220f-476f-8992-ee2d26f855f2",
+  "rawContent": "2026-09-07T09:13:45.383373+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: acpi LNXTHERM:01: registered as thermal_zone1",
+  "rawHash": "bb66393304060c3d44cabaeccaabb03d308e2dddd77731ec88685c4fc0e59481",
+  "ingestedAt": "2026-09-11T04:36:54.781Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

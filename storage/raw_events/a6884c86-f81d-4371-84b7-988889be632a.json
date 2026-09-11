@@ -1,0 +1,16 @@
+{
+  "eventId": "a6884c86-f81d-4371-84b7-988889be632a",
+  "rawContent": "2026-09-06T08:08:00.189630+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Stopped target org.gnome.SettingsDaemon.MediaKeys.target - GNOME keyboard shortcuts target.",
+  "rawHash": "1955661a84f06beffbf700eef5a688b24d8a1c7f3f11a68e6c1514ee5e60c2bf",
+  "ingestedAt": "2026-09-11T04:36:50.785Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

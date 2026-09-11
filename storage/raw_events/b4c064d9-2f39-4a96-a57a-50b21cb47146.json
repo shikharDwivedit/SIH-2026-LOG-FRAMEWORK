@@ -1,0 +1,16 @@
+{
+  "eventId": "b4c064d9-2f39-4a96-a57a-50b21cb47146",
+  "rawContent": "2026-09-06T09:43:55.972682+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: ../../../gobject/gsignal.c:2723: instance '0x5d85de17f8e0' has no handler with id '312834'",
+  "rawHash": "bf6acceee3e472a0b65ad7a87c473bc866ea1ae9a9ad1f9b70c9dfce3c664e71",
+  "ingestedAt": "2026-09-11T04:36:51.591Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "2a622d8d-3f0a-4209-8b53-8aefcc9aaced",
+  "rawContent": "2026-09-06T22:31:33.563524+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: anacron.service: Deactivated successfully.",
+  "rawHash": "d564f20729b7c7f420d1ddc505fbf6e3f865d9f4e1e5c84f919329445efd675d",
+  "ingestedAt": "2026-09-11T04:36:54.003Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

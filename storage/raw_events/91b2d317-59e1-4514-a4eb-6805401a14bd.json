@@ -1,0 +1,16 @@
+{
+  "eventId": "91b2d317-59e1-4514-a4eb-6805401a14bd",
+  "rawContent": "2026-09-06T21:51:46.309015+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI Error: Aborting method \\_SB.WMID.WQBC due to previous error (AE_AML_OPERAND_VALUE) (20251212/psparse-529)",
+  "rawHash": "d0c9e7fc1c31bd2135f978c061683a24b9e3dc57eccfacc8596762f345c46acf",
+  "ingestedAt": "2026-09-11T04:36:52.380Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

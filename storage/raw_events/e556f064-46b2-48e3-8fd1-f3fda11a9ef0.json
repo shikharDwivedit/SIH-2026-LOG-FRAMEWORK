@@ -1,0 +1,16 @@
+{
+  "eventId": "e556f064-46b2-48e3-8fd1-f3fda11a9ef0",
+  "rawContent": "2026-09-06T09:43:38.311056+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788668018.3107] device (wlo1): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network \"VITAP-HOSTEL\"",
+  "rawHash": "232fe406198cd3ebf7c8330faeb2f01ed2256d27c74edbf77bb9d54aec4a925b",
+  "ingestedAt": "2026-09-11T04:36:51.362Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

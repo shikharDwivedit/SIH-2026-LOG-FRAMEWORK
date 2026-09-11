@@ -1,0 +1,17 @@
+{
+  "eventId": "486d7760-85c8-4679-b4e7-5364ec4f2e29",
+  "rawContent": "2026-09-06T21:52:09.964341+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[6504]: [session uid=1000 pid=6504 pidfd=5] Activating via systemd: service name='org.gtk.vfs.Metadata' unit='gvfs-metadata.service' requested by ':1.19' (uid=1000 pid=7084 comm=\"/usr/bin/gnome-shell --mode=ubuntu\" label=\"unconfined\")",
+  "rawHash": "0f843158711cc9d76cc6f7c7d56b47601501dc3d70153383f659c2bab4d26ccd",
+  "ingestedAt": "2026-09-11T04:36:53.461Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

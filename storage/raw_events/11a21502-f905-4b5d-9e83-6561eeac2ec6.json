@@ -1,0 +1,17 @@
+{
+  "eventId": "11a21502-f905-4b5d-9e83-6561eeac2ec6",
+  "rawContent": "2026-09-06T08:07:39.200081+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Bluetooth: hci0: Found Intel DDC parameters: intel/ibt-1040-0041.ddc",
+  "rawHash": "75ca898504cf90952bd4e58e04a56cf982210e803ca4bf56c8eb4edb54916fa7",
+  "ingestedAt": "2026-09-11T04:36:50.151Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

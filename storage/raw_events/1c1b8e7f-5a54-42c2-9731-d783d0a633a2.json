@@ -1,0 +1,16 @@
+{
+  "eventId": "1c1b8e7f-5a54-42c2-9731-d783d0a633a2",
+  "rawContent": "2026-09-07T09:13:46.015648+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx unattended-upgrade-shutdown[2436]: /usr/share/unattended-upgrades/unattended-upgrade-shutdown:250: PyGIDeprecationWarning: GLib.unix_signal_add is deprecated; use GLibUnix.signal_add instead",
+  "rawHash": "6adc6f23c34bdfda8f3a21c7a34ab5f1e3d81d4d743b250077329bfba449ab79",
+  "ingestedAt": "2026-09-11T04:36:55.208Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

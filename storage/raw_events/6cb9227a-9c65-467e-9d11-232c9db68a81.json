@@ -1,0 +1,16 @@
+{
+  "eventId": "6cb9227a-9c65-467e-9d11-232c9db68a81",
+  "rawContent": "2026-09-06T21:51:46.306792+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: input: Power Button as /devices/platform/PNP0C0C:00/input/input1",
+  "rawHash": "5874f90780046696636d062de1ee5d8c5507647c84805792e28877c1ec14bb28",
+  "ingestedAt": "2026-09-11T04:36:52.172Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

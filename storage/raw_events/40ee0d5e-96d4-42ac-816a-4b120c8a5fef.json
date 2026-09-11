@@ -1,0 +1,16 @@
+{
+  "eventId": "40ee0d5e-96d4-42ac-816a-4b120c8a5fef",
+  "rawContent": "2026-09-06T21:51:46.304127+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: AppArmor: AppArmor initialized",
+  "rawHash": "55c01d5faac231a2171e6660c0dfe73b6833376d61922ca6fc85f282d02c2b34",
+  "ingestedAt": "2026-09-11T04:36:51.841Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

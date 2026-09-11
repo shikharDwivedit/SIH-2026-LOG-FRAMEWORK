@@ -1,0 +1,16 @@
+{
+  "eventId": "5053dd2b-c4a2-40b6-aa07-34eaab2082cb",
+  "rawContent": "2026-09-06T08:08:00.115123+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[9231]: > Warning:          Virtual modifier ScrollLock multiply defined",
+  "rawHash": "a5cda04ee1989d57ce3fe0fb938637e9c03096b7200f68e993992294ace5e34a",
+  "ingestedAt": "2026-09-11T04:36:50.761Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

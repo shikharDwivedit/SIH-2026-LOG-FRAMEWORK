@@ -1,0 +1,16 @@
+{
+  "eventId": "83283334-9784-4447-8e70-5154384b0c83",
+  "rawContent": "2026-09-06T08:07:55.592254+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Reached target gnome-session-manager.target - GNOME Session Manager is ready.",
+  "rawHash": "7f9791a3e8d8adeacd4746116228f21fb66dfb9d533936809f5747edfe991c75",
+  "ingestedAt": "2026-09-11T04:36:50.595Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

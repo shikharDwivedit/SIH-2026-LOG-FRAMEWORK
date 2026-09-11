@@ -1,0 +1,16 @@
+{
+  "eventId": "34b0151b-ec98-47bd-bd73-6738813b9d14",
+  "rawContent": "2026-09-06T21:51:53.870843+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[4981]: > Warning:          Virtual modifier Hyper multiply defined",
+  "rawHash": "f4a0edac0cc8ca9892a08a2adcb43fb1890a762033845e2104dc76d683327804",
+  "ingestedAt": "2026-09-11T04:36:53.025Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

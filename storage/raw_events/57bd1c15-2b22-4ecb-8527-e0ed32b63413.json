@@ -1,0 +1,17 @@
+{
+  "eventId": "57bd1c15-2b22-4ecb-8527-e0ed32b63413",
+  "rawContent": "2026-09-07T09:13:45.381398+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished systemd-random-seed.service - Load/Save OS Random Seed.",
+  "rawHash": "3e75ff798ce01f408d3c0467d4dd17c06199826c0153de34a065a7e6f2b94644",
+  "ingestedAt": "2026-09-11T04:36:54.282Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

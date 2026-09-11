@@ -1,0 +1,17 @@
+{
+  "eventId": "9e540998-d18d-4896-aa32-e135261d6686",
+  "rawContent": "2026-09-06T09:43:34.812113+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[2192]: [system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service' requested by ':1.82' (uid=1000 pid=7881 comm=\"/usr/bin/gnome-shell --mode=ubuntu\" label=\"unconfined\")",
+  "rawHash": "d563e0f7565042f958fbdddb00d5bb3988f37947b7d524d8067f6ed12f4221f1",
+  "ingestedAt": "2026-09-11T04:36:51.300Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "076dec94-9ffb-40bd-8614-7475d6835e60",
+  "rawContent": "2026-09-07T09:13:46.703983+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2551]: Reached target graphical-session-pre.target - Session services which should run early before the graphical session is brought up.",
+  "rawHash": "6c044ffd7ecfdaf2739e0350fa308c944a830ed59a9848b9fc41a6689901d2ce",
+  "ingestedAt": "2026-09-11T04:36:55.256Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

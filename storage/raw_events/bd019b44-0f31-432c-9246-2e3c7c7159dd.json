@@ -1,0 +1,16 @@
+{
+  "eventId": "bd019b44-0f31-432c-9246-2e3c7c7159dd",
+  "rawContent": "2026-09-06T09:01:44.378870+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Can't update stage views actor dashtodockBox [StBoxLayout] is on because it needs an allocation.",
+  "rawHash": "5d4aec8d4b169b599e0aee726b7f612ee3862890189b5d2f70bf4391f8f5ae97",
+  "ingestedAt": "2026-09-11T04:36:51.151Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

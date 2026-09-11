@@ -1,0 +1,16 @@
+{
+  "eventId": "085a29a2-66db-474b-a741-3c58ad047daf",
+  "rawContent": "2026-09-07T09:13:45.382590+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: PCI: Using host bridge windows from ACPI; if necessary, use \"pci=nocrs\" and report a bug",
+  "rawHash": "a07225ccf04487def1d37775e02bca86175de7011649196fd3c1affcaef69e2e",
+  "ingestedAt": "2026-09-11T04:36:54.496Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

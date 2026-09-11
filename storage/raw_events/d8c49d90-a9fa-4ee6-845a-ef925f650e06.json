@@ -1,0 +1,16 @@
+{
+  "eventId": "d8c49d90-a9fa-4ee6-845a-ef925f650e06",
+  "rawContent": "2026-09-07T09:13:49.819344+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2311]: <info>  [1788752629.8188] Config: added 'proactive_key_caching' value '1'",
+  "rawHash": "334de98283127504309f5f2cc53c72f7d84091b890773e44b76ed57e27f9a725",
+  "ingestedAt": "2026-09-11T04:36:55.829Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

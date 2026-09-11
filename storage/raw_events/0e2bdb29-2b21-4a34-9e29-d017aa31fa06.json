@@ -1,0 +1,16 @@
+{
+  "eventId": "0e2bdb29-2b21-4a34-9e29-d017aa31fa06",
+  "rawContent": "2026-09-07T09:13:49.720440+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gsd-xsettings[4892]: Failed to get current UI scaling factor: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name \"org.gnome.Mutter.X11\" does not exist",
+  "rawHash": "f0a26049905b4608a001bea33b8ad3a259146333078cc154b56035090952ae71",
+  "ingestedAt": "2026-09-11T04:36:55.810Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

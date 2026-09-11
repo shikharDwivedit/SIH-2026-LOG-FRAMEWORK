@@ -1,0 +1,16 @@
+{
+  "eventId": "9d981854-93bc-404f-92d5-41207b3ce1c6",
+  "rawContent": "2026-09-06T21:51:46.308195+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: usb 1-14: New USB device found, idVendor=8087, idProduct=0033, bcdDevice= 0.00",
+  "rawHash": "54cd4b77f44f5e15b65f605e446bbf7409b4e11a7056f716e879cea886f0a91e",
+  "ingestedAt": "2026-09-11T04:36:52.305Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

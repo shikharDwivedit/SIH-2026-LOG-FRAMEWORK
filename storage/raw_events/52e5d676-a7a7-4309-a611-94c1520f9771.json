@@ -1,0 +1,17 @@
+{
+  "eventId": "52e5d676-a7a7-4309-a611-94c1520f9771",
+  "rawContent": "2026-09-06T08:07:39.196993+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: pci 0000:00:0a.0: enabling Extended Tags",
+  "rawHash": "3cf7449a7c504078074e4f2182297aa88f8103ac46eac25274dcc30c7a22b294",
+  "ingestedAt": "2026-09-11T04:36:49.638Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

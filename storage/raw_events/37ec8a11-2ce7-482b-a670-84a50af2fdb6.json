@@ -1,0 +1,16 @@
+{
+  "eventId": "37ec8a11-2ce7-482b-a670-84a50af2fdb6",
+  "rawContent": "2026-09-07T09:13:45.383155+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting dpkg-db-backup.service - Daily dpkg database backup service...",
+  "rawHash": "bc9d52bfa711ee7956710885f50e9c529faec4b23571eff6155e28b79afb68c3",
+  "ingestedAt": "2026-09-11T04:36:54.730Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

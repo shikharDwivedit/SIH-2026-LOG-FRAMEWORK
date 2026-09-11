@@ -1,0 +1,17 @@
+{
+  "eventId": "5c962c30-537d-49bc-aa0c-9e3fcbc6e84c",
+  "rawContent": "2026-09-06T23:30:14.691492+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788717614.6911] device (wlo1): ip:dhcp4: restarting",
+  "rawHash": "6d66c3d4dedd6c8fbadfb22df0667222963a543210800ac4963ad1ec4791840b",
+  "ingestedAt": "2026-09-11T04:36:54.096Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "a6f2f715-6c70-4495-bbba-f0d0db18d55b",
+  "rawContent": "2026-09-06T21:51:46.309146+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Initialized Arguments for Method [WHCM]:  (2 arguments defined for method invocation)",
+  "rawHash": "b29e6e64a978a8959cfdd42375cf1012aee4d43c87c2ea0647830a68c217f55f",
+  "ingestedAt": "2026-09-11T04:36:52.389Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

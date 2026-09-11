@@ -1,0 +1,16 @@
+{
+  "eventId": "ea9b7c96-94ba-460d-a7a3-3d45052e416d",
+  "rawContent": "2026-09-07T09:13:46.401182+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2551]: Started mpris-proxy.service - Bluetooth mpris proxy.",
+  "rawHash": "53fa7d9d45f89ec66494c0ce8777317fe77baba5fc556de5b4c17d8466ab4160",
+  "ingestedAt": "2026-09-11T04:36:55.243Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

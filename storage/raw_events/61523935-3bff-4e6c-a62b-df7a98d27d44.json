@@ -1,0 +1,16 @@
+{
+  "eventId": "61523935-3bff-4e6c-a62b-df7a98d27d44",
+  "rawContent": "2026-09-06T09:43:56.026898+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Attempting to call back into JSAPI during the sweeping phase of GC. This is most likely caused by not destroying a Clutter actor or Gtk+ widget with ::destroy signals connected, but can also be caused by using the destroy(), dispose(), or remove() vfuncs. Because it would crash the application, it has been blocked and the JS callback not invoked.#012== Stack trace for context 0x5d85dc0bf390 ==#012The offending signal was destroy on StWidget 0x5d85e32f0540.",
+  "rawHash": "c0ec02f70d12fd1aa0812f9d153d5ad284cd537c88f27509c6f5cea4dfde8f2b",
+  "ingestedAt": "2026-09-11T04:36:51.596Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

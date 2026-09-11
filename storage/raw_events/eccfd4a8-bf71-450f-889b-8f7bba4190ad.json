@@ -1,0 +1,16 @@
+{
+  "eventId": "eccfd4a8-bf71-450f-889b-8f7bba4190ad",
+  "rawContent": "2026-09-06T21:52:12.495601+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7084]: Received notification for window. 0 notifications remaining.",
+  "rawHash": "19d246de7f8e50cf3f54324c7ae246d56b09053d48ab17e7ef9084cb78a5d2e4",
+  "ingestedAt": "2026-09-11T04:36:53.613Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

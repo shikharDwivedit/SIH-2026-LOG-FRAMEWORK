@@ -1,0 +1,16 @@
+{
+  "eventId": "b8cba794-573e-428e-82a9-08354eb40420",
+  "rawContent": "2026-09-06T09:43:55.790351+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Stopped target gnome-session-services.target - GNOME session services.",
+  "rawHash": "eda8e83370fb18c90579375f668b4c601a62db2306183b5df090c576811d318a",
+  "ingestedAt": "2026-09-11T04:36:51.487Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

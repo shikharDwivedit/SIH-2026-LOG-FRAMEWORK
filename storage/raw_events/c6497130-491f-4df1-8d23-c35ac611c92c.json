@@ -1,0 +1,16 @@
+{
+  "eventId": "c6497130-491f-4df1-8d23-c35ac611c92c",
+  "rawContent": "2026-09-07T09:13:45.383022+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started fstrim.timer - Discard unused filesystem blocks once a week.",
+  "rawHash": "6dcf9ef736b3045dbdeabec095d4078db1c46d5d1a3244dc437ba74e05458edc",
+  "ingestedAt": "2026-09-11T04:36:54.668Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

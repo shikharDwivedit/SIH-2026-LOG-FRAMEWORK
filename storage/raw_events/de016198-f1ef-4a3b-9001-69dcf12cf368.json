@@ -1,0 +1,16 @@
+{
+  "eventId": "de016198-f1ef-4a3b-9001-69dcf12cf368",
+  "rawContent": "2026-09-07T09:13:45.383496+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: NET: Registered PF_INET6 protocol family",
+  "rawHash": "f6cbb674abcc63bbcd3537291c1fd7919cba1f0edf256f78a6bbc7731fdcb395",
+  "ingestedAt": "2026-09-11T04:36:54.844Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "fa14e6dd-b50e-4bc0-acf2-7c717e56b1c6",
+  "rawContent": "2026-09-06T08:07:39.198111+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Dependency failed for sssd-pam.socket - SSSD PAM Service responder socket.",
+  "rawHash": "cbad9b8483018e4b9dd9afd98892d266f7e98914fce7f93dfce6bd92eea81ecf",
+  "ingestedAt": "2026-09-11T04:36:49.838Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

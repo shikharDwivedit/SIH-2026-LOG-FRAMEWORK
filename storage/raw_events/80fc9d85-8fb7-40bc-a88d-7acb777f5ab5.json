@@ -1,0 +1,16 @@
+{
+  "eventId": "80fc9d85-8fb7-40bc-a88d-7acb777f5ab5",
+  "rawContent": "2026-09-06T08:07:39.208051+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started systemd-hostnamed.service - Hostname Service.",
+  "rawHash": "fdf9045fdeafcd0d2fcf977499fe23697b6a8102ad783624a850f356b8869466",
+  "ingestedAt": "2026-09-11T04:36:50.168Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

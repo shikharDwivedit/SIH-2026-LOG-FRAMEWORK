@@ -1,0 +1,16 @@
+{
+  "eventId": "1e35e081-06ce-4399-9217-ad6e22a1908c",
+  "rawContent": "2026-09-06T08:42:37.763424+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished NetworkManager-wait-online.service - Network Manager Wait Online.",
+  "rawHash": "be4daf971b7958062895cfe81b2d1340a37ca21dabc710c2515e04d62bec6f05",
+  "ingestedAt": "2026-09-11T04:36:51.100Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

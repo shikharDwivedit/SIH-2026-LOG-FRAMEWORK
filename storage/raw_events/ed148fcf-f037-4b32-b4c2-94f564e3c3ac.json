@@ -1,0 +1,17 @@
+{
+  "eventId": "ed148fcf-f037-4b32-b4c2-94f564e3c3ac",
+  "rawContent": "2026-09-06T08:07:39.883423+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[2192]: [system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service' requested by ':1.23' (uid=60578 pid=2604 comm=\"/usr/bin/pipewire\" label=\"unconfined\")",
+  "rawHash": "7dfb8c0473ba0aea4c91e5ba64cbf7d9dbb086c91eee75a56ee54890fd814bc8",
+  "ingestedAt": "2026-09-11T04:36:50.233Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

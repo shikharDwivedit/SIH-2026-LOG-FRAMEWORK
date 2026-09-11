@@ -1,0 +1,16 @@
+{
+  "eventId": "edb401e8-7336-4590-84ef-a1fe344413c4",
+  "rawContent": "2026-09-06T21:51:46.540662+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788711706.5404] device (wlo1): driver supports Access Point (AP) mode",
+  "rawHash": "9c99c83126bd2b4bab8a151a9381e10651e204e612f08bd12d0ffd1f175cb38e",
+  "ingestedAt": "2026-09-11T04:36:52.517Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

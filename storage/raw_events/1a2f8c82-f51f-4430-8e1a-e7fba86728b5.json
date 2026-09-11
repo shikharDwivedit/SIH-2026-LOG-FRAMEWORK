@@ -1,0 +1,17 @@
+{
+  "eventId": "1a2f8c82-f51f-4430-8e1a-e7fba86728b5",
+  "rawContent": "2026-09-06T09:43:40.867034+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Can't update stage views actor bms-dash-blurred-widget [StWidget] is on because it needs an allocation.",
+  "rawHash": "3d2be9a4d3f59b9adf23a1d855504fbdfbf8444c1a62a6b94e9b26cf63b00164",
+  "ingestedAt": "2026-09-11T04:36:51.414Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

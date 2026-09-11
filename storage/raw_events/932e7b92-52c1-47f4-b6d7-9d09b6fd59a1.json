@@ -1,0 +1,16 @@
+{
+  "eventId": "932e7b92-52c1-47f4-b6d7-9d09b6fd59a1",
+  "rawContent": "2026-09-06T08:07:39.929697+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Started ssh-agent.service - OpenSSH Agent.",
+  "rawHash": "c2fcf5932239ff182d55fd4e2dc30f13d41f9fcc0c56d0bcbe74f210dbca5048",
+  "ingestedAt": "2026-09-11T04:36:50.250Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

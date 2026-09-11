@@ -1,0 +1,16 @@
+{
+  "eventId": "d5decca5-2146-47c6-8cda-b5bf0b20924d",
+  "rawContent": "2026-09-06T21:51:46.307790+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: wmi_bus wmi_bus-PNP0C14:00: [Firmware Bug]: WQ00 data block query control method not found",
+  "rawHash": "64fd9731b3e401b8a0c7b22b216683669c455707fed9f11bca78b6bf29e3267c",
+  "ingestedAt": "2026-09-11T04:36:52.277Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

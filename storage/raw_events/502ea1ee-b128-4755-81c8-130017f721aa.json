@@ -1,0 +1,17 @@
+{
+  "eventId": "502ea1ee-b128-4755-81c8-130017f721aa",
+  "rawContent": "2026-09-07T09:13:45.384148+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: usbcore: registered new interface driver btusb",
+  "rawHash": "bed6c8ba2e9a14427c546cd6849899a314004ef1bfe9e55fa159fe41d6f3fe07",
+  "ingestedAt": "2026-09-11T04:36:55.075Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

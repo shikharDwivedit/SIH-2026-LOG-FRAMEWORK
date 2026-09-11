@@ -1,0 +1,17 @@
+{
+  "eventId": "32288291-a5b5-44d9-9445-3a689e035243",
+  "rawContent": "2026-09-07T09:13:45.381372+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: DMI: HP OMEN by HP Gaming Laptop 16-wf0xxx/8BAA, BIOS F.29 11/07/2025",
+  "rawHash": "fe2ce1bf46f6df211b2e5c532a490e1a48f0d348e69b43c8366f341225156bfa",
+  "ingestedAt": "2026-09-11T04:36:54.268Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

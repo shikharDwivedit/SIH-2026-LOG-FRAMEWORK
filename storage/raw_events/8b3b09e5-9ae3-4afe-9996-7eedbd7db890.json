@@ -1,0 +1,16 @@
+{
+  "eventId": "8b3b09e5-9ae3-4afe-9996-7eedbd7db890",
+  "rawContent": "2026-09-06T09:43:55.770566+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Owner of volume monitor org.gtk.vfs.MTPVolumeMonitor disconnected from the bus; removing drives/volumes/mounts",
+  "rawHash": "ae2fa5f18a2cf5508e184eac1807c262768e4aa72522c60aa1ae096601a51862",
+  "ingestedAt": "2026-09-11T04:36:51.456Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

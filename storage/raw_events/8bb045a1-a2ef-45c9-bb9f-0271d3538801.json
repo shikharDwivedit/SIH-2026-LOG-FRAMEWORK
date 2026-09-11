@@ -1,0 +1,16 @@
+{
+  "eventId": "8bb045a1-a2ef-45c9-bb9f-0271d3538801",
+  "rawContent": "2026-09-06T21:52:05.047817+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: gnome-initial-setup-copy-worker.service - GNOME Initial Setup Copy Worker skipped, unmet condition check ConditionPathExists=!/home/shikhar/.config/gnome-initial-setup-done",
+  "rawHash": "d77d8cae7f084ce6e30692b175a5051e49be04c40ad6439cfdc53faa7eb1aa43",
+  "ingestedAt": "2026-09-11T04:36:53.183Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

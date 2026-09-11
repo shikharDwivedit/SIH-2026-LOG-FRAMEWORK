@@ -1,0 +1,17 @@
+{
+  "eventId": "bd2a7bf7-4def-43e3-9b71-7e9d5ceb4529",
+  "rawContent": "2026-09-06T08:07:39.198910+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: lp: driver loaded but no devices found",
+  "rawHash": "6769b0485dd922b4bf3c24ced18607f6c77dd9c9eb48d89426423114c5ac1b7e",
+  "ingestedAt": "2026-09-11T04:36:49.978Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

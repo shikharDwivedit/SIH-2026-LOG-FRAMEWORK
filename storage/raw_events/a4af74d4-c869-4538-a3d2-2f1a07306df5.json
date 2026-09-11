@@ -1,0 +1,16 @@
+{
+  "eventId": "a4af74d4-c869-4538-a3d2-2f1a07306df5",
+  "rawContent": "2026-09-07T09:13:49.674860+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[4891]: The XKEYBOARD keymap compiler (xkbcomp) reports:",
+  "rawHash": "88d861522f68f04000a3f91d6723f7f4a2401b8a27e6ba488f25de2ef77b0840",
+  "ingestedAt": "2026-09-11T04:36:55.805Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

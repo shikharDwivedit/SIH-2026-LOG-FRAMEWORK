@@ -1,0 +1,16 @@
+{
+  "eventId": "0c3feddd-1e2d-464a-b7f7-ee416f59af98",
+  "rawContent": "2026-09-06T08:07:39.197540+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: VFS: Disk quotas dquot_6.6.0",
+  "rawHash": "84cae38bf53cf94d3e7396abae8a096a17d3165e644247b8e7583592648cff95",
+  "ingestedAt": "2026-09-11T04:36:49.746Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

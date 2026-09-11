@@ -1,0 +1,16 @@
+{
+  "eventId": "b4e419c8-f683-4014-92f6-947e0d9995f7",
+  "rawContent": "2026-09-06T21:52:04.443524+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Created slice session.slice - User Core Session Slice.",
+  "rawHash": "664c96debca9304847bd9eb6a836034e4e638b08349008cf94b45074ad5468e7",
+  "ingestedAt": "2026-09-11T04:36:53.137Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

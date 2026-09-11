@@ -1,0 +1,17 @@
+{
+  "eventId": "b5ec0318-4c75-40fc-bfb8-e937fe6fd5fa",
+  "rawContent": "2026-09-07T09:13:45.384162+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: usbcore: registered new interface driver uvcvideo",
+  "rawHash": "1846fde6e29009d45d9f98aa108d7a1bf73bf900863f5e261760fd7badb5c756",
+  "ingestedAt": "2026-09-11T04:36:55.119Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

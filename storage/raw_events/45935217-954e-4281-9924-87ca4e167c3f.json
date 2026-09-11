@@ -1,0 +1,17 @@
+{
+  "eventId": "45935217-954e-4281-9924-87ca4e167c3f",
+  "rawContent": "2026-09-06T08:07:39.199578+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: spi-nor spi1.0: supply vcc not found, using dummy regulator",
+  "rawHash": "8e828dcc5324b32c760a19ceef9ab93887b7ad8ed5205b6e06c9601914c6de4f",
+  "ingestedAt": "2026-09-11T04:36:50.081Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

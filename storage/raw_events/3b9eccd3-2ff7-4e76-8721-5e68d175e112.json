@@ -1,0 +1,16 @@
+{
+  "eventId": "3b9eccd3-2ff7-4e76-8721-5e68d175e112",
+  "rawContent": "2026-09-06T08:07:39.196544+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounted snap-gtk\\x2dcommon\\x2dthemes-1535.mount - Mount unit for gtk-common-themes, revision 1535.",
+  "rawHash": "a541b15cbe2a32f99b011fa8ffc41077a02213c247fd6b6718d6a4b156ad89a2",
+  "ingestedAt": "2026-09-11T04:36:49.574Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

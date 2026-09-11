@@ -1,0 +1,16 @@
+{
+  "eventId": "76869e3b-7cc9-4ca1-af48-ffc566d1c87a",
+  "rawContent": "2026-09-07T09:13:48.443858+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[2673]: Error looking up permission: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for geolocation",
+  "rawHash": "7f22139621f1d79af8fe2a5d86bae4f4c56de08db62dd6095ac769c631b91e25",
+  "ingestedAt": "2026-09-11T04:36:55.781Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

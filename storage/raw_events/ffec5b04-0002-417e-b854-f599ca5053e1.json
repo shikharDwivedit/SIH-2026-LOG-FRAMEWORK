@@ -1,0 +1,16 @@
+{
+  "eventId": "ffec5b04-0002-417e-b854-f599ca5053e1",
+  "rawContent": "2026-09-07T09:13:45.383846+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: nvidia-modeset: nvidia-modeset: ACPI reported no NVIDIA native backlight available; attempting to use ACPI backlight.",
+  "rawHash": "4d087973b867afb01030286c0a7f1ab805a7c349b2ad81f6d1e7062271fe30cd",
+  "ingestedAt": "2026-09-11T04:36:54.978Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

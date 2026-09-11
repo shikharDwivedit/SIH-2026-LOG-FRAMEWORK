@@ -1,0 +1,17 @@
+{
+  "eventId": "1acfecdd-20ec-4b74-8d13-4ab08c5c8efe",
+  "rawContent": "2026-09-06T09:43:38.514479+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788668018.5142] policy: set 'VITAP-HOSTEL' (wlo1) as default for IPv4 routing and DNS",
+  "rawHash": "60f79b8114fab2385d4fe89f18b439394193cbddba09b59008c592b104f4b463",
+  "ingestedAt": "2026-09-11T04:36:51.360Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

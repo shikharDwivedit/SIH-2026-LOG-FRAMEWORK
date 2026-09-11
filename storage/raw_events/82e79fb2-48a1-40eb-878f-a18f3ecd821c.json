@@ -1,0 +1,16 @@
+{
+  "eventId": "82e79fb2-48a1-40eb-878f-a18f3ecd821c",
+  "rawContent": "2026-09-06T08:07:40.886283+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[2192]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.34' (uid=0 pid=2210 comm=\"/snap/snapd/current/usr/lib/snapd/snapd\" label=\"unconfined\")",
+  "rawHash": "0d95972ce5d60a286a11db6a91e964a4b2749fedfe13a3b0f261b929bd8dbe59",
+  "ingestedAt": "2026-09-11T04:36:50.270Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

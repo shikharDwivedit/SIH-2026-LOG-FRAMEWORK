@@ -1,0 +1,17 @@
+{
+  "eventId": "58281827-29b1-4a5a-8c8e-4e02f873a08a",
+  "rawContent": "2026-09-06T09:34:37.508147+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788667477.5078] dhcp4 (wlo1): activation: beginning transaction (timeout in 45 seconds)",
+  "rawHash": "d66aac47b8dfd395875af0a5b8dcebb501e1a4ed68cd9c0f32a48214fac63b22",
+  "ingestedAt": "2026-09-11T04:36:51.205Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

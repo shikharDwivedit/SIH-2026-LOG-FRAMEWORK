@@ -1,0 +1,16 @@
+{
+  "eventId": "964e31c9-3e1b-4177-9909-c51067aaf0c5",
+  "rawContent": "2026-09-06T21:51:46.307897+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788711706.3076] Loaded device plugin: NMWifiFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/1.54.3/libnm-device-plugin-wifi.so)",
+  "rawHash": "da13778acce1596064a89cc93addd231ac375a10afcd8424ef8528c44559ab28",
+  "ingestedAt": "2026-09-11T04:36:52.296Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

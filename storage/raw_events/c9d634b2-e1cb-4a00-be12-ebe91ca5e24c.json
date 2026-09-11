@@ -1,0 +1,17 @@
+{
+  "eventId": "c9d634b2-e1cb-4a00-be12-ebe91ca5e24c",
+  "rawContent": "2026-09-06T21:52:11.593826+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-control-center-global-shortcuts-provider[9274]: Theme parser error: gtk.css:8661:39-43: Expected a valid color.",
+  "rawHash": "7250ebd5281459b6ef8d1160cb072070ac1ab2e53dd99f97aea91413fcc0d98a",
+  "ingestedAt": "2026-09-11T04:36:53.596Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

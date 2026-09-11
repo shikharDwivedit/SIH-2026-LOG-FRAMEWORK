@@ -1,0 +1,17 @@
+{
+  "eventId": "2519cba5-f729-49e9-941d-4781b95be7a5",
+  "rawContent": "2026-09-06T08:08:09.607955+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2337]: wlo1: WPA: Key negotiation completed with b8:50:01:6b:23:80 [PTK=CCMP GTK=CCMP]",
+  "rawHash": "4b8594b84400c6151b8ea62cefa2414f6b209223e845f51a808e855a45c6d3df",
+  "ingestedAt": "2026-09-11T04:36:50.897Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

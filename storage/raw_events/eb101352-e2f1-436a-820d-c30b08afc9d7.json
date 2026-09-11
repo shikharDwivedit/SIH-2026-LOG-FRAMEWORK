@@ -1,0 +1,17 @@
+{
+  "eventId": "eb101352-e2f1-436a-820d-c30b08afc9d7",
+  "rawContent": "2026-09-07T09:13:45.384082+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: i915 0000:00:02.0: [drm] GT0: HuC firmware i915/tgl_huc.bin version 7.9.3",
+  "rawHash": "e4f7f4f6e320e5ef2afd37f4c2bd48cb1795f38c47fa09699498f78d4f6ff151",
+  "ingestedAt": "2026-09-11T04:36:55.050Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "90d71a3d-b23a-4bec-81b9-18ffb8c464c4",
+  "rawContent": "2026-09-06T21:51:46.305319+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: ua-reboot-cmds.service - Ubuntu Pro reboot cmds skipped, no trigger condition checks were met.",
+  "rawHash": "2a13a7ab7f6b1abba864c655762c7889d199dea74aa763c45fe46147ba018c97",
+  "ingestedAt": "2026-09-11T04:36:51.964Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

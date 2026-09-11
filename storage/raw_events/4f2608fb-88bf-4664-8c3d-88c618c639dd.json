@@ -1,0 +1,16 @@
+{
+  "eventId": "4f2608fb-88bf-4664-8c3d-88c618c639dd",
+  "rawContent": "2026-09-06T21:53:39.825926+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2369]: wlo1: CTRL-EVENT-EAP-PEER-CERT depth=3 subject='/C=US/ST=New Jersey/L=Jersey City/O=The USERTRUST Network/CN=USERTrust RSA Certification Authority' hash=e793c9b02fd8aa13e21c31228accb08119643b749c898964b1746d46c3d4cbd2",
+  "rawHash": "bac6be03ccf556e04912ac833aa23fa7a0606700e464f8cca6528f83148f671d",
+  "ingestedAt": "2026-09-11T04:36:53.778Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "b31393e7-df6c-4767-a308-577c201c5f7a",
+  "rawContent": "2026-09-06T21:53:39.700550+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2369]: wlo1: CTRL-EVENT-EAP-METHOD EAP vendor 0 method 25 (PEAP) selected",
+  "rawHash": "4f1b2c4e291e212156247026e83c8dd3a527109c54ff62d66e7ddbb26f3fe0b8",
+  "ingestedAt": "2026-09-11T04:36:53.761Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

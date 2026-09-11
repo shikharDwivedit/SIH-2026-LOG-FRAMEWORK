@@ -1,0 +1,16 @@
+{
+  "eventId": "01b4ff0f-1763-4088-bb74-d33ded795ac2",
+  "rawContent": "2026-09-07T09:13:45.381994+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Built 1 zonelists, mobility grouping on.  Total pages: 4115838",
+  "rawHash": "9e88758e5d840bda642ddd417d8515f1afaa89686390fc330a11d4e282a1e633",
+  "ingestedAt": "2026-09-11T04:36:54.401Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

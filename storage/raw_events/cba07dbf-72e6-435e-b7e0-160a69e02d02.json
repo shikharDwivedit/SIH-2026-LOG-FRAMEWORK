@@ -1,0 +1,16 @@
+{
+  "eventId": "cba07dbf-72e6-435e-b7e0-160a69e02d02",
+  "rawContent": "2026-09-06T08:07:39.198955+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: hid: raw HID events driver (C) Jiri Kosina",
+  "rawHash": "f3e8c220041faa53f4bd2346baf2cbaa578924218a7f4fda01d4b6f549e5de38",
+  "ingestedAt": "2026-09-11T04:36:50.000Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

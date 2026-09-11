@@ -1,0 +1,16 @@
+{
+  "eventId": "d33f10af-7975-47b8-963f-91ffa71fb14a",
+  "rawContent": "2026-09-06T08:13:36.772054+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: launchpadlib-cache-clean.service - Clean up old files in the Launchpadlib cache skipped, unmet condition check ConditionPathExists=/home/shikhar/.launchpadlib/api.launchpad.net/cache",
+  "rawHash": "16584f839b9640270b0fa2a0fd185eec70f443bacc4cb84997c0ad90dc07424f",
+  "ingestedAt": "2026-09-11T04:36:51.079Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

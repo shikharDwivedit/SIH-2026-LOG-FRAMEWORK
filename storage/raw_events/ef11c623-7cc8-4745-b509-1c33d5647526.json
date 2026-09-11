@@ -1,0 +1,17 @@
+{
+  "eventId": "ef11c623-7cc8-4745-b509-1c33d5647526",
+  "rawContent": "2026-09-06T08:07:39.198586+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: i8042: PNP: PS/2 appears to have AUX port disabled, if this is incorrect please boot with i8042.nopnp",
+  "rawHash": "9c4813f32ca7cf22a64cabdcf239c51bfe57364afd3718149246570f5cb25cdd",
+  "ingestedAt": "2026-09-11T04:36:49.907Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

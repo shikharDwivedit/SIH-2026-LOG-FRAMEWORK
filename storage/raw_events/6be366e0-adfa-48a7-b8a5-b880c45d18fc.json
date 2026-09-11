@@ -1,0 +1,17 @@
+{
+  "eventId": "6be366e0-adfa-48a7-b8a5-b880c45d18fc",
+  "rawContent": "2026-09-06T09:43:32.808289+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx bluetoothd[2181]: Controller resume with wake event 0x0",
+  "rawHash": "8d9d8db4a64ed111ca60c8451a9610505c14ba1d9056a1cd701fe2f383db8ed4",
+  "ingestedAt": "2026-09-11T04:36:51.266Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

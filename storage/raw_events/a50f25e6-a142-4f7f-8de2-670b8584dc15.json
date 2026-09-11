@@ -1,0 +1,16 @@
+{
+  "eventId": "a50f25e6-a142-4f7f-8de2-670b8584dc15",
+  "rawContent": "2026-09-06T21:51:46.301669+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-modules-load[607]: Using 10 probe threads",
+  "rawHash": "50f83b9f46c23c5f495a9b614d9c461866c8b84b53a1fe8ec1fcad562221cb78",
+  "ingestedAt": "2026-09-11T04:36:51.605Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

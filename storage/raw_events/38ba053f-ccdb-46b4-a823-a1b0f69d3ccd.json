@@ -1,0 +1,16 @@
+{
+  "eventId": "38ba053f-ccdb-46b4-a823-a1b0f69d3ccd",
+  "rawContent": "2026-09-06T22:31:33.562709+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx anacron[17194]: Normal exit (0 jobs run)",
+  "rawHash": "9ab6f03408f28cd77e7b6d94ca8df8d1e86ef71c47e2d2efaeee3c3d065c0578",
+  "ingestedAt": "2026-09-11T04:36:54.006Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

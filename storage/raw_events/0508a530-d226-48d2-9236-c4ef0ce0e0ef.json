@@ -1,0 +1,17 @@
+{
+  "eventId": "0508a530-d226-48d2-9236-c4ef0ce0e0ef",
+  "rawContent": "2026-09-06T23:30:27.708539+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Stopped update-notifier-crash.path - Path trigger for Apport crash notifications.",
+  "rawHash": "386fe7151e67380ff80d6aa177e209b5b0f9ec1eee98757eda57cef212186b95",
+  "ingestedAt": "2026-09-11T04:36:54.202Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "8dd6c1a9-e539-42bd-a47c-7519949cc357",
+  "rawContent": "2026-09-06T08:07:39.198042+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Dependency failed for sssd-autofs.socket - SSSD AutoFS Service responder socket.",
+  "rawHash": "274428969e8a917c4f922f4863026c28a44600dc5f0890a676c761d04edd6457",
+  "ingestedAt": "2026-09-11T04:36:49.831Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

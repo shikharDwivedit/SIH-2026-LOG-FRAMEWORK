@@ -1,0 +1,16 @@
+{
+  "eventId": "9f912bc2-b7b0-48c7-916c-eebf375dd9a0",
+  "rawContent": "2026-09-06T08:42:38.794614+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started fwupd.service - Firmware update daemon.",
+  "rawHash": "c5e258df6a3fd98484961f428218e337efa596e58a1047d5596ac75176b205f5",
+  "ingestedAt": "2026-09-11T04:36:51.106Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

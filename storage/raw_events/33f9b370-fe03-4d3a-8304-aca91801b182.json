@@ -1,0 +1,16 @@
+{
+  "eventId": "33f9b370-fe03-4d3a-8304-aca91801b182",
+  "rawContent": "2026-09-06T08:58:15.974768+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Type GITypeInfo of property AccountsService.User::password-mode does not match return type GITypeInfo of getter get_password_mode. Falling back to slow path",
+  "rawHash": "ac5205d85bcd244e90dea124e6b39c24ab30de9b60f782d587ecacabb10d4bae",
+  "ingestedAt": "2026-09-11T04:36:51.109Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

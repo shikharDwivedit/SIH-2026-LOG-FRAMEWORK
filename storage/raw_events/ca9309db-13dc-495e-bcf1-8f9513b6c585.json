@@ -1,0 +1,16 @@
+{
+  "eventId": "ca9309db-13dc-495e-bcf1-8f9513b6c585",
+  "rawContent": "2026-09-07T09:13:49.708568+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2551]: org.gnome.SettingsDaemon.XSettings.target - GNOME XSettings target is inactive.",
+  "rawHash": "df137b595c19fd9df5a4f91fc8dbc5b162369790c7963d54eec4292b7ab70452",
+  "ingestedAt": "2026-09-11T04:36:55.810Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

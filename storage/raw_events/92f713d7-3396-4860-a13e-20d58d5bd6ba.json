@@ -1,0 +1,16 @@
+{
+  "eventId": "92f713d7-3396-4860-a13e-20d58d5bd6ba",
+  "rawContent": "2026-09-06T08:07:41.810797+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Reached target org.gnome.SettingsDaemon.MediaKeys.target - GNOME keyboard shortcuts target.",
+  "rawHash": "af4448081247ea6454b09455b9ba37c58c0681d82312712a8fe96bbedf51ff50",
+  "ingestedAt": "2026-09-11T04:36:50.322Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

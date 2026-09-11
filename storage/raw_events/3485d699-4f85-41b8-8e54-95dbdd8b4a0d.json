@@ -1,0 +1,17 @@
+{
+  "eventId": "3485d699-4f85-41b8-8e54-95dbdd8b4a0d",
+  "rawContent": "2026-09-06T08:07:41.505446+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wireplumber[2612]: [0:00:09.499896577] [2884]  INFO Camera camera_manager.cpp:223 Adding camera '\\_SB_.PC00.XHCI.RHUB.HS06-6:1.0-0408:5487' for pipeline handler uvcvideo",
+  "rawHash": "0422008b3de6ef40855715ae55ed3a1ffb84dc0313e6f8b95180452310cd6dd1",
+  "ingestedAt": "2026-09-11T04:36:50.293Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "799ce189-3d64-40ed-aeb2-9b69099054e0",
+  "rawContent": "2026-09-06T08:07:41.929023+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2904]: time=\"2026-09-06T08:07:41+05:30\" level=warning msg=\"failed to get custom firmware class path: open /sys/module/firmware_class/parameters/path: permission denied\"",
+  "rawHash": "63b61360f7e979c852ad8288114b488cecd3d729ba84caf2600075242fc8d8b8",
+  "ingestedAt": "2026-09-11T04:36:50.335Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

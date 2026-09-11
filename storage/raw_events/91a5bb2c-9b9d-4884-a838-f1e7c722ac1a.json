@@ -1,0 +1,16 @@
+{
+  "eventId": "91a5bb2c-9b9d-4884-a838-f1e7c722ac1a",
+  "rawContent": "2026-09-07T09:13:45.381329+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: BIOS-e820: [gap 0x0000000068400000-0x00000000bfffffff]",
+  "rawHash": "5865fd9821e85b795443cd7ee39fb0c89d284c3e936b13e99bfb4215a1caf3be",
+  "ingestedAt": "2026-09-11T04:36:54.268Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

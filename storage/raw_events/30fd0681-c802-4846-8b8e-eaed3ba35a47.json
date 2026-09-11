@@ -1,0 +1,17 @@
+{
+  "eventId": "30fd0681-c802-4846-8b8e-eaed3ba35a47",
+  "rawContent": "2026-09-06T21:52:23.273830+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Closed pk-debconf-helper.socket - debconf communication socket.",
+  "rawHash": "20bb035588ae4ecbb89b15b21fe97e681033e9e8cef6d039691373b92f020719",
+  "ingestedAt": "2026-09-11T04:36:53.673Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

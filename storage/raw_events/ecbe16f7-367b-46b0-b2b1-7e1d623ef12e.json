@@ -1,0 +1,17 @@
+{
+  "eventId": "ecbe16f7-367b-46b0-b2b1-7e1d623ef12e",
+  "rawContent": "2026-09-06T21:51:51.510711+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Starting org.gnome.SettingsDaemon.Power.service - GNOME power management service...",
+  "rawHash": "8d24c2191022e3f84410080e2dd78dba5e10b6ef36e2bae1f1a32f4bdae043d8",
+  "ingestedAt": "2026-09-11T04:36:52.628Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

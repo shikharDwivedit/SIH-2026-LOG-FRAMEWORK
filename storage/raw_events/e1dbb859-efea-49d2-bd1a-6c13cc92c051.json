@@ -1,0 +1,16 @@
+{
+  "eventId": "e1dbb859-efea-49d2-bd1a-6c13cc92c051",
+  "rawContent": "2026-09-06T08:07:39.197758+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx (bluetoothd)[2181]: bluetooth.service: ConfigurationDirectory 'bluetooth' already exists but the mode is different. (File system: 755 ConfigurationDirectoryMode: 555)",
+  "rawHash": "c51f4108255c09276bd8910190c30ae4f67fba91dbe8efee0f27f03eaf951407",
+  "ingestedAt": "2026-09-11T04:36:49.774Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

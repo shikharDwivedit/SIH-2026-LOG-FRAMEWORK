@@ -1,0 +1,17 @@
+{
+  "eventId": "b91292c2-37c8-49c1-b89c-47a95a1cc592",
+  "rawContent": "2026-09-07T09:13:45.383989+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: intel_rapl_common: Found RAPL domain package",
+  "rawHash": "ef4881348c6f4ac47971c9bdc1f933af1b47cfce1bdc8c80437a1bd8de76dafe",
+  "ingestedAt": "2026-09-11T04:36:55.024Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

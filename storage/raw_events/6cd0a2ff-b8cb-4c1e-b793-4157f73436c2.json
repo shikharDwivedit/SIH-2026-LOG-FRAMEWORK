@@ -1,0 +1,16 @@
+{
+  "eventId": "6cd0a2ff-b8cb-4c1e-b793-4157f73436c2",
+  "rawContent": "2026-09-06T21:51:46.308120+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: nvidia 0000:01:00.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=none:owns=none",
+  "rawHash": "e365b247e4177c1e3596ca45611793e8f76af8c0e9113ea0c5e290aa056ad111",
+  "ingestedAt": "2026-09-11T04:36:52.297Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

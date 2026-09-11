@@ -1,0 +1,16 @@
+{
+  "eventId": "9f96e8ca-a89e-4ed1-920a-32f62b91fe81",
+  "rawContent": "2026-09-06T09:43:55.796491+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopping colord.service - Manage, Install and Generate Color Profiles...",
+  "rawHash": "5671022a5455ab9548ffdf14af592811d435f855ffb97be4c789c5892a903655",
+  "ingestedAt": "2026-09-11T04:36:51.523Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

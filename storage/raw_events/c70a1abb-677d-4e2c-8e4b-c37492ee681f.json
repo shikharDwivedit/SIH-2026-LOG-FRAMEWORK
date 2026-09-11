@@ -1,0 +1,17 @@
+{
+  "eventId": "c70a1abb-677d-4e2c-8e4b-c37492ee681f",
+  "rawContent": "2026-09-06T08:07:39.199889+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: iwlwifi 0000:00:14.3: RFIm is deactivated, reason = 5",
+  "rawHash": "bbb6b583f1acc824862a7b914c159e86df7142e71e20e46d0fa89d3e773eb6d7",
+  "ingestedAt": "2026-09-11T04:36:50.126Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

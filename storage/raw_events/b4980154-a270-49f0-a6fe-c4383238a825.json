@@ -1,0 +1,16 @@
+{
+  "eventId": "b4980154-a270-49f0-a6fe-c4383238a825",
+  "rawContent": "2026-09-06T21:52:11.922674+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx update-notifier[8103]: libayatana-appindicator is deprecated. Please use libayatana-appindicator-glib in newly written code.",
+  "rawHash": "60dadaa7d0cdc28efd1d72be85e4fc3d397ec83ecd872e743c2770c7dd39c65b",
+  "ingestedAt": "2026-09-11T04:36:53.609Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

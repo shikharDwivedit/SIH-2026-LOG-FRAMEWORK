@@ -1,0 +1,16 @@
+{
+  "eventId": "7a80885f-3917-46a6-9736-056a224e8e40",
+  "rawContent": "2026-09-06T09:43:54.754546+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: endSessionDialog: No XDG_SESSION_ID, fetched from logind: 2",
+  "rawHash": "b519261584a2b3f53c48c1691618f8cbe69f4f67bb9e009232bdc7003c31d0fc",
+  "ingestedAt": "2026-09-11T04:36:51.444Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

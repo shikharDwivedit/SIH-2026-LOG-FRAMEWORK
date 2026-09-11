@@ -1,0 +1,16 @@
+{
+  "eventId": "c8e5ae8c-f5ee-4442-99be-c9c501a96c29",
+  "rawContent": "2026-09-06T21:53:43.071768+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788711823.0717] device (wlo1): Activation: (wifi) connection 'A34' has security, and secrets exist.  No new secrets needed.",
+  "rawHash": "c5245703d048064a69525f2f29ed5d3cdf5ab20a68dd25389db408f9f9f33635",
+  "ingestedAt": "2026-09-11T04:36:53.822Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

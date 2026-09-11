@@ -1,0 +1,17 @@
+{
+  "eventId": "241b2292-8b33-4b31-b5d5-373b7233fdc6",
+  "rawContent": "2026-09-06T09:43:39.169535+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Called enable_unredirect_for_display while unredirection is enabled.",
+  "rawHash": "212e96c93776c156c3a6d988c07aa0505a39f73d72b9e2d05e9381bf18b2a7a6",
+  "ingestedAt": "2026-09-11T04:36:51.370Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

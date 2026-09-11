@@ -1,0 +1,16 @@
+{
+  "eventId": "31e5a2ca-f2fd-4dfd-8eb7-2867827f80ec",
+  "rawContent": "2026-09-06T08:07:52.701710+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788662272.7016] device (br-c3a8af4a3ba6): Activation: starting connection 'br-c3a8af4a3ba6' (2aca29e7-6ee9-4b20-b400-ca487949282f)",
+  "rawHash": "0531576b5e53b6124cfa6c584807be67e7e3361b30572f90dd25142d5af641a8",
+  "ingestedAt": "2026-09-11T04:36:50.502Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

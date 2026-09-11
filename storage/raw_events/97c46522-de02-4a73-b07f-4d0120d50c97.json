@@ -1,0 +1,16 @@
+{
+  "eventId": "97c46522-de02-4a73-b07f-4d0120d50c97",
+  "rawContent": "2026-09-06T09:43:33.669356+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788668013.6683] device (wlo1): state change: unmanaged -> unavailable (reason 'managed', managed-type: 'external')",
+  "rawHash": "045df157ec76ef6202731009445aad74850e1e9063013eee6db21229a54c8398",
+  "ingestedAt": "2026-09-11T04:36:51.284Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

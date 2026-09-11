@@ -1,0 +1,17 @@
+{
+  "eventId": "9acb944f-b870-41b5-9501-86bece1c6754",
+  "rawContent": "2026-09-06T21:53:38.097998+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: No Arguments are initialized for method [_Q37]",
+  "rawHash": "df2887ef3bc95e685235cf704162a360f26acb06d30bc57dc49198607aeffc99",
+  "ingestedAt": "2026-09-11T04:36:53.722Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

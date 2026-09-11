@@ -1,0 +1,17 @@
+{
+  "eventId": "529bfb19-1b18-44ba-a971-e8ce4ee6979d",
+  "rawContent": "2026-09-06T21:52:23.273921+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Closed systemd-ask-password.socket - Query the User Interactively for a Password.",
+  "rawHash": "d33cfa322ea6e0094eddeefa94bef87b3a38c56c7e15cb41a17bee0b35dfc773",
+  "ingestedAt": "2026-09-11T04:36:53.673Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

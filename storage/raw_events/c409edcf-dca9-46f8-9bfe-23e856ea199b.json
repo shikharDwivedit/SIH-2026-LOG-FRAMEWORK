@@ -1,0 +1,16 @@
+{
+  "eventId": "c409edcf-dca9-46f8-9bfe-23e856ea199b",
+  "rawContent": "2026-09-06T09:43:55.798461+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopping nvidia-persistenced.service - NVIDIA Persistence Daemon...",
+  "rawHash": "b075980116a762b662dd4d06381790aede303c675ba4af414867897c18a0620e",
+  "ingestedAt": "2026-09-11T04:36:51.525Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

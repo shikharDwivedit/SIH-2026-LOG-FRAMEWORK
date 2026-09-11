@@ -1,0 +1,17 @@
+{
+  "eventId": "b035e82c-3cdc-43c8-9179-767da25e186a",
+  "rawContent": "2026-09-06T23:30:16.783434+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788717616.7831] device (wlo1): supplicant interface state: scanning -> authenticating",
+  "rawHash": "a181e4670656a22cb04a4ec64349e1a5c709792c0aec9e4d67c102c1c2c998de",
+  "ingestedAt": "2026-09-11T04:36:54.096Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

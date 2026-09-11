@@ -1,0 +1,16 @@
+{
+  "eventId": "29119f8e-7394-4b95-aaa3-6353e2d312bd",
+  "rawContent": "2026-09-07T09:13:45.383943+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd-journald[606]: Collecting audit messages is disabled.",
+  "rawHash": "5b82b91d5b0374639d3951d94aba3b5b11ad30823592a93eb2c981e9e3fcb296",
+  "ingestedAt": "2026-09-11T04:36:55.010Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

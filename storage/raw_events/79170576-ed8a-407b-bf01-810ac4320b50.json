@@ -1,0 +1,16 @@
+{
+  "eventId": "79170576-ed8a-407b-bf01-810ac4320b50",
+  "rawContent": "2026-09-06T09:02:09.007902+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: fprintd.service: Deactivated successfully.",
+  "rawHash": "f47741a14c92acde2286c029a921e255a6a2157d00ccd39d92067bf485a7ef52",
+  "ingestedAt": "2026-09-11T04:36:51.167Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "4caa2d32-c4df-459b-acef-406d1cda73aa",
+  "rawContent": "2026-09-06T21:51:46.307690+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.",
+  "rawHash": "7b708b6b95d67b1acbf782095d83da0010d9450f466c1728ae9f602be909db7a",
+  "ingestedAt": "2026-09-11T04:36:52.262Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

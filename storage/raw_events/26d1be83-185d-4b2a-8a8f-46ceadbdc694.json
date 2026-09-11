@@ -1,0 +1,16 @@
+{
+  "eventId": "26d1be83-185d-4b2a-8a8f-46ceadbdc694",
+  "rawContent": "2026-09-06T23:30:27.671331+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx nvidia-persistenced: Shutdown (2288)",
+  "rawHash": "cf69e6128c8a18a1dccc5398a174eec1020c38df3f080b68b7701dc2347a1b06",
+  "ingestedAt": "2026-09-11T04:36:54.171Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

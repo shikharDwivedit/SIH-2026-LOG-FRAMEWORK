@@ -1,0 +1,16 @@
+{
+  "eventId": "2c140ac4-facb-424e-a4d7-3b8deeddeeac",
+  "rawContent": "2026-09-06T08:07:39.199570+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: hp_wmi: query 0x4c returned error 0x6",
+  "rawHash": "882dd978d979d9b2193a101102e98c527374526d6e41d4deead43675953ddc47",
+  "ingestedAt": "2026-09-11T04:36:50.085Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

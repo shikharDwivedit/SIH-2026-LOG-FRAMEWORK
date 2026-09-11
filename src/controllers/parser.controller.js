@@ -7,7 +7,7 @@ const { eventProcessingService } = require("../services/event/event-processing.s
 
 function validateParserConfig(parserConfig) {
   const errors = [];
-  const extractionTypes = ["key-value", "json", "regex"];
+  const extractionTypes = ["key-value", "json", "regex", "cef"];
 
   if (!parserConfig || typeof parserConfig !== "object" || Array.isArray(parserConfig)) {
     return ["Parser config must be a JSON object"];
@@ -46,7 +46,7 @@ const registerCustomParser = asyncHandler(async (req, res) => {
     throw new ApiError(400, validationErrors.join("; "));
   }
 
-  const defaultExtractionType = parserConfig.format === "json" || parserConfig.format === "regex"
+  const defaultExtractionType = ["json", "regex", "cef"].includes(parserConfig.format)
     ? parserConfig.format
     : "key-value";
   const registeredParser = {

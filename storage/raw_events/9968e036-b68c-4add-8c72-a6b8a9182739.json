@@ -1,0 +1,17 @@
+{
+  "eventId": "9968e036-b68c-4add-8c72-a6b8a9182739",
+  "rawContent": "2026-09-06T21:51:46.305831+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx chronyd[2386]: Added pool ntp-bootstrap.ubuntu.com",
+  "rawHash": "07cc94f0af7d5bdd177b31340e9261c5da1d81cab2e4ef8ffe8caf5d25a0b4f6",
+  "ingestedAt": "2026-09-11T04:36:52.042Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

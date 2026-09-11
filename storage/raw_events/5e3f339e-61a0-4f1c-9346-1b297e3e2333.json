@@ -1,0 +1,16 @@
+{
+  "eventId": "5e3f339e-61a0-4f1c-9346-1b297e3e2333",
+  "rawContent": "2026-09-06T23:30:27.669025+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: app-gnome-update\\x2dmanager-22524.scope: Consumed 5.730s CPU time over 41.504s wall clock time, 136.7M memory peak.",
+  "rawHash": "2d8716f61c042214405a7f5f7dcd590801b6290ca0e690e915c58a04d98f2e81",
+  "ingestedAt": "2026-09-11T04:36:54.161Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "4d1b4c3b-03ba-430a-beae-51d32f6f5155",
+  "rawContent": "2026-09-07T09:13:45.382219+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier",
+  "rawHash": "68b14ca7e7389beb1bca1e5892ae3a7883d032898bac263fd6f253740eaec89c",
+  "ingestedAt": "2026-09-11T04:36:54.440Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

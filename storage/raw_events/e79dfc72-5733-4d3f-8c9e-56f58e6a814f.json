@@ -1,0 +1,16 @@
+{
+  "eventId": "e79dfc72-5733-4d3f-8c9e-56f58e6a814f",
+  "rawContent": "2026-09-07T09:13:45.904768+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started update-notifier-download.timer - Download data for packages that failed at package install time.",
+  "rawHash": "5d9e1a3e02ff290aa02aefbfc5103a0111481fbbd8091c00ad7b41b1c4e1aaee",
+  "ingestedAt": "2026-09-11T04:36:55.194Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

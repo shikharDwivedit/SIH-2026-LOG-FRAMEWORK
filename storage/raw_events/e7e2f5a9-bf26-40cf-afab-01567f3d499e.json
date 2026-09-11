@@ -1,0 +1,16 @@
+{
+  "eventId": "e7e2f5a9-bf26-40cf-afab-01567f3d499e",
+  "rawContent": "2026-09-06T08:07:39.198583+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K] at 0x60,0x64 irq 1",
+  "rawHash": "a59f3b311556ac5b01463395204c268d38ecfda03bbd2b1ea9ffd7268f532f6a",
+  "ingestedAt": "2026-09-11T04:36:49.915Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

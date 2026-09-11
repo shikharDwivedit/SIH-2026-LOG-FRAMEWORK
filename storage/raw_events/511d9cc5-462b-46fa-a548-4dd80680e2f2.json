@@ -1,0 +1,16 @@
+{
+  "eventId": "511d9cc5-462b-46fa-a548-4dd80680e2f2",
+  "rawContent": "2026-09-06T23:29:47.840386+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx org.debian.apt[22538]: 23:29:47 AptDaemon.Worker [INFO]: Updating cache",
+  "rawHash": "13d8179830ca3213491f8a156be6f8b5102d32f178dfb2af4e05f068eec1c4dc",
+  "ingestedAt": "2026-09-11T04:36:54.079Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

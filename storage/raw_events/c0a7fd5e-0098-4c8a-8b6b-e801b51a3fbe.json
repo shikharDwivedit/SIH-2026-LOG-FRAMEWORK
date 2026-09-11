@@ -1,0 +1,17 @@
+{
+  "eventId": "c0a7fd5e-0098-4c8a-8b6b-e801b51a3fbe",
+  "rawContent": "2026-09-06T08:07:39.196683+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounted snap-wine\\x2dplatform\\x2druntime\\x2dcore24-22.mount - Mount unit for wine-platform-runtime-core24, revision 22.",
+  "rawHash": "f404c2af6457e1d276916fd5c0c24579a1d404bacdbf0f02df3b18c0037cb16c",
+  "ingestedAt": "2026-09-11T04:36:49.593Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

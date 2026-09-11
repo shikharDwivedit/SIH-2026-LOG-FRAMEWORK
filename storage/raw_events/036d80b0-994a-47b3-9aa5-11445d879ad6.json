@@ -1,0 +1,16 @@
+{
+  "eventId": "036d80b0-994a-47b3-9aa5-11445d879ad6",
+  "rawContent": "2026-09-07T09:13:45.382156+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounting snap-telegram\\x2ddesktop-7130.mount - Mount unit for telegram-desktop, revision 7130...",
+  "rawHash": "9bebb7db96780f4ea6673a16e77c6847669a1aec67b307b19b187e23d4ae5d00",
+  "ingestedAt": "2026-09-11T04:36:54.430Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

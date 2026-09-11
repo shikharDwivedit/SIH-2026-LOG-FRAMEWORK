@@ -1,0 +1,39 @@
+{
+  "name": "generic-json",
+  "version": "1.0",
+  "vendor": "Generic",
+  "product": "JSON Event Source",
+  "device_type": "perimeter-device",
+  "format": "json",
+  "match_criteria": {
+    "contains": []
+  },
+  "extraction": {
+    "type": "json"
+  },
+  "field_mappings": {
+    "timestamp": "event.timestamp",
+    "event_time": "event.event_time",
+    "category": "event.category",
+    "type": "event.type",
+    "action": "event.action",
+    "outcome": "event.outcome",
+    "severity": "event.severity",
+    "message": "event.message",
+    "vendor": "source.vendor",
+    "product": "source.product",
+    "hostname": "source.hostname",
+    "src_ip": "network.source_ip",
+    "source_ip": "network.source_ip",
+    "src_port": "network.source_port",
+    "source_port": "network.source_port",
+    "dst_ip": "network.destination_ip",
+    "destination_ip": "network.destination_ip",
+    "dst_port": "network.destination_port",
+    "destination_port": "network.destination_port",
+    "protocol": "network.protocol",
+    "username": "identity.username",
+    "user": "identity.username",
+    "rule_id": "threat.rule_id"
+  }
+}

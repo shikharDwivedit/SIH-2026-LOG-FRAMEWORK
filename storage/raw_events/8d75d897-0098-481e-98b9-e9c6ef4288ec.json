@@ -1,0 +1,16 @@
+{
+  "eventId": "8d75d897-0098-481e-98b9-e9c6ef4288ec",
+  "rawContent": "2026-09-06T21:56:27.772139+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx brave-browser.desktop[10053]: [202:0x19f4004f8000]    62583 ms: Scavenge 135.1 (156.6) -> 129.3 (156.6) MB, pooled: 0.0 MB, 4.59 / 0.00 ms (average mu = 0.866, current mu = 0.863) allocation failure;",
+  "rawHash": "b3a592eb47bda107b5098a851d9a0d630f5431452cfacdacdc957a7f1caddc2a",
+  "ingestedAt": "2026-09-11T04:36:53.881Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

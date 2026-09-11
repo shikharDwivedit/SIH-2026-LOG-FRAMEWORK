@@ -1,0 +1,16 @@
+{
+  "eventId": "2b37ef89-04ea-40ed-ad12-5e7dbed9e3fe",
+  "rawContent": "2026-09-06T09:43:52.851737+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788668032.8515] manager: rfkill: Wi-Fi now disabled by radio killswitch",
+  "rawHash": "c446cd1f2ab95c5273de8f85f5771f6abaf664d2e1e08df21281b5a59107fd60",
+  "ingestedAt": "2026-09-11T04:36:51.436Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

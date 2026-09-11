@@ -1,0 +1,16 @@
+{
+  "eventId": "12784760-c747-49fb-bd2f-3853ab1e3947",
+  "rawContent": "2026-09-07T09:13:45.383375+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled",
+  "rawHash": "34bef5d765f8336cee4da22691a1715c162b7858f6fe992550fbbdacba02b4a1",
+  "ingestedAt": "2026-09-11T04:36:54.786Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

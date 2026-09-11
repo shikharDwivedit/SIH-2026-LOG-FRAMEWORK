@@ -1,0 +1,17 @@
+{
+  "eventId": "7db21eec-dc6e-42c2-87d8-e5c5fe8b0a14",
+  "rawContent": "2026-09-06T23:30:16.776716+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2369]: wlo1: Removed BSSID be:63:52:a2:ff:44 from ignore list (clear)",
+  "rawHash": "33b527333e66e46c51a30998253fe86b8c517198be21d5e5c068201f7c4e2ae5",
+  "ingestedAt": "2026-09-11T04:36:54.096Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

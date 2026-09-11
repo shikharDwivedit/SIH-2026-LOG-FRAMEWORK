@@ -1,0 +1,16 @@
+{
+  "eventId": "2cf27efd-58f3-4b6b-8ead-56f4b1fbb2f9",
+  "rawContent": "2026-09-06T08:07:40.809123+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx snapd[2210]: backend.go:141: delegating reload of snap-confine profiles to system snap security profiles setup",
+  "rawHash": "0302ef25631a8e12750fdee5d1adceda0693c2f26d373583562c13eaf1d1aa1c",
+  "ingestedAt": "2026-09-11T04:36:50.268Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

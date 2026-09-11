@@ -1,0 +1,17 @@
+{
+  "eventId": "28a3ded5-97bb-4ccd-bd7b-ddf7b4b11c04",
+  "rawContent": "2026-09-06T08:07:39.197439+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: iommu: DMA domain TLB invalidation policy: lazy mode",
+  "rawHash": "ca5dba41e2fa4fb1e1060cfae5d9e05cdd1febf692f94721895d4ca8932db686",
+  "ingestedAt": "2026-09-11T04:36:49.719Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

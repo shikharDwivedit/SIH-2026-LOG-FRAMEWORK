@@ -1,0 +1,17 @@
+{
+  "eventId": "4a807364-67bb-42ed-9a9c-f96a63eb0fbd",
+  "rawContent": "2026-09-06T23:30:27.665588+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: ua-timer.timer: Deactivated successfully.",
+  "rawHash": "02017ada941acf734e075bf11c08db04e13db503c69a94116d6a7ff28945463d",
+  "ingestedAt": "2026-09-11T04:36:54.154Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

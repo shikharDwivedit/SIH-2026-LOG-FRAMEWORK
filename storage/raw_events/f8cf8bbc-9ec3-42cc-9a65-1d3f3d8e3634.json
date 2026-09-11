@@ -1,0 +1,16 @@
+{
+  "eventId": "f8cf8bbc-9ec3-42cc-9a65-1d3f3d8e3634",
+  "rawContent": "2026-09-06T21:51:46.308979+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: i915 0000:00:02.0: [drm] Using Transparent Hugepages",
+  "rawHash": "877dd02f8401cec94994e19a089dd28df2aa21fc139882058ec877a6bd8f1154",
+  "ingestedAt": "2026-09-11T04:36:52.368Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

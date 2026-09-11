@@ -1,0 +1,17 @@
+{
+  "eventId": "5b3f753a-1d0c-471d-92fd-7961e167ee52",
+  "rawContent": "2026-09-06T21:51:46.305030+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: PCI Root Bridge [PC00] (domain 0000 [bus 00-fe])",
+  "rawHash": "670bfab6f000f7989047af6f25108716e6598cd35884f7178836905dadb9f29c",
+  "ingestedAt": "2026-09-11T04:36:51.921Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

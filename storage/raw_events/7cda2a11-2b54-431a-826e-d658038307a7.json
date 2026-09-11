@@ -1,0 +1,16 @@
+{
+  "eventId": "7cda2a11-2b54-431a-826e-d658038307a7",
+  "rawContent": "2026-09-06T21:51:46.308180+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: hid-multitouch 0018:06CB:CEE7.0006: input,hidraw5: I2C HID v1.00 Mouse [SYNA32E2:00 06CB:CEE7] on i2c-SYNA32E2:00",
+  "rawHash": "5f3f4e706ff799f69c6c565e76bfd3b1f547f1ff007fe9c12314debf226ffa16",
+  "ingestedAt": "2026-09-11T04:36:52.305Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

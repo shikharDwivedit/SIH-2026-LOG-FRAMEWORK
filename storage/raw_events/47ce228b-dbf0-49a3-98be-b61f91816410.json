@@ -1,0 +1,16 @@
+{
+  "eventId": "47ce228b-dbf0-49a3-98be-b61f91816410",
+  "rawContent": "2026-09-06T08:07:39.197188+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: systemd-machine-id-commit.service - Save Transient machine-id to Disk skipped, unmet condition check ConditionPathIsMountPoint=/etc/machine-id",
+  "rawHash": "8273be8b67ad42a89f5ba039a9c2ff14dfff7a81e3fbb98f5f97ab6f8ec86ff2",
+  "ingestedAt": "2026-09-11T04:36:49.681Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

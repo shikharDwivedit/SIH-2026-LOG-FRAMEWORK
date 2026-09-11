@@ -1,0 +1,16 @@
+{
+  "eventId": "aebb249b-963d-49e0-85d8-b8bd555ff81e",
+  "rawContent": "2026-09-06T09:43:38.243867+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2337]: EAP-MSCHAPV2: Authentication succeeded",
+  "rawHash": "7fefb873cdf3680ceec7e5f10374efdc2f5a65a4ea11615d921e6df234885b7f",
+  "ingestedAt": "2026-09-11T04:36:51.357Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "c1a3b20d-83fc-496a-9cd6-a9a7f747f81c",
+  "rawContent": "2026-09-06T21:51:46.308745+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...",
+  "rawHash": "baa5dd980050dbc71d16f98401cf0879c7d1ac24c58ba9d00692f80dbccd5626",
+  "ingestedAt": "2026-09-11T04:36:52.336Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

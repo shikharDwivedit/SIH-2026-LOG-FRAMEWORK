@@ -1,0 +1,17 @@
+{
+  "eventId": "c7c9cd29-f1ca-4995-ada3-d9a2b3b2f07e",
+  "rawContent": "2026-09-06T08:07:39.197475+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: mctp: management component transport protocol core",
+  "rawHash": "e8af94368a43df29766c423a53e4f7f63e3693e12bbd9191d28a2ee1d7d54ce6",
+  "ingestedAt": "2026-09-11T04:36:49.730Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

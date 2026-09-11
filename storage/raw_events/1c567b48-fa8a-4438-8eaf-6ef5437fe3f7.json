@@ -1,0 +1,16 @@
+{
+  "eventId": "1c567b48-fa8a-4438-8eaf-6ef5437fe3f7",
+  "rawContent": "2026-09-06T08:07:39.197121+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: systemd-journal-catalog-update.service - Rebuild Journal Catalog skipped, unmet condition check ConditionNeedsUpdate=/var",
+  "rawHash": "1fe3c99dd1c2a42cb8dff72fdab36adaf483c6cdcf780c09f5042989d1dcf2a1",
+  "ingestedAt": "2026-09-11T04:36:49.669Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

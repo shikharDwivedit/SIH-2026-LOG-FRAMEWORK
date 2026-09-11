@@ -1,0 +1,17 @@
+{
+  "eventId": "d37d18e7-78f4-4b10-a6e7-87ba9d0857f2",
+  "rawContent": "2026-09-06T21:51:46.306867+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: xhci_hcd 0000:00:14.0: Host supports USB 3.2 Enhanced SuperSpeed",
+  "rawHash": "235ca9a371f38f368dad6c6d9afc722eaad051852754148a7c1576299871528e",
+  "ingestedAt": "2026-09-11T04:36:52.179Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

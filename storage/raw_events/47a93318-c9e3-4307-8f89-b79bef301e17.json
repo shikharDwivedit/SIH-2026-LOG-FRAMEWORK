@@ -1,0 +1,17 @@
+{
+  "eventId": "47a93318-c9e3-4307-8f89-b79bef301e17",
+  "rawContent": "2026-09-06T21:52:23.271237+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Closed dbus.socket - D-Bus User Message Bus Socket.",
+  "rawHash": "1c793029260c21fed831f74813784a4810b672b78cd8dbab9bd8fd96498a2eaa",
+  "ingestedAt": "2026-09-11T04:36:53.663Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

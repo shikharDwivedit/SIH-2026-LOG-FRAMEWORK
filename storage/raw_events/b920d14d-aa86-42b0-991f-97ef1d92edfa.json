@@ -1,0 +1,16 @@
+{
+  "eventId": "b920d14d-aa86-42b0-991f-97ef1d92edfa",
+  "rawContent": "2026-09-06T21:51:46.307713+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Finished dracut-cmdline.service - dracut cmdline hook.",
+  "rawHash": "c93042aa48eebcdaa6bb471c568c880c90972c3268f9463635387aa4f18a7142",
+  "ingestedAt": "2026-09-11T04:36:52.264Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

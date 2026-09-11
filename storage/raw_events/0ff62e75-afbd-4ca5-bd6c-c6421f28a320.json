@@ -1,0 +1,16 @@
+{
+  "eventId": "0ff62e75-afbd-4ca5-bd6c-c6421f28a320",
+  "rawContent": "2026-09-07T09:13:45.383338+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Initialise system trusted keyrings",
+  "rawHash": "55ec315477b99a20e43192d98623a2529378b26ae1f8576c3f6d8c2cf1e433d2",
+  "ingestedAt": "2026-09-11T04:36:54.763Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

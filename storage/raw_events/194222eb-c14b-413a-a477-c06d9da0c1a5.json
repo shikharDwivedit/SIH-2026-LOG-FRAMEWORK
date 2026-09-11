@@ -1,0 +1,17 @@
+{
+  "eventId": "194222eb-c14b-413a-a477-c06d9da0c1a5",
+  "rawContent": "2026-09-07T09:13:45.381567+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving FACP table memory at [mem 0x5cabf000-0x5cabf10b]",
+  "rawHash": "c02d7e45810d9fb9b62cdd5e0485eb5472f47473ce983af0cbc95101db703568",
+  "ingestedAt": "2026-09-11T04:36:54.316Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

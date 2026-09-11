@@ -1,0 +1,16 @@
+{
+  "eventId": "1e87f429-3f6b-4ecb-afa6-49a7ce9e902a",
+  "rawContent": "2026-09-07T09:13:45.381239+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: BIOS-provided physical RAM map:",
+  "rawHash": "b1651d799ec3bac7f17aae99dc4d80a235cd3cb146de6510ea64acb9bdedde7b",
+  "ingestedAt": "2026-09-11T04:36:54.260Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

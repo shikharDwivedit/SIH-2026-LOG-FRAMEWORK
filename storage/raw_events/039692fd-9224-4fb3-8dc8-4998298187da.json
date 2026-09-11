@@ -1,0 +1,17 @@
+{
+  "eventId": "039692fd-9224-4fb3-8dc8-4998298187da",
+  "rawContent": "2026-09-06T08:08:12.333934+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped user@60578.service - User Manager for UID 60578.",
+  "rawHash": "f0bc03de05414ab3bf34cdefcf982210a019144542392f93564c77c81a1c7a5d",
+  "ingestedAt": "2026-09-11T04:36:50.941Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

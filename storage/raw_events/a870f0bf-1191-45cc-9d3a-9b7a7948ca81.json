@@ -1,0 +1,16 @@
+{
+  "eventId": "a870f0bf-1191-45cc-9d3a-9b7a7948ca81",
+  "rawContent": "2026-09-06T21:51:46.302419+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving FPDT table memory at [mem 0x5cace000-0x5cace043]",
+  "rawHash": "5c93382972ed33a437a957ad8f2787f1c2cfb91cbe74346f935ca6e23d2d6505",
+  "ingestedAt": "2026-09-11T04:36:51.701Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

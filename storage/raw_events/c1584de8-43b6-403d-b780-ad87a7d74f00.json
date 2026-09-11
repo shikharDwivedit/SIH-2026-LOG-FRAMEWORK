@@ -1,0 +1,16 @@
+{
+  "eventId": "c1584de8-43b6-403d-b780-ad87a7d74f00",
+  "rawContent": "2026-09-06T09:01:44.215127+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: DING: DBus interface for Nautilus (org.gnome.Nautilus.FileOperations2) is now available.",
+  "rawHash": "877f77ed26c2ff0387cf5e07db321159a05bfdfece4fd9c5c6d5a98f2aa2e0fc",
+  "ingestedAt": "2026-09-11T04:36:51.138Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

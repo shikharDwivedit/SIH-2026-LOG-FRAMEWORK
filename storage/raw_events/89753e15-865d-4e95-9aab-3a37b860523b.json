@@ -1,0 +1,17 @@
+{
+  "eventId": "89753e15-865d-4e95-9aab-3a37b860523b",
+  "rawContent": "2026-09-06T08:12:43.247502+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx snapd[2210]: storehelpers.go:919: cannot refresh: snap has no updates available: \"bare\", \"clementine\", \"core18\", \"core20\", \"core22\", \"core24\", \"docker\", \"gnome-3-28-1804\", \"gnome-42-2204\", \"gnome-46-2404\", \"gtk-common-themes\", \"mesa-2404\", \"ngrok\", \"snap-store\", \"snapd\", \"telegram-desktop\", \"webkitgtk-6-gnome-2404\", \"wine-platform\", \"wine-platform-runtime-core24\", \"winebar\"",
+  "rawHash": "06d615828bda1efdbb16092eae352ae076c501777319c4532d8629ebbb6636ab",
+  "ingestedAt": "2026-09-11T04:36:51.010Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

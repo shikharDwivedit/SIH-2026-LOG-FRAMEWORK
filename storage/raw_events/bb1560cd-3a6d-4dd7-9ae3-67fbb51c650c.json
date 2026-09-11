@@ -1,0 +1,17 @@
+{
+  "eventId": "bb1560cd-3a6d-4dd7-9ae3-67fbb51c650c",
+  "rawContent": "2026-09-06T08:07:39.197216+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx apparmor.systemd[1885]: Warning from /etc/apparmor.d (/etc/apparmor.d/usr.sbin.sssd line 69): Caching disabled for: 'usr.sbin.sssd' due to force complain",
+  "rawHash": "6ec70c4fadecc4af5d7c04d3fc8c9ec6400e40154666c3bc9798e389500386b6",
+  "ingestedAt": "2026-09-11T04:36:49.685Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

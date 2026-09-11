@@ -1,0 +1,16 @@
+{
+  "eventId": "08652447-b202-4a27-b14c-37e46748d1bb",
+  "rawContent": "2026-09-06T21:52:04.445225+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Reached target paths.target - Paths.",
+  "rawHash": "9b5360ff13aacd88403739eaaf45d02855f76633c7ed9bb783fa736989909253",
+  "ingestedAt": "2026-09-11T04:36:53.141Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "de2b5a14-1d57-4c28-9430-544f21c65ee5",
+  "rawContent": "2026-09-07T09:13:45.382978+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: e820: register RAM buffer resource [mem 0x42ee9000-0x43ffffff]",
+  "rawHash": "d8d132505bbe9a1a92f32913d91b1e4b35d2ffbaf28b63ab6ffee519caf97874",
+  "ingestedAt": "2026-09-11T04:36:54.644Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

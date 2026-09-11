@@ -1,0 +1,16 @@
+{
+  "eventId": "38f35a82-5475-4a34-aa9b-243739551b9a",
+  "rawContent": "2026-09-06T21:52:09.187437+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Starting localsearch-3.service - LocalSearch indexer...",
+  "rawHash": "a3de5d88b8b5800fbbeb9cebfa4d413e085d74c199a720b8fa5e5ed8bacce2b4",
+  "ingestedAt": "2026-09-11T04:36:53.381Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

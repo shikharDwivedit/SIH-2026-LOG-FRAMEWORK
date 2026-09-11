@@ -1,0 +1,16 @@
+{
+  "eventId": "6ad63383-5f9b-4b2c-80f5-c4d0b3be59fb",
+  "rawContent": "2026-09-07T09:13:45.383401+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx boltd[2141]: bolt 0.9.10 starting up.",
+  "rawHash": "cadc39fef7a2eb020fdf18e478a99011fe522026526d2c5396b9ef20d75e4eda",
+  "ingestedAt": "2026-09-11T04:36:54.805Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

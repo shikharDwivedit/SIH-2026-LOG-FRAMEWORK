@@ -1,0 +1,16 @@
+{
+  "eventId": "4e4bdca3-cace-409a-881d-a4df97044f86",
+  "rawContent": "2026-09-06T21:51:46.307331+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: RAS: Correctable Errors collector initialized.",
+  "rawHash": "ba2ef1e6bb040c5a4a8a9f9df5b61266b8fc6db98cc02d6fb53e56a97a754858",
+  "ingestedAt": "2026-09-11T04:36:52.236Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

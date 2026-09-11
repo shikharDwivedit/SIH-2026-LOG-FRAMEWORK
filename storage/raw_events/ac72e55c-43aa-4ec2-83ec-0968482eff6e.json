@@ -1,0 +1,17 @@
+{
+  "eventId": "ac72e55c-43aa-4ec2-83ec-0968482eff6e",
+  "rawContent": "2026-09-07T09:13:48.015398+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2848]: time=\"2026-09-07T09:13:48+05:30\" level=info msg=\"Selecting /dev/dri/card1 as /dev/dri/card1\"",
+  "rawHash": "047ca983c10185d72293281275a458a30d357bc3a900ceb78b1a8146a3d27af3",
+  "ingestedAt": "2026-09-11T04:36:55.290Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

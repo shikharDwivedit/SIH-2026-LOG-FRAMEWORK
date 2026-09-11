@@ -1,0 +1,16 @@
+{
+  "eventId": "a9b9fe31-afe1-42ac-9779-8ede6106a347",
+  "rawContent": "2026-09-06T08:07:39.236356+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx boltd[2182]: probing: adding /sys/devices/pci0000:00/0000:00:1b.0/0000:02:00.0 to roots",
+  "rawHash": "5eba0d4b6ac7980111e25eda906fa550083840dbc0a046929633e9c10f0cf124",
+  "ingestedAt": "2026-09-11T04:36:50.186Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

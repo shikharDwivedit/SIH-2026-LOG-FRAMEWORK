@@ -43,7 +43,7 @@ class EventProcessingService {
     const normalizedEvent = normalizationService.normalize(rawEvent, parseResult);
 
     // ── 6. Validate ──────────────────────────────────────────────────────────
-    eventValidationService.validate(normalizedEvent);
+    const validationResult = eventValidationService.validate(normalizedEvent);
 
     // ── 7. Dead-letter routing ───────────────────────────────────────────────
     // If no parser matched AND the event is not even partially parsed,
@@ -55,6 +55,25 @@ class EventProcessingService {
         message: "No matching parser for this log source. Add a parser config to parsers/ directory.",
         detectedFormat,
         attemptedParser: null
+      });
+      metricsService.recordDeadLettered();
+    } else if (!parseResult.success) {
+      normalizedEvent.processing.status = ProcessingStatus.PARSER_ERROR;
+      deadLetterService.record(rawEvent, {
+        code: "PARSER_ERROR",
+        message: "The selected parser could not extract fields from this event.",
+        detectedFormat,
+        attemptedParser: parserConfig.name,
+        errors: normalizedEvent.processing.errors
+      });
+      metricsService.recordDeadLettered();
+    } else if (!validationResult.valid) {
+      deadLetterService.record(rawEvent, {
+        code: "VALIDATION_ERROR",
+        message: validationResult.errors.join("; "),
+        detectedFormat,
+        attemptedParser: parserConfig?.name || null,
+        errors: validationResult.errors
       });
       metricsService.recordDeadLettered();
     }

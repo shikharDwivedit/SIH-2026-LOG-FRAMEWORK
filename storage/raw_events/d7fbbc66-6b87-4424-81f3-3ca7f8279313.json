@@ -1,0 +1,16 @@
+{
+  "eventId": "d7fbbc66-6b87-4424-81f3-3ca7f8279313",
+  "rawContent": "2026-09-06T08:08:02.052521+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Starting gnome-session-restart-dbus.service - Restart DBus after GNOME Session shutdown...",
+  "rawHash": "9820c868a24e60f5974c4da582c547ae024675d9c33f06f568c90c288a085cda",
+  "ingestedAt": "2026-09-11T04:36:50.825Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

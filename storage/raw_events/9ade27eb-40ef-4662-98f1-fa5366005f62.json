@@ -1,0 +1,16 @@
+{
+  "eventId": "9ade27eb-40ef-4662-98f1-fa5366005f62",
+  "rawContent": "2026-09-06T08:07:39.196135+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: x86/fpu: Supporting XSAVE feature 0x800: 'Control-flow User registers'",
+  "rawHash": "2d5a4daa0fb36c86346d8cde9e0893147cb053585f28110bc636341fc7be2d55",
+  "ingestedAt": "2026-09-11T04:36:49.541Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

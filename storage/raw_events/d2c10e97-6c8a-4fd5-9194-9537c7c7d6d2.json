@@ -1,0 +1,17 @@
+{
+  "eventId": "d2c10e97-6c8a-4fd5-9194-9537c7c7d6d2",
+  "rawContent": "2026-09-06T08:08:01.411202+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: loading user theme: /usr/share/themes/Yaru-dark/gnome-shell/gnome-shell.css",
+  "rawHash": "b528ffb9bc0ff3cc9a16b61de705eb54685571775b8834bd0f43bb0a2eda487d",
+  "ingestedAt": "2026-09-11T04:36:50.808Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

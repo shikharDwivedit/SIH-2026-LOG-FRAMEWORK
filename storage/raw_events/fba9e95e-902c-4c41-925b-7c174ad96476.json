@@ -1,0 +1,17 @@
+{
+  "eventId": "fba9e95e-902c-4c41-925b-7c174ad96476",
+  "rawContent": "2026-09-06T08:07:39.200091+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Bluetooth: hci0: Firmware SHA1: 0x2925677d",
+  "rawHash": "13592217a6d901ef7a9703927cc59adef87487c499018e486c48d25ce9b4f2f4",
+  "ingestedAt": "2026-09-11T04:36:50.151Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

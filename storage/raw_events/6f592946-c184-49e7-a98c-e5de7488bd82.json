@@ -1,0 +1,16 @@
+{
+  "eventId": "6f592946-c184-49e7-a98c-e5de7488bd82",
+  "rawContent": "2026-09-06T08:07:39.196222+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: VFS: Finished mounting rootfs on nullfs",
+  "rawHash": "4b9fb6defebc833c8941edf204b4d8a5d2d6fc8e6d78788aa7b00de509d080e4",
+  "ingestedAt": "2026-09-11T04:36:49.553Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

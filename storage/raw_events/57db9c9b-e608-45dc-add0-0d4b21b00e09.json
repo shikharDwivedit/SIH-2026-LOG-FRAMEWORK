@@ -1,0 +1,16 @@
+{
+  "eventId": "57db9c9b-e608-45dc-add0-0d4b21b00e09",
+  "rawContent": "2026-09-06T21:51:46.305773+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started chrony.service - chrony, an NTP client/server.",
+  "rawHash": "818bd1bedf7d2f27ee850a0e0193f15c7c5d05fb41a76138eaafcbaca17b73ca",
+  "ingestedAt": "2026-09-11T04:36:52.035Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

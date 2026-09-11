@@ -1,0 +1,16 @@
+{
+  "eventId": "c3b0489e-070e-4b1d-9e84-a316b9e93a08",
+  "rawContent": "2026-09-06T09:43:55.786752+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Stopped app-gnome-org.gnome.Evolution\\x2dalarm\\x2dnotify-8047.scope - Application launched by gnome-session-service.",
+  "rawHash": "bc099aaa26e6ed7a75fdf38a43d5b3d3d787bd61fc68d5e0083b7aa45bc5e641",
+  "ingestedAt": "2026-09-11T04:36:51.483Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "9fba04fc-c2e9-4252-ad42-d86e51108335",
+  "rawContent": "2026-09-06T09:43:37.766962+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788668017.7661] Config: added 'phase2' value 'auth=MSCHAPV2'",
+  "rawHash": "98394e19f68b638d0a00ad91eabd0e0e819a1e5e10b17eb18bde72a20a0e56cf",
+  "ingestedAt": "2026-09-11T04:36:51.327Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

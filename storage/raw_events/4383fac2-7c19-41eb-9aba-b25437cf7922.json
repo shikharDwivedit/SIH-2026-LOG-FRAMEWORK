@@ -1,0 +1,16 @@
+{
+  "eventId": "4383fac2-7c19-41eb-9aba-b25437cf7922",
+  "rawContent": "2026-09-06T08:08:09.068950+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788662289.0688] Config: added 'scan_ssid' value '1'",
+  "rawHash": "9a81d13d4798c1a7d31dfc0fd86b9f725c74f562486ebaffc6ad34880bedd7e7",
+  "ingestedAt": "2026-09-11T04:36:50.886Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "bf120cbe-1ec8-4aed-8ddc-38be503c80cd",
+  "rawContent": "2026-09-06T08:07:43.256356+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx tlp[4797]: Applying power save settings...done.",
+  "rawHash": "1422de371dcc21ef1a102660686f1d7aad91518016eaeae43f4cd1988635ff8e",
+  "ingestedAt": "2026-09-11T04:36:50.439Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

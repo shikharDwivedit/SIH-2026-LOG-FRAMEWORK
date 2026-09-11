@@ -1,0 +1,16 @@
+{
+  "eventId": "7962edc9-24e6-46e4-b579-eff837e2253d",
+  "rawContent": "2026-09-06T21:51:46.305525+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx bluetoothd[2265]: Starting SDP server",
+  "rawHash": "df6534f0ef2cd959e1f52800e6bcb336e109edc228cb7591a2bad4538e660667",
+  "ingestedAt": "2026-09-11T04:36:51.995Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

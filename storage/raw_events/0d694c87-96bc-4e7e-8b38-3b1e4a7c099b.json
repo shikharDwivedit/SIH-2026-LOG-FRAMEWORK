@@ -1,0 +1,16 @@
+{
+  "eventId": "0d694c87-96bc-4e7e-8b38-3b1e4a7c099b",
+  "rawContent": "2026-09-06T21:53:43.026141+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...",
+  "rawHash": "30f7d56a529087134e4ba1edd0d03e02054cd96e13b5c30dfb9914fd3a6d973d",
+  "ingestedAt": "2026-09-11T04:36:53.815Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

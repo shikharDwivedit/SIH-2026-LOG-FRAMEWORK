@@ -1,0 +1,16 @@
+{
+  "eventId": "b24aaccd-17b8-4ff1-87b3-92637ac1c981",
+  "rawContent": "2026-09-06T21:51:46.303638+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting netplan-configure.service - Netplan Backend Configuration...",
+  "rawHash": "ab8e8a2694c5c41dc9cb2dd1ea52ac1fcc0fa2ed0151e0c7657952efbb36a5fa",
+  "ingestedAt": "2026-09-11T04:36:51.789Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

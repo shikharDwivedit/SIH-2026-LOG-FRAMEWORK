@@ -1,0 +1,17 @@
+{
+  "eventId": "686ea650-66e1-4ddb-b977-52a1632b6d75",
+  "rawContent": "2026-09-07T09:13:45.383347+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: sssd-pam.socket: Job sssd-pam.socket/start failed with result 'dependency'.",
+  "rawHash": "437decc6040ba447612a74fedf4bac3277e10bbd7d9077f34a046f358e176bcc",
+  "ingestedAt": "2026-09-11T04:36:54.769Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "046c4272-f39b-4593-a052-4c591386d6e0",
+  "rawContent": "2026-09-06T21:51:46.303035+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx mtp-probe: checking bus 1, device 2: \"/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1\"",
+  "rawHash": "da2c1173d36119dede8d0b7089f9a0575bb85c832deca1cd3ce17b1fb8b91a10",
+  "ingestedAt": "2026-09-11T04:36:51.756Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

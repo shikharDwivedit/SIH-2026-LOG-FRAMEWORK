@@ -1,0 +1,16 @@
+{
+  "eventId": "991e8db2-b396-4e4a-a668-bc8bfa7fb50d",
+  "rawContent": "2026-09-07T09:13:45.383491+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: drop_monitor: Initializing network drop monitor service",
+  "rawHash": "d8f812a031030f8afdbcbff22c1f7b76846369f054fd39560f3310a542bb376d",
+  "ingestedAt": "2026-09-11T04:36:54.843Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

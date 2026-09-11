@@ -1,0 +1,16 @@
+{
+  "eventId": "9c61ca4c-2d84-4eb0-8c8a-0f9ea859c5cd",
+  "rawContent": "2026-09-06T08:08:01.776563+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Update check failed: Error resolving “extensions.gnome.org”: Temporary failure in name resolution",
+  "rawHash": "e219f428255851d9c8b17248d833d3aa99848e24831d22cab36398782be56fb4",
+  "ingestedAt": "2026-09-11T04:36:50.817Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

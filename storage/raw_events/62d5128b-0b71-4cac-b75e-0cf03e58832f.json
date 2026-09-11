@@ -1,0 +1,16 @@
+{
+  "eventId": "62d5128b-0b71-4cac-b75e-0cf03e58832f",
+  "rawContent": "2026-09-07T09:13:48.026954+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2848]: time=\"2026-09-07T09:13:48+05:30\" level=info msg=\"Selecting /var/lib/snapd/hostfs/usr/lib/x86_64-linux-gnu/libnvidia-vksc-core.so.595.84 as /var/lib/snapd/hostfs/usr/lib/x86_64-linux-gnu/libnvidia-vksc-core.so.595.84\"",
+  "rawHash": "eaae67798fdb0262d6fc533b665fce2acc039f3aa9269abe8d3416e8f0577049",
+  "ingestedAt": "2026-09-11T04:36:55.604Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

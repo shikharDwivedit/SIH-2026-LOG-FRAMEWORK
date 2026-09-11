@@ -1,0 +1,17 @@
+{
+  "eventId": "ad73d732-1850-418a-9bc9-ee4b8dff2b83",
+  "rawContent": "2026-09-06T08:07:54.785347+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Queued start job for default target default.target.",
+  "rawHash": "5408d856da49c099252a4b6f04702cf67655011822ddb3ba2d7075e1c579e320",
+  "ingestedAt": "2026-09-11T04:36:50.518Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "2bf32f7b-1098-47e4-a224-6c994e89915a",
+  "rawContent": "2026-09-06T09:43:55.794043+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped target tpm2.target - Trusted Platform Module.",
+  "rawHash": "a4caf9f16dc57e64f5ab8de283544d4e97e10aa0df81960a65ed0e71ac229b2e",
+  "ingestedAt": "2026-09-11T04:36:51.518Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

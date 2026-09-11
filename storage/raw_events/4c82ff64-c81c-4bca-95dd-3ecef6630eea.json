@@ -1,0 +1,17 @@
+{
+  "eventId": "4c82ff64-c81c-4bca-95dd-3ecef6630eea",
+  "rawContent": "2026-09-06T21:51:46.306872+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: usb usb1: Product: xHCI Host Controller",
+  "rawHash": "351b2046d5d16e0b720c7d8d3d7c15ce2f96403bb18101980a99d0f9873a8d06",
+  "ingestedAt": "2026-09-11T04:36:52.179Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "00501417-36df-43ab-aa98-80ae862a0e00",
+  "rawContent": "2026-09-06T21:51:46.302967+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-fsck[986]: fsck.fat 4.2 (2021-01-31)",
+  "rawHash": "affca52fd0ced685dafba43bd9b26373fa5b916e176b230f92e09ba2fac546ce",
+  "ingestedAt": "2026-09-11T04:36:51.749Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

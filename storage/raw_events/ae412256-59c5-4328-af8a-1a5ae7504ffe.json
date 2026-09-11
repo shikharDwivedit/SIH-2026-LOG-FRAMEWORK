@@ -1,0 +1,17 @@
+{
+  "eventId": "ae412256-59c5-4328-af8a-1a5ae7504ffe",
+  "rawContent": "2026-09-07T09:13:45.383030+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started man-db.timer - Daily man-db regeneration.",
+  "rawHash": "0462c452d6e8ac6df14f52ba40fd0027b25f2101b4abfffe80bf35dd0aa484cb",
+  "ingestedAt": "2026-09-11T04:36:54.665Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

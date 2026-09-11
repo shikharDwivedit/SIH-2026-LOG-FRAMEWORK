@@ -1,0 +1,17 @@
+{
+  "eventId": "23b92641-3370-45be-8c96-49d89f14a09f",
+  "rawContent": "2026-09-06T08:08:09.067657+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788662289.0675] device (wlo1): Activation: (wifi) access point 'VITAP-HOSTEL' has security, but secrets are required.",
+  "rawHash": "d41a2ea81a9355bfaecbf65790b537e2f0f3ca4f501154eaa069648062b0f998",
+  "ingestedAt": "2026-09-11T04:36:50.881Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

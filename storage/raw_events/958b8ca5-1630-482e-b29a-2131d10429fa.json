@@ -1,0 +1,16 @@
+{
+  "eventId": "958b8ca5-1630-482e-b29a-2131d10429fa",
+  "rawContent": "2026-09-07T09:13:45.486376+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started udisks2.service - Disk Manager.",
+  "rawHash": "18460113285c38cd52e05cfdc9ec1d03f404c7d38f71210c8a3cdd2607d477e7",
+  "ingestedAt": "2026-09-11T04:36:55.177Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

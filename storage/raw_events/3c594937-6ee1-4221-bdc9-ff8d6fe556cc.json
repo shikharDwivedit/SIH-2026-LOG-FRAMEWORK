@@ -1,0 +1,17 @@
+{
+  "eventId": "3c594937-6ee1-4221-bdc9-ff8d6fe556cc",
+  "rawContent": "2026-09-06T21:51:53.428693+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[4672]: time=\"2026-09-06T21:51:53+05:30\" level=warning msg=\"Could not locate vulkan/icd.d/nvidia_layers.json: vulkan/icd.d/nvidia_layers.json: not found\\nvulkan/icd.d/nvidia_layers.json: not found\"",
+  "rawHash": "7da2063d69d64d3fd8ec95833625242ab48dc43e05fede4252e48d564121eb7e",
+  "ingestedAt": "2026-09-11T04:36:52.819Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

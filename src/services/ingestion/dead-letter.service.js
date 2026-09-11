@@ -31,6 +31,7 @@ class DeadLetterService {
       transport: rawEvent.transport || "unknown",
       error_code: errorInfo.code || "UNKNOWN_ERROR",
       error_message: errorInfo.message || "Processing failed",
+      errors: errorInfo.errors || [],
       detected_format: errorInfo.detectedFormat || "unknown",
       attempted_parser: errorInfo.attemptedParser || null,
       recorded_at: new Date().toISOString(),

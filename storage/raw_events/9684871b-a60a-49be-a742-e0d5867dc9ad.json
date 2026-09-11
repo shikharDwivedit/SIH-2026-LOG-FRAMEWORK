@@ -1,0 +1,16 @@
+{
+  "eventId": "9684871b-a60a-49be-a742-e0d5867dc9ad",
+  "rawContent": "2026-09-06T21:52:13.078136+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: dbus.service: Consumed 3.254s CPU time over 25.529s wall clock time, 241.7M memory peak.",
+  "rawHash": "6a37466e652f92c3fe0c60dc51d5b3d2ea38d94a1dd4ff31de1adc9656f19c2e",
+  "ingestedAt": "2026-09-11T04:36:53.650Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

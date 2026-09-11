@@ -1,0 +1,17 @@
+{
+  "eventId": "ae1fa16c-68ea-4556-b6cc-50b9cf6627d3",
+  "rawContent": "2026-09-06T08:07:41.923124+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2904]: time=\"2026-09-06T08:07:41+05:30\" level=warning msg=\"Could not locate /dev/dri/controlD65: /dev/dri/controlD65: not found\"",
+  "rawHash": "7f87a3a11257861c712647f7ff7caa59a97c3e13eb33a913c546b161546f8fc8",
+  "ingestedAt": "2026-09-11T04:36:50.318Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "9010001e-4ae6-42e0-96e6-1ae3772d6914",
+  "rawContent": "2026-09-06T08:07:39.196725+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Enabled 9 GPEs in block 00 to 7F",
+  "rawHash": "2c44e8e45da084508097ce997c131c66f626599047fc108fa59812efdefaa36d",
+  "ingestedAt": "2026-09-11T04:36:49.608Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

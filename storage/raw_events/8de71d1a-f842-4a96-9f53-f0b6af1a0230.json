@@ -1,0 +1,16 @@
+{
+  "eventId": "8de71d1a-f842-4a96-9f53-f0b6af1a0230",
+  "rawContent": "2026-09-06T09:43:56.088940+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: tlp.service: Deactivated successfully.",
+  "rawHash": "fdd16fae3148ecf7235a9e2030e6efcca41a0ba9dabff65a96bd5f3582b85a13",
+  "ingestedAt": "2026-09-11T04:36:51.597Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

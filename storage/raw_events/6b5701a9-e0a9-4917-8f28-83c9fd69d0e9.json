@@ -1,0 +1,17 @@
+{
+  "eventId": "6b5701a9-e0a9-4917-8f28-83c9fd69d0e9",
+  "rawContent": "2026-09-06T08:07:39.198886+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).",
+  "rawHash": "7d67386386d4d84192a27976e4c3f20d30464530d8264b75f3b343036af71729",
+  "ingestedAt": "2026-09-11T04:36:49.978Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

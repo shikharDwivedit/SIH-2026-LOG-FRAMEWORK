@@ -1,0 +1,16 @@
+{
+  "eventId": "31fba34c-07d4-4509-badd-ff0cacb315dc",
+  "rawContent": "2026-09-06T08:07:39.195079+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: BIOS-e820: [mem 0x000000005cb00000-0x0000000060ffffff]  device reserved",
+  "rawHash": "a54bf64bdbd37b2e6f08dd552f6f256e3cb77f1636562bed7cd80578f104c833",
+  "ingestedAt": "2026-09-11T04:36:49.382Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

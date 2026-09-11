@@ -1,0 +1,16 @@
+{
+  "eventId": "810f7f2c-3504-40ce-aa70-0e5956df0e91",
+  "rawContent": "2026-09-06T21:53:10.867398+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7084]: meta_window_set_stack_position_no_sync: assertion 'window->stack_position >= 0' failed",
+  "rawHash": "6bd1d0ae638850d2b8b95a8a9f6fcdff043ab736459c65786b841b2d854f35d5",
+  "ingestedAt": "2026-09-11T04:36:53.720Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

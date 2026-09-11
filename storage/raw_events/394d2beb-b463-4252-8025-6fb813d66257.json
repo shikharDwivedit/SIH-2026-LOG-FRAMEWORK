@@ -1,0 +1,16 @@
+{
+  "eventId": "394d2beb-b463-4252-8025-6fb813d66257",
+  "rawContent": "2026-09-06T21:51:46.305390+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx thermald[2305]: 32 CPUID levels; family:model:stepping 0x6:bf:2 (6:191:2)",
+  "rawHash": "79314e332e0de064243240a84dddeb5a745078b3a8e7b9a34babca3884922d73",
+  "ingestedAt": "2026-09-11T04:36:51.982Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

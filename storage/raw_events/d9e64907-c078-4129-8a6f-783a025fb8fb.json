@@ -1,0 +1,17 @@
+{
+  "eventId": "d9e64907-c078-4129-8a6f-783a025fb8fb",
+  "rawContent": "2026-09-06T00:50:14.465344+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx rtkit-daemon[6936]: Resumed scheduling 7 threads.",
+  "rawHash": "2ef70927160b3e5f7695c374480c09c89de0007ee3804001c0281e3f609cb5a8",
+  "ingestedAt": "2026-09-11T04:36:49.361Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

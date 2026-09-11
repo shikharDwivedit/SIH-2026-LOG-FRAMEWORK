@@ -1,0 +1,17 @@
+{
+  "eventId": "bf42729b-2f09-4581-b9b9-f9f893c33425",
+  "rawContent": "2026-09-07T09:13:45.384196+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: skl_hda_dsp_generic skl_hda_dsp_generic: ASoC: Parent card not yet available, widget card binding deferred",
+  "rawHash": "1ebac7bd712472faa0725c8e02d5ea837929427e6b010a15fd4351bbae4a38e4",
+  "ingestedAt": "2026-09-11T04:36:55.119Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

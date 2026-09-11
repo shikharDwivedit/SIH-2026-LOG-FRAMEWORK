@@ -1,0 +1,16 @@
+{
+  "eventId": "7e86b5d5-6c12-4dbf-981b-b5c0e4955201",
+  "rawContent": "2026-09-06T08:07:55.508076+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Reached target gnome-session-pre.target - Tasks to be run before GNOME Session starts.",
+  "rawHash": "230c61e280f346b325f37483d7f6e0ad4b55f56827d09676c9c0b5abb49e720e",
+  "ingestedAt": "2026-09-11T04:36:50.584Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

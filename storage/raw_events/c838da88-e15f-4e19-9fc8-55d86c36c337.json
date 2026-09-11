@@ -1,0 +1,16 @@
+{
+  "eventId": "c838da88-e15f-4e19-9fc8-55d86c36c337",
+  "rawContent": "2026-09-06T21:52:09.132785+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Started org.gnome.SettingsDaemon.ScreensaverProxy.service - GNOME FreeDesktop screensaver service.",
+  "rawHash": "f1674f638483ff3e162e1635f1d63e207f9536d3368d18eff57b46ffebae0078",
+  "ingestedAt": "2026-09-11T04:36:53.343Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

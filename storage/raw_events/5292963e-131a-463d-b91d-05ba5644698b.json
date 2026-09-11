@@ -1,0 +1,16 @@
+{
+  "eventId": "5292963e-131a-463d-b91d-05ba5644698b",
+  "rawContent": "2026-09-06T08:42:39.039578+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx fwupdmgr[15294]:  • 0 devices are supported in the enabled remotes (an update has been published)",
+  "rawHash": "af04d7553e98b920846bd9f693959b57c4a2e657ca70714fa57f5041299d563e",
+  "ingestedAt": "2026-09-11T04:36:51.108Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

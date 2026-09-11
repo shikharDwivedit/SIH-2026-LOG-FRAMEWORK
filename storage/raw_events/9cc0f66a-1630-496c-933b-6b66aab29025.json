@@ -1,0 +1,16 @@
+{
+  "eventId": "9cc0f66a-1630-496c-933b-6b66aab29025",
+  "rawContent": "2026-09-06T08:07:39.199678+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Initialized Local Variables for Method [WQBE]:",
+  "rawHash": "401ac9968aa05ae017d923855460fa48e6b50dd9f742d7d555d8ccf0392f35c7",
+  "ingestedAt": "2026-09-11T04:36:50.098Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

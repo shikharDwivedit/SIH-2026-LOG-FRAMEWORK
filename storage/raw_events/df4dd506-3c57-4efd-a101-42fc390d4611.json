@@ -1,0 +1,16 @@
+{
+  "eventId": "df4dd506-3c57-4efd-a101-42fc390d4611",
+  "rawContent": "2026-09-07T09:13:45.383490+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[2146]: dbus[2146]: Unknown username \"malcontent-webd\" in message bus configuration file",
+  "rawHash": "847b30d9f755a2d867cf0eef3575879dc8be0c807c9a17c72a2303502db14bd3",
+  "ingestedAt": "2026-09-11T04:36:54.843Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

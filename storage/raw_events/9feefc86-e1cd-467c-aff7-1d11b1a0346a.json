@@ -1,0 +1,17 @@
+{
+  "eventId": "9feefc86-e1cd-467c-aff7-1d11b1a0346a",
+  "rawContent": "2026-09-06T21:51:55.090805+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[2709]: [session uid=60578 pid=2709 pidfd=5] Successfully activated service 'org.gnome.Shell.Screencast'",
+  "rawHash": "17109e25c065cab2c0bc0c03f25804208877d51211b276c10271185ad88d2fec",
+  "ingestedAt": "2026-09-11T04:36:53.029Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "f9c2dcb3-ef52-41ab-aead-aaac4c27948b",
+  "rawContent": "2026-09-06T21:51:46.345961+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx boltd[2266]: [74b98780-002c-domain0                    ] newly connected [iommu] (/sys/devices/pci0000:00/0000:00:1b.0/0000:02:00.0/0000:03:00.0/0000:04:00.0/domain0/0-0)",
+  "rawHash": "d90388f905068adf5b890a304cc48b075aefa5e7dfa2d5b89c3538f30b4008e2",
+  "ingestedAt": "2026-09-11T04:36:52.488Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

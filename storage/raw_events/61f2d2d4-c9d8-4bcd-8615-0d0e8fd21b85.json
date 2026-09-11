@@ -1,0 +1,16 @@
+{
+  "eventId": "61f2d2d4-c9d8-4bcd-8615-0d0e8fd21b85",
+  "rawContent": "2026-09-06T21:51:52.874450+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished setvtrgb.service - Set console scheme.",
+  "rawHash": "e4ae1aec23207e04b43bf81e0b59fd70727e7131ff5e7e701f594de350d494ec",
+  "ingestedAt": "2026-09-11T04:36:52.712Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

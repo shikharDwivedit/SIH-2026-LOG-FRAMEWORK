@@ -1,0 +1,16 @@
+{
+  "eventId": "35fca675-f042-410c-9da9-e3fd44118145",
+  "rawContent": "2026-09-07T09:13:45.436353+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2311]: <info>  [1788752625.4360] ifupdown: management mode: unmanaged",
+  "rawHash": "054168934543b77f8ce53e56f473102f47b6d669b8c00359bb0f3f6d8f4401df",
+  "ingestedAt": "2026-09-11T04:36:55.158Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

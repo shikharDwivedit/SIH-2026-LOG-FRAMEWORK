@@ -1,0 +1,17 @@
+{
+  "eventId": "ecb03ba8-aa5d-4e81-84fd-26283b508201",
+  "rawContent": "2026-09-07T09:13:46.401540+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting rtkit-daemon.service - RealtimeKit Scheduling Policy Service...",
+  "rawHash": "b43585857b406d0cb25ca846f39c3d20b46fac3e21c3d512110f1004303691a7",
+  "ingestedAt": "2026-09-11T04:36:55.224Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

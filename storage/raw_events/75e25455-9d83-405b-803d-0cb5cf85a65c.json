@@ -1,0 +1,16 @@
+{
+  "eventId": "75e25455-9d83-405b-803d-0cb5cf85a65c",
+  "rawContent": "2026-09-06T08:07:39.195117+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: systemd-sysusers.service - Create System Users skipped, no trigger condition checks were met.",
+  "rawHash": "de7e82045178b45508f911310e39c765854a276418ac78b2e2e829f55d4b32e4",
+  "ingestedAt": "2026-09-11T04:36:49.390Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

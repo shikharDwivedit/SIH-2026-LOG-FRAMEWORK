@@ -1,0 +1,16 @@
+{
+  "eventId": "30bce40a-b7ba-4ed1-b591-3d2a83a73b6a",
+  "rawContent": "2026-09-06T21:51:46.303946+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: CPU0: Thermal monitoring enabled (TM1)",
+  "rawHash": "e0ea7050e5683b19cfe96c7a3533b849d8c071cf0b58bd6f38e720a2ad4c7e99",
+  "ingestedAt": "2026-09-11T04:36:51.823Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

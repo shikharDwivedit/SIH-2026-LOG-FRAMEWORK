@@ -1,0 +1,17 @@
+{
+  "eventId": "04a9aa4d-0495-4045-b999-88db05a0aa46",
+  "rawContent": "2026-09-06T09:43:32.551636+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: OOM killer disabled.",
+  "rawHash": "481862139b7776e1cbba04fa2a5392658c7bc34ae464ebc5de0c297409f0a5e2",
+  "ingestedAt": "2026-09-11T04:36:51.243Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

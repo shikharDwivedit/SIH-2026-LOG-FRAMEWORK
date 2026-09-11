@@ -1,0 +1,16 @@
+{
+  "eventId": "f028a633-d2fa-4a1b-ae36-1949f84defb1",
+  "rawContent": "2026-09-06T08:07:39.953385+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-keyring-daemon[2633]: GNOME_KEYRING_CONTROL=/run/user/60578/keyring",
+  "rawHash": "0f65d1df941b315366314ac43deb4cce6acfbe2637743208cb2183c3e5a13017",
+  "ingestedAt": "2026-09-11T04:36:50.254Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

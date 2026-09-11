@@ -1,0 +1,17 @@
+{
+  "eventId": "d082e8f9-d90a-42f7-9f89-c7745c7e1eb9",
+  "rawContent": "2026-09-06T09:43:55.834456+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: gdm.service: Main process exited, code=exited, status=1/FAILURE",
+  "rawHash": "40e7da84c10fe452e85e3d303c43045b7bda10b13e96d13cc16b1b213b2c4453",
+  "ingestedAt": "2026-09-11T04:36:51.549Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

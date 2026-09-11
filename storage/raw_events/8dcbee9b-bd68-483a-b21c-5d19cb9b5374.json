@@ -1,0 +1,16 @@
+{
+  "eventId": "8dcbee9b-bd68-483a-b21c-5d19cb9b5374",
+  "rawContent": "2026-09-06T09:43:55.942544+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Object Gjs_status_system_PowerToggle (0x5d85dfa6b7d0), has been already disposed — impossible to set any property on it. This might be caused by the object having been destroyed from C code using something such as destroy(), dispose(), or remove() vfuncs.#012== Stack trace for context 0x5d85dc0bf390 ==#012#0   5d85dc1b7428 i   resource:///org/gnome/shell/ui/status/system.js:72 (1cf5514ab3d0 @ 50)#012#1   5d85dc1b73a8 i   resource:///org/gnome/shell/ui/status/system.js:46 (1cf5514ab290 @ 12)#012#2   5d85dc1b7308 i   resource:///org/gnome/shell/ui/main.js:292 (e07514fb7e0 @ 119)",
+  "rawHash": "274e42c28d4ed84c488f21a34c7a90494609a1e85b05efc12e7e12d29d889170",
+  "ingestedAt": "2026-09-11T04:36:51.589Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

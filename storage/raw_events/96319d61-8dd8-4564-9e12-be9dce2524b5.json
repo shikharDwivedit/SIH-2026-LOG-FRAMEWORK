@@ -1,0 +1,16 @@
+{
+  "eventId": "96319d61-8dd8-4564-9e12-be9dce2524b5",
+  "rawContent": "2026-09-06T21:51:46.308541+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...",
+  "rawHash": "1253de2c6d11eaef8a520652a1931fdf9ed7c3f8706b001895c4f7c4887d2f01",
+  "ingestedAt": "2026-09-11T04:36:52.330Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

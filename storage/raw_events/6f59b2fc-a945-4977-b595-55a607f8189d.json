@@ -1,0 +1,16 @@
+{
+  "eventId": "6f59b2fc-a945-4977-b595-55a607f8189d",
+  "rawContent": "2026-09-06T21:52:10.938272+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Stopped target org.gnome.SettingsDaemon.A11ySettings.target - GNOME accessibility target.",
+  "rawHash": "5bfb237fb6122c08ac69f48d617605e5c9cd8683175874517dca49d5b5009878",
+  "ingestedAt": "2026-09-11T04:36:53.571Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

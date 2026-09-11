@@ -1,0 +1,16 @@
+{
+  "eventId": "32868907-78c9-4111-b60d-4e5269b8309b",
+  "rawContent": "2026-09-06T08:07:39.199179+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: nvidia-modeset: WARNING: GPU:0: Unable to read EDID for display device DP-4",
+  "rawHash": "5b2c80d350b1429f343811dea83af88f95758314037da5d18b247364c542a6dc",
+  "ingestedAt": "2026-09-11T04:36:50.032Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

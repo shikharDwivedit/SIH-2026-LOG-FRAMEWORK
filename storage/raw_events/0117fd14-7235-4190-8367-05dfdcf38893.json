@@ -1,0 +1,16 @@
+{
+  "eventId": "0117fd14-7235-4190-8367-05dfdcf38893",
+  "rawContent": "2026-09-06T08:07:55.593925+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Starting org.gnome.Shell@ubuntu.service - GNOME Shell...",
+  "rawHash": "15ef02bfc012209a0521366d67c4cfbf97dbc23fc1e80c8ac9af8d5bfc5a28f5",
+  "ingestedAt": "2026-09-11T04:36:50.596Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

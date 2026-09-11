@@ -1,0 +1,16 @@
+{
+  "eventId": "825c6df4-8c07-4fb4-8bda-0854329373e4",
+  "rawContent": "2026-09-06T08:07:39.195843+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounting snap-bare-5.mount - Mount unit for bare, revision 5...",
+  "rawHash": "f2f511d7b657ba3103169495fbf9eb40e6770addb0bd6f5b3fd73c7528fb6829",
+  "ingestedAt": "2026-09-11T04:36:49.512Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

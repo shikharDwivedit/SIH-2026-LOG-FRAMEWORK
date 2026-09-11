@@ -1,0 +1,17 @@
+{
+  "eventId": "64d82469-92b8-4a72-8921-664dbedb40af",
+  "rawContent": "2026-09-06T09:43:55.792861+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped apt-daily-upgrade.timer - Daily apt upgrade and clean activities.",
+  "rawHash": "74593b13a2ff84a0036a96ae997cf0fece6bd7fa40f3578e8913662ade309f07",
+  "ingestedAt": "2026-09-11T04:36:51.506Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "81f57944-14c1-4d8e-bbde-4c6ca914055c",
+  "rawContent": "2026-09-06T21:51:46.308973+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: i915 0000:00:02.0: [drm] Found alderlake_s (device ID 4688) integrated display version 12.00 stepping C0",
+  "rawHash": "27cc20de2f7138c7a54c169a7292bc8551069e776f9318d7fc9a28e83473a74b",
+  "ingestedAt": "2026-09-11T04:36:52.367Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

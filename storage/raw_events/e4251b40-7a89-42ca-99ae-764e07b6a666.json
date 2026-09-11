@@ -1,0 +1,16 @@
+{
+  "eventId": "e4251b40-7a89-42ca-99ae-764e07b6a666",
+  "rawContent": "2026-09-06T08:08:09.745793+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788662289.7456] dhcp4 (wlo1): state changed new lease, address=172.18.112.219",
+  "rawHash": "b264e97d17612500d8c7e9b535f3f4d2b83bb06ee4d1892304c4b02deb6fb6d2",
+  "ingestedAt": "2026-09-11T04:36:50.923Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "a8bb9782-95fa-485a-aa27-09d2b122980f",
+  "rawContent": "2026-09-06T21:52:09.133070+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Started org.gnome.SettingsDaemon.Datetime.service - GNOME date & time service.",
+  "rawHash": "a98e87e358e12df46640846eff7c616a7d50048711605b8c057e9e3cb75c1496",
+  "ingestedAt": "2026-09-11T04:36:53.306Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

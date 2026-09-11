@@ -1,0 +1,16 @@
+{
+  "eventId": "bf13e634-c270-432c-91e8-b7e96fe6eaf2",
+  "rawContent": "2026-09-06T21:51:46.302279+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Found device dev-disk-by\\x2duuid-C03B\\x2dB20C.device - WD PC SN810 SDCPNRY-512G-1006 SYSTEM.",
+  "rawHash": "e925e2733faebe0deab2acf3b3c0d778e7f60d6cf3dfa1e1f77ea09bc350c058",
+  "ingestedAt": "2026-09-11T04:36:51.679Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

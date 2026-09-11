@@ -1,0 +1,16 @@
+{
+  "eventId": "ed4fd27f-4f71-49e2-ae53-fa91e9b854fc",
+  "rawContent": "2026-09-06T08:07:39.199569+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: intel_tcc_cooling: TCC Offset locked",
+  "rawHash": "66f9267ea66d0c72da9a71940b5ff6dacd2a1c801cba6104595a057fa7e034fe",
+  "ingestedAt": "2026-09-11T04:36:50.084Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

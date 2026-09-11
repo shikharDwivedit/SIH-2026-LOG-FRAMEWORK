@@ -1,0 +1,17 @@
+{
+  "eventId": "c8a44471-864e-4a9b-b368-f89fddc47378",
+  "rawContent": "2026-09-06T21:51:47.466233+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Started ubuntu-insights-upload.timer - \"Run Ubuntu-Insights upload 8 mins after boot and every week relative to the activation time\".",
+  "rawHash": "7a14468af5ac89be53a81da62f38a1cf5a1155ca1d9aaa69916bcffe96305e29",
+  "ingestedAt": "2026-09-11T04:36:52.533Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "d7ed14b9-8f7d-472a-8320-9e305d620da9",
+  "rawContent": "2026-09-06T21:51:46.302276+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving SSDT table memory at [mem 0x5caf7000-0x5caf710f]",
+  "rawHash": "7285c3c871dc413ab9a7e55ea2007cf612e3c59d27eca8c84515879f5738115d",
+  "ingestedAt": "2026-09-11T04:36:51.677Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

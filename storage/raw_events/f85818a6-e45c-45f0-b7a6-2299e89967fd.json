@@ -1,0 +1,17 @@
+{
+  "eventId": "f85818a6-e45c-45f0-b7a6-2299e89967fd",
+  "rawContent": "2026-09-06T08:07:39.195532+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-fsck[903]: There are differences between boot sector and its backup.",
+  "rawHash": "94a9486c00ec94909ed575f62b93653f11ca9db469c1799e10fee7f98d73c23a",
+  "ingestedAt": "2026-09-11T04:36:49.447Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

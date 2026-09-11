@@ -1,0 +1,16 @@
+{
+  "eventId": "e7e5fc0c-7240-4c95-9d5d-ad41c86a4be8",
+  "rawContent": "2026-09-07T09:13:46.339595+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2551]: Started ubuntu-report.path - Pending report trigger for Ubuntu Report.",
+  "rawHash": "963a96bfef36d180b768193ae409063a78517f751488fdf4fb20fd3681461a2e",
+  "ingestedAt": "2026-09-11T04:36:55.218Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

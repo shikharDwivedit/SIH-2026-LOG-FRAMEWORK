@@ -1,0 +1,17 @@
+{
+  "eventId": "230e31df-5a13-4ca9-a66a-ffab17c63585",
+  "rawContent": "2026-09-06T08:07:39.196625+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: cpuidle: using governor menu",
+  "rawHash": "e5c084d878aae3380397e51b73fefe2afa03f8b97fb17606e87ac8d57aee1c31",
+  "ingestedAt": "2026-09-11T04:36:49.582Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

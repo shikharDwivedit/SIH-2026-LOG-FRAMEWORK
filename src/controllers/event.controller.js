@@ -9,7 +9,17 @@ const { generateUuid } = require("../utils/hash");
 const fileIngestionJobs = new Map();
 
 const ingestLog = asyncHandler(async (req, res) => {
-  const { log, source_ip, transport } = req.body;
+  const {
+    log,
+    source_ip,
+    source_id,
+    parser_name,
+    source_vendor,
+    source_product,
+    source_device_type,
+    source_name,
+    transport
+  } = req.body;
 
   if (!log || typeof log !== "string" || !log.trim()) {
     throw new ApiError(400, "Log content string is required in request body");
@@ -17,6 +27,12 @@ const ingestLog = asyncHandler(async (req, res) => {
 
   const result = eventProcessingService.processSingleRawLog(log, {
     source_ip,
+    source_id,
+    parserName: parser_name,
+    source_vendor,
+    source_product,
+    source_device_type,
+    source_name,
     transport: transport || "http"
   });
 

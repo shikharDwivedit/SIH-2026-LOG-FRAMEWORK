@@ -1,0 +1,17 @@
+{
+  "eventId": "a81b331b-904a-47b9-a868-cbbb28b2eea0",
+  "rawContent": "2026-09-07T09:13:45.383193+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: secureboot-db.service - Secure Boot updates for DB and DBX skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/db-d719b2cb-3d3a-4596-a3bc-dad00e67656f",
+  "rawHash": "19c4fb632d2add9d203208d6b87c2878cc15c8ff9ce8f808643cf209a1e61cb3",
+  "ingestedAt": "2026-09-11T04:36:54.735Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

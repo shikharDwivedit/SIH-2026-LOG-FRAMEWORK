@@ -1,0 +1,17 @@
+{
+  "eventId": "b41d5d00-2f2b-40dd-b466-df424d555286",
+  "rawContent": "2026-09-07T09:13:46.375731+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started session-c1.scope - Session c1 of User gdm-greeter.",
+  "rawHash": "966e3e9b791384e1c57726bd99f9f185e8945a236af9e342c83bdfb0b39a1cfa",
+  "ingestedAt": "2026-09-11T04:36:55.224Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

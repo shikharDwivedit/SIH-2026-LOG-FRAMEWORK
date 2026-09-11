@@ -1,0 +1,16 @@
+{
+  "eventId": "3e70f7d8-eed8-4334-b2b7-151c48b36335",
+  "rawContent": "2026-09-06T09:43:32.551663+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: i915 0000:00:02.0: [drm] GT0: GUC: submission disabled",
+  "rawHash": "ef16b0eff2b7fbf2e1abbff226ea850464c9514a4536f5f9a78bebd7f48285ae",
+  "ingestedAt": "2026-09-11T04:36:51.249Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "0a9037bb-e4d0-4940-b2b9-4863be088839",
+  "rawContent": "2026-09-06T08:07:55.466284+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Finished user-session-migration.service - User Session Migration.",
+  "rawHash": "31d5bfb73a34a373a634fc9dbdfdcd7d6d71a9d1a313aed3ff653933580fc9d8",
+  "ingestedAt": "2026-09-11T04:36:50.578Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

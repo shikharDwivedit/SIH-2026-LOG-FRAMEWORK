@@ -1,0 +1,17 @@
+{
+  "eventId": "8792fba1-fc05-4c7d-8393-07122d6788cf",
+  "rawContent": "2026-09-06T08:07:39.198853+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788662259.1734] monitoring ifupdown state file '/run/network/ifstate'.",
+  "rawHash": "2258a95ffbd04ea4208e62574a618ec6df30d77193bea6245d775f15bbe7ebf6",
+  "ingestedAt": "2026-09-11T04:36:49.967Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "a0f4a509-faba-45dd-a53f-9657603a6304",
+  "rawContent": "2026-09-07T09:13:45.384121+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: DSP detected with PCI class/subclass/prog-if 0x040100",
+  "rawHash": "d5fe2de96d0b8e3723b947a3cab33ebe00bf1e87ea338160649664ca9af8d8bb",
+  "ingestedAt": "2026-09-11T04:36:55.070Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "b38b53b9-0c50-48dc-8e54-94becb712d80",
+  "rawContent": "2026-09-06T08:07:39.199558+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: iwlwifi 0000:00:14.3: Detected Intel(R) Wi-Fi 6E AX211 160MHz",
+  "rawHash": "25907b840f0b5aa5cffc50a3353e04114b968cba4786b89dd488f344dfc2bf59",
+  "ingestedAt": "2026-09-11T04:36:50.083Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

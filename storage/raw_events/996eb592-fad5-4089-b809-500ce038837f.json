@@ -1,0 +1,16 @@
+{
+  "eventId": "996eb592-fad5-4089-b809-500ce038837f",
+  "rawContent": "2026-09-06T21:52:13.062054+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Stopped filter-chain.service - PipeWire filter chain daemon.",
+  "rawHash": "cf971340263ea179ff250274b47f8bc71c660a0f32fc797653f62475c043dbd0",
+  "ingestedAt": "2026-09-11T04:36:53.646Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

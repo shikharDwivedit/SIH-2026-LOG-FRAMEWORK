@@ -1,0 +1,16 @@
+{
+  "eventId": "b4a6686e-2971-4e75-8e05-edfb631d36e8",
+  "rawContent": "2026-09-06T08:07:39.199592+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: i915 0000:00:02.0: vgaarb: deactivate vga console",
+  "rawHash": "ac414c26d7973b18e497f9e33f32432feb657fa6c1f21a38f2b5f83dd240691a",
+  "ingestedAt": "2026-09-11T04:36:50.089Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

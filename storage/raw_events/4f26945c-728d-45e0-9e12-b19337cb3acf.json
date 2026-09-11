@@ -1,0 +1,16 @@
+{
+  "eventId": "4f26945c-728d-45e0-9e12-b19337cb3acf",
+  "rawContent": "2026-09-06T08:07:54.819274+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Listening on keyboxd.socket - GnuPG public key management service.",
+  "rawHash": "7d88e440f099d19ce360a6775a38ec41d073a6945071637d2c5758ded181895e",
+  "ingestedAt": "2026-09-11T04:36:50.532Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

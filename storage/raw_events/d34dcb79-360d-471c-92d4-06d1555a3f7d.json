@@ -1,0 +1,16 @@
+{
+  "eventId": "d34dcb79-360d-471c-92d4-06d1555a3f7d",
+  "rawContent": "2026-09-06T21:52:13.079074+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: mpris-proxy.service: Failed with result 'exit-code'.",
+  "rawHash": "c50e3b7164f975aca8a00e92e2d50e78982e10d22eac65de3abbc64318b62683",
+  "ingestedAt": "2026-09-11T04:36:53.650Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

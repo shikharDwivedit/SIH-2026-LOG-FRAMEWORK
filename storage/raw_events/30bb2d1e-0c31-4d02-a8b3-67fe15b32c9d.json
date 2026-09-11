@@ -1,0 +1,16 @@
+{
+  "eventId": "30bb2d1e-0c31-4d02-a8b3-67fe15b32c9d",
+  "rawContent": "2026-09-06T08:07:39.196629+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.",
+  "rawHash": "dff8cc51ca9ec4b7fee151575c9302fb34d7975437c1d846d1abbe30da7a0d85",
+  "ingestedAt": "2026-09-11T04:36:49.588Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

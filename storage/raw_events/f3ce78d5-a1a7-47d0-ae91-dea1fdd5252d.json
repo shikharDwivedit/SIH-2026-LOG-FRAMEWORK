@@ -1,0 +1,16 @@
+{
+  "eventId": "f3ce78d5-a1a7-47d0-ae91-dea1fdd5252d",
+  "rawContent": "2026-09-06T09:34:37.407643+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx rtkit-daemon[2615]: Successfully demoted thread 7364 of process 7364.",
+  "rawHash": "b4cef4a1130d3a1882614c1d0af47e836a12759f76830ce7e6f24240d822e2d3",
+  "ingestedAt": "2026-09-11T04:36:51.201Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

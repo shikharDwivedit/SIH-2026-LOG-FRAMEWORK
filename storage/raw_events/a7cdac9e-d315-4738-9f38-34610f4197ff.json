@@ -1,0 +1,16 @@
+{
+  "eventId": "a7cdac9e-d315-4738-9f38-34610f4197ff",
+  "rawContent": "2026-09-07T09:13:46.114919+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting user@60578.service - User Manager for UID 60578...",
+  "rawHash": "14b43091a949998e127c8d998b919c33aec9d425bb259b9a2cbb15352b367dbe",
+  "ingestedAt": "2026-09-11T04:36:55.215Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

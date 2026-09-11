@@ -1,0 +1,16 @@
+{
+  "eventId": "7a77fb34-b769-47c0-9cc4-2530757f9331",
+  "rawContent": "2026-09-06T21:52:05.115061+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Started gvfs-daemon.service - Virtual filesystem service.",
+  "rawHash": "758ab19dde1a624db623ef56b404e7a09d68fe06bc7718349ce977c10db15328",
+  "ingestedAt": "2026-09-11T04:36:53.196Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

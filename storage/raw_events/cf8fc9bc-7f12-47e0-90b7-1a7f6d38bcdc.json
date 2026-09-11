@@ -1,0 +1,16 @@
+{
+  "eventId": "cf8fc9bc-7f12-47e0-90b7-1a7f6d38bcdc",
+  "rawContent": "2026-09-06T21:51:46.302486+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch skipped, unmet condition check ConditionPathExists=!/run/plymouth/pid",
+  "rawHash": "1df3900a38aa7acc22f7269525e5ef3da3fb3cbe37804bee715114ace4d5089c",
+  "ingestedAt": "2026-09-11T04:36:51.711Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

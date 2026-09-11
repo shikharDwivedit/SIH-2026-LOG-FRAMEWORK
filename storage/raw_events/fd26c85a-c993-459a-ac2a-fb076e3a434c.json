@@ -1,0 +1,17 @@
+{
+  "eventId": "fd26c85a-c993-459a-ac2a-fb076e3a434c",
+  "rawContent": "2026-09-06T08:07:40.955043+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: snapd.autoimport.service - Auto import assertions from block devices skipped, no trigger condition checks were met.",
+  "rawHash": "1fdc718e86aad7832c83beb1b862aa37a84978b05c7925e12850091828247940",
+  "ingestedAt": "2026-09-11T04:36:50.267Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

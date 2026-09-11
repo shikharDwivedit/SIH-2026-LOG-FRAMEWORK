@@ -1,0 +1,16 @@
+{
+  "eventId": "1d093a3b-e191-429d-9f7b-7e0ffe49a3db",
+  "rawContent": "2026-09-07T09:13:45.382437+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: audit: initializing netlink subsys (disabled)",
+  "rawHash": "813fc18622f98d847c76269c4699188c899e8805cc81051d3cc084b504307db0",
+  "ingestedAt": "2026-09-11T04:36:54.470Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

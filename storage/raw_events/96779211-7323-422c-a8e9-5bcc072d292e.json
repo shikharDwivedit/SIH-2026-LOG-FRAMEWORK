@@ -1,0 +1,16 @@
+{
+  "eventId": "96779211-7323-422c-a8e9-5bcc072d292e",
+  "rawContent": "2026-09-07T09:13:45.904641+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started NetworkManager.service - Network Manager.",
+  "rawHash": "f953a01cec2ae8e1b787c3ac06b364f95aee7210986aa6fb40950fe55e26dfad",
+  "ingestedAt": "2026-09-11T04:36:55.192Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

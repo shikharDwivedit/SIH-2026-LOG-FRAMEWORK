@@ -1,0 +1,16 @@
+{
+  "eventId": "aeb0782c-5628-4e50-b82e-8de3f40f1c6b",
+  "rawContent": "2026-09-06T21:52:11.116134+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-control-center-global-shortcuts-provider[5176]: Lost connection to Wayland compositor.",
+  "rawHash": "636e27b7b7e9637e630d33bc45e3ca12d45cc420f416cf437574bc33a1ae35c7",
+  "ingestedAt": "2026-09-11T04:36:53.586Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

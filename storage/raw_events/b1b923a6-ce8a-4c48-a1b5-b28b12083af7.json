@@ -1,0 +1,17 @@
+{
+  "eventId": "b1b923a6-ce8a-4c48-a1b5-b28b12083af7",
+  "rawContent": "2026-09-06T09:43:55.793800+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: update-notifier-download.timer: Deactivated successfully.",
+  "rawHash": "0189027db1f60962a85f70b94f700797fe441e7df7c964b2cb117d569640a6ee",
+  "ingestedAt": "2026-09-11T04:36:51.507Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

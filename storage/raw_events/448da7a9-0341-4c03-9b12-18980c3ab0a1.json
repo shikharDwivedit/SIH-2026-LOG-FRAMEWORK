@@ -1,0 +1,17 @@
+{
+  "eventId": "448da7a9-0341-4c03-9b12-18980c3ab0a1",
+  "rawContent": "2026-09-06T21:51:47.466182+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Started ubuntu-insights-collect.timer - \"Run Ubuntu-Insights collect 5 mins after boot and every month relative to the activation time\".",
+  "rawHash": "d67652af3368a29fa6828c5ecb71bb4076537de575bde3b07653465cff02db55",
+  "ingestedAt": "2026-09-11T04:36:52.533Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

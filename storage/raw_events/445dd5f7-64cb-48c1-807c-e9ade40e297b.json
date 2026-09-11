@@ -1,0 +1,16 @@
+{
+  "eventId": "445dd5f7-64cb-48c1-807c-e9ade40e297b",
+  "rawContent": "2026-09-06T21:56:27.772106+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx brave-browser.desktop[10053]: <--- Last few GCs --->",
+  "rawHash": "bf74b6d41261c45038292da5daa1a960a76d12e7b3c53ebedf35065c5d4ee295",
+  "ingestedAt": "2026-09-11T04:36:53.880Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

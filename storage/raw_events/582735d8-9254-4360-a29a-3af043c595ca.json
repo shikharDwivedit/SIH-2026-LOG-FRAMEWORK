@@ -1,0 +1,16 @@
+{
+  "eventId": "582735d8-9254-4360-a29a-3af043c595ca",
+  "rawContent": "2026-09-06T21:51:47.470051+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Listening on speech-dispatcher.socket - Speech Dispatcher Socket.",
+  "rawHash": "815470d1767cc215d2d56c348614e0834da71cab5246a5cc7f2d23a5ea0a240a",
+  "ingestedAt": "2026-09-11T04:36:52.546Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

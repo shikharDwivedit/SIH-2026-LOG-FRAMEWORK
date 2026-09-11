@@ -1,0 +1,16 @@
+{
+  "eventId": "c82f30f9-1725-47ff-bc47-78214969cfa6",
+  "rawContent": "2026-09-06T08:42:39.039401+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx fwupdmgr[15294]: Successfully downloaded new metadata:",
+  "rawHash": "030c7907fbfbe9304040e72535259923cc39f438a022c5adb1cce8f24eee8c51",
+  "ingestedAt": "2026-09-11T04:36:51.107Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

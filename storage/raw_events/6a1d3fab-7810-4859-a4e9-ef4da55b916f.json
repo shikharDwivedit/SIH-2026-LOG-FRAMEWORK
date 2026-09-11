@@ -1,0 +1,16 @@
+{
+  "eventId": "6a1d3fab-7810-4859-a4e9-ef4da55b916f",
+  "rawContent": "2026-09-06T08:07:39.199051+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: hid-generic 0003:32C2:0018.0005: input,hiddev1,hidraw4: USB HID v1.10 Mouse [HS6209 2.4G Wireless Receiver] on usb-0000:00:14.0-2/input2",
+  "rawHash": "f4fb42568c1de150d5806e0ecf235407229aa60f83c329ddb24de8401df63cca",
+  "ingestedAt": "2026-09-11T04:36:50.018Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

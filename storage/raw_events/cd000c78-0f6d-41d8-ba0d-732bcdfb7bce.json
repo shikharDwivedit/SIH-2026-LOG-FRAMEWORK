@@ -1,0 +1,16 @@
+{
+  "eventId": "cd000c78-0f6d-41d8-ba0d-732bcdfb7bce",
+  "rawContent": "2026-09-06T21:52:23.317592+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Removed slice app.slice - User Application Slice.",
+  "rawHash": "14ae1ca873a11b8c842d08e1321d302bea41a1cbecb8920141770ed780f912ba",
+  "ingestedAt": "2026-09-11T04:36:53.678Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

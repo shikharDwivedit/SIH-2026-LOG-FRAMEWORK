@@ -1,0 +1,16 @@
+{
+  "eventId": "7d044d6e-c075-4063-885b-c03469f469cb",
+  "rawContent": "2026-09-06T08:07:55.155391+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wireplumber[7380]: [0:00:23.149860978] [7533] ERROR DmaBufAllocator dma_buf_allocator.cpp:119 Could not open any dma-buf provider",
+  "rawHash": "9caba5d27b7196248554cca83bb740a5b2731e9aeef8bb0535c2408473de248b",
+  "ingestedAt": "2026-09-11T04:36:50.554Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

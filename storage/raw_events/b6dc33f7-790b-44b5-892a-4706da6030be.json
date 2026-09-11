@@ -1,0 +1,16 @@
+{
+  "eventId": "b6dc33f7-790b-44b5-892a-4706da6030be",
+  "rawContent": "2026-09-06T21:51:46.307180+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing 2025 Kmod: 4627603d2357a2a3f81006370894c221175893e9'",
+  "rawHash": "a7a4ec2d349ce4b5894e865ec3017734c966eabbb4af57e9231446b640b3ad3f",
+  "ingestedAt": "2026-09-11T04:36:52.218Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "36c1c6e8-bb3d-4bb1-976c-e7cbf8805746",
+  "rawContent": "2026-09-06T08:07:39.801854+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: /usr/lib/systemd/user/spice-vdagent.service:23: Unknown key 'StandardError' in section [Install], ignoring.",
+  "rawHash": "9f34e61195bc8963d2125951aac3d9ca38c110f0770610e5751a827c9d18296f",
+  "ingestedAt": "2026-09-11T04:36:50.222Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

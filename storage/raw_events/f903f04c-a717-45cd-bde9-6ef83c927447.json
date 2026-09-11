@@ -1,0 +1,17 @@
+{
+  "eventId": "f903f04c-a717-45cd-bde9-6ef83c927447",
+  "rawContent": "2026-09-06T08:07:41.805099+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gsd-sharing[2961]: Failed to stop gnome-user-share-webdav.service: GDBus.Error:org.freedesktop.systemd1.NoSuchUnit: Unit gnome-user-share-webdav.service not loaded.",
+  "rawHash": "6a6e0364131d274a480471fea8ea1a57b40c1b8eff477b8e937a1eb3b4c3e615",
+  "ingestedAt": "2026-09-11T04:36:50.317Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

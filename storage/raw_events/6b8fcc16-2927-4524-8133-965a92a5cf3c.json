@@ -1,0 +1,16 @@
+{
+  "eventId": "6b8fcc16-2927-4524-8133-965a92a5cf3c",
+  "rawContent": "2026-09-07T09:13:45.948755+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2311]: <info>  [1788752625.9485] Wi-Fi P2P device controlled by interface wlo1 created",
+  "rawHash": "108abdc29279f6ca713d6545821c7dde8ee2e17c2e9517c6b79270faa72e5f7b",
+  "ingestedAt": "2026-09-11T04:36:55.206Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

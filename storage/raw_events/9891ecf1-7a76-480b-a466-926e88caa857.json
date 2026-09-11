@@ -1,0 +1,17 @@
+{
+  "eventId": "9891ecf1-7a76-480b-a466-926e88caa857",
+  "rawContent": "2026-09-07T09:13:45.383497+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Segment Routing with IPv6",
+  "rawHash": "ad2e81811f769714aec495c3cf3f97d6c5d92abb14505d7954cee6bd185bbd72",
+  "ingestedAt": "2026-09-11T04:36:54.840Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

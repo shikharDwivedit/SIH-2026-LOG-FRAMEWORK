@@ -1,0 +1,16 @@
+{
+  "eventId": "6b156334-d71a-4434-9576-4de7b9d328c6",
+  "rawContent": "2026-09-07T09:13:45.383091+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kdump-tools[1670]: Starting kdump-tools:",
+  "rawHash": "68cb92c57e4abb05356a1f80ec0eeaa14cc680d92609005711c9ed9f9d71e8c9",
+  "ingestedAt": "2026-09-11T04:36:54.701Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "633c7c58-bf23-4c64-8d74-e72d220cca84",
+  "rawContent": "2026-09-06T21:51:46.303905+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: printk: legacy console [tty0] enabled",
+  "rawHash": "6beb5827c0edc1f9bb37abab37a1234fb91596cb833d8d7adb81bc587b1bce96",
+  "ingestedAt": "2026-09-11T04:36:51.812Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

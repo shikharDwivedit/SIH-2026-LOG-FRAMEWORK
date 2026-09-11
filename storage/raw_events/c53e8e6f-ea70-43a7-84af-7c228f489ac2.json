@@ -1,0 +1,16 @@
+{
+  "eventId": "c53e8e6f-ea70-43a7-84af-7c228f489ac2",
+  "rawContent": "2026-09-06T21:52:08.954647+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Reached target gnome-session@ubuntu.target - GNOME Session (session: ubuntu).",
+  "rawHash": "9c055ce56c18be813aeb4f8461d49c6227d9feb2f3d135399220c303a8fa2a94",
+  "ingestedAt": "2026-09-11T04:36:53.293Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

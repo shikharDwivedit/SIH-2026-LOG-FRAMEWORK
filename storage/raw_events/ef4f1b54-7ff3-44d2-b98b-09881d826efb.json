@@ -1,0 +1,17 @@
+{
+  "eventId": "ef4f1b54-7ff3-44d2-b98b-09881d826efb",
+  "rawContent": "2026-09-06T21:51:46.302241+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Expecting device dev-tpm0.device - /dev/tpm0...",
+  "rawHash": "e8c251a18a49e83e1ac3fbdfe81ec54db14e76befeb2dfcd74ad06a6d062139f",
+  "ingestedAt": "2026-09-11T04:36:51.672Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

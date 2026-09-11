@@ -1,0 +1,17 @@
+{
+  "eventId": "b54d5513-175e-4cc3-8a08-3cb95a4bc65f",
+  "rawContent": "2026-09-07T09:13:45.381660+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving PHAT table memory at [mem 0x5c9f6000-0x5c9f67db]",
+  "rawHash": "65fb8f24140c30c8ade513c2577ff9d13f3a2ba0e411b9f8b60e8556e02d24c0",
+  "ingestedAt": "2026-09-11T04:36:54.337Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

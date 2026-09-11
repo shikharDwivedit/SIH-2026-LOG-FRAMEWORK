@@ -1,0 +1,17 @@
+{
+  "eventId": "55e2edfa-54d7-4452-b374-7aab5c35690e",
+  "rawContent": "2026-09-07T09:13:45.381861+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting systemd-backlight@backlight:nvidia_wmi_ec_backlight.service - Load/Save Screen Backlight Brightness of backlight:nvidia_wmi_ec_backlight...",
+  "rawHash": "8dfca821d6abd39a5a4d1f0f83786d59a12e1d11a2abf46914ce52aad1bbdde8",
+  "ingestedAt": "2026-09-11T04:36:54.368Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

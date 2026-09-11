@@ -1,0 +1,16 @@
+{
+  "eventId": "3f98ba41-6911-4b15-9cfe-8f6328f4e724",
+  "rawContent": "2026-09-07T09:13:45.382981+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished snapd.apparmor.service - Load AppArmor profiles managed internally by snapd.",
+  "rawHash": "b2929f974aee416e393123e7064c586ad71dc1c5ebef72c9d917e93a02de9422",
+  "ingestedAt": "2026-09-11T04:36:54.646Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "623a2472-16f0-40da-beb5-143ca7f34af3",
+  "rawContent": "2026-09-06T21:53:43.270228+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2369]: wlo1: Trying to associate with be:63:52:a2:ff:44 (SSID='A34' freq=5220 MHz)",
+  "rawHash": "ac79d5bb8372006d017cd4d5f2c352b7b603c00da22510518c7c278e4c211ba5",
+  "ingestedAt": "2026-09-11T04:36:53.826Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

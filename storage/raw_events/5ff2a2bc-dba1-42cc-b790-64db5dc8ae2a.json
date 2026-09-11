@@ -1,0 +1,16 @@
+{
+  "eventId": "5ff2a2bc-dba1-42cc-b790-64db5dc8ae2a",
+  "rawContent": "2026-09-06T08:08:09.698724+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI Error: Aborting method \\_SB.PC00.LPCB.EC0._Q37 due to previous error (AE_NOT_FOUND) (20251212/psparse-529)",
+  "rawHash": "d2d08f49451d279ff1f21fc07ae5dd6b6d7c2eef311711ce583bbc65f6796084",
+  "ingestedAt": "2026-09-11T04:36:50.922Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

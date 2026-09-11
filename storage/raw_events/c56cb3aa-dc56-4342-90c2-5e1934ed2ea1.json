@@ -1,0 +1,17 @@
+{
+  "eventId": "c56cb3aa-dc56-4342-90c2-5e1934ed2ea1",
+  "rawContent": "2026-09-06T08:07:39.270085+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished apport.service - automatic crash report generation.",
+  "rawHash": "4fd206546bbb827936be6905d2d0a97a39b370036175f6486f03868147a097a1",
+  "ingestedAt": "2026-09-11T04:36:50.188Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "a08d9c61-8ba9-49e4-a69b-9179ea0dc974",
+  "rawContent": "2026-09-06T08:07:39.198332+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: tun: Universal TUN/TAP device driver, 1.6",
+  "rawHash": "52eef9cbea62639f3d81c7b36c544f53fdbd9b3b1376b4d0c4fbd0f416e9ea56",
+  "ingestedAt": "2026-09-11T04:36:49.885Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

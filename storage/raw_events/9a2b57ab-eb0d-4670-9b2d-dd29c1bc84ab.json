@@ -1,0 +1,17 @@
+{
+  "eventId": "9a2b57ab-eb0d-4670-9b2d-dd29c1bc84ab",
+  "rawContent": "2026-09-06T08:07:39.196212+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounting tmp.mount - Temporary Directory /tmp...",
+  "rawHash": "fc8a0a99702cb0c5f3f6596297cced8b877f93b048b9d0dfc970d53df3cfbe49",
+  "ingestedAt": "2026-09-11T04:36:49.550Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

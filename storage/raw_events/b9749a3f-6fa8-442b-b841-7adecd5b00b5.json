@@ -1,0 +1,16 @@
+{
+  "eventId": "b9749a3f-6fa8-442b-b841-7adecd5b00b5",
+  "rawContent": "2026-09-06T21:52:09.287028+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[6504]: [session uid=1000 pid=6504 pidfd=5] Activating via systemd: service name='org.gnome.evolution.dataserver.AddressBook10' unit='evolution-addressbook-factory.service' requested by ':1.63' (uid=1000 pid=8307 comm=\"/usr/libexec/evolution-calendar-factory\" label=\"unconfined\")",
+  "rawHash": "279e0243eea76e5c51d34e5f89a4fafa26bb70e7a8f5845dcc92128318805114",
+  "ingestedAt": "2026-09-11T04:36:53.424Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

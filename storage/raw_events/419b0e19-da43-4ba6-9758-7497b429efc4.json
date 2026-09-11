@@ -1,0 +1,16 @@
+{
+  "eventId": "419b0e19-da43-4ba6-9758-7497b429efc4",
+  "rawContent": "2026-09-06T08:07:58.947591+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gsd-media-keys[8008]: Failed to grab accelerator for keybinding settings:hibernate",
+  "rawHash": "fc2df847f337f93e7f78f6d1ed89fe1982533d12845d827f1de065bf752219ee",
+  "ingestedAt": "2026-09-11T04:36:50.715Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

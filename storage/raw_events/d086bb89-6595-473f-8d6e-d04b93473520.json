@@ -1,0 +1,17 @@
+{
+  "eventId": "d086bb89-6595-473f-8d6e-d04b93473520",
+  "rawContent": "2026-09-07T09:13:45.383949+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Adding 4194300k swap on /swap.img.  Priority:-1 extents:3 across:4456444k SS",
+  "rawHash": "c0b536ed7d1906df92667bc12b621e680a4a45d9105efd0188f4256173eb80e2",
+  "ingestedAt": "2026-09-11T04:36:55.004Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

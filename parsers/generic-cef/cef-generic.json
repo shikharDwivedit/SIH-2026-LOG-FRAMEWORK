@@ -1,0 +1,30 @@
+{
+  "name": "generic-cef",
+  "version": "1.0",
+  "vendor": "Generic",
+  "product": "Common Event Format",
+  "device_type": "perimeter-device",
+  "format": "cef",
+  "match_criteria": {
+    "regex": "(?:^|\\s)CEF:\\d+\\|"
+  },
+  "extraction": {
+    "type": "cef"
+  },
+  "field_mappings": {
+    "device_vendor": "source.vendor",
+    "device_product": "source.product",
+    "device_version": "source.version",
+    "signature_id": "threat.rule_id",
+    "name": "event.message",
+    "severity": "event.severity",
+    "src": "network.source_ip",
+    "spt": "network.source_port",
+    "dst": "network.destination_ip",
+    "dpt": "network.destination_port",
+    "proto": "network.protocol",
+    "act": "event.action",
+    "outcome": "event.outcome",
+    "suser": "identity.username"
+  }
+}

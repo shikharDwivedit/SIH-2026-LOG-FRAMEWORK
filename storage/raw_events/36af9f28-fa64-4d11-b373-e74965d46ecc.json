@@ -1,0 +1,16 @@
+{
+  "eventId": "36af9f28-fa64-4d11-b373-e74965d46ecc",
+  "rawContent": "2026-09-06T08:07:39.199941+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Bluetooth: HCI device and connection manager initialized",
+  "rawHash": "0fa99a9dbd982244d37b52720750f690f878cb6fccc5103d4ccbabad39cc7371",
+  "ingestedAt": "2026-09-11T04:36:50.136Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "99f6d5de-fb52-46ea-a111-8183adbbfe8e",
+  "rawContent": "2026-09-06T08:07:40.881684+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx snapd[2210]: standby.go:95: will consider standby after: 5s",
+  "rawHash": "14e73804b027a5dd5749337aa70edca26f211e0bb7b8090c4483be83c31edfa9",
+  "ingestedAt": "2026-09-11T04:36:50.269Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

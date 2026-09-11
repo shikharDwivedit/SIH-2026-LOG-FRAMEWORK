@@ -1,0 +1,16 @@
+{
+  "eventId": "5ccbe835-b267-40ff-8aed-4228d17756f0",
+  "rawContent": "2026-09-07T09:13:48.236473+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[2586]: [session uid=60578 pid=2586 pidfd=5] Successfully activated service 'org.gnome.Shell.Notifications'",
+  "rawHash": "68ed9df5756ed007b26faa1040e8d4595eb30ce7f4f6d8f7d29bbc674d7e7ad5",
+  "ingestedAt": "2026-09-11T04:36:55.752Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

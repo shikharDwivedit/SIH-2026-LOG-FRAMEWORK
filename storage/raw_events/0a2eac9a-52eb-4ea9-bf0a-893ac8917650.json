@@ -1,0 +1,17 @@
+{
+  "eventId": "0a2eac9a-52eb-4ea9-bf0a-893ac8917650",
+  "rawContent": "2026-09-06T21:51:46.306067+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: acpi PNP0C02:01: Could not reserve [mem 0xfed20000-0xfed7ffff]",
+  "rawHash": "216f36f5b1cf207cd1b76d9c65b454fb7c8a200966cc19bc8bedd4ea48e657ab",
+  "ingestedAt": "2026-09-11T04:36:52.084Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

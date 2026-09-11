@@ -1,0 +1,17 @@
+{
+  "eventId": "647c5e7e-5fe3-4ddf-bc55-fd7f07d26e18",
+  "rawContent": "2026-09-06T08:07:39.197050+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx apparmor.systemd[1885]: Warning: found usr.sbin.sssd in /etc/apparmor.d/force-complain, forcing complain mode",
+  "rawHash": "20f54ebea4533b30fb846f913085c44221071063ab3ce06d6e9f1f742afef8de",
+  "ingestedAt": "2026-09-11T04:36:49.650Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "a85b84e1-6180-435c-a9d5-415dcd4736e0",
+  "rawContent": "2026-09-06T08:07:39.195126+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: efi: EFI v2.8 by INSYDE Corp.",
+  "rawHash": "f6c3e8951aa55c74f4e64d6938d18f8b83ae5a9e0a9844f4947515b367d3daf8",
+  "ingestedAt": "2026-09-11T04:36:49.386Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "f3e18e96-1eb7-4feb-8605-fd0d83144472",
+  "rawContent": "2026-09-07T09:13:45.382826+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished apparmor.service - Load AppArmor profiles.",
+  "rawHash": "3ba1f2e2fa5fc81ddd6e7be60afa43e06008b5ddf5a4ee6dc65929f30808a5b4",
+  "ingestedAt": "2026-09-11T04:36:54.594Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

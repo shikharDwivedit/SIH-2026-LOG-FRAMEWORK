@@ -1,0 +1,17 @@
+{
+  "eventId": "2e42f6dc-7190-49fa-be77-20daf43a779d",
+  "rawContent": "2026-09-06T21:51:46.307574+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Reached target slices.target - Slice Units.",
+  "rawHash": "79c9a214e0df9d330efb3a604f5fb202f4bdeda919ed264e46a234ddcd9b3390",
+  "ingestedAt": "2026-09-11T04:36:52.243Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "2790a25f-187a-43ca-b4d3-ce044408798a",
+  "rawContent": "2026-09-06T21:51:46.330176+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx networkd-dispatcher[2277]: No valid path found for iwconfig",
+  "rawHash": "e2814bd593034535dff52aee6e84830bad370991e190ba9b0204f56b197ebf9e",
+  "ingestedAt": "2026-09-11T04:36:52.470Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "eventId": "415cf489-fa7a-43b1-890f-36ae0c7a30f1",
+  "rawContent": "srcip=192.0.2.10 action=deny",
+  "rawHash": "b78092cdfba9f997802440372411f96ebc62d9552c256d132d928f6b83e83027",
+  "ingestedAt": "2026-09-11T05:24:39.928Z",
+  "sourceId": "unknown",
+  "transport": "unit-test",
+  "metadata": {
+    "parserName": "fortigate",
+    "transport": "unit-test"
+  }
+}

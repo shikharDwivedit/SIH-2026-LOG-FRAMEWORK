@@ -1,0 +1,16 @@
+{
+  "eventId": "6f6e82d0-94a3-4fe5-8e1c-3a0498b5360e",
+  "rawContent": "2026-09-07T09:13:46.879776+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[2673]: Unknown experimental feature 'xwayland-native-scaling'",
+  "rawHash": "3c147657ec3f8c0064dbf760b503e98e4a3b995c49c03facf2f0c1fe5cd5df48",
+  "ingestedAt": "2026-09-11T04:36:55.260Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "5ad1d93b-7705-4c9a-86ed-d1739ea7a46d",
+  "rawContent": "2026-09-07T09:13:45.383498+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: In-situ OAM (IOAM) with IPv6",
+  "rawHash": "ece3d07279a777e8e12e8ddeee71a22e73c873a26a8bd251101b13838b63d210",
+  "ingestedAt": "2026-09-11T04:36:54.845Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

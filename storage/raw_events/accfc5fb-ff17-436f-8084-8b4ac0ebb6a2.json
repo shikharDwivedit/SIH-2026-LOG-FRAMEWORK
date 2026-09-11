@@ -1,0 +1,17 @@
+{
+  "eventId": "accfc5fb-ff17-436f-8084-8b4ac0ebb6a2",
+  "rawContent": "2026-09-06T21:51:53.903457+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Started org.gnome.SettingsDaemon.XSettings.service - GNOME XSettings service.",
+  "rawHash": "0a8280ef5c44d0e0e0039dc13b4af007242cbc8e59cd9273da401ad9e71a1edf",
+  "ingestedAt": "2026-09-11T04:36:53.007Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

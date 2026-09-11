@@ -1,0 +1,17 @@
+{
+  "eventId": "d4637cb5-84a9-4f78-9f90-459cc0e06477",
+  "rawContent": "2026-09-07T09:13:48.513209+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2311]: <info>  [1788752628.5127] agent-manager: agent[53d625f5d871fd5c,:1.32/org.gnome.Shell.NetworkAgent/60578]: agent registered",
+  "rawHash": "22a25236344e6635cfc6076b0ccf1bef3a50fffc123ebcd176e76ca206903a0a",
+  "ingestedAt": "2026-09-11T04:36:55.751Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

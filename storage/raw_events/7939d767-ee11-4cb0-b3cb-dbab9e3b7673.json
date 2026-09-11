@@ -1,0 +1,17 @@
+{
+  "eventId": "7939d767-ee11-4cb0-b3cb-dbab9e3b7673",
+  "rawContent": "2026-09-06T08:07:39.198422+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started dbus.service - D-Bus System Message Bus.",
+  "rawHash": "b2b775c089d144679983fd61ef27b4c36ba890834b99b1cc21862fd162960c18",
+  "ingestedAt": "2026-09-11T04:36:49.895Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

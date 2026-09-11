@@ -1,0 +1,16 @@
+{
+  "eventId": "acc17605-ab7e-48ad-b906-6281ac6daf4b",
+  "rawContent": "2026-09-06T23:30:27.668767+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopping bolt.service - Thunderbolt system service...",
+  "rawHash": "c7804a48a2e076cb06fcffe8da967ead814ed79b56980a33c5a278ff926a9172",
+  "ingestedAt": "2026-09-11T04:36:54.160Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

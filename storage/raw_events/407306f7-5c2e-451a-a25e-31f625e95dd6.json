@@ -1,0 +1,17 @@
+{
+  "eventId": "407306f7-5c2e-451a-a25e-31f625e95dd6",
+  "rawContent": "2026-09-06T08:07:42.765806+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished plymouth-quit-wait.service - Hold until boot process finishes up.",
+  "rawHash": "05b91e7d0e9e643a5b352ae595d11d30dd4cbd5a7cf5473ec3b07521bfbd5c69",
+  "ingestedAt": "2026-09-11T04:36:50.431Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "596eb399-25ab-4cdf-87e5-0156a8fbc719",
+  "rawContent": "2026-09-07T09:13:45.383750+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: wmi_bus wmi_bus-PNP0C14:04: [Firmware Info]: 8F1F6435-9F42-42C8-BADC-0E9424F20C9A has zero instances",
+  "rawHash": "044b2821bb4e32fb010e766f73267f1fdf3a514a18f9517f83da175838db0c7d",
+  "ingestedAt": "2026-09-11T04:36:54.935Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

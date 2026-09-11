@@ -1,0 +1,17 @@
+{
+  "eventId": "bd17d4a0-7fdc-4eab-9b71-72c7f8305db1",
+  "rawContent": "2026-09-06T08:07:39.198509+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Reached target bluetooth.target - Bluetooth Support.",
+  "rawHash": "ce87c58e67c41c6de490771fbbe48a2cdbfec2350e30a940678aeb69e3acaffb",
+  "ingestedAt": "2026-09-11T04:36:49.906Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

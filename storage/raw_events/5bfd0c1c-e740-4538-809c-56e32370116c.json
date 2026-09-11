@@ -1,0 +1,16 @@
+{
+  "eventId": "5bfd0c1c-e740-4538-809c-56e32370116c",
+  "rawContent": "2026-09-06T08:07:39.197369+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started apt-daily.timer - Daily apt download activities.",
+  "rawHash": "63e0453127c7ce3d91d5a9b553c106bd0a9eaa7f594617609fa12c94ee73dc42",
+  "ingestedAt": "2026-09-11T04:36:49.715Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

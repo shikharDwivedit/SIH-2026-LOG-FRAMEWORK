@@ -1,0 +1,17 @@
+{
+  "eventId": "f21032af-8a07-4cd4-98e3-d9443e70d4e3",
+  "rawContent": "2026-09-06T08:07:39.195660+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: CPU topo: Allowing 24 present CPUs plus 0 hotplug CPUs",
+  "rawHash": "02482358376410157eec0b9e1f0973a7721ae54abdcea3c47a079876ec0d46c2",
+  "ingestedAt": "2026-09-11T04:36:49.477Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

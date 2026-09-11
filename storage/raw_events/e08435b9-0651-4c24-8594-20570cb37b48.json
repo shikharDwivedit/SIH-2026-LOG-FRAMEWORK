@@ -1,0 +1,17 @@
+{
+  "eventId": "e08435b9-0651-4c24-8594-20570cb37b48",
+  "rawContent": "2026-09-06T08:07:39.195887+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: APIC: Switch to symmetric I/O mode setup",
+  "rawHash": "eda204c34a01c6efe81eb67cc70daffd44195dcb7cf307215340da1e41cd05ee",
+  "ingestedAt": "2026-09-11T04:36:49.518Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "d6868056-da60-4857-badb-f1b205d7ad31",
+  "rawContent": "2026-09-07T09:13:45.384106+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: i915 0000:00:02.0: [drm] Skipping intel_backlight registration",
+  "rawHash": "6ebbf7d51672aa5d73217df4003c3075e565490c35e51f5d04f12cfb221160c9",
+  "ingestedAt": "2026-09-11T04:36:55.061Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

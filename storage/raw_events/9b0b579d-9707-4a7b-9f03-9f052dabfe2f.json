@@ -1,0 +1,16 @@
+{
+  "eventId": "9b0b579d-9707-4a7b-9f03-9f052dabfe2f",
+  "rawContent": "2026-09-07T09:13:45.383775+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: nvme 0000:44:00.0: platform quirk: setting simple suspend",
+  "rawHash": "4e88eab40280a2cc2bee9765ec910a49a1c997fcc4bdf08a6e782cc239fbaafb",
+  "ingestedAt": "2026-09-11T04:36:54.951Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "915b2273-2a15-42b7-9db4-7c5204933c25",
+  "rawContent": "2026-09-06T09:43:55.814128+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopping upower.service - Daemon for power management...",
+  "rawHash": "3acadc76b6493c213b6ff3369055952e602bf17fa703bbc7bc4ca4d87f5b160b",
+  "ingestedAt": "2026-09-11T04:36:51.548Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

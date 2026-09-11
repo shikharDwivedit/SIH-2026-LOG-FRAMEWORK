@@ -1,0 +1,16 @@
+{
+  "eventId": "12ffe1bc-c6b0-46bf-a030-c76f333afdc1",
+  "rawContent": "2026-09-07T09:13:45.381359+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started rsyslog.service - System Logging Service.",
+  "rawHash": "4d97c87524e4baa9a213c78bd03c197cf97667c7048caf364ebcc381ae65fbec",
+  "ingestedAt": "2026-09-11T04:36:54.959Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "a94659ce-1549-40e5-acbd-82e99c467812",
+  "rawContent": "2026-09-06T21:52:07.001137+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7084]: Added device '/dev/dri/card1' (nvidia-drm) using atomic mode setting.",
+  "rawHash": "9ea515dccf647bbf6b6fc9b5f9fc3e8d7b0a76896348740e8da1181e5d180a9f",
+  "ingestedAt": "2026-09-11T04:36:53.229Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

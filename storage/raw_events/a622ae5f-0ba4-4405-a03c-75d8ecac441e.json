@@ -1,0 +1,17 @@
+{
+  "eventId": "a622ae5f-0ba4-4405-a03c-75d8ecac441e",
+  "rawContent": "2026-09-06T21:52:09.185568+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: gnome-initial-setup-upgrade-login.service - GNOME Initial Setup skipped, unmet condition check ConditionPathExists=!/home/shikhar/.config/gnome-initial-setup/upgrade-26.04-done",
+  "rawHash": "34f47b37c28bc20acee6fb2e2097049ae1ef174bd31a372d06455b65670480c2",
+  "ingestedAt": "2026-09-11T04:36:53.376Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

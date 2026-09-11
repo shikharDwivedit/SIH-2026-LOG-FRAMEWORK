@@ -1,0 +1,16 @@
+{
+  "eventId": "af6cd7d2-97ee-4559-a1a3-2059ce774cf8",
+  "rawContent": "2026-09-06T08:07:39.199477+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.",
+  "rawHash": "93561d5381fa0e1c2820e6f428d0091499cfe6b7badcce3b96ccda065a9d4a46",
+  "ingestedAt": "2026-09-11T04:36:50.068Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

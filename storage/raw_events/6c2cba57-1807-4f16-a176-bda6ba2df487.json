@@ -1,0 +1,17 @@
+{
+  "eventId": "6c2cba57-1807-4f16-a176-bda6ba2df487",
+  "rawContent": "2026-09-06T08:07:39.198216+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: platform rtc_cmos: registered platform RTC device (no PNP device found)",
+  "rawHash": "829c9d773210125c75f3d006c6212116b2aed7bef74697376c07af40c5ddc157",
+  "ingestedAt": "2026-09-11T04:36:49.849Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

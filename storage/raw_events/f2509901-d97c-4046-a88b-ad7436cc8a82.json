@@ -1,0 +1,17 @@
+{
+  "eventId": "f2509901-d97c-4046-a88b-ad7436cc8a82",
+  "rawContent": "2026-09-06T21:51:46.308419+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Listening on systemd-mute-console.socket - Console Output Muting Service Socket.",
+  "rawHash": "bcf5fd3f4a737d7e4e0c2196b2373146990bbd1f5f3b247fcaf4fe15e985b008",
+  "ingestedAt": "2026-09-11T04:36:52.323Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

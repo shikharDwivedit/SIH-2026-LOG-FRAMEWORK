@@ -1,0 +1,16 @@
+{
+  "eventId": "64c8218d-2ca4-4caf-8158-5cea564ff28e",
+  "rawContent": "2026-09-07T09:13:48.026031+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2848]: time=\"2026-09-07T09:13:48+05:30\" level=warning msg=\"Could not locate X11/xorg.conf.d/nvidia-drm-outputclass.conf: X11/xorg.conf.d/nvidia-drm-outputclass.conf: not found\"",
+  "rawHash": "29290f39ee52289f68287c50fc74cc39e69162d1511d34b955afc865b56492a3",
+  "ingestedAt": "2026-09-11T04:36:55.449Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

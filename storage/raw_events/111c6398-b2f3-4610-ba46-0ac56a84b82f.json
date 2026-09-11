@@ -1,0 +1,16 @@
+{
+  "eventId": "111c6398-b2f3-4610-ba46-0ac56a84b82f",
+  "rawContent": "2026-09-06T09:43:33.480448+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished systemd-suspend.service - System Suspend.",
+  "rawHash": "0fdc60a5643e1f113123676ae572b5f76f90007224ae77c832a5083bd01d3e68",
+  "ingestedAt": "2026-09-11T04:36:51.271Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "3bbe9111-3878-4fa9-a92c-70c51c532fa7",
+  "rawContent": "2026-09-06T21:51:46.306671+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)",
+  "rawHash": "8d3837614767361849b83b35b6123e91631f6b600d7872e0ba0f5d0c5e47a1f9",
+  "ingestedAt": "2026-09-11T04:36:52.157Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

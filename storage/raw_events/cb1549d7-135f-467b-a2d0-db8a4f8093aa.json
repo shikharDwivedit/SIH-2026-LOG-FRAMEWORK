@@ -1,0 +1,17 @@
+{
+  "eventId": "cb1549d7-135f-467b-a2d0-db8a4f8093aa",
+  "rawContent": "2026-09-06T08:07:39.237575+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788662259.2374] manager: (lo): new Loopback device (/org/freedesktop/NetworkManager/Devices/1)",
+  "rawHash": "1662b6e81a7a0b0517d7dc3e8c30a7812977160459dbf8be0c422dce84fd36b9",
+  "ingestedAt": "2026-09-11T04:36:50.188Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

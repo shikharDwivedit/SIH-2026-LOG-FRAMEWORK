@@ -1,0 +1,16 @@
+{
+  "eventId": "37264cd5-76ad-41f8-a015-4068b118e82f",
+  "rawContent": "2026-09-06T21:51:46.302435+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: No NUMA configuration found",
+  "rawHash": "1027f58f64f0144ab97a9b256bc42a00fe764991fcc89db6b3ad4b1355098d0b",
+  "ingestedAt": "2026-09-11T04:36:51.702Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

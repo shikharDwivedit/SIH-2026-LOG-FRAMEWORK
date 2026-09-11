@@ -1,0 +1,16 @@
+{
+  "eventId": "b278be3d-0f27-405a-8d19-ccb1110012b6",
+  "rawContent": "2026-09-06T21:51:46.305938+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: clocksource: Switched to clocksource tsc-early",
+  "rawHash": "d0738dad547ad4a687c6b32a296408673081471e660bc4cbe7a8bcb2d8c4303d",
+  "ingestedAt": "2026-09-11T04:36:52.059Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

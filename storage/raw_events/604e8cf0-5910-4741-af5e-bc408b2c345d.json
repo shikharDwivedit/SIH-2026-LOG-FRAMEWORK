@@ -1,0 +1,17 @@
+{
+  "eventId": "604e8cf0-5910-4741-af5e-bc408b2c345d",
+  "rawContent": "2026-09-06T21:52:09.968370+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Starting gvfs-metadata.service - Virtual filesystem metadata service...",
+  "rawHash": "d6fbdae009ca8f4c512878f80e75e5fb04f4d0a85240f10dc21c59eb1a4d7530",
+  "ingestedAt": "2026-09-11T04:36:53.461Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

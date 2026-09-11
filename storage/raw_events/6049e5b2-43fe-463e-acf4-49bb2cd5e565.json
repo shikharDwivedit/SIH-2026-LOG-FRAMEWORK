@@ -1,0 +1,16 @@
+{
+  "eventId": "6049e5b2-43fe-463e-acf4-49bb2cd5e565",
+  "rawContent": "2026-09-06T21:51:53.428765+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[4672]: time=\"2026-09-06T21:51:53+05:30\" level=info msg=\"Selecting /var/lib/snapd/hostfs/usr/lib/x86_64-linux-gnu/libEGL_nvidia.so.595.84 as /var/lib/snapd/hostfs/usr/lib/x86_64-linux-gnu/libEGL_nvidia.so.595.84\"",
+  "rawHash": "1c381b5f40b41b7fa55c66c6d8816089ec95cf517d899c765215bff65e30d598",
+  "ingestedAt": "2026-09-11T04:36:52.841Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

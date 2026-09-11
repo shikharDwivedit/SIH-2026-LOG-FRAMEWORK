@@ -1,0 +1,16 @@
+{
+  "eventId": "c03ee2bd-8c8b-46f4-b6a6-674155273943",
+  "rawContent": "2026-09-06T08:07:39.195460+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving DBG2 table memory at [mem 0x5cac2000-0x5cac2053]",
+  "rawHash": "882b404d44c8360341b0f7e8eb18ea37fa30184185f9346ac4fae617ef354cbb",
+  "ingestedAt": "2026-09-11T04:36:49.446Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

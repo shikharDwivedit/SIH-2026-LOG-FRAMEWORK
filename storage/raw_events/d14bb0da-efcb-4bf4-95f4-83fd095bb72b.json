@@ -1,0 +1,17 @@
+{
+  "eventId": "d14bb0da-efcb-4bf4-95f4-83fd095bb72b",
+  "rawContent": "2026-09-06T08:07:39.199311+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Listening on systemd-resolved-monitor.socket - Resolve Monitor Varlink Socket.",
+  "rawHash": "373bc1f04bcb1b95a499d3f4dee35cf0e0dd35330ddd0f9012a9f6744d096290",
+  "ingestedAt": "2026-09-11T04:36:50.040Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

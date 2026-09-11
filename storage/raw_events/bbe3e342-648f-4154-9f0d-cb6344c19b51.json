@@ -1,0 +1,17 @@
+{
+  "eventId": "bbe3e342-648f-4154-9f0d-cb6344c19b51",
+  "rawContent": "2026-09-06T08:07:39.198251+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting thermald.service - Thermal Daemon Service...",
+  "rawHash": "0970d88e046416670a200d7e223a4f70d94be37b4418352b8a17ca621217c249",
+  "ingestedAt": "2026-09-11T04:36:49.861Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

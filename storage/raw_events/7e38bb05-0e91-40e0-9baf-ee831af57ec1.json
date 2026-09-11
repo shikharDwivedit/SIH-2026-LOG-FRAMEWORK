@@ -1,0 +1,16 @@
+{
+  "eventId": "7e38bb05-0e91-40e0-9baf-ee831af57ec1",
+  "rawContent": "2026-09-06T21:51:46.302466+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: systemd-pcrnvdone.service - TPM PCR NvPCR Initialization Separator skipped, unmet condition check ConditionSecurity=measured-uki",
+  "rawHash": "90d93a042fd7533b7e9e54d8653fdb16a0c448f1b10e8c0af274951386d177f4",
+  "ingestedAt": "2026-09-11T04:36:51.709Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

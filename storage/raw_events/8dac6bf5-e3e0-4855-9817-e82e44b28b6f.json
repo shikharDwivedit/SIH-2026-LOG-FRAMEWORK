@@ -1,0 +1,16 @@
+{
+  "eventId": "8dac6bf5-e3e0-4855-9817-e82e44b28b6f",
+  "rawContent": "2026-09-06T08:08:00.241091+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[2688]: Shutting down GNOME Shell",
+  "rawHash": "5e6b89921f6bf100e4e5953660b08ff1f84eff0d29aa560c7804d4cebbba831f",
+  "ingestedAt": "2026-09-11T04:36:50.800Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "8f07edc2-a27e-42c7-bb24-f087ea4e2baa",
+  "rawContent": "2026-09-06T08:07:39.198048+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: sssd-autofs.socket: Job sssd-autofs.socket/start failed with result 'dependency'.",
+  "rawHash": "d5d0d0cee5d7a2712330b0a8b2e642d18d3d0e43d1dce38639bafac242d74e06",
+  "ingestedAt": "2026-09-11T04:36:49.832Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

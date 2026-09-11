@@ -1,0 +1,17 @@
+{
+  "eventId": "05e362c5-2d1d-4cb6-aa0e-9d09c30cc5c8",
+  "rawContent": "2026-09-06T09:34:37.572097+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting nvidia-suspend.service - NVIDIA system suspend actions...",
+  "rawHash": "616a7cf9c5e1c84edea11acb7a50248fcc0f3a006c0dfddb15d7f14264d7e419",
+  "ingestedAt": "2026-09-11T04:36:51.219Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

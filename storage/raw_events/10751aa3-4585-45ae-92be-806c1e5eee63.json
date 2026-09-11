@@ -1,0 +1,16 @@
+{
+  "eventId": "10751aa3-4585-45ae-92be-806c1e5eee63",
+  "rawContent": "2026-09-06T21:51:46.304339+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Timer migration: 2 hierarchy levels; 8 children per group; 2 crossnode level",
+  "rawHash": "0dcebc746a0beca8d7a4ccf6c62aacdd5023208aada68de8a3fcd15e12de2230",
+  "ingestedAt": "2026-09-11T04:36:51.862Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

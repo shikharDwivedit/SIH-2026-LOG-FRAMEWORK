@@ -1,0 +1,16 @@
+{
+  "eventId": "aff3acc8-ab14-485d-ab0d-f5253747fa46",
+  "rawContent": "2026-09-07T09:13:45.383407+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: hub 2-0:1.0: USB hub found",
+  "rawHash": "768e15a9eea39bf3c0f1d7f1c1e29621518b7b71d9b372965b4737e4460eee56",
+  "ingestedAt": "2026-09-11T04:36:54.807Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

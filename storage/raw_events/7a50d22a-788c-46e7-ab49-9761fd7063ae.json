@@ -1,0 +1,17 @@
+{
+  "eventId": "7a50d22a-788c-46e7-ab49-9761fd7063ae",
+  "rawContent": "2026-09-07T09:13:48.025831+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2848]: time=\"2026-09-07T09:13:48+05:30\" level=info msg=\"Selecting /usr/share/nvidia/nvoptix.bin as /usr/share/nvidia/nvoptix.bin\"",
+  "rawHash": "393e056f4553ee22552c4d5dd7b736d1ca70f9e1425684670bdd6fb1f5f0670d",
+  "ingestedAt": "2026-09-11T04:36:55.354Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

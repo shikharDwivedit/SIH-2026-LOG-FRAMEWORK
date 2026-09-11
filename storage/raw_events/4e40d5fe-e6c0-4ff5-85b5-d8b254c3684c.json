@@ -1,0 +1,16 @@
+{
+  "eventId": "4e40d5fe-e6c0-4ff5-85b5-d8b254c3684c",
+  "rawContent": "2026-09-06T08:07:42.005384+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: snap.docker.nvidia-container-toolkit.service: Deactivated successfully.",
+  "rawHash": "381cdc37fd480958a7eb49d36b83e4e8ca9fb852399da7fadac24cc6adedec82",
+  "ingestedAt": "2026-09-11T04:36:50.420Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

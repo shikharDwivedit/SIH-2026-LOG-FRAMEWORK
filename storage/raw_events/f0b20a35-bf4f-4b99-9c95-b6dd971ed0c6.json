@@ -1,0 +1,17 @@
+{
+  "eventId": "f0b20a35-bf4f-4b99-9c95-b6dd971ed0c6",
+  "rawContent": "2026-09-06T08:07:39.196946+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: pci 0000:00:02.0: DMAR: Skip IOMMU disabling for graphics",
+  "rawHash": "33522fe9ee22b10baf67679ce8f3139acb0079f90905ce187e20f7b951034f24",
+  "ingestedAt": "2026-09-11T04:36:49.638Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

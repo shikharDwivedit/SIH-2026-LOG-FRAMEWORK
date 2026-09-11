@@ -1,0 +1,16 @@
+{
+  "eventId": "b4abe9ad-50f3-4170-99b3-87e4cabc3683",
+  "rawContent": "2026-09-07T09:13:45.382134+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: DMAR: dmar1: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da",
+  "rawHash": "46ec7cc214dffce2b90fdfcf280c32e774066cf53b1b4d124d712a59b0fa8771",
+  "ingestedAt": "2026-09-11T04:36:54.425Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "47865a04-81d3-43d8-8f3c-4ce7bb40ea73",
+  "rawContent": "2026-09-06T21:51:46.305032+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]",
+  "rawHash": "832ae11fe9efa424a60cae13e60d8404b64d07f301613251c72334485c6aef6f",
+  "ingestedAt": "2026-09-11T04:36:51.929Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

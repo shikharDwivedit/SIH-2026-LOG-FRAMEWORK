@@ -1,0 +1,16 @@
+{
+  "eventId": "76883eb6-2510-458e-9cee-c93b06bc9e79",
+  "rawContent": "2026-09-06T08:07:39.195671+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: PM: hibernation: Registered nosave memory: [mem 0x42ee9000-0x42ee9fff]",
+  "rawHash": "387a94459d60ee1cc52693a8f83aa87c4f0191b608d3105f5e1d59c1d9a6a3d8",
+  "ingestedAt": "2026-09-11T04:36:49.482Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

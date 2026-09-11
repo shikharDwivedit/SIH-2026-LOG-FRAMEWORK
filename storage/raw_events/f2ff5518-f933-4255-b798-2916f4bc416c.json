@@ -1,0 +1,16 @@
+{
+  "eventId": "f2ff5518-f933-4255-b798-2916f4bc416c",
+  "rawContent": "2026-09-06T21:52:10.505515+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[9282]: Errors from xkbcomp are not fatal to the X server",
+  "rawHash": "049a2193cfeafac403317bcf51eb4045648797f9011c39abc00bacd1e4a83a5f",
+  "ingestedAt": "2026-09-11T04:36:53.528Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

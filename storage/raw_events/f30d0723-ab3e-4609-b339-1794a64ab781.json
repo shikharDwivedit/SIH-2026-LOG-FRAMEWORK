@@ -1,0 +1,16 @@
+{
+  "eventId": "f30d0723-ab3e-4609-b339-1794a64ab781",
+  "rawContent": "2026-09-07T09:13:45.381493+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-udevd[657]: Using default interface naming scheme 'v259'.",
+  "rawHash": "51c1cff19a60a4ae99f76b17b9f6d366479b9f8fff31b248ae4df128d5c56137",
+  "ingestedAt": "2026-09-11T04:36:54.312Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

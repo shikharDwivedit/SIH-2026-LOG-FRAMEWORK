@@ -1,0 +1,16 @@
+{
+  "eventId": "e3678485-952b-46bb-a802-5282c651c92c",
+  "rawContent": "2026-09-06T09:43:55.778563+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: run-user-1000-gvfs.mount: Deactivated successfully.",
+  "rawHash": "17fb7710d826ab134c74fee563d3d8b5172221f028da1f18529771fdce06cd55",
+  "ingestedAt": "2026-09-11T04:36:51.459Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

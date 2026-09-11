@@ -1,0 +1,16 @@
+{
+  "eventId": "abb23cc3-31d2-477a-ab7a-7dda9ed88598",
+  "rawContent": "2026-09-06T23:30:27.661676+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Stopped gvfs-udisks2-volume-monitor.service - Virtual filesystem service - disk device monitor.",
+  "rawHash": "521af82e932342fd1eefcfc6918d282e13147cb25a9dce1ef5b2e2bfd68cf4a9",
+  "ingestedAt": "2026-09-11T04:36:54.139Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

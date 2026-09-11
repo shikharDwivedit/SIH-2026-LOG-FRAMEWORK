@@ -1,0 +1,16 @@
+{
+  "eventId": "b647b7a2-7f70-4dbf-9a90-410e53a53758",
+  "rawContent": "2026-09-06T21:51:46.304020+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: mitigations: Enabled attack vectors: user_kernel, user_user, guest_host, guest_guest, SMT mitigations: auto",
+  "rawHash": "559efa54fd102abc7669af24506ee0ba34f76d8376e07efabd6bfbd77e6d6d54",
+  "ingestedAt": "2026-09-11T04:36:51.826Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

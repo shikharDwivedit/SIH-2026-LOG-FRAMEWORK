@@ -1,0 +1,16 @@
+{
+  "eventId": "03215418-fbdb-4162-844e-7e14877c5620",
+  "rawContent": "2026-09-06T21:51:46.301602+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Linux version 7.0.0-31-generic (buildd@lcy02-amd64-091) (x86_64-linux-gnu-gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0, GNU ld (GNU Binutils for Ubuntu) 2.46) #31-Ubuntu SMP PREEMPT_DYNAMIC Sat Aug  1 04:26:38 UTC 2026 (Ubuntu 7.0.0-31.31-generic 7.0.14)",
+  "rawHash": "b6eb3ce8fe89069d02b3218fba7a775a5432330d70097f89130cf0825cfb4fee",
+  "ingestedAt": "2026-09-11T04:36:51.601Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

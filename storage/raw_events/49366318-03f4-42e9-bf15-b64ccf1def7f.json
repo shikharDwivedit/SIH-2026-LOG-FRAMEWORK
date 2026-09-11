@@ -1,0 +1,16 @@
+{
+  "eventId": "49366318-03f4-42e9-bf15-b64ccf1def7f",
+  "rawContent": "2026-09-06T23:30:27.713299+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Stopped target org.gnome.SettingsDaemon.PrintNotifications.target - GNOME printer notifications target.",
+  "rawHash": "a5542a7e2e3b12fba9e41a7bb1a89ead4a521311a60638dc8763f71b519891d4",
+  "ingestedAt": "2026-09-11T04:36:54.225Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

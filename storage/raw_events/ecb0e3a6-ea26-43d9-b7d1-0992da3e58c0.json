@@ -1,0 +1,16 @@
+{
+  "eventId": "ecb0e3a6-ea26-43d9-b7d1-0992da3e58c0",
+  "rawContent": "2026-09-06T23:30:27.663455+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Stopped gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor.",
+  "rawHash": "72bb2db660c1b84ccad14823d7fc6c4c8533b43cabd5c58ffc2901f41fa4fcb4",
+  "ingestedAt": "2026-09-11T04:36:54.140Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

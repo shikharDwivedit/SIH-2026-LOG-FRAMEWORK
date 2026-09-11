@@ -1,0 +1,17 @@
+{
+  "eventId": "b7e2f29e-0a45-4ae5-957d-11b5570927da",
+  "rawContent": "2026-09-06T21:52:09.133321+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Started org.gnome.SettingsDaemon.Sound.service - GNOME sound sample caching service.",
+  "rawHash": "a0aeeeff4447e8ff8549d06d05efafa0d77c819817b484e5e1b82d5b751dac26",
+  "ingestedAt": "2026-09-11T04:36:53.306Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

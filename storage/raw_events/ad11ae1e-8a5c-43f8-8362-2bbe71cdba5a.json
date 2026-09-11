@@ -1,0 +1,16 @@
+{
+  "eventId": "ad11ae1e-8a5c-43f8-8362-2bbe71cdba5a",
+  "rawContent": "2026-09-06T08:08:36.743263+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx anacron[12808]: Will run job `cron.daily' in 5 min.",
+  "rawHash": "5dee0bf3ac490a6bdbcbff5dc9b321b5995d01cde4a5b119867f7e53a1dddefc",
+  "ingestedAt": "2026-09-11T04:36:50.994Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

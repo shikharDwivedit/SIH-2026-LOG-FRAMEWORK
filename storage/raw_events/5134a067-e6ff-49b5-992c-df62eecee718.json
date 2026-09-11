@@ -1,0 +1,16 @@
+{
+  "eventId": "5134a067-e6ff-49b5-992c-df62eecee718",
+  "rawContent": "2026-09-07T09:13:45.383867+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Reached target time-set.target - System Time Set.",
+  "rawHash": "d5e32872cf7616870034b3f61ae431280e2be265e23df619f671bd53e883443a",
+  "ingestedAt": "2026-09-11T04:36:54.992Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

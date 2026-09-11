@@ -1,0 +1,16 @@
+{
+  "eventId": "9f126349-56e4-46c9-9099-714cf1a89a0a",
+  "rawContent": "2026-09-06T21:51:53.429537+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[4672]: time=\"2026-09-06T21:51:53+05:30\" level=info msg=\"Selecting /run/nvidia-persistenced/socket as /run/nvidia-persistenced/socket\"",
+  "rawHash": "ed6eedf27ae9f19418c090ed8ef6a835034607c4b7d332d97148bfeaf03053a4",
+  "ingestedAt": "2026-09-11T04:36:52.949Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "92845711-f85e-4f32-b16f-97f3dd97b035",
+  "rawContent": "2026-09-07T09:13:45.383490+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: fbcon: Deferring console take-over",
+  "rawHash": "055290f4c644865d2a781c0eb60d23c32d5a08079f4e9036abd11650360e369a",
+  "ingestedAt": "2026-09-11T04:36:54.840Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

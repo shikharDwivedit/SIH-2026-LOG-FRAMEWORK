@@ -1,0 +1,16 @@
+{
+  "eventId": "2b16bfd5-df2c-4910-af0f-c96b235bc2f7",
+  "rawContent": "2026-09-06T21:51:53.428718+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[4672]: time=\"2026-09-06T21:51:53+05:30\" level=info msg=\"Selecting /var/lib/snapd/hostfs/usr/share/vulkan/implicit_layer.d/nvidia_layers.json as /etc/vulkan/implicit_layer.d/nvidia_layers.json\"",
+  "rawHash": "0e6792d009d00887b95a94bd49ec5dc15e714953009bc86a09542660ef6817fd",
+  "ingestedAt": "2026-09-11T04:36:52.835Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

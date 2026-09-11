@@ -1,0 +1,16 @@
+{
+  "eventId": "4c41b26a-12ad-4b71-9eb3-30ba5ad5b7d1",
+  "rawContent": "2026-09-06T09:43:55.799625+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx nvidia-persistenced: PID file unlocked.",
+  "rawHash": "2d0ff7716c5bfd47a9c390d00ccaf3493f2ca6637752635cf4335b9e80de8e9f",
+  "ingestedAt": "2026-09-11T04:36:51.530Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

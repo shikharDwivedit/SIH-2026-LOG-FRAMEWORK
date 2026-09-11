@@ -1,0 +1,16 @@
+{
+  "eventId": "b1c337a2-d0ff-4f13-bac4-c5c849f9faea",
+  "rawContent": "2026-09-06T08:07:39.197411+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started e2scrub_all.timer - Periodic ext4 Online Metadata Check for All Filesystems.",
+  "rawHash": "ad78be24a1bd2f39bd0bf3d5d6e18569a36516bc4e60205a0ec1eef5a18b626a",
+  "ingestedAt": "2026-09-11T04:36:49.721Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "c2b8161b-a7bf-4eec-aa9f-18ee3931a256",
+  "rawContent": "2026-09-07T09:13:45.382804+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: first-boot-complete.target - First Boot Complete skipped, unmet condition check ConditionFirstBoot=yes",
+  "rawHash": "ee3801dcfe65f50dc1ecc7d4b53ada2a46c79264880afdc8138a40ae09f8fa63",
+  "ingestedAt": "2026-09-11T04:36:54.593Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

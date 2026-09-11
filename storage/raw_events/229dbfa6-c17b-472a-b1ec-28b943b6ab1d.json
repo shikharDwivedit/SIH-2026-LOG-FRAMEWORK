@@ -1,0 +1,16 @@
+{
+  "eventId": "229dbfa6-c17b-472a-b1ec-28b943b6ab1d",
+  "rawContent": "2026-09-07T09:13:45.381983+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)",
+  "rawHash": "9184c8443edec4fc80fe2ed0ff84ec5ca38d179becc89108a78fff5b2e3c1a1e",
+  "ingestedAt": "2026-09-11T04:36:54.400Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

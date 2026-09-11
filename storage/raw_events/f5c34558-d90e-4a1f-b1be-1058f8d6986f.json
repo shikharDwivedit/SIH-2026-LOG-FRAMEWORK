@@ -1,0 +1,17 @@
+{
+  "eventId": "f5c34558-d90e-4a1f-b1be-1058f8d6986f",
+  "rawContent": "2026-09-06T21:51:46.307053+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: serio: i8042 KBD port at 0x60,0x64 irq 1",
+  "rawHash": "f3d4f6ac7facbe192d3aae17d8edabfe01f2936ae120ab5d40291ccf85afcfc0",
+  "ingestedAt": "2026-09-11T04:36:52.197Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

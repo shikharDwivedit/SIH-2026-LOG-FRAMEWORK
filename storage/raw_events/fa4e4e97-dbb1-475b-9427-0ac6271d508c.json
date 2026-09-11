@@ -1,0 +1,17 @@
+{
+  "eventId": "fa4e4e97-dbb1-475b-9427-0ac6271d508c",
+  "rawContent": "2026-09-06T21:51:46.305602+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: alsa-state.service - Manage Sound Card State (restore and store) skipped, unmet condition check ConditionPathExists=/etc/alsa/state-daemon.conf",
+  "rawHash": "c2a0956ee26bc1d774805fc89def2f53b4b2cbf83fbd34759ed23b17d601fc81",
+  "ingestedAt": "2026-09-11T04:36:51.993Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

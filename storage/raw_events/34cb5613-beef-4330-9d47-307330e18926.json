@@ -1,0 +1,17 @@
+{
+  "eventId": "34cb5613-beef-4330-9d47-307330e18926",
+  "rawContent": "2026-09-06T08:07:39.196226+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Performance Events: XSAVE Architectural LBR, PEBS fmt4+-baseline,  AnyThread deprecated, Alderlake Hybrid events, 32-deep LBR, full-width counters, Intel PMU driver.",
+  "rawHash": "6835f197accf22ae22285c5bdd15f7e09844d1043df21b26cf63ca945b0a01ec",
+  "ingestedAt": "2026-09-11T04:36:49.550Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

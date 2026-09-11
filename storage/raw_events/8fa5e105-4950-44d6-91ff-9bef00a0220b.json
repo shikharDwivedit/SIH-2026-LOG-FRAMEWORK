@@ -1,0 +1,16 @@
+{
+  "eventId": "8fa5e105-4950-44d6-91ff-9bef00a0220b",
+  "rawContent": "2026-09-07T09:13:45.383712+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Starting dracut-cmdline-ask.service - dracut ask for additional cmdline parameters...",
+  "rawHash": "f4794da6831d0bc6d3b587e2a7c906871b89af10818e67ee5591a20331269d96",
+  "ingestedAt": "2026-09-11T04:36:54.908Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

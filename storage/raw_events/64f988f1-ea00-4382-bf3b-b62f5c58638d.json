@@ -1,0 +1,16 @@
+{
+  "eventId": "64f988f1-ea00-4382-bf3b-b62f5c58638d",
+  "rawContent": "2026-09-06T08:42:38.792671+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx fwupd[15304]: 03:12:38.792 FuMain               fwupd 2.1.1 ready for requests (locale en_US.UTF-8)",
+  "rawHash": "636c22b6a397942734dc55c2560bd03dbbb4fcda94c092fa9e30388f5ab029d8",
+  "ingestedAt": "2026-09-11T04:36:51.105Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

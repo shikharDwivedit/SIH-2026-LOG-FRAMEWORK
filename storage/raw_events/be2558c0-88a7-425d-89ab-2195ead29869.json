@@ -1,0 +1,16 @@
+{
+  "eventId": "be2558c0-88a7-425d-89ab-2195ead29869",
+  "rawContent": "2026-09-07T09:13:45.383164+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: pci 0000:01:00.1: extending delay after power-on from D3hot to 20 msec",
+  "rawHash": "645880cc3b7382a5c6116c3aaf70855df25b54a382e4e08663a5bfbbc4cf224a",
+  "ingestedAt": "2026-09-11T04:36:54.733Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

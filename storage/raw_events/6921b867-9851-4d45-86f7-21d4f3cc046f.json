@@ -1,0 +1,16 @@
+{
+  "eventId": "6921b867-9851-4d45-86f7-21d4f3cc046f",
+  "rawContent": "2026-09-06T21:51:46.308915+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: i801_smbus 0000:00:1f.4: SPD Write Disable is set",
+  "rawHash": "3e8594f227193d6afc8c5adb2b713e70fdc2d83123e0ba5519573e78f0e40e38",
+  "ingestedAt": "2026-09-11T04:36:52.351Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

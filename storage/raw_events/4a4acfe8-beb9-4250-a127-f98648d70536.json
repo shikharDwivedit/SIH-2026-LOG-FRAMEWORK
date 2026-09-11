@@ -1,0 +1,16 @@
+{
+  "eventId": "4a4acfe8-beb9-4250-a127-f98648d70536",
+  "rawContent": "2026-09-06T21:51:51.041887+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx rtkit-daemon[2719]: Successfully made thread 2957 of process 2720 owned by '60578' RT at priority 20.",
+  "rawHash": "ecad1ce5e471ec9727ce8f8e3179af0847af5b0b7136d531873400e242160b3b",
+  "ingestedAt": "2026-09-11T04:36:52.607Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

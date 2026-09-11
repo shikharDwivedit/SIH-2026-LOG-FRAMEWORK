@@ -1,0 +1,17 @@
+{
+  "eventId": "435b760c-9387-4014-968d-41e0d7442f74",
+  "rawContent": "2026-09-07T09:13:45.383292+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: pci 0000:00:08.0: Adding to iommu group 4",
+  "rawHash": "9846af6aae039bf3d4e90f5f1b701de4846bc4db2d34e25c706cdb9c77a94c71",
+  "ingestedAt": "2026-09-11T04:36:54.744Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

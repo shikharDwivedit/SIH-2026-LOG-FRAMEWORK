@@ -1,0 +1,16 @@
+{
+  "eventId": "5527b178-4740-483a-84b5-14b941930803",
+  "rawContent": "2026-09-07T09:13:46.361297+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2551]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...",
+  "rawHash": "78d61fcbee7c1ab5c6068bf771a9cdfecdcc4718bb398b316c9ddb270c11d27a",
+  "ingestedAt": "2026-09-11T04:36:55.227Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

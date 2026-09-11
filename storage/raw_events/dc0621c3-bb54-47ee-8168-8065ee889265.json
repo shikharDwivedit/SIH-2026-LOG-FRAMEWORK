@@ -1,0 +1,17 @@
+{
+  "eventId": "dc0621c3-bb54-47ee-8168-8065ee889265",
+  "rawContent": "2026-09-06T09:01:44.448970+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[7363]: [session uid=1000 pid=7363 pidfd=5] Successfully activated service 'org.gnome.ArchiveManager1'",
+  "rawHash": "bad68bae810401e3728d92f526a757751f3bf24a096726e11879522739ea2023",
+  "ingestedAt": "2026-09-11T04:36:51.156Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

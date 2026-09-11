@@ -1,0 +1,16 @@
+{
+  "eventId": "30840fa6-7a10-4f43-b02e-9aa8a28433a7",
+  "rawContent": "2026-09-06T08:07:58.676934+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Finished gnome-session-signal-init.service - Signal initialization done to GNOME Session Manager.",
+  "rawHash": "4c8d3c954035dfe0871ccaf07e973a4b90c40c8a6c7a3435dcb80d05b7bedd4d",
+  "ingestedAt": "2026-09-11T04:36:50.647Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

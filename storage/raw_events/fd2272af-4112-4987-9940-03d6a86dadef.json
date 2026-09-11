@@ -1,0 +1,16 @@
+{
+  "eventId": "fd2272af-4112-4987-9940-03d6a86dadef",
+  "rawContent": "2026-09-06T21:52:23.270588+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Stopped ubuntu-insights-collect.timer - \"Run Ubuntu-Insights collect 5 mins after boot and every month relative to the activation time\".",
+  "rawHash": "19d3ef76a16beb8dbf64e1e5672e834396a798b588cbede2b77d4a0f8c4272d4",
+  "ingestedAt": "2026-09-11T04:36:53.670Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

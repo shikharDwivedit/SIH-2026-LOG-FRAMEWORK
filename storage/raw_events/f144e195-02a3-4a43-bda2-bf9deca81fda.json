@@ -1,0 +1,17 @@
+{
+  "eventId": "f144e195-02a3-4a43-bda2-bf9deca81fda",
+  "rawContent": "2026-09-06T21:51:53.533651+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2536]: Conainter Toolkit setup complete",
+  "rawHash": "100e9c4c7bdb98fa94b4e76ac14eecc980dac2dc9d0443d0c6e4f164111833da",
+  "ingestedAt": "2026-09-11T04:36:53.006Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "4de095c6-92fd-4cb0-b0aa-979d9618710d",
+  "rawContent": "2026-09-06T08:07:39.198005+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Reached target nss-user-lookup.target - User and Group Name Lookups.",
+  "rawHash": "95c3b8655a6790920c36bfaa146bd7fbcc886ea78cf01ba74a042873c07f926c",
+  "ingestedAt": "2026-09-11T04:36:49.828Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

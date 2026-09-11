@@ -1,0 +1,16 @@
+{
+  "eventId": "0dcc69ea-69d1-4c91-a6d2-30ef63fae88f",
+  "rawContent": "2026-09-06T09:43:52.840507+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2337]: p2p-dev-wlo1: CTRL-EVENT-DSCP-POLICY clear_all",
+  "rawHash": "c8f558efd0579b69b500862ac77e82325cfd8a5115ddbc9481fedbafec4135ea",
+  "ingestedAt": "2026-09-11T04:36:51.431Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "63955ecb-345a-4c69-a04c-2737fc0ef52f",
+  "rawContent": "2026-09-06T08:08:09.753454+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-resolved[684]: wlo1: Bus client set DNS server list to: 172.18.112.10",
+  "rawHash": "84ce1ff36a1113f4785c9cfd99ddda0151c23126003349bb4b78730da86f13ef",
+  "ingestedAt": "2026-09-11T04:36:50.927Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

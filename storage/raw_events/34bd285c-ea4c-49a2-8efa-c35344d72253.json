@@ -1,0 +1,16 @@
+{
+  "eventId": "34bd285c-ea4c-49a2-8efa-c35344d72253",
+  "rawContent": "2026-09-06T08:07:41.948045+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: spice-vdagent.service - Spice guest session agent skipped, unmet condition check ConditionPathExists=/run/spice-vdagentd/spice-vdagent-sock",
+  "rawHash": "1d88c701b2a3eabfcb186cc0b8d1f75300ddba7fab1009422bc040809729b231",
+  "ingestedAt": "2026-09-11T04:36:50.409Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

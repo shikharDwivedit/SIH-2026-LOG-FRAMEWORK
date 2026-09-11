@@ -1,0 +1,16 @@
+{
+  "eventId": "79fbf171-78c1-4d1f-ba03-2d6bd12c1d8e",
+  "rawContent": "2026-09-06T09:43:55.856842+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.",
+  "rawHash": "ee9488e4c89af0c2dfe1cff4abd11348e7048ebf90d6cf10a89c8b0dfc764bb2",
+  "ingestedAt": "2026-09-11T04:36:51.577Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

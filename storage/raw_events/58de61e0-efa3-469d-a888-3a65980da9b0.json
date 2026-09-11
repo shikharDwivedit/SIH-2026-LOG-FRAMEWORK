@@ -1,0 +1,16 @@
+{
+  "eventId": "58de61e0-efa3-469d-a888-3a65980da9b0",
+  "rawContent": "2026-09-06T08:07:39.198279+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: pcieport 0000:00:1b.4: AER: enabled with IRQ 124",
+  "rawHash": "e36fb312021ef18ba34eff6701b6637eb7a8cca5729e6f24a5e6e155949e7a94",
+  "ingestedAt": "2026-09-11T04:36:49.870Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "c7399f34-40fd-44bc-8023-6da8ce031e9b",
+  "rawContent": "2026-09-06T08:07:54.816674+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Reached target timers.target - Timers.",
+  "rawHash": "8f2f4c0e0cb1d5cdc71c13f7835b9eab05620ad4462b51962c573b506ac85962",
+  "ingestedAt": "2026-09-11T04:36:50.529Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

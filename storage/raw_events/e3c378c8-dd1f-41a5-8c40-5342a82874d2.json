@@ -1,0 +1,16 @@
+{
+  "eventId": "e3c378c8-dd1f-41a5-8c40-5342a82874d2",
+  "rawContent": "2026-09-07T09:13:45.381453+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-resolved[647]: Positive Trust Anchors:",
+  "rawHash": "fbed8f686827fe2a4e060805272e60789c09d2960bd90f1e5846d0c2a05f9a4e",
+  "ingestedAt": "2026-09-11T04:36:54.301Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "5898ddab-3c91-482e-8e49-e96de716e58e",
+  "rawContent": "2026-09-06T08:07:39.197962+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: snapd.recovery-chooser-trigger.service - Wait for the Ubuntu Core chooser trigger skipped, unmet condition check ConditionKernelCommandLine=snapd_recovery_mode",
+  "rawHash": "5808faed031b3422179301b27ae796304b3d0d8134168065150f470cbf5814d8",
+  "ingestedAt": "2026-09-11T04:36:49.817Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

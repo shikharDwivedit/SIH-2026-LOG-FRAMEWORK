@@ -1,0 +1,16 @@
+{
+  "eventId": "cb507df1-a13f-4d6a-bb7e-88f965d02b8a",
+  "rawContent": "2026-09-06T21:53:43.070470+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788711823.0703] device (wlo1): state change: disconnected -> prepare (reason 'none', managed-type: 'full')",
+  "rawHash": "b6aa6b516093b09a78310d1b3aa960726053c17e90e3b918a3f7f135ef2f90e0",
+  "ingestedAt": "2026-09-11T04:36:53.818Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

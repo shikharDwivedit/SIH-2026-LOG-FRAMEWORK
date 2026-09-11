@@ -1,0 +1,16 @@
+{
+  "eventId": "7e703071-0274-4d79-b99b-466ad7f2f5cd",
+  "rawContent": "2026-09-06T21:51:46.303889+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: RCU Tasks: Setting shift to 5 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=24.",
+  "rawHash": "a887bf699d2a295857e5e4c562d508be1c8b725a1ed87d069bb066c2c7da3520",
+  "ingestedAt": "2026-09-11T04:36:51.809Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

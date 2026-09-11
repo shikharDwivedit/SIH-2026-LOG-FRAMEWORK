@@ -1,0 +1,16 @@
+{
+  "eventId": "d811763d-1392-4797-b8ed-887ca9a83493",
+  "rawContent": "2026-09-06T08:07:58.437272+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[7363]: [session uid=1000 pid=7363 pidfd=5] Activating service name='org.gnome.Shell.CalendarServer' requested by ':1.20' (uid=1000 pid=7881 comm=\"/usr/bin/gnome-shell --mode=ubuntu\" label=\"unconfined\")",
+  "rawHash": "a6171b0945a44b42c932fe8d315c9cd9863422637d3ebfab8c9c07d0c2a4ad26",
+  "ingestedAt": "2026-09-11T04:36:50.630Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

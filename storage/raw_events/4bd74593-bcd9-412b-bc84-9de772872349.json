@@ -1,0 +1,17 @@
+{
+  "eventId": "4bd74593-bcd9-412b-bc84-9de772872349",
+  "rawContent": "2026-09-07T09:13:45.381633+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving HPET table memory at [mem 0x5cabe000-0x5cabe037]",
+  "rawHash": "440afd97c59b673a6de00040a91bb00b4f830c8f2e2ca1ceb8d32a63f4b9f0cb",
+  "ingestedAt": "2026-09-11T04:36:54.327Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

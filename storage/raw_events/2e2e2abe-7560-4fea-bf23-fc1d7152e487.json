@@ -1,0 +1,17 @@
+{
+  "eventId": "2e2e2abe-7560-4fea-bf23-fc1d7152e487",
+  "rawContent": "2026-09-06T21:53:38.097973+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI BIOS Error (bug): Could not resolve symbol [\\_SB.PC00.LPCB.EC0._Q37.PNOT], AE_NOT_FOUND (20251212/psargs-332)",
+  "rawHash": "50c889918a401f9dbce3ba637bbe5ece6eb8dd92d92b435077e58ade0111c2f2",
+  "ingestedAt": "2026-09-11T04:36:53.722Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

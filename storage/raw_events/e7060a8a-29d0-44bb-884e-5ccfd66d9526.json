@@ -1,0 +1,16 @@
+{
+  "eventId": "e7060a8a-29d0-44bb-884e-5ccfd66d9526",
+  "rawContent": "2026-09-06T08:07:39.195489+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving MCFG table memory at [mem 0x5cabc000-0x5cabc03b]",
+  "rawHash": "63b3c620cb41460fba2dfbdf49f8cdab39bc3c4d297c2ac3685252e4b0748716",
+  "ingestedAt": "2026-09-11T04:36:49.450Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

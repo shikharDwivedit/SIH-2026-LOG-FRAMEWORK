@@ -1,0 +1,16 @@
+{
+  "eventId": "47960ac8-862f-489a-8c02-ece70743117e",
+  "rawContent": "2026-09-07T09:13:45.381568+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving FACS table memory at [mem 0x5c8ad000-0x5c8ad03f]",
+  "rawHash": "f4c6b82f6d9da34d17f734df0010e15433d3b873d5d7b5468c1f3a8307c0b9a2",
+  "ingestedAt": "2026-09-11T04:36:54.322Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

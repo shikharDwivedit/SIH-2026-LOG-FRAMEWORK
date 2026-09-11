@@ -1,0 +1,16 @@
+{
+  "eventId": "4e0c3b22-5423-4b88-a631-6521977ff12b",
+  "rawContent": "2026-09-06T21:51:46.306200+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)",
+  "rawHash": "86a8489c639873e8f6825faddbfb6eccb31cb06a1052066276a33d81ab5fd669",
+  "ingestedAt": "2026-09-11T04:36:52.103Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

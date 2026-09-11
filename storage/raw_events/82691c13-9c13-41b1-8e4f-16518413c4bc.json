@@ -1,0 +1,17 @@
+{
+  "eventId": "82691c13-9c13-41b1-8e4f-16518413c4bc",
+  "rawContent": "2026-09-07T09:13:45.381384+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Reached target swap.target - Swaps.",
+  "rawHash": "3d1c1335a3c06529bdc77199320ce2635fe0a205d88e95b302a1897803dfc46c",
+  "ingestedAt": "2026-09-11T04:36:54.282Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

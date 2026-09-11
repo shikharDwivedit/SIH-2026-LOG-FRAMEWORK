@@ -1,0 +1,16 @@
+{
+  "eventId": "7d2d44cc-d626-4cf1-9fbc-8db04627bcd9",
+  "rawContent": "2026-09-06T09:43:33.487416+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx rtkit-daemon[2615]: Resuming known real-time threads.",
+  "rawHash": "699849931f66a0dca2d4131959fea9137af9e60e742f4ceac88f4a2c05aaed08",
+  "ingestedAt": "2026-09-11T04:36:51.275Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "75c5c672-66d6-4785-b67b-ea1667c439df",
+  "rawContent": "2026-09-06T09:43:55.971355+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788668035.9710] device (E4:EC:E8:93:63:BA): state change: disconnected -> unmanaged (reason 'unmanaged-link-not-init', managed-type: 'removed')",
+  "rawHash": "21b0fdfd1f82596dcd90528e330e7d2b3c065a5f9a1a803544ed78f264fe7d1b",
+  "ingestedAt": "2026-09-11T04:36:51.590Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "03c074d2-b5a0-4bc2-9de3-91a525126109",
+  "rawContent": "2026-09-07T09:13:45.382213+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Spectre V2 : Spectre v2 / PBRSB-eIBRS: Retire a single CALL on VMEXIT",
+  "rawHash": "f6404de4bf8c6b7a43f1a5bbdb5f5f01433ca047e6fe6b5146c924077f930630",
+  "ingestedAt": "2026-09-11T04:36:54.437Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

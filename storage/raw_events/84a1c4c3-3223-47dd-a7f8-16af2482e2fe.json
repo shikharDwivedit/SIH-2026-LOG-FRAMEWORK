@@ -1,0 +1,16 @@
+{
+  "eventId": "84a1c4c3-3223-47dd-a7f8-16af2482e2fe",
+  "rawContent": "2026-09-06T09:43:33.965141+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wireplumber[7380]: spa.bluez5.midi: org.bluez.GattManager1.RegisterApplication() failed: GDBus.Error:org.bluez.Error.AlreadyExists: Already Exists",
+  "rawHash": "c863b31d73193d29fa30473970f2fd0ae4aa4e8658862d611d197b3704e1c82d",
+  "ingestedAt": "2026-09-11T04:36:51.292Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

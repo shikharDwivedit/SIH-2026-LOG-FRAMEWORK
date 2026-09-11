@@ -1,0 +1,16 @@
+{
+  "eventId": "4a094809-5809-42e7-b59a-b8619a406611",
+  "rawContent": "2026-09-06T08:08:20.268525+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.",
+  "rawHash": "6a8424e219c619076d04b02918619ee4ce35db6a38460f7b2ed1de748dbe8354",
+  "ingestedAt": "2026-09-11T04:36:50.975Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

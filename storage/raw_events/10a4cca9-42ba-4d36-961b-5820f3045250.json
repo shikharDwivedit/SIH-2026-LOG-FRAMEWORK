@@ -1,0 +1,16 @@
+{
+  "eventId": "10a4cca9-42ba-4d36-961b-5820f3045250",
+  "rawContent": "2026-09-06T08:07:39.197423+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started fwupd-refresh.timer - Refresh fwupd metadata regularly.",
+  "rawHash": "fec1943e3c2d63a58d35638ead67167aedc69cdc28af309b41c498b1b58726e4",
+  "ingestedAt": "2026-09-11T04:36:49.723Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "7e0d53b8-8b22-4fb6-9bda-66ede4f3b308",
+  "rawContent": "2026-09-06T23:30:27.670711+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: snapd.system-shutdown.service - Ubuntu core (all-snaps) system shutdown helper setup service skipped, unmet condition check ConditionPathExists=/usr/lib/snapd/system-shutdown",
+  "rawHash": "513723e8ab9f0c94458b20f47d5d17a7f6b812d4b8f1a11bf55ae74b69a5bade",
+  "ingestedAt": "2026-09-11T04:36:54.168Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "2360e1f8-0bdf-4400-bd90-0fe4ea74436c",
+  "rawContent": "2026-09-06T08:07:39.199322+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Listening on systemd-udevd-varlink.socket - udev Varlink Socket.",
+  "rawHash": "6d47d1285a4ef015f62af1d26bf46ae7b56e81839d5c2f9d1fb66e0ccc93ede8",
+  "ingestedAt": "2026-09-11T04:36:50.040Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

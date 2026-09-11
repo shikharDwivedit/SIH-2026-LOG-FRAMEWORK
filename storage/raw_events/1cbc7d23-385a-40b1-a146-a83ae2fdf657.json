@@ -1,0 +1,16 @@
+{
+  "eventId": "1cbc7d23-385a-40b1-a146-a83ae2fdf657",
+  "rawContent": "2026-09-06T21:52:05.328502+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7084]: Unknown experimental feature 'scale-monitor-framebuffer'",
+  "rawHash": "1e3dbc3f3a4bcfa33d3ea749b96f1c28e9167aeefb4e573f3ce810262e7fc579",
+  "ingestedAt": "2026-09-11T04:36:53.207Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

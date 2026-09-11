@@ -1,0 +1,16 @@
+{
+  "eventId": "63bb1aef-0d9c-4df6-a8b4-d1f362ce7149",
+  "rawContent": "2026-09-06T08:07:39.195074+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: BIOS-e820: [mem 0x000000005c9bf000-0x000000005cafefff]  ACPI data",
+  "rawHash": "2885e85a670b86b735bd8eb47b88fcc64395fd12ad87dfd97c4b774f27d3b47d",
+  "ingestedAt": "2026-09-11T04:36:49.381Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

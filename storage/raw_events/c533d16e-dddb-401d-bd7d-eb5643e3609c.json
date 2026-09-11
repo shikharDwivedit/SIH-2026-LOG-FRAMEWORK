@@ -1,0 +1,16 @@
+{
+  "eventId": "c533d16e-dddb-401d-bd7d-eb5643e3609c",
+  "rawContent": "2026-09-06T09:43:33.508242+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: rfkill: input handler disabled",
+  "rawHash": "5a8d28e5e80bbc76b8f43b3393e61d49432844ff1aed59bac016ee7a809dda43",
+  "ingestedAt": "2026-09-11T04:36:51.281Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "99b2f626-bba4-4a29-a3eb-1deff5930cbe",
+  "rawContent": "2026-09-06T21:51:46.309155+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: hp_bioscfg: Returned error 0x3004, \"Generic/Other error\"",
+  "rawHash": "e4dc6c8459d494a65a94f7c9b59d8f06237ab43c3fff03f8483dc6889169e203",
+  "ingestedAt": "2026-09-11T04:36:52.391Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

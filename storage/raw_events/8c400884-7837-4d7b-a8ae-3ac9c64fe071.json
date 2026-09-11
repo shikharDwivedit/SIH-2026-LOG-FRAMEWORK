@@ -1,0 +1,16 @@
+{
+  "eventId": "8c400884-7837-4d7b-a8ae-3ac9c64fe071",
+  "rawContent": "2026-09-06T08:07:55.440221+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Started update-notifier-release.path - Path trigger for new release of Ubuntu notifications.",
+  "rawHash": "a45575d4946b660c25016a66fc4c2741a4cda7459ca748325dc803202ab135e5",
+  "ingestedAt": "2026-09-11T04:36:50.575Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

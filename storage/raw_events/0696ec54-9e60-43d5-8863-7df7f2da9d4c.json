@@ -1,0 +1,17 @@
+{
+  "eventId": "0696ec54-9e60-43d5-8863-7df7f2da9d4c",
+  "rawContent": "2026-09-07T09:13:45.383845+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: EXT4-fs (nvme0n1p5): mounted filesystem a8a5a758-f200-4390-be61-ed84246bfde7 ro with ordered data mode. Quota mode: none.",
+  "rawHash": "8798f365bace82e68a31c6236264233f51b8a58ff2b2a85f6e8e91fef3c45a81",
+  "ingestedAt": "2026-09-11T04:36:54.962Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

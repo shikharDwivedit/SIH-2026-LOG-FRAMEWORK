@@ -1,0 +1,16 @@
+{
+  "eventId": "7dac891b-ff71-4c0e-871c-c67e878d30ee",
+  "rawContent": "2026-09-06T08:07:39.195853+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: \tRude variant of Tasks RCU enabled.",
+  "rawHash": "1613feff64a40c615971017a5e724c75c27c4637fd8d31247193385262cf9f9c",
+  "ingestedAt": "2026-09-11T04:36:49.514Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

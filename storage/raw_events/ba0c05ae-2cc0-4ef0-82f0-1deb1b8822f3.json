@@ -1,0 +1,16 @@
+{
+  "eventId": "ba0c05ae-2cc0-4ef0-82f0-1deb1b8822f3",
+  "rawContent": "2026-09-07T09:13:45.383083+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Listening on snapd.socket - Socket activation for snappy daemon.",
+  "rawHash": "c3a4b966475b1c88df994986238029518d802e8533e665c5d97231b2c187d2b5",
+  "ingestedAt": "2026-09-11T04:36:54.697Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

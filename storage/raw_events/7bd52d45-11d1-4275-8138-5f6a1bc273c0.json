@@ -1,0 +1,16 @@
+{
+  "eventId": "7bd52d45-11d1-4275-8138-5f6a1bc273c0",
+  "rawContent": "2026-09-06T21:51:46.306766+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: pcieport 0000:00:1b.4: PME: Signaling with IRQ 124",
+  "rawHash": "775478afb54cf88f66d47bcc2b34f2cd16a7d2f3d911266c8d46602347825977",
+  "ingestedAt": "2026-09-11T04:36:52.167Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

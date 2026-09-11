@@ -1,0 +1,17 @@
+{
+  "eventId": "5612a01e-d4c3-4fc5-8f64-47cb73bded49",
+  "rawContent": "2026-09-06T08:07:39.195547+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Reserving Intel graphics memory at [mem 0x64800000-0x683fffff]",
+  "rawHash": "be0202b81f359d6952d92de869a5a2994b425df109a4b32c65f2fb0b5fb36d53",
+  "ingestedAt": "2026-09-11T04:36:49.456Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

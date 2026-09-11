@@ -1,0 +1,16 @@
+{
+  "eventId": "1a5bb3a4-4853-40de-90a2-fc4030b17d08",
+  "rawContent": "2026-09-06T08:07:41.760926+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Starting org.gnome.SettingsDaemon.A11ySettings.service - GNOME accessibility service...",
+  "rawHash": "56bc1127eae5f3113a042b42505f5b1e58b9e6dcbb32533ff40adf832abb83be",
+  "ingestedAt": "2026-09-11T04:36:50.310Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "ac2320f3-45a6-4933-ba94-a9595c9f6ecb",
+  "rawContent": "2026-09-06T08:07:39.199328+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...",
+  "rawHash": "456cfdb3146024861db6dd725892645f0c95e493f733ae220e8096cc92eb3edf",
+  "ingestedAt": "2026-09-11T04:36:50.050Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

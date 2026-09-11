@@ -1,0 +1,16 @@
+{
+  "eventId": "2a1d0997-eda9-40f6-8f8d-bc7faaa6fb3c",
+  "rawContent": "2026-09-06T21:52:09.319248+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gsd-usb-protection[8081]: Failed to fetch USBGuard parameters: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.usbguard1 was not provided by any .service files",
+  "rawHash": "45595b3f08137a727d1500392baf5b161b8ebfd43f192bdf07b937b020f1b4ea",
+  "ingestedAt": "2026-09-11T04:36:53.431Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

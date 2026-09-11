@@ -1,0 +1,16 @@
+{
+  "eventId": "114b58e1-1b0f-4ec0-8a35-d3a34f0e7b01",
+  "rawContent": "2026-09-06T21:51:46.309369+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: input: sof-hda-dsp HDMI/DP,pcm=5 as /devices/pci0000:00/0000:00:1f.3/skl_hda_dsp_generic/sound/card1/input33",
+  "rawHash": "a63a761bfd1b6961e8ffabebc513d32af4fa9c32eebd534f9ab55412947cda9c",
+  "ingestedAt": "2026-09-11T04:36:52.460Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

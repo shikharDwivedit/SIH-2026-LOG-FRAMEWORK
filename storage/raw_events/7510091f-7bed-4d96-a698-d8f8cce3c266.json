@@ -1,0 +1,16 @@
+{
+  "eventId": "7510091f-7bed-4d96-a698-d8f8cce3c266",
+  "rawContent": "2026-09-06T09:43:55.792365+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped target boot-complete.target - Boot Completion Check.",
+  "rawHash": "e32305d49a4de937f898a05c0fe7c8728c8f3b9bca44c087f271ca305369a8b9",
+  "ingestedAt": "2026-09-11T04:36:51.502Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

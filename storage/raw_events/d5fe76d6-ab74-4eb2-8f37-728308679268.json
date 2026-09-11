@@ -1,0 +1,16 @@
+{
+  "eventId": "d5fe76d6-ab74-4eb2-8f37-728308679268",
+  "rawContent": "2026-09-06T23:30:27.674854+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gdm3: Gdm: Failed to list cached users: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name :1.11 was not provided by any .service files",
+  "rawHash": "cb47f169a321302f61f7d52b1a498e82bb06141e12a4e18dc7a8830920e2d028",
+  "ingestedAt": "2026-09-11T04:36:54.174Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "2c697d81-a9c7-4ab3-b2d8-4a2257ac09b7",
+  "rawContent": "2026-09-06T21:51:46.303886+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=24",
+  "rawHash": "bb26efda9a56ece105c6194d232addbd874ea98ecceaf389569df9c2f4e00c6a",
+  "ingestedAt": "2026-09-11T04:36:51.806Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

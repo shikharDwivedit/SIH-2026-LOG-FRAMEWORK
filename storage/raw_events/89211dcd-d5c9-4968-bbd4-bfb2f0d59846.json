@@ -1,0 +1,16 @@
+{
+  "eventId": "89211dcd-d5c9-4968-bbd4-bfb2f0d59846",
+  "rawContent": "2026-09-06T09:43:40.687246+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Can't update stage views actor bms-dash-backgroundgroup [MetaBackgroundGroup] is on because it needs an allocation.",
+  "rawHash": "de4bdc4cd283a04ecf1a9ba4380e3ed7b7694c916ec9d8e800eb2be9ebdf44ca",
+  "ingestedAt": "2026-09-11T04:36:51.393Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

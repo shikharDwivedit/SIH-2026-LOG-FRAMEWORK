@@ -1,0 +1,17 @@
+{
+  "eventId": "6f090c01-4cd9-473f-8c8a-3ddf0d4fd734",
+  "rawContent": "2026-09-06T09:43:55.976179+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx bluetoothd[2181]: Stopping SDP server",
+  "rawHash": "064eb926d737157aefe77d4591025b312413da80bb6e2f6d8ea57c9eeb697c4d",
+  "ingestedAt": "2026-09-11T04:36:51.584Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

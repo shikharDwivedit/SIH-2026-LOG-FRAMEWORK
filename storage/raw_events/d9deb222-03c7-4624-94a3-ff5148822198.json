@@ -1,0 +1,17 @@
+{
+  "eventId": "d9deb222-03c7-4624-94a3-ff5148822198",
+  "rawContent": "2026-09-06T21:51:46.306785+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: pcieport 0000:03:03.0: pciehp: Slot #3 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+",
+  "rawHash": "d9787873dfafd46cccacf69daaedef726351df054f25762c7b865bcb1f7add2d",
+  "ingestedAt": "2026-09-11T04:36:52.168Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

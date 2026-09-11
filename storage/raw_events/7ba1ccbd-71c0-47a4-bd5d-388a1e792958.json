@@ -1,0 +1,17 @@
+{
+  "eventId": "7ba1ccbd-71c0-47a4-bd5d-388a1e792958",
+  "rawContent": "2026-09-06T21:51:46.304105+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) skipped, unmet condition check ConditionPathExists=/var/lib/apport/autoreport",
+  "rawHash": "d7da2eba15ba42b12c3ee5edbdcc6447361d5e4fce00839a35be93857d3af9ce",
+  "ingestedAt": "2026-09-11T04:36:51.828Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

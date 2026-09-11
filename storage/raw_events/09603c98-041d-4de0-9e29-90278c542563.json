@@ -1,0 +1,16 @@
+{
+  "eventId": "09603c98-041d-4de0-9e29-90278c542563",
+  "rawContent": "2026-09-06T21:51:46.305138+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx nvidia-persistenced: Verbose syslog connection opened",
+  "rawHash": "cb9abd0739818b5a2afb75572858e1439879fb9f609d813e54d081a86297eddb",
+  "ingestedAt": "2026-09-11T04:36:51.939Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

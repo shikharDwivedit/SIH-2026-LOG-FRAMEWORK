@@ -1,0 +1,16 @@
+{
+  "eventId": "44b97a46-2ed3-4ddf-8e5a-cea1f8a1c4d6",
+  "rawContent": "2026-09-06T21:51:46.302163+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started systemd-resolved.service - Network Name Resolution.",
+  "rawHash": "578bdcf0359af16de68f80ebc819b9b6e19f44c64b0f5c5128b05881720edfd0",
+  "ingestedAt": "2026-09-11T04:36:51.667Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

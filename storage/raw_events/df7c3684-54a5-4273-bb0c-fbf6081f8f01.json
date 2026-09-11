@@ -1,0 +1,16 @@
+{
+  "eventId": "df7c3684-54a5-4273-bb0c-fbf6081f8f01",
+  "rawContent": "2026-09-07T09:13:45.383933+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.",
+  "rawHash": "5872bdc397a65c0730f174d559b2524660b34de126d994e4d71deb2596a3f730",
+  "ingestedAt": "2026-09-11T04:36:55.007Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "bb27c1ea-4c4f-448b-a5c3-31cdcf76ebf4",
+  "rawContent": "2026-09-06T21:51:46.309230+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Bluetooth: hci0: Found device firmware: intel/ibt-1040-0041.sfi",
+  "rawHash": "36cd09e84cf7cbfab5356d350f98fb06cbb49b8d850fbc3e537dcfabdbbfb419",
+  "ingestedAt": "2026-09-11T04:36:52.412Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

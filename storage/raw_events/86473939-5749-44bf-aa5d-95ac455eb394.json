@@ -1,0 +1,16 @@
+{
+  "eventId": "86473939-5749-44bf-aa5d-95ac455eb394",
+  "rawContent": "2026-09-06T08:07:58.541479+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Registering session with GDM",
+  "rawHash": "ae51d50afa3e61e28f20f16e64c0a88acbaabe445e2854f6ef4d3b63c421719a",
+  "ingestedAt": "2026-09-11T04:36:50.633Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

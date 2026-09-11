@@ -1,0 +1,16 @@
+{
+  "eventId": "a0d6f280-1769-43ee-915b-5964a5cac855",
+  "rawContent": "2026-09-06T08:07:54.817863+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Listening on dirmngr.socket - GnuPG network certificate management daemon.",
+  "rawHash": "1ae2af7e0ed319283ac656531a9a6d3b0d0e985e04bb49e89207ec812aae7ea1",
+  "ingestedAt": "2026-09-11T04:36:50.530Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

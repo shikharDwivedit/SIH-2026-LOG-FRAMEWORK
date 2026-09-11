@@ -1,0 +1,17 @@
+{
+  "eventId": "9f9023e3-6533-47ab-9737-5adbbf6a398d",
+  "rawContent": "2026-09-06T21:51:46.302982+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished systemd-fsck@dev-disk-by\\x2duuid-C03B\\x2dB20C.service - File System Check on /dev/disk/by-uuid/C03B-B20C.",
+  "rawHash": "8aa6f3132017c8e04f424e30eb5c8ab9c2da9d3328214558ffc1a572bd104d64",
+  "ingestedAt": "2026-09-11T04:36:51.740Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

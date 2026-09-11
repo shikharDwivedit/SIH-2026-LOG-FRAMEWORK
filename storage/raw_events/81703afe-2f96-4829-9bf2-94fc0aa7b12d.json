@@ -1,0 +1,17 @@
+{
+  "eventId": "81703afe-2f96-4829-9bf2-94fc0aa7b12d",
+  "rawContent": "2026-09-06T21:51:46.301851+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: APIC: Static calls initialized",
+  "rawHash": "1d2efe4593cddd283e4764951544e775d2bfb4e387a9c45bcf215cf549437d2b",
+  "ingestedAt": "2026-09-11T04:36:51.619Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

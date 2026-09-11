@@ -1,0 +1,17 @@
+{
+  "eventId": "ac9952fa-ae76-4431-a736-234468005dd2",
+  "rawContent": "2026-09-06T23:29:48.459365+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished esm-cache.service - Update the local ESM caches.",
+  "rawHash": "619f50f07faad7eda88abb3c8b14aa170803bc029fac92f99225e848b556bf9d",
+  "ingestedAt": "2026-09-11T04:36:54.075Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

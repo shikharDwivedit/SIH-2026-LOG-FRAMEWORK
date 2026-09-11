@@ -1,0 +1,16 @@
+{
+  "eventId": "38dd168e-39f0-4dce-b701-49b41e3a3283",
+  "rawContent": "2026-09-06T21:51:46.307059+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: rtc_cmos rtc_cmos: setting system clock to 2026-09-06T16:21:38 UTC (1788711698)",
+  "rawHash": "5328909af8409fb2c7ac3e8ac10a3cb4df533f8d6eff3e5ee6a242c3bda35681",
+  "ingestedAt": "2026-09-11T04:36:52.206Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

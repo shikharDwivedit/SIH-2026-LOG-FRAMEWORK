@@ -1,0 +1,16 @@
+{
+  "eventId": "9d3f05e8-45c7-4493-8897-a53d6d8f3013",
+  "rawContent": "2026-09-06T21:52:10.984222+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Stopping org.gnome.Shell@gdm.service - GNOME Shell...",
+  "rawHash": "08592b077aa6b59a2c259efefe6945ba833d464e0e1776ebf0d082a5ad9e1344",
+  "ingestedAt": "2026-09-11T04:36:53.585Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "459a7a11-1b76-46be-bf51-e096d1347929",
+  "rawContent": "2026-09-06T08:07:53.298058+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788662273.2976] device (docker0): state change: unmanaged -> unavailable (reason 'connection-assumed', managed-type: 'external')",
+  "rawHash": "d87cecc29803b0eb69b0b8c22911eed60bb21db6376b46b5deab0cfb4870dc9d",
+  "ingestedAt": "2026-09-11T04:36:50.510Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

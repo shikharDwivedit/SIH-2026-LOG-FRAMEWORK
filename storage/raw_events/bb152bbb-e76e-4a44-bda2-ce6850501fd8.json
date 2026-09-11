@@ -1,0 +1,17 @@
+{
+  "eventId": "bb152bbb-e76e-4a44-bda2-ce6850501fd8",
+  "rawContent": "2026-09-06T23:30:27.665543+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped systemd-tmpfiles-clean.timer - Daily Cleanup of Temporary Directories.",
+  "rawHash": "ec9f1e7b688dfb2ac96d47a0c999a3de11cab8e3ab7de22ba83e86a837411723",
+  "ingestedAt": "2026-09-11T04:36:54.145Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

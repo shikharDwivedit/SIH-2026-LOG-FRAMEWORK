@@ -1,0 +1,16 @@
+{
+  "eventId": "d92613a9-f5a6-4cbf-99a2-3db2f0cf912f",
+  "rawContent": "2026-09-06T09:43:55.783763+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Stopped gvfs-afc-volume-monitor.service - Virtual filesystem service - Apple File Conduit monitor.",
+  "rawHash": "70b8136ca369407f8b070917a1a0e5b6bc14c984dbd881f99713c369c576d6e9",
+  "ingestedAt": "2026-09-11T04:36:51.474Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

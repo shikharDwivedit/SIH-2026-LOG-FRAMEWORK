@@ -1,0 +1,16 @@
+{
+  "eventId": "460787cf-8ac2-46ab-a6ea-ce03b665009f",
+  "rawContent": "2026-09-06T21:51:46.302915+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Unknown kernel command line parameters \"splash\", will be passed to user space.",
+  "rawHash": "0bf7d230f055ccc0f06af1fd5baf31557db754194eeb9890c0e84b5220ae17fa",
+  "ingestedAt": "2026-09-11T04:36:51.746Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

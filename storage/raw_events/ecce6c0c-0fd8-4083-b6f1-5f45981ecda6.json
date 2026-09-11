@@ -1,0 +1,16 @@
+{
+  "eventId": "ecce6c0c-0fd8-4083-b6f1-5f45981ecda6",
+  "rawContent": "2026-09-06T08:07:39.196631+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page",
+  "rawHash": "4b5406192f9dfbd0924c8d0293c99d5bed51a7470e53805b3095232cca40296d",
+  "ingestedAt": "2026-09-11T04:36:49.589Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

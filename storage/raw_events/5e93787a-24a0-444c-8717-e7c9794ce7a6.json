@@ -1,0 +1,16 @@
+{
+  "eventId": "5e93787a-24a0-444c-8717-e7c9794ce7a6",
+  "rawContent": "2026-09-06T08:07:39.197805+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting e2scrub_reap.service - Remove Stale Online ext4 Metadata Check Snapshots...",
+  "rawHash": "bf38171e71ecb4e4a23847b93a9ad60131c6fa2295ab53000dfdbb535af457d2",
+  "ingestedAt": "2026-09-11T04:36:49.792Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

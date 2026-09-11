@@ -1,0 +1,16 @@
+{
+  "eventId": "04a3a21f-2add-4909-98ef-69e56182562d",
+  "rawContent": "2026-09-06T08:07:58.576352+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Reached target gnome-session-basic-services.target - GNOME basic session services.",
+  "rawHash": "926fec56bc3149560b71b240da5c8213cd76048bead683374aea43c88ba58aa3",
+  "ingestedAt": "2026-09-11T04:36:50.636Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

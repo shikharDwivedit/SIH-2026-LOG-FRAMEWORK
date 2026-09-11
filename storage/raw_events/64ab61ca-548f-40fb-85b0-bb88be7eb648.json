@@ -1,0 +1,16 @@
+{
+  "eventId": "64ab61ca-548f-40fb-85b0-bb88be7eb648",
+  "rawContent": "2026-09-06T08:07:41.929110+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2904]: time=\"2026-09-06T08:07:41+05:30\" level=info msg=\"Selecting /dev/nvidia-uvm as /dev/nvidia-uvm\"",
+  "rawHash": "80f16b875fbf68a514e0780edda1988dfd884ada732645cea37acc43d6aeb397",
+  "ingestedAt": "2026-09-11T04:36:50.338Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

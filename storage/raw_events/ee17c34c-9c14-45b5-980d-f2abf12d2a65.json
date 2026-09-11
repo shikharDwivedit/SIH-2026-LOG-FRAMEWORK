@@ -1,0 +1,17 @@
+{
+  "eventId": "ee17c34c-9c14-45b5-980d-f2abf12d2a65",
+  "rawContent": "2026-09-06T22:23:42.481933+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[2271]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.13' (uid=0 pid=2367 comm=\"/usr/sbin/NetworkManager --no-daemon\" label=\"unconfined\")",
+  "rawHash": "bc203d7f1ff2b9c3630f7c355dec19e55e9b569a0d71ed99401974951a7e7b4f",
+  "ingestedAt": "2026-09-11T04:36:53.981Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

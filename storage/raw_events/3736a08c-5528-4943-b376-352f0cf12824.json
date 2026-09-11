@@ -1,0 +1,16 @@
+{
+  "eventId": "3736a08c-5528-4943-b376-352f0cf12824",
+  "rawContent": "2026-09-06T21:52:13.062876+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Stopped pipewire-pulse.service - PipeWire PulseAudio.",
+  "rawHash": "28d4bc906720754c33ca98bfe94aa58a26f4b50d6032ba7ac6caeb90b7e7cc1e",
+  "ingestedAt": "2026-09-11T04:36:53.646Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

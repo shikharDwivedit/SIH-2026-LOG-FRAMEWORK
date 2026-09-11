@@ -1,0 +1,17 @@
+{
+  "eventId": "064a9260-4859-4218-ac55-269ce5cf8305",
+  "rawContent": "2026-09-07T09:13:45.383646+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Successfully made /usr/ read-only.",
+  "rawHash": "996a89d69a4ed1138478016d8751b087c5991a6a78e8c40858232acaa8eb3b4f",
+  "ingestedAt": "2026-09-11T04:36:54.877Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

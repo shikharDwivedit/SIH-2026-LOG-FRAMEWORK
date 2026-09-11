@@ -1,0 +1,16 @@
+{
+  "eventId": "e02d8dc0-ac34-4700-bedb-a08da2a20178",
+  "rawContent": "2026-09-06T21:51:46.305958+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: acpi PNP0C02:00: Skipped [io  0x004e-0x004f]",
+  "rawHash": "86909406b30b7ad38158f107d4802644b53e574e42d9d77f3128517ff40077be",
+  "ingestedAt": "2026-09-11T04:36:52.064Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "d9d8afe0-4cea-441b-959c-d9dfcc20c9b1",
+  "rawContent": "2026-09-06T09:43:55.793445+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: logrotate.timer: Deactivated successfully.",
+  "rawHash": "e36d2dbadc48a91fb53184035c0b6317c09de611757347773fd447c61f0e016a",
+  "ingestedAt": "2026-09-11T04:36:51.512Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

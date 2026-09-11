@@ -1,0 +1,16 @@
+{
+  "eventId": "b3d9c3a8-99e4-47ba-b5d2-10cdc37251c4",
+  "rawContent": "2026-09-06T21:51:46.302348+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving ECDT table memory at [mem 0x5cac0000-0x5cac0068]",
+  "rawHash": "b61101e419fe0b3688fc480d138a180066a02cbc39b922582a594f91248ca36d",
+  "ingestedAt": "2026-09-11T04:36:51.690Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

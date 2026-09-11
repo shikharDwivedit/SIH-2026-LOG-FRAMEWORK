@@ -1,0 +1,17 @@
+{
+  "eventId": "5a897633-3a0c-471c-b5ce-5603c209700f",
+  "rawContent": "2026-09-06T08:07:58.747797+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Started org.gnome.SettingsDaemon.MediaKeys.service - GNOME keyboard shortcuts service.",
+  "rawHash": "7d46091b54f715c2483b04aa53da91515d30c107312c588e1a0bd4ceff23af91",
+  "ingestedAt": "2026-09-11T04:36:50.660Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

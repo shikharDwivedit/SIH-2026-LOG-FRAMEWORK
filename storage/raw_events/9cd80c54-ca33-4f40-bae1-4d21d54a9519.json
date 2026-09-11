@@ -1,0 +1,17 @@
+{
+  "eventId": "9cd80c54-ca33-4f40-bae1-4d21d54a9519",
+  "rawContent": "2026-09-07T09:13:45.383571+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx chronyd[2265]: Using leap second list /usr/share/zoneinfo/leap-seconds.list",
+  "rawHash": "03de3441c26b05ace30fc673662b1ea032c669540bfe104f20c4f11298d86b77",
+  "ingestedAt": "2026-09-11T04:36:54.877Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

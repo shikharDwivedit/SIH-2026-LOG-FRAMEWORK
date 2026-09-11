@@ -1,0 +1,16 @@
+{
+  "eventId": "a8ea7be8-3f40-4177-84fb-db9dd0c90e10",
+  "rawContent": "2026-09-06T21:51:46.918922+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx thermald[2305]: Polling mode is enabled: 4",
+  "rawHash": "7bb35b53d55067a3b202fb57f3852f91af5ac94821c26aab7ce8a9e9466821b8",
+  "ingestedAt": "2026-09-11T04:36:52.535Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

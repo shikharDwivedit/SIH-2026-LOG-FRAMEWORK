@@ -1,0 +1,17 @@
+{
+  "eventId": "0c8055b8-f5e6-47cd-bb6c-2174937d3b1e",
+  "rawContent": "2026-09-07T09:13:45.381542+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: modprobe@fuse.service - Load Kernel Module fuse skipped, unmet condition check ConditionKernelModuleLoaded=!fuse",
+  "rawHash": "bdfef462badd8d47603d6734d4d896ca416d06f8fc8c834891a7a35cfe18a52d",
+  "ingestedAt": "2026-09-11T04:36:54.307Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

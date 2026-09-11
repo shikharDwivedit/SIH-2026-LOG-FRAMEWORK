@@ -1,0 +1,17 @@
+{
+  "eventId": "34396471-09bc-449e-904d-4649d5dc2be8",
+  "rawContent": "2026-09-06T08:08:39.504741+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx brave-browser.desktop[11983]: [12813:352:0906/080839.504432:ERROR:third_party/puffin/src/puffpatch.cc:122] Failed to create a temporary file for memory-mapping: Operation not permitted (1)",
+  "rawHash": "e5f8d64c9b930e18e7a1bb8b565ea69aa175b8ce5331601a6140a9e78fe74af2",
+  "ingestedAt": "2026-09-11T04:36:50.972Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

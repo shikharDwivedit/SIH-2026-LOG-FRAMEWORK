@@ -1,0 +1,16 @@
+{
+  "eventId": "a09fc34f-bb25-4b8d-999d-79cab9656af3",
+  "rawContent": "2026-09-06T08:07:39.198022+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: sssd-nss.socket: Job sssd-nss.socket/start failed with result 'dependency'.",
+  "rawHash": "722f16de65b42b090a452b3436f032108e30640726ce101b0cff459ec2196f40",
+  "ingestedAt": "2026-09-11T04:36:49.830Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

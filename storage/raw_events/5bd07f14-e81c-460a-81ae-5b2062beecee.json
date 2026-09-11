@@ -1,0 +1,16 @@
+{
+  "eventId": "5bd07f14-e81c-460a-81ae-5b2062beecee",
+  "rawContent": "2026-09-06T21:51:46.308416+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Listening on systemd-factory-reset.socket - Factory Reset Management.",
+  "rawHash": "2aa544b061c9ca8a7abf0cb0a77cf6dca23ed7caac7659f34d29c9b04c8ee79d",
+  "ingestedAt": "2026-09-11T04:36:52.325Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

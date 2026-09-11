@@ -45,6 +45,36 @@ class ParserService {
         const parsedJson = JSON.parse(rawContent);
         Object.assign(extracted, parsedJson);
         success = true;
+      } else if (type === "cef") {
+        const cefContent = rawContent.trim().replace(/^.*?CEF:/i, "CEF:");
+        const sections = cefContent.split("|");
+        if (sections.length < 8 || !/^CEF:\d+$/i.test(sections[0])) {
+          throw new Error("Invalid CEF header");
+        }
+
+        const headerFields = [
+          "version",
+          "device_vendor",
+          "device_product",
+          "device_version",
+          "signature_id",
+          "name",
+          "severity"
+        ];
+        headerFields.forEach((field, index) => {
+          extracted[field] = sections[index + 1];
+        });
+
+        const extension = sections.slice(7).join("|");
+        const extensionPattern = /([a-zA-Z][a-zA-Z0-9_]*)=("(?:[^"\\]|\\.)*"|\S+)/g;
+        let match;
+        while ((match = extensionPattern.exec(extension)) !== null) {
+          extracted[match[1]] = match[2]
+            .replace(/^"|"$/g, "")
+            .replace(/\\([=|\\])/g, "$1")
+            .replace(/\\n/g, "\n");
+        }
+        success = true;
       }
     } catch (err) {
       success = false;

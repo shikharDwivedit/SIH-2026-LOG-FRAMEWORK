@@ -1,0 +1,17 @@
+{
+  "eventId": "50ce9405-27b4-4837-b8a0-646710c7c0c8",
+  "rawContent": "2026-09-06T23:30:27.723523+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: org.freedesktop.IBus.session.GNOME.service: Consumed 16.271s CPU time over 1h 38min 18.765s wall clock time, 27.7M memory peak.",
+  "rawHash": "fe04dea8646fa7c00161dd43d85899a5566017293ec499cc8eb275d1cb370c02",
+  "ingestedAt": "2026-09-11T04:36:54.224Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

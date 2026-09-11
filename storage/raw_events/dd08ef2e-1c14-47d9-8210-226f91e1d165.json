@@ -1,0 +1,16 @@
+{
+  "eventId": "dd08ef2e-1c14-47d9-8210-226f91e1d165",
+  "rawContent": "2026-09-06T22:59:05.012053+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[2271]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'",
+  "rawHash": "82ac070777d34327050d95cc670ed2bb5f79fea2bf1afed377ad21b71a750ce3",
+  "ingestedAt": "2026-09-11T04:36:54.021Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

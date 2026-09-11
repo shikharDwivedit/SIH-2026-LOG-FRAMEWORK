@@ -1,0 +1,16 @@
+{
+  "eventId": "113a8b21-dfe9-4183-99e1-e12e69ff34e3",
+  "rawContent": "2026-09-06T21:52:09.133238+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Started org.gnome.SettingsDaemon.Smartcard.service - GNOME smartcard service.",
+  "rawHash": "f1dfd2fdee66d95110899fc214d8752c6c37eea72fc0671c7ea3a73d8a33b7e0",
+  "ingestedAt": "2026-09-11T04:36:53.346Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

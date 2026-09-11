@@ -1,0 +1,17 @@
+{
+  "eventId": "013936d4-ded0-4ab4-a473-e04ba4f1d990",
+  "rawContent": "2026-09-06T21:52:04.555043+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Started pipewire-pulse.service - PipeWire PulseAudio.",
+  "rawHash": "916a94949f54325500a1bfee76c6f57509cd7318f427a720b35e502eb0c37273",
+  "ingestedAt": "2026-09-11T04:36:53.150Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

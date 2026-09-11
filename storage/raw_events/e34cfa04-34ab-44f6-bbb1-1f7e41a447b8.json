@@ -1,0 +1,17 @@
+{
+  "eventId": "e34cfa04-34ab-44f6-bbb1-1f7e41a447b8",
+  "rawContent": "2026-09-06T09:43:55.835968+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Requested transaction contradicts existing jobs: Transaction for plymouth-quit.service/start is destructive (systemd-resolved-varlink.socket has 'stop' job queued, but 'start' is included in transaction).",
+  "rawHash": "b150a582e1da605bfb50a682d0e0e0d84a552844acb9ab6d7cd46930a18a9cf4",
+  "ingestedAt": "2026-09-11T04:36:51.570Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

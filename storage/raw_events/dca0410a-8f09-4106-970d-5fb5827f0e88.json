@@ -1,0 +1,17 @@
+{
+  "eventId": "dca0410a-8f09-4106-970d-5fb5827f0e88",
+  "rawContent": "2026-09-06T21:51:46.303981+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx snapd-apparmor[2043]: main.go:146: Loading profiles [/var/lib/snapd/apparmor/profiles/snap-confine.snapd.27710 /var/lib/snapd/apparmor/profiles/snap-confine.snapd.27738 /var/lib/snapd/apparmor/profiles/snap-update-ns.clementine /var/lib/snapd/apparmor/profiles/snap-update-ns.docker /var/lib/snapd/apparmor/profiles/snap-update-ns.mesa-2404 /var/lib/snapd/apparmor/profiles/snap-update-ns.ngrok /var/lib/snapd/apparmor/profiles/snap-update-ns.snap-store /var/lib/snapd/apparmor/profiles/snap-update-ns.telegram-desktop /var/lib/snapd/apparmor/profiles/snap-update-ns.winebar /var/lib/snapd/apparmor/profiles/snap.clementine.clementine /var/lib/snapd/apparmor/profiles/snap.clementine.clementine-tagreader /var/lib/snapd/apparmor/profiles/snap.docker.compose /var/lib/snapd/apparmor/profiles/snap.docker.docker /var/lib/snapd/apparmor/profiles/snap.docker.dockerd /var/lib/snapd/apparmor/profiles/snap.docker.hook.configure /var/lib/snapd/apparmor/profiles/snap.docker.hook.connect-plug-gpu-2404 /var/lib/snapd/apparmor/profiles/snap.docker.hook.connect-plug-graphics-core22 /var/lib/snapd/apparmor/profiles/snap.docker.hook.install /var/lib/snapd/apparmor/profiles/snap.docker.hook.post-refresh /var/lib/snapd/apparmor/profiles/snap.docker.nvidia-container-toolkit /var/lib/snapd/apparmor/profiles/snap.mesa-2404.component-monitor /var/lib/snapd/apparmor/profiles/snap.mesa-2404.hook.connect-plug-kernel-gpu-2404 /var/lib/snapd/apparmor/profiles/snap.mesa-2404.hook.disconnect-plug-kernel-gpu-2404 /var/lib/snapd/apparmor/profiles/snap.mesa-2404.hook.install /var/lib/snapd/apparmor/profiles/snap.mesa-2404.hook.post-refresh /var/lib/snapd/apparmor/profiles/snap.ngrok.ngrok /var/lib/snapd/apparmor/profiles/snap.snap-store.hook.configure /var/lib/snapd/apparmor/profiles/snap.snap-store.packagekit-session-installer /var/lib/snapd/apparmor/profiles/snap.snap-store.show-updates /var/lib/snapd/apparmor/profiles/snap.snap-store.snap-store /var/lib/snapd/apparmor/profiles/snap.telegram-desktop.hook.configure /var/lib/snapd/apparmor/profiles/snap.telegram-desktop.telegram-desktop /var/lib/snapd/apparmor/profiles/snap.winebar.hook.configure /var/lib/snapd/apparmor/profiles/snap.winebar.winebar]",
+  "rawHash": "4f45974b41f24c7bfffeaa5f194c0c926add6c818bf5708ac294f647c8638748",
+  "ingestedAt": "2026-09-11T04:36:51.817Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

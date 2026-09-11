@@ -1,0 +1,16 @@
+{
+  "eventId": "0b64d232-1973-41a1-8de5-81c54db7e28c",
+  "rawContent": "2026-09-07T09:13:45.383856+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Stopped initrd-switch-root.service - Switch Root.",
+  "rawHash": "0490a6f9f408c6990b5a24fab2d2ee39d8aab3501d84c70815309122c2e14601",
+  "ingestedAt": "2026-09-11T04:36:54.984Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "e11dc617-0649-465f-9a66-48d6a872c24d",
+  "rawContent": "2026-09-06T08:07:39.200107+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: input: sof-hda-dsp Mic as /devices/pci0000:00/0000:00:1f.3/skl_hda_dsp_generic/sound/card1/input29",
+  "rawHash": "edf7d6bd7fd8fbfcdc4d07116d4cb15bd626c91c2176bb2763baf47eb32423d6",
+  "ingestedAt": "2026-09-11T04:36:50.164Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

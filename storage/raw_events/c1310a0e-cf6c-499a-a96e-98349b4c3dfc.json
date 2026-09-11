@@ -1,0 +1,16 @@
+{
+  "eventId": "c1310a0e-cf6c-499a-a96e-98349b4c3dfc",
+  "rawContent": "2026-09-06T08:07:39.199300+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: systemd-pcrlock.socket - Make TPM PCR Policy skipped, unmet condition check ConditionSecurity=measured-uki",
+  "rawHash": "48003d1f4c2308e0252e33898a77e71dbd7038038edf08ed796f0f2c4010ae4c",
+  "ingestedAt": "2026-09-11T04:36:50.048Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

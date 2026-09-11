@@ -1,0 +1,16 @@
+{
+  "eventId": "de3cb659-5e60-4c87-b6d3-58fc84db5e2a",
+  "rawContent": "2026-09-06T09:43:38.532048+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788668018.5319] device (wlo1): state change: ip-config -> ip-check (reason 'none', managed-type: 'full')",
+  "rawHash": "c5c9d15d8e1e1803d28c60e0dd4120bda5d2d0242188963ae54182a1da0cd6eb",
+  "ingestedAt": "2026-09-11T04:36:51.366Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

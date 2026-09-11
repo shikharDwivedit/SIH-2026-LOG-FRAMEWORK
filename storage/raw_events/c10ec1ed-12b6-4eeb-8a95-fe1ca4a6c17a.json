@@ -1,0 +1,17 @@
+{
+  "eventId": "c10ec1ed-12b6-4eeb-8a95-fe1ca4a6c17a",
+  "rawContent": "2026-09-06T08:07:39.195653+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: CPU topo: Max. threads per core:   2",
+  "rawHash": "9b92828b453b28a958a5d95ba88532f27dcfc7ff05aba90b086d08c29cdb9d62",
+  "ingestedAt": "2026-09-11T04:36:49.477Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

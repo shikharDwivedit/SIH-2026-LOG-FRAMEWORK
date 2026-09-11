@@ -1,0 +1,16 @@
+{
+  "eventId": "8104b05f-3b7f-4bf3-9966-efa14daedf40",
+  "rawContent": "2026-09-06T21:51:46.304404+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Memory: 15263228K/16463352K available (23807K kernel code, 4952K rwdata, 16764K rodata, 5292K init, 5856K bss, 1159628K reserved, 0K cma-reserved)",
+  "rawHash": "a8474fb3a2195627f035079ad1326e9b8643fa15aac707e5d7d89993499f7fb4",
+  "ingestedAt": "2026-09-11T04:36:51.871Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

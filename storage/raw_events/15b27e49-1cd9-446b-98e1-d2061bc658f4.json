@@ -1,0 +1,17 @@
+{
+  "eventId": "15b27e49-1cd9-446b-98e1-d2061bc658f4",
+  "rawContent": "2026-09-06T08:08:36.740806+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx anacron[12808]: Anacron 2.3 started on 2026-09-06",
+  "rawHash": "3e0b78dd1e312115b764a8f9b69c5f352a0c9aed9599b40e839e3171656ec2a2",
+  "ingestedAt": "2026-09-11T04:36:50.972Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

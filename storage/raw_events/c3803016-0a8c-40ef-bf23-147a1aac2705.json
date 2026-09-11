@@ -1,0 +1,16 @@
+{
+  "eventId": "c3803016-0a8c-40ef-bf23-147a1aac2705",
+  "rawContent": "2026-09-07T09:13:49.812991+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2311]: <info>  [1788752629.8123] policy: auto-activating connection 'VITAP-HOSTEL' (eb7f3366-21aa-416c-b43f-bfc2549c8612)",
+  "rawHash": "51dd4d4b976ff967d3cd63f1b03794cb076701a0fc45354062d9b1960a00be5f",
+  "ingestedAt": "2026-09-11T04:36:55.821Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "20c8964f-1af3-4b65-ad9f-6f7e13e4700c",
+  "rawContent": "2026-09-06T08:07:39.229176+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started networkd-dispatcher.service - Dispatcher daemon for systemd-networkd.",
+  "rawHash": "5458d778f580d9424e2d0eb3b7c6d6348b89759b8f3053951b747484e8bf7195",
+  "ingestedAt": "2026-09-11T04:36:50.176Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

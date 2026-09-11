@@ -1,0 +1,17 @@
+{
+  "eventId": "5e596576-2716-4fd6-8510-2ba72e55e82c",
+  "rawContent": "2026-09-07T09:13:45.384161+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: uvcvideo 1-6:1.0: Found UVC 1.10 device HP True Vision FHD Camera (0408:5487)",
+  "rawHash": "dfd2383fd97045efce02cafa416fa51446c046c32bd566ca2ce5204de5cd88e5",
+  "ingestedAt": "2026-09-11T04:36:55.119Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

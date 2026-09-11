@@ -1,0 +1,17 @@
+{
+  "eventId": "5f9f4138-adaa-4978-8cbb-ff47aa806210",
+  "rawContent": "2026-09-06T08:07:41.708603+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Starting xdg-permission-store.service - sandboxed app permission store...",
+  "rawHash": "21fa1b9dcc145cfbedd8c9aa440507c0a4b49bb5199b808d699ec6ad0ba84d64",
+  "ingestedAt": "2026-09-11T04:36:50.293Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

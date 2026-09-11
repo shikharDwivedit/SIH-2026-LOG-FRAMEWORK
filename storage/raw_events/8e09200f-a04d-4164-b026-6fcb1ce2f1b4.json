@@ -1,0 +1,16 @@
+{
+  "eventId": "8e09200f-a04d-4164-b026-6fcb1ce2f1b4",
+  "rawContent": "2026-09-06T21:52:09.434497+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[6504]: [session uid=1000 pid=6504 pidfd=5] Successfully activated service 'org.gtk.vfs.UDisks2VolumeMonitor'",
+  "rawHash": "7298543317e6fdb92910cd8791afa3055866fb3e411aac3e8a1a3a2c05b412e3",
+  "ingestedAt": "2026-09-11T04:36:53.444Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

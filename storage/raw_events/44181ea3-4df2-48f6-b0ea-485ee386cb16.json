@@ -1,0 +1,16 @@
+{
+  "eventId": "44181ea3-4df2-48f6-b0ea-485ee386cb16",
+  "rawContent": "2026-09-06T21:52:05.122884+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Starting gnome-session-manager@ubuntu.service - GNOME Session Manager (session: ubuntu)...",
+  "rawHash": "0d3f9f6737e605f34fb395c1cf0bfd830ed5364ebc24dfb451094a447facbfb3",
+  "ingestedAt": "2026-09-11T04:36:53.199Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

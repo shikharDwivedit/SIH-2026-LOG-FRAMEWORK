@@ -23,9 +23,10 @@ class FormatDetectorService {
       return LogFormat.CEF;
     }
 
-    // FortiGate / KV format check (contains multiple key=value pairs, e.g., srcip=10.0.0.5 action=deny)
+    // Key-value format check. Two pairs are enough to distinguish structured
+    // vendor text from an arbitrary regex-based syslog message.
     const kvMatches = trimmed.match(/\b([a-zA-Z0-9_\-\.]+)=("[^"]*"|\S+)/g);
-    if (kvMatches && kvMatches.length >= 3) {
+    if (kvMatches && kvMatches.length >= 2) {
       return LogFormat.KEY_VALUE;
     }
 

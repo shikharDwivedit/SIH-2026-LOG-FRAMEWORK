@@ -1,0 +1,17 @@
+{
+  "eventId": "45779b63-7532-475b-a2d3-a126e7f4b3e4",
+  "rawContent": "2026-09-06T09:43:56.092890+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopping chrony.service - chrony, an NTP client/server...",
+  "rawHash": "376bd052580679eb89df2c535a1a1939c3c818d6d3ad691c886697f801eb66d5",
+  "ingestedAt": "2026-09-11T04:36:51.595Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

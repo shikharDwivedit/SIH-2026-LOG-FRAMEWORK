@@ -1,0 +1,17 @@
+{
+  "eventId": "6bf4626f-e262-499f-9574-2c8888d15b9b",
+  "rawContent": "2026-09-06T08:07:41.832712+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2904]: time=\"2026-09-06T08:07:41+05:30\" level=warning msg=\"Failed to init nvsandboxutils: ERROR_LIBRARY_LOAD; ignoring\"",
+  "rawHash": "d477ea41cb37a088e1fa5c4ee6c7347c8e76f0714aaef185e36668d73723ef90",
+  "ingestedAt": "2026-09-11T04:36:50.318Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

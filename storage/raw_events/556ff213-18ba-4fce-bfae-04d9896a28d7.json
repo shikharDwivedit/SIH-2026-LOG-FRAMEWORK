@@ -1,0 +1,16 @@
+{
+  "eventId": "556ff213-18ba-4fce-bfae-04d9896a28d7",
+  "rawContent": "2026-09-07T09:13:45.382676+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Reached target local-fs.target - Local File Systems.",
+  "rawHash": "52c445caeee81f7255f969106b5e4d0c553e26035dd6e529276f9743fba00d37",
+  "ingestedAt": "2026-09-11T04:36:54.521Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

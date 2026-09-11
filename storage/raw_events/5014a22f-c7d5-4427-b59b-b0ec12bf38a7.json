@@ -1,0 +1,16 @@
+{
+  "eventId": "5014a22f-c7d5-4427-b59b-b0ec12bf38a7",
+  "rawContent": "2026-09-06T21:51:46.307461+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Running in initrd.",
+  "rawHash": "348b2cf4499768278f35df6303b84c14e71d690c2aa677d54478bd4a564e4338",
+  "ingestedAt": "2026-09-11T04:36:52.245Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

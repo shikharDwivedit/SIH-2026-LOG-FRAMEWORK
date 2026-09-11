@@ -1,0 +1,16 @@
+{
+  "eventId": "2ab53f8e-409a-45d4-afa7-874908be19f1",
+  "rawContent": "2026-09-07T09:13:45.381567+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving DSDT table memory at [mem 0x5ca19000-0x5cabaa87]",
+  "rawHash": "4fa00b2a6b8c437dd29fcd6d8c51bd0ec2329e94357fd043bcf98066c7813437",
+  "ingestedAt": "2026-09-11T04:36:54.321Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

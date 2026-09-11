@@ -1,0 +1,16 @@
+{
+  "eventId": "a752840c-57eb-42e0-a4e3-32339bddac90",
+  "rawContent": "2026-09-06T22:06:47.039545+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.",
+  "rawHash": "8e90164a2cc89a1a5dade19179eb4fe45020e563cc2260eddd46fd9cf534d4b2",
+  "ingestedAt": "2026-09-11T04:36:53.965Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

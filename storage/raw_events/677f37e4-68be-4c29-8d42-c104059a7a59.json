@@ -1,0 +1,16 @@
+{
+  "eventId": "677f37e4-68be-4c29-8d42-c104059a7a59",
+  "rawContent": "2026-09-06T21:52:08.979243+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Starting org.gnome.SettingsDaemon.Keyboard.service - GNOME keyboard configuration service...",
+  "rawHash": "fa4019693d299517f705b5f8c8f9df111b228f83ddda1e19c8fcb9dc6f08c7ff",
+  "ingestedAt": "2026-09-11T04:36:53.295Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

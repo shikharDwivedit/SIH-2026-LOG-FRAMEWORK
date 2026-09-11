@@ -1,0 +1,16 @@
+{
+  "eventId": "a0f4fad8-de21-4bf0-8c3c-81a49ba42ae8",
+  "rawContent": "2026-09-07T09:13:45.381548+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Condition check resulted in dev-tpmrm0.device - /dev/tpmrm0 being skipped.",
+  "rawHash": "0cde0e84825070b0fce717322f5a50561efb38daa09aa6c215587f80f7e8121c",
+  "ingestedAt": "2026-09-11T04:36:54.317Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

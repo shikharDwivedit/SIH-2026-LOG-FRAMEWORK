@@ -1,0 +1,16 @@
+{
+  "eventId": "f1ac49d4-c64c-43ab-bf5d-0c64375fff8b",
+  "rawContent": "2026-09-06T21:51:46.306694+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Key type blacklist registered",
+  "rawHash": "41a794103bce3f018c41080cf1b3cd679efdd9395a531cb99cc2257da5b9a186",
+  "ingestedAt": "2026-09-11T04:36:52.159Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

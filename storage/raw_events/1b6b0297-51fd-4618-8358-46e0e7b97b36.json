@@ -1,0 +1,17 @@
+{
+  "eventId": "1b6b0297-51fd-4618-8358-46e0e7b97b36",
+  "rawContent": "2026-09-06T08:07:59.116008+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Started gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor.",
+  "rawHash": "b64a03b87c7a8a93ba3a713e7c4d7f45cbb3dadb3e9b328f9d04fac1536570c1",
+  "ingestedAt": "2026-09-11T04:36:50.720Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

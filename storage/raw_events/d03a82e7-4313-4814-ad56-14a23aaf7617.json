@@ -1,0 +1,17 @@
+{
+  "eventId": "d03a82e7-4313-4814-ad56-14a23aaf7617",
+  "rawContent": "2026-09-07T09:13:45.382960+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: libata version 3.00 loaded.",
+  "rawHash": "8ebfcee1a5c564d3f1b1ea1dfa84c03585dfbad1bdcb64ecdf50ea887df202c7",
+  "ingestedAt": "2026-09-11T04:36:54.627Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

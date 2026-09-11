@@ -1,0 +1,16 @@
+{
+  "eventId": "99c52f8d-6d08-4a21-916a-536348f59e01",
+  "rawContent": "2026-09-06T08:07:39.198985+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: idma64 idma64.0: Found Intel integrated DMA 64-bit",
+  "rawHash": "61f196e96a66bcfc4f3a22ac29517f83755484d038a99b2e9bdb392f9f141520",
+  "ingestedAt": "2026-09-11T04:36:50.008Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

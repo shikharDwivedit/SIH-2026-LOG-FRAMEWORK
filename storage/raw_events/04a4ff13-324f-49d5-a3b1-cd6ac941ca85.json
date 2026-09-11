@@ -1,0 +1,16 @@
+{
+  "eventId": "04a4ff13-324f-49d5-a3b1-cd6ac941ca85",
+  "rawContent": "2026-09-06T21:51:46.302261+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving UEFI table memory at [mem 0x5c9be000-0x5c9be1ce]",
+  "rawHash": "385680cb75a371fa730982d6ecf05c3f09aaa41c1c5fc3fe4ae2126a888393fe",
+  "ingestedAt": "2026-09-11T04:36:51.676Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

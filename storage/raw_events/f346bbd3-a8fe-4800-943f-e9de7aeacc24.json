@@ -1,0 +1,17 @@
+{
+  "eventId": "f346bbd3-a8fe-4800-943f-e9de7aeacc24",
+  "rawContent": "2026-09-06T08:07:56.731721+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Obtained a high priority EGL context",
+  "rawHash": "1bbef314ad3e157a029459030f52a36f724bcdb860921ca541e998de083e0126",
+  "ingestedAt": "2026-09-11T04:36:50.592Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

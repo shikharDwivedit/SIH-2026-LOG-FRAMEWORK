@@ -1,0 +1,17 @@
+{
+  "eventId": "5a5b3024-6d91-48fb-85f2-48ee33d3df48",
+  "rawContent": "2026-09-07T09:13:45.383528+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Demotion targets for Node 0: null",
+  "rawHash": "cf0ce52ee56065d61d7b84f46488b4b0e2f661dd40e0d85d122992d2d2242973",
+  "ingestedAt": "2026-09-11T04:36:54.851Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "2a6f6330-8c0d-46ea-80ac-ec021383103f",
+  "rawContent": "2026-09-06T08:08:12.311085+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Closed ssh-agent.socket - OpenSSH Agent socket.",
+  "rawHash": "43b01be71ab3c82547d1c90aaf986d84b821a3f6de438133ecde76583c8d6678",
+  "ingestedAt": "2026-09-11T04:36:50.947Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

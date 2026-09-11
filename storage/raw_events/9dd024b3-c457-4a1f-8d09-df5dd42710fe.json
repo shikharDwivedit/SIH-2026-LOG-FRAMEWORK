@@ -1,0 +1,16 @@
+{
+  "eventId": "9dd024b3-c457-4a1f-8d09-df5dd42710fe",
+  "rawContent": "2026-09-06T21:53:43.070900+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788711823.0708] device (wlo1): Activation: (wifi) access point 'A34' has security, but secrets are required.",
+  "rawHash": "a86ba0f88599e7350247d246b687d1579b59e8771d587199dd29ae5990684489",
+  "ingestedAt": "2026-09-11T04:36:53.820Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

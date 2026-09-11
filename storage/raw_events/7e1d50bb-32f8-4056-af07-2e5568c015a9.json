@@ -1,0 +1,17 @@
+{
+  "eventId": "7e1d50bb-32f8-4056-af07-2e5568c015a9",
+  "rawContent": "2026-09-06T08:07:39.199804+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: loop9: detected capacity change from 0 to 337560",
+  "rawHash": "b89d349af2e9675e1c1b7d117bef65b4b3f410ba39faaf5495b2e5aaa1a2afdd",
+  "ingestedAt": "2026-09-11T04:36:50.103Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

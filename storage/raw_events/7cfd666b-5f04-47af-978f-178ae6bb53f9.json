@@ -1,0 +1,16 @@
+{
+  "eventId": "7cfd666b-5f04-47af-978f-178ae6bb53f9",
+  "rawContent": "2026-09-07T09:13:45.383350+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)",
+  "rawHash": "8b08df29ce4020b82eeb63e1594f07043ebb3e79a2f979009428d05d31c7e81a",
+  "ingestedAt": "2026-09-11T04:36:54.772Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

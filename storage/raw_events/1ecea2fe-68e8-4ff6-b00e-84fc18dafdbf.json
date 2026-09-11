@@ -1,0 +1,16 @@
+{
+  "eventId": "1ecea2fe-68e8-4ff6-b00e-84fc18dafdbf",
+  "rawContent": "2026-09-06T08:07:55.589326+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-session-service[7870]: App spice-vdagent.desktop sets X-GNOME-Autostart-Phase, but gnome-session no longer manages session services",
+  "rawHash": "7ccad420289432179e0b5d2ff24b574208437decadf6dde7e7d54c1bf20a0187",
+  "ingestedAt": "2026-09-11T04:36:50.594Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

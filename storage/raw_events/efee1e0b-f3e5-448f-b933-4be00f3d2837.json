@@ -1,0 +1,16 @@
+{
+  "eventId": "efee1e0b-f3e5-448f-b933-4be00f3d2837",
+  "rawContent": "2026-09-06T08:07:39.195626+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: TSC deadline timer available",
+  "rawHash": "bac1a37c3c887036ea49f1e7e8bd715a1a25aaface862bbb9cadd14d111ff9ac",
+  "ingestedAt": "2026-09-11T04:36:49.474Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

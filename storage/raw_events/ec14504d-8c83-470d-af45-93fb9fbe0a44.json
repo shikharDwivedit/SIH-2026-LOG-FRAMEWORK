@@ -1,0 +1,17 @@
+{
+  "eventId": "ec14504d-8c83-470d-af45-93fb9fbe0a44",
+  "rawContent": "2026-09-06T21:51:47.637100+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx rtkit-daemon[2719]: Handling system-suspend using logind.",
+  "rawHash": "cefe2ab0a77e48c703d379f7c8b464fe323b26fd7c56e499a4aafbdf752155f8",
+  "ingestedAt": "2026-09-11T04:36:52.561Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

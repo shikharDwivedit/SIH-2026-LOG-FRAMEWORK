@@ -1,0 +1,17 @@
+{
+  "eventId": "b4f5749a-3955-43d6-8162-2372fcbe662d",
+  "rawContent": "2026-09-07T09:13:45.382199+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Spectre V2 : Mitigation: Enhanced / Automatic IBRS",
+  "rawHash": "f903aa168ddafbb55966688df4c2b5a70fe932fa6f1d723e90d1fe15cb197083",
+  "ingestedAt": "2026-09-11T04:36:54.429Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

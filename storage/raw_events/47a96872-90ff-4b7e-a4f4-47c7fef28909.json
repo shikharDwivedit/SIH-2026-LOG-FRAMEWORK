@@ -1,0 +1,16 @@
+{
+  "eventId": "47a96872-90ff-4b7e-a4f4-47c7fef28909",
+  "rawContent": "2026-09-07T09:13:45.411728+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx polkitd[2317]: Started polkitd version 127",
+  "rawHash": "4246fe64c68ff41af0036250325f6a824e7283369e2338451c9a85b6cd972971",
+  "ingestedAt": "2026-09-11T04:36:55.147Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

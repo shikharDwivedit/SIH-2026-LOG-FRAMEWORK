@@ -1,0 +1,16 @@
+{
+  "eventId": "7b15f5a8-cb6e-419d-b08d-7ef5620c090e",
+  "rawContent": "2026-09-06T09:13:05.495047+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished apt-news.service - Update APT News.",
+  "rawHash": "fe83a392535484f152e5baf141568fc5c35dea2094b16980d20e1c3f0e280fa7",
+  "ingestedAt": "2026-09-11T04:36:51.175Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

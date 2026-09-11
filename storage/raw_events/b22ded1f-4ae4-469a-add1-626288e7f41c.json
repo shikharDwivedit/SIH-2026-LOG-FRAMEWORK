@@ -1,0 +1,16 @@
+{
+  "eventId": "b22ded1f-4ae4-469a-add1-626288e7f41c",
+  "rawContent": "2026-09-07T09:13:46.990132+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started snapd.service - Snap Daemon.",
+  "rawHash": "9f1b2238877a883465a83289e67ab7d1a24511fa31bba55fff33e6a6fe45c421",
+  "ingestedAt": "2026-09-11T04:36:55.261Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

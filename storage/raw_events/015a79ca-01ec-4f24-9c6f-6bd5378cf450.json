@@ -1,0 +1,17 @@
+{
+  "eventId": "015a79ca-01ec-4f24-9c6f-6bd5378cf450",
+  "rawContent": "2026-09-06T08:07:39.196440+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Estimated ratio of average max frequency by base frequency (times 1024): 2137",
+  "rawHash": "57a870f931665d345dc434ca70b98c252bbcb8384a8ed64b4a2ee6db9eae7212",
+  "ingestedAt": "2026-09-11T04:36:49.561Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

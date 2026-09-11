@@ -1,0 +1,17 @@
+{
+  "eventId": "7c622e52-acc7-45e9-9852-0da90aef1f36",
+  "rawContent": "2026-09-06T08:07:39.199797+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: snd_hda_intel 0000:01:00.1: Disabling MSI",
+  "rawHash": "8faeb797cc1c57a19fd4c953457ebaa43b4cf53ca4647593b57cc75ee7fa3b9c",
+  "ingestedAt": "2026-09-11T04:36:50.103Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

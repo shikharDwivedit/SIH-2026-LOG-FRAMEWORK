@@ -1,0 +1,16 @@
+{
+  "eventId": "d3c0bb59-1df4-4936-a454-8e229e72c983",
+  "rawContent": "2026-09-06T08:08:00.232694+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Stopped org.gnome.SettingsDaemon.Keyboard.service - GNOME keyboard configuration service.",
+  "rawHash": "ea8a1b64e4b1d7c824d156845bd3cb2bca0caa1152a0a332367b916dee49d914",
+  "ingestedAt": "2026-09-11T04:36:50.794Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

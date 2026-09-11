@@ -1,0 +1,17 @@
+{
+  "eventId": "f3b9dddc-f436-49ce-881c-d9d607a1e2c4",
+  "rawContent": "2026-09-06T08:07:39.198327+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: hpet_acpi_add: no address or irqs in _CRS",
+  "rawHash": "5ee12374b3519a22fe7ee550a3300f1ca1a543ab4e189e59dc560a44429ee367",
+  "ingestedAt": "2026-09-11T04:36:49.874Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

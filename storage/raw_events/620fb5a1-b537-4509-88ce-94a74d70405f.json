@@ -1,0 +1,16 @@
+{
+  "eventId": "620fb5a1-b537-4509-88ce-94a74d70405f",
+  "rawContent": "2026-09-06T21:51:52.535882+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[2271]: [system] Successfully activated service 'org.freedesktop.GeoClue2'",
+  "rawHash": "98517f94661299c040940d090391fce0d2a8530daa0280d0bf0fd825171fc984",
+  "ingestedAt": "2026-09-11T04:36:52.696Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

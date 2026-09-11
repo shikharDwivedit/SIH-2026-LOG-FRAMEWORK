@@ -1,0 +1,17 @@
+{
+  "eventId": "7e887fc6-b366-4403-877f-d522c6090827",
+  "rawContent": "2026-09-07T09:13:45.381348+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: random: crng init done",
+  "rawHash": "1ef994f19057f402c78bf515de2cfe6d6873becdaad53b1eae9d4a888433d20c",
+  "ingestedAt": "2026-09-11T04:36:54.268Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

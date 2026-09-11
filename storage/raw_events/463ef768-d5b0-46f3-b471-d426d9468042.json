@@ -1,0 +1,17 @@
+{
+  "eventId": "463ef768-d5b0-46f3-b471-d426d9468042",
+  "rawContent": "2026-09-06T21:52:09.264170+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Started evolution-calendar-factory.service - Evolution calendar service.",
+  "rawHash": "e9021cb722e2e77cf6b6a572591b4283d2141d3aab72d95cfd10d1fb234c1ba9",
+  "ingestedAt": "2026-09-11T04:36:53.376Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

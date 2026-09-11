@@ -1,0 +1,17 @@
+{
+  "eventId": "50c1347b-1e53-4127-a6d7-a404451cfe51",
+  "rawContent": "2026-09-06T21:51:46.305199+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started cron.service - Regular background program processing daemon.",
+  "rawHash": "51f2395f34a2028d747be5c8e96576f317819f953a89a8a47c206f6650676b48",
+  "ingestedAt": "2026-09-11T04:36:51.942Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

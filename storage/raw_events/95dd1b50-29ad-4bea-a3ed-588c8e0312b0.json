@@ -1,0 +1,16 @@
+{
+  "eventId": "95dd1b50-29ad-4bea-a3ed-588c8e0312b0",
+  "rawContent": "2026-09-06T23:30:21.094495+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2369]: wlo1: Triggering 6GHz-only scan",
+  "rawHash": "55e8166302bf7ce8a1a409ac39d145647cb467ba9a1242391e37221899b53974",
+  "ingestedAt": "2026-09-11T04:36:54.119Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

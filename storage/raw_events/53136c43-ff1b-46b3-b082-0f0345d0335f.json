@@ -1,0 +1,16 @@
+{
+  "eventId": "53136c43-ff1b-46b3-b082-0f0345d0335f",
+  "rawContent": "2026-09-06T08:08:42.019027+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx geoclue[4229]: Service not used for 60 seconds. Shutting down..",
+  "rawHash": "1b51a3721a86f7dba45fb4f3c32eff2b39219632e0cd55efd9b4d6aeff3c049d",
+  "ingestedAt": "2026-09-11T04:36:51.002Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

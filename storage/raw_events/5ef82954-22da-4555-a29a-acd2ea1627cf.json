@@ -1,0 +1,16 @@
+{
+  "eventId": "5ef82954-22da-4555-a29a-acd2ea1627cf",
+  "rawContent": "2026-09-06T21:51:46.304036+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: VMSCAPE: Mitigation: IBPB before exit to userspace",
+  "rawHash": "03c72d66518d8eee75b1486ed40e6cb995e8b160998f9c8802801128317a5236",
+  "ingestedAt": "2026-09-11T04:36:51.829Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

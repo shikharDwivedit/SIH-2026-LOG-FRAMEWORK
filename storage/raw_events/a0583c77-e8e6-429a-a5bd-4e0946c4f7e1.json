@@ -1,0 +1,16 @@
+{
+  "eventId": "a0583c77-e8e6-429a-a5bd-4e0946c4f7e1",
+  "rawContent": "2026-09-06T08:07:39.200060+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: snd_hda_codec_alc269 ehdaudio0D0: autoconfig for ALC245: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:speaker",
+  "rawHash": "de2c6467916de019afa0fa9dbf990c5def0636e95f1d315f173076391f57319b",
+  "ingestedAt": "2026-09-11T04:36:50.155Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

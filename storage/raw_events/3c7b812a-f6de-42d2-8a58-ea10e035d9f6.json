@@ -1,0 +1,16 @@
+{
+  "eventId": "3c7b812a-f6de-42d2-8a58-ea10e035d9f6",
+  "rawContent": "2026-09-06T21:52:09.132500+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Started org.gnome.SettingsDaemon.Rfkill.service - GNOME RFKill support service.",
+  "rawHash": "0c60df4e2a740e210c8ab178649e95f2f0b81263a7ed6e3fea93a77caf3d19ba",
+  "ingestedAt": "2026-09-11T04:36:53.342Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

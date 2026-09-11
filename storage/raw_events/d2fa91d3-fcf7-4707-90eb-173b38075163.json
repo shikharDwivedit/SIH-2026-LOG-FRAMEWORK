@@ -1,0 +1,17 @@
+{
+  "eventId": "d2fa91d3-fcf7-4707-90eb-173b38075163",
+  "rawContent": "2026-09-06T08:12:48.715407+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: ubuntu-insights-collect.service: (This warning is only shown for the first unit using IP firewalling.)",
+  "rawHash": "fa34e9b821bdb5af51e5b08b646bc44be036acbaf5d4e9dc7e7c7a2b510c6412",
+  "ingestedAt": "2026-09-11T04:36:51.010Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

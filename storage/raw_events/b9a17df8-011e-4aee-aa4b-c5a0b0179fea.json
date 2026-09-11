@@ -1,0 +1,16 @@
+{
+  "eventId": "b9a17df8-011e-4aee-aa4b-c5a0b0179fea",
+  "rawContent": "2026-09-06T21:51:52.539271+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2536]: NVIDIA hardware detected: 01:00.0 VGA compatible controller: NVIDIA Corporation GN20-P0-R-K2 [GeForce RTX 3050 6GB Laptop GPU] (rev a1)",
+  "rawHash": "a5e36c164e05541ae107e5c5b19adac1c2382f1f6f8f1b2f0985c44984362c79",
+  "ingestedAt": "2026-09-11T04:36:52.703Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

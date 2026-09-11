@@ -1,0 +1,17 @@
+{
+  "eventId": "a9d82ead-62c9-4967-8ace-8e182b7251c6",
+  "rawContent": "2026-09-06T21:53:35.800557+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788711815.8002] audit: op=\"radio-control\" arg=\"wireless-enabled:on\" pid=7084 uid=1000 result=\"success\"",
+  "rawHash": "60a7cf0807df5110cea3ef9bcfda7a1c12f6b7f6ed0e37cdce59a18a11b05fc0",
+  "ingestedAt": "2026-09-11T04:36:53.721Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

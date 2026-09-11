@@ -1,0 +1,16 @@
+{
+  "eventId": "78071934-105a-4c07-8e9f-2e620be0bf14",
+  "rawContent": "2026-09-06T21:51:46.304402+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: smpboot: Total of 24 processors activated (110592.00 BogoMIPS)",
+  "rawHash": "fe333d1ae1491805973a294b18e9e16eab67a5df22fda3af131ac5eb725b8ce9",
+  "ingestedAt": "2026-09-11T04:36:51.870Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

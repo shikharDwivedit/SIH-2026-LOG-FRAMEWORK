@@ -1,0 +1,16 @@
+{
+  "eventId": "2a96fdb4-c3ef-4e81-9a1e-89ba4418131d",
+  "rawContent": "2026-09-06T09:13:08.982442+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting packagekit.service - PackageKit Daemon...",
+  "rawHash": "6a87b757fcc206b0a874614823d693680f207e15cfec6b350b68290a8e0604d2",
+  "ingestedAt": "2026-09-11T04:36:51.185Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

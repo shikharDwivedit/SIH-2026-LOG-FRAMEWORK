@@ -1,0 +1,16 @@
+{
+  "eventId": "b0405cb8-8388-4c27-817b-76f499607288",
+  "rawContent": "2026-09-06T21:51:47.469647+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Listening on pk-debconf-helper.socket - debconf communication socket.",
+  "rawHash": "5aa8c0ba211cb2a81dcf54a4997c4b925474f97318d276ca19c67801cd21a15f",
+  "ingestedAt": "2026-09-11T04:36:52.545Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "60519b39-bfa2-4529-b2a9-c8f201334e6d",
+  "rawContent": "2026-09-06T08:37:04.798046+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished apt-daily-upgrade.service - Daily apt upgrade and clean activities.",
+  "rawHash": "1cd204ee839d48ef4ba0b036461995f941e8183d5ea7cfff5ce6b1ae03a4dbc6",
+  "ingestedAt": "2026-09-11T04:36:51.099Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

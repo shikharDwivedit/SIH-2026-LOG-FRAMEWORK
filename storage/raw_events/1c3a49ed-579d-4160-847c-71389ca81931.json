@@ -1,0 +1,16 @@
+{
+  "eventId": "1c3a49ed-579d-4160-847c-71389ca81931",
+  "rawContent": "2026-09-06T21:52:23.374532+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped user-runtime-dir@60578.service - User Runtime Directory /run/user/60578.",
+  "rawHash": "34577594228b60f8bfc10b97040dc4fd57df95c1490e254ab963eda7e2eaa86d",
+  "ingestedAt": "2026-09-11T04:36:53.682Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

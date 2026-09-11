@@ -1,0 +1,17 @@
+{
+  "eventId": "bb3890b6-1ed2-476f-81af-2a7242fe3af7",
+  "rawContent": "2026-09-06T08:07:42.250978+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx geoclue[4229]: Failed to connect to avahi service: Daemon not running",
+  "rawHash": "8277a88045f8934f1a7da5dae4c88f36d5bd22d41670d138d32f2f072571d3d2",
+  "ingestedAt": "2026-09-11T04:36:50.431Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

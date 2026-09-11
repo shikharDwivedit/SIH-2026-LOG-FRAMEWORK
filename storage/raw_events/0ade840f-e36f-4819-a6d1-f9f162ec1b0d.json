@@ -1,0 +1,16 @@
+{
+  "eventId": "0ade840f-e36f-4819-a6d1-f9f162ec1b0d",
+  "rawContent": "2026-09-07T09:13:45.382609+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounted snap-mesa\\x2d2404-1165.mount - Mount unit for mesa-2404, revision 1165.",
+  "rawHash": "f651e68b1f9689b1d13dd0ed32f3c163e99d3420c56891de63cbd642635b2f41",
+  "ingestedAt": "2026-09-11T04:36:54.502Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

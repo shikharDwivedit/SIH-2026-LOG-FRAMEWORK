@@ -1,0 +1,17 @@
+{
+  "eventId": "e89959a7-a29b-46b6-9247-883b6516e8aa",
+  "rawContent": "2026-09-06T21:51:52.536856+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: audit: type=1400 audit(1788711712.534:247): apparmor=\"DENIED\" operation=\"capable\" class=\"cap\" profile=\"snap.docker.nvidia-container-toolkit\" pid=4610 comm=\"lspci\" capability=21  capname=\"sys_admin\"",
+  "rawHash": "e47b35547134de5900822fdc0744daff56eb5b496606aa23a73fe5c96130066c",
+  "ingestedAt": "2026-09-11T04:36:52.681Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

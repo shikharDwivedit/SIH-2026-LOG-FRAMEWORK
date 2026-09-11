@@ -1,0 +1,16 @@
+{
+  "eventId": "a3ed5163-79a9-4cc2-a96e-6a4412fc88a3",
+  "rawContent": "2026-09-06T23:29:47.539452+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx AptDaemon.Trans: INFO: Queuing transaction /org/debian/apt/transaction/51d7d725c3eb459582418ca2d36c4a21",
+  "rawHash": "225bfda911e086a044b0b2763d935e85afe0fb71fa90a144417c7bd9f6186d99",
+  "ingestedAt": "2026-09-11T04:36:54.050Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

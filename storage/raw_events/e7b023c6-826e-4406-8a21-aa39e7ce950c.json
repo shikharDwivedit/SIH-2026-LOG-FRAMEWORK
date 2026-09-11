@@ -1,0 +1,16 @@
+{
+  "eventId": "e7b023c6-826e-4406-8a21-aa39e7ce950c",
+  "rawContent": "2026-09-07T09:13:45.383837+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: input: SYNA32E2:00 06CB:CEE7 Mouse as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-SYNA32E2:00/0018:06CB:CEE7.0006/input/input14",
+  "rawHash": "3e13cd4ac5245f5f1c758834c9e738ad7f2e01f0ea7e8ced7faf5a627d06e7b7",
+  "ingestedAt": "2026-09-11T04:36:54.970Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

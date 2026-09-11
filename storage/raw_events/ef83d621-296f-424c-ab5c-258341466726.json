@@ -1,0 +1,17 @@
+{
+  "eventId": "ef83d621-296f-424c-ab5c-258341466726",
+  "rawContent": "2026-09-06T08:07:39.196627+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5",
+  "rawHash": "405fcc7bab7aec80528c825d09ab87a5bafa1046a9d325545d3c1459c9536ab5",
+  "ingestedAt": "2026-09-11T04:36:49.582Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "dcf90e98-a81f-4ce8-8098-36cf0f74d1f6",
+  "rawContent": "2026-09-06T21:52:05.015455+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-session-i[6720]: Starting GNOME session target: gnome-session@ubuntu.target",
+  "rawHash": "5374a30e20679b5ed0dc8b3c53f6984b430750bf463760b9d04dc49ff3851835",
+  "ingestedAt": "2026-09-11T04:36:53.181Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

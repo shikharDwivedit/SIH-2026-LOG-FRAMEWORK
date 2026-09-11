@@ -1,0 +1,17 @@
+{
+  "eventId": "8b4e6a9e-b04f-486b-8a75-11a30bc9467e",
+  "rawContent": "2026-09-07T09:13:45.383856+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.",
+  "rawHash": "8baeaa6d90ebb39ff99614283a5049479fdcdc721701f943567f4ab2c130e3a4",
+  "ingestedAt": "2026-09-11T04:36:54.980Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "8937c1b5-ef01-476c-976d-c900d8f80255",
+  "rawContent": "2026-09-06T21:52:04.880287+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: sys-devices-virtual-misc-rfkill.device: Failed to enqueue SYSTEMD_WANTS job, ignoring: Unit systemd-rfkill.socket is masked.",
+  "rawHash": "9b0574b35ff4bfb142c114350d45c707daa8818c84aa47c58c0c756450414b5d",
+  "ingestedAt": "2026-09-11T04:36:53.178Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

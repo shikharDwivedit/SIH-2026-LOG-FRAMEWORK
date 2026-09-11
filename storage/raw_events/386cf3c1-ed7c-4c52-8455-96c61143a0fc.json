@@ -1,0 +1,17 @@
+{
+  "eventId": "386cf3c1-ed7c-4c52-8455-96c61143a0fc",
+  "rawContent": "2026-09-07T09:13:45.432254+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2311]: <info>  [1788752625.4322] manager: rfkill: Wi-Fi enabled by radio killswitch; enabled by state file",
+  "rawHash": "07d305aad1abc041a80d9ca5bb3563a43816ec552fc68e0f9de8f6e9e13fd846",
+  "ingestedAt": "2026-09-11T04:36:55.140Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "383e330e-a511-4f0c-88e9-004c3a989c3b",
+  "rawContent": "2026-09-06T21:51:47.550643+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Started pipewire.service - PipeWire Multimedia Service.",
+  "rawHash": "f43be903f7876242476b88a1d1e7f3d50637f2650cd4f87da4fe6b500faa30cb",
+  "ingestedAt": "2026-09-11T04:36:52.551Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

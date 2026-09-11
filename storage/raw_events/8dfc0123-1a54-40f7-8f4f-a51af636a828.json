@@ -1,0 +1,16 @@
+{
+  "eventId": "8dfc0123-1a54-40f7-8f4f-a51af636a828",
+  "rawContent": "2026-09-06T08:07:41.792062+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Reached target org.gnome.SettingsDaemon.Smartcard.target - GNOME smartcard target.",
+  "rawHash": "ba99a06b308fe42b6d40145e054eeaa4d03d0c413fa1b8a7b097ed03e18af356",
+  "ingestedAt": "2026-09-11T04:36:50.319Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

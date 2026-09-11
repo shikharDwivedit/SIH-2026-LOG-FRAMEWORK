@@ -1,0 +1,16 @@
+{
+  "eventId": "ee68e498-8183-4ff7-ae7a-bf6eb16b63fa",
+  "rawContent": "2026-09-07T09:13:45.382621+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounted snap-snap\\x2dstore-1367.mount - Mount unit for snap-store, revision 1367.",
+  "rawHash": "c46227ad46dd511303406593c22499357eb908d17e9a31c204317cc91e414b41",
+  "ingestedAt": "2026-09-11T04:36:54.505Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

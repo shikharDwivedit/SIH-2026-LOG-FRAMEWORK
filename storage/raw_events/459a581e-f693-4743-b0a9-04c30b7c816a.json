@@ -1,0 +1,17 @@
+{
+  "eventId": "459a581e-f693-4743-b0a9-04c30b7c816a",
+  "rawContent": "2026-09-06T08:07:41.267065+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Started at-spi-dbus-bus.service - Accessibility services bus.",
+  "rawHash": "79293527f52627e246e8c66e238f87064652408697599cdc968d3c3182b99f08",
+  "ingestedAt": "2026-09-11T04:36:50.268Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

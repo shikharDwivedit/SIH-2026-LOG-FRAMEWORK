@@ -1,0 +1,16 @@
+{
+  "eventId": "1179ca0f-de16-4e9c-b850-099f2447673b",
+  "rawContent": "2026-09-06T09:43:40.726632+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Can't update stage views actor unnamed [Gjs_ubuntu-dock_ubuntu_com_docking_DashSlideContainer] is on because it needs an allocation.",
+  "rawHash": "a6e5819543929e88ad0b31b2c810768172233d8bfb055e4b2588ae60450e53f9",
+  "ingestedAt": "2026-09-11T04:36:51.398Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

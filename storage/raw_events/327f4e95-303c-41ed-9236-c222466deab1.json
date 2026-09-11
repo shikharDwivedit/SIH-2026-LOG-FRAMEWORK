@@ -1,0 +1,17 @@
+{
+  "eventId": "327f4e95-303c-41ed-9236-c222466deab1",
+  "rawContent": "2026-09-06T21:51:46.308879+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'",
+  "rawHash": "a643d0405e1b348efd3ccb031f51e8be7fa99277fde91000403d29ce96ddd54c",
+  "ingestedAt": "2026-09-11T04:36:52.346Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

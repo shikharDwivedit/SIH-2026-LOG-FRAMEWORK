@@ -1,0 +1,16 @@
+{
+  "eventId": "5ce963e1-05b6-46f0-8ee1-3941bb846cdf",
+  "rawContent": "2026-09-06T08:08:02.106237+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Stopping pipewire.service - PipeWire Multimedia Service...",
+  "rawHash": "d20b277bd9bed7052b513212c642e4e4814afb4ba61e4c4add4b9ad77b0361fd",
+  "ingestedAt": "2026-09-11T04:36:50.832Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

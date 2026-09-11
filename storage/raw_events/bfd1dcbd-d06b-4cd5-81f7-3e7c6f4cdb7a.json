@@ -1,0 +1,16 @@
+{
+  "eventId": "bfd1dcbd-d06b-4cd5-81f7-3e7c6f4cdb7a",
+  "rawContent": "2026-09-06T21:51:46.306866+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2",
+  "rawHash": "c20bc8a8b56140c071ee8f8d240bc31a7b53ec2e23197184491acb2a209e16a5",
+  "ingestedAt": "2026-09-11T04:36:52.180Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

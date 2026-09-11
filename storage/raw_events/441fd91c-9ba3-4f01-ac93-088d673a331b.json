@@ -1,0 +1,17 @@
+{
+  "eventId": "441fd91c-9ba3-4f01-ac93-088d673a331b",
+  "rawContent": "2026-09-06T08:07:39.195850+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: rcu: Preemptible hierarchical RCU implementation.",
+  "rawHash": "ee3d42c912337bdaf4b1fa432641292f6602ebfd86f93b7e4f30b65b2029a187",
+  "ingestedAt": "2026-09-11T04:36:49.508Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

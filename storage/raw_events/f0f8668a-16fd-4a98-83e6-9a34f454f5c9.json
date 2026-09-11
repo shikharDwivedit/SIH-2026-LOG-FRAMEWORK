@@ -1,0 +1,17 @@
+{
+  "eventId": "f0f8668a-16fd-4a98-83e6-9a34f454f5c9",
+  "rawContent": "2026-09-06T08:07:42.029136+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[2688]: Will monitor session c1",
+  "rawHash": "466c12f47bedc1cdcb5adc1bc137b7fc201ae15c82805f8ba4351cfd6c9c9408",
+  "ingestedAt": "2026-09-11T04:36:50.414Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

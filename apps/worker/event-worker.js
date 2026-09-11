@@ -21,7 +21,12 @@ class EventWorker {
   async processQueue() {
     await this.queue.consume(async (job) => {
       logger.debug(`Worker processing job ${job.jobId} (rawEventId: ${job.rawEventId})`);
-      eventProcessingService.processSingleRawLog(job.rawContent, job.metadata || {});
+      const metadata = job.metadata || {};
+      eventProcessingService.processSingleRawLog(job.rawContent, {
+        ...metadata,
+        source_id: metadata.source_id || metadata.sourceId,
+        source_ip: metadata.source_ip || metadata.sourceIp
+      });
     });
   }
 

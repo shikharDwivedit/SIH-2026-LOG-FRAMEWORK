@@ -1,0 +1,16 @@
+{
+  "eventId": "a7d0669c-2f48-441f-9960-3c0e0627d3b9",
+  "rawContent": "2026-09-06T09:43:33.487652+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx rtkit-daemon[2615]: Successfully made thread 7382 of process 7382 owned by '1000' high priority at nice level -11.",
+  "rawHash": "20546635e75fc1948e2506710524abffcd950d3ed108f8e9cb8e5e4fd75d729b",
+  "ingestedAt": "2026-09-11T04:36:51.279Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

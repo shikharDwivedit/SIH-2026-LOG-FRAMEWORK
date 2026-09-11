@@ -1,0 +1,16 @@
+{
+  "eventId": "23669055-21c1-4682-ae8d-77be5a5ed60d",
+  "rawContent": "2026-09-06T22:09:26.307243+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx fwupdmgr[14869]:  • 4 devices are updatable",
+  "rawHash": "183ecf9ade7ca427c77c4929baadacf92766475d6cf52e140b1c658a9b105fc5",
+  "ingestedAt": "2026-09-11T04:36:53.984Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

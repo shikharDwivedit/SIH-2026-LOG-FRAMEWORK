@@ -1,0 +1,17 @@
+{
+  "eventId": "b56e6619-bb53-4214-b2ec-4d678cbc5d4e",
+  "rawContent": "2026-09-06T08:13:36.794230+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx update-notifier-crash[13588]: /usr/bin/whoopsie",
+  "rawHash": "1e403a3f6666e177ec649715d882f37c329b35c6b3052c4586ccb0ff8eb43ec8",
+  "ingestedAt": "2026-09-11T04:36:51.080Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

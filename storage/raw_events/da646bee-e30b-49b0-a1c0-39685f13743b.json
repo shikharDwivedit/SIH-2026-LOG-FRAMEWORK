@@ -1,0 +1,16 @@
+{
+  "eventId": "da646bee-e30b-49b0-a1c0-39685f13743b",
+  "rawContent": "2026-09-06T08:07:39.199004+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: intel-lpss 0000:00:1e.3: enabling device (0004 -> 0006)",
+  "rawHash": "97ae31240a29706168a8f9fac3efb7051818c21434a6eed255ed275988e9d6fc",
+  "ingestedAt": "2026-09-11T04:36:50.011Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

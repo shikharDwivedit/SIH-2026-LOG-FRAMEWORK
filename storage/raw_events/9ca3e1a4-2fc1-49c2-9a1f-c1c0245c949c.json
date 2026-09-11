@@ -1,0 +1,16 @@
+{
+  "eventId": "9ca3e1a4-2fc1-49c2-9a1f-c1c0245c949c",
+  "rawContent": "2026-09-07T09:13:45.383789+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: input: SEMICO   USB Gaming Keyboard  Consumer Control as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.1/0003:1A2C:9BFA.0002/input/input5",
+  "rawHash": "44e01e2830f4a8db0e071af2c9b1402de03c88c0efe7fe4484c0e44cbca538a8",
+  "ingestedAt": "2026-09-11T04:36:54.955Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

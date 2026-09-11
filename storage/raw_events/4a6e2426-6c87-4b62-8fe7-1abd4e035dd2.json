@@ -1,0 +1,17 @@
+{
+  "eventId": "4a6e2426-6c87-4b62-8fe7-1abd4e035dd2",
+  "rawContent": "2026-09-06T08:07:39.234246+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started accounts-daemon.service - Accounts Service.",
+  "rawHash": "d58cf45b48fc619a906a6cedb6993b997d49683eb65f57cb1dfbf631fd557f1d",
+  "ingestedAt": "2026-09-11T04:36:50.176Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

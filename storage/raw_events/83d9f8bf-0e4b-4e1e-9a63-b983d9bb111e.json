@@ -1,0 +1,17 @@
+{
+  "eventId": "83d9f8bf-0e4b-4e1e-9a63-b983d9bb111e",
+  "rawContent": "2026-09-06T23:30:27.707871+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: audit: type=1400 audit(1788717627.706:346): apparmor=\"DENIED\" operation=\"capable\" class=\"cap\" profile=\"fusermount3\" pid=24424 comm=\"fusermount3\" capability=7  capname=\"setuid\"",
+  "rawHash": "945dd72cfb96ce98c855c66ea7900a1aff59b9999a237eeb4dda2d785dec24e6",
+  "ingestedAt": "2026-09-11T04:36:54.202Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

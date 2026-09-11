@@ -1,0 +1,17 @@
+{
+  "eventId": "b4c5d8f6-aba4-4ee8-8d41-4ff941f4ca39",
+  "rawContent": "2026-09-07T09:13:46.181852+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-xdg-autostart-generator[2558]: Exec binary '/usr/lib/x86_64-linux-gnu/xapps/xapp-sn-watcher' does not exist: No such file or directory",
+  "rawHash": "b7d9d4c3835d8f3d45adbb6f56d09a477a5d8889619ef4981b023d5f3472db80",
+  "ingestedAt": "2026-09-11T04:36:55.213Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

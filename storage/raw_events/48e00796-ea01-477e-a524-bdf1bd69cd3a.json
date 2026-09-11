@@ -1,0 +1,17 @@
+{
+  "eventId": "48e00796-ea01-477e-a524-bdf1bd69cd3a",
+  "rawContent": "2026-09-06T08:07:39.199973+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Bluetooth: hci0: DSM reset method type: 0x00",
+  "rawHash": "618ba33303ec29e840c986a9c9e1f0b19ed133cf4a37d21110b6d0ee8f0ad266",
+  "ingestedAt": "2026-09-11T04:36:50.139Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

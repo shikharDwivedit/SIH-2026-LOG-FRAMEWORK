@@ -1,0 +1,17 @@
+{
+  "eventId": "c976e70b-207c-4800-b6b1-621cd27468c9",
+  "rawContent": "2026-09-06T23:30:14.846392+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788717614.8462] device (wlo1): supplicant interface state: disconnected -> scanning",
+  "rawHash": "aa30401963fe3a258f6d3782c6c8969815cc676a8f977fc600b265083a7c4eb8",
+  "ingestedAt": "2026-09-11T04:36:54.096Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

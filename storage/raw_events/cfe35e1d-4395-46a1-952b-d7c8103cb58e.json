@@ -1,0 +1,17 @@
+{
+  "eventId": "cfe35e1d-4395-46a1-952b-d7c8103cb58e",
+  "rawContent": "2026-09-06T21:51:46.304621+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Added _OSI(Processor Aggregator Device)",
+  "rawHash": "9c504b147667b5ed52c9583f32614f819b2e2e17e522a5b49ccdf81c4b1cd07a",
+  "ingestedAt": "2026-09-11T04:36:51.886Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

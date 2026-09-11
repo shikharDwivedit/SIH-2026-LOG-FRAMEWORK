@@ -1,0 +1,16 @@
+{
+  "eventId": "c97bb6ce-60f2-41f6-b952-35854f0a159b",
+  "rawContent": "2026-09-06T08:07:54.823206+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Listening on systemd-ask-password.socket - Query the User Interactively for a Password.",
+  "rawHash": "96070117aa71cc9bdb04de47cbe740aa9c8973cd9432415a615819e72f6b7050",
+  "ingestedAt": "2026-09-11T04:36:50.535Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

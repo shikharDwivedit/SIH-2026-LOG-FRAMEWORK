@@ -1,0 +1,16 @@
+{
+  "eventId": "a452a90d-1d2d-4cee-97ad-3192fddc9edd",
+  "rawContent": "2026-09-06T08:07:39.675261+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-xdg-autostart-generator[2586]: /etc/xdg/autostart/xapp-sn-watcher.desktop: not generating unit, executable specified in Exec= does not exist.",
+  "rawHash": "9b3ee60a76b6a444d7c9b5e87fc783ac333969db9e54b71cac14256637b7afe5",
+  "ingestedAt": "2026-09-11T04:36:50.218Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

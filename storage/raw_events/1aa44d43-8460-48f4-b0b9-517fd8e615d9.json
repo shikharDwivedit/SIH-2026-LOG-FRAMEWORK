@@ -1,0 +1,17 @@
+{
+  "eventId": "1aa44d43-8460-48f4-b0b9-517fd8e615d9",
+  "rawContent": "2026-09-06T08:07:59.120990+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[7363]: [session uid=1000 pid=7363 pidfd=5] Activating via systemd: service name='org.gtk.vfs.GoaVolumeMonitor' unit='gvfs-goa-volume-monitor.service' requested by ':1.61' (uid=1000 pid=8257 comm=\"/usr/libexec/localsearch-3\" label=\"unconfined\")",
+  "rawHash": "f008092eec9fca6ef4c745472e8548e7e5641992edee3285a53283f4bd81f798",
+  "ingestedAt": "2026-09-11T04:36:50.720Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

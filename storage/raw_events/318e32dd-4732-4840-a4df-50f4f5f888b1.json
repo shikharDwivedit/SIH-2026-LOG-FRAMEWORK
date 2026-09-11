@@ -1,0 +1,16 @@
+{
+  "eventId": "318e32dd-4732-4840-a4df-50f4f5f888b1",
+  "rawContent": "2026-09-06T08:07:39.197440+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: SCSI subsystem initialized",
+  "rawHash": "fb0178e550a4874a72fcfd6579e92b7d8416d9ab24b2f296a916405ed9efc78f",
+  "ingestedAt": "2026-09-11T04:36:49.727Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

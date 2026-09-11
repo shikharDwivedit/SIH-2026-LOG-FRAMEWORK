@@ -1,0 +1,17 @@
+{
+  "eventId": "86c6f5a3-9cbf-40ec-a26b-0988e031cd15",
+  "rawContent": "2026-09-06T08:07:39.198291+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting ubuntu-fan.service - Ubuntu FAN network setup...",
+  "rawHash": "aa4773c63583d87b66dfdda690b4b7e50145fd7c34233765cf0b6ea62607767d",
+  "ingestedAt": "2026-09-11T04:36:49.874Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

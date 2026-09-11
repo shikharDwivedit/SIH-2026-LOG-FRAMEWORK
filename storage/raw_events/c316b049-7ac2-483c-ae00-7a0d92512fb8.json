@@ -1,0 +1,16 @@
+{
+  "eventId": "c316b049-7ac2-483c-ae00-7a0d92512fb8",
+  "rawContent": "2026-09-06T08:07:39.198588+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: mousedev: PS/2 mouse device common for all mice",
+  "rawHash": "2cd7a439d3129f5d2a90d0f98ba0f0ced4b358f6c9afb61d3a95f2b8f956e605",
+  "ingestedAt": "2026-09-11T04:36:49.916Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

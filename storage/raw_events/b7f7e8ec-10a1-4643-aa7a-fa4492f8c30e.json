@@ -1,0 +1,16 @@
+{
+  "eventId": "b7f7e8ec-10a1-4643-aa7a-fa4492f8c30e",
+  "rawContent": "2026-09-06T21:51:46.302851+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival skipped, unmet condition check ConditionDirectoryNotEmpty=/sys/fs/pstore",
+  "rawHash": "019672175d6867f28a2ffcfb7be1c4c34c8d7429a9612e3b954f3403e0dbd354",
+  "ingestedAt": "2026-09-11T04:36:51.742Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

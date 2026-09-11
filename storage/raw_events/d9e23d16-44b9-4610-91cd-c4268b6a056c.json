@@ -1,0 +1,16 @@
+{
+  "eventId": "d9e23d16-44b9-4610-91cd-c4268b6a056c",
+  "rawContent": "2026-09-06T08:07:41.047176+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx snapd[2210]: stateengine.go:161: state ensure error: Get \"https://api.snapcraft.io/api/v1/snaps/sections\": dial tcp: lookup api.snapcraft.io on 127.0.0.53:53: server misbehaving",
+  "rawHash": "0c1d4a6bd1e853a986866ca0892e3330af36e44922680e225e278d6f568bfda6",
+  "ingestedAt": "2026-09-11T04:36:50.273Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

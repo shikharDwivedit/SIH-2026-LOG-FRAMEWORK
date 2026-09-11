@@ -1,0 +1,17 @@
+{
+  "eventId": "d1cc2600-9b3c-4276-bfdc-3bb6b7ab2e1f",
+  "rawContent": "2026-09-06T09:34:38.206423+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-sleep[18527]: This is not recommended, and might result in unexpected behavior, particularly",
+  "rawHash": "faa59d26282c29ea3d68140f5b2db222bb90fdba8c274c7be3e0be3ca32f96a2",
+  "ingestedAt": "2026-09-11T04:36:51.231Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

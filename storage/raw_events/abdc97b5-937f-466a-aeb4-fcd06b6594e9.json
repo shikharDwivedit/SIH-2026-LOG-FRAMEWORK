@@ -1,0 +1,16 @@
+{
+  "eventId": "abdc97b5-937f-466a-aeb4-fcd06b6594e9",
+  "rawContent": "2026-09-07T09:13:48.198205+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2551]: Started org.gnome.SettingsDaemon.Sharing.service - GNOME file sharing service.",
+  "rawHash": "947f1942bfe1b974c4744cbf443bb1591066e09a18aa64064fe0d4f0d529be53",
+  "ingestedAt": "2026-09-11T04:36:55.739Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "e1e8a114-fbc7-47b1-bf88-3e9b68c4a41d",
+  "rawContent": "2026-09-06T08:07:39.198907+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Finished systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully.",
+  "rawHash": "ab685baf9b09accc02eff322e39d6ed65f2c83621f7c3bd45535ede324339c6c",
+  "ingestedAt": "2026-09-11T04:36:49.986Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

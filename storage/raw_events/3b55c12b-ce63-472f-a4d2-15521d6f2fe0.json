@@ -1,0 +1,17 @@
+{
+  "eventId": "3b55c12b-ce63-472f-a4d2-15521d6f2fe0",
+  "rawContent": "2026-09-06T08:07:39.197973+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting snapd.seeded.service - Wait until snapd is fully seeded...",
+  "rawHash": "6198c9bffea34625656eba6403373d430d16d73665db73e9f372b2543fd86e71",
+  "ingestedAt": "2026-09-11T04:36:49.817Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

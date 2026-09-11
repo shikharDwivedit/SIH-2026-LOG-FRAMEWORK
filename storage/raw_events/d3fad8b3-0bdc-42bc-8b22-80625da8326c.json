@@ -1,0 +1,16 @@
+{
+  "eventId": "d3fad8b3-0bdc-42bc-8b22-80625da8326c",
+  "rawContent": "2026-09-06T23:30:27.665248+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped fwupd-refresh.timer - Refresh fwupd metadata regularly.",
+  "rawHash": "2ac41b825308e512f8b5358149bc7f59f59d42ea7d5070c6956ce7a8449443fd",
+  "ingestedAt": "2026-09-11T04:36:54.150Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

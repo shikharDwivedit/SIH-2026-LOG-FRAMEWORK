@@ -1,0 +1,17 @@
+{
+  "eventId": "7feedc6d-f913-40fc-a225-8b1bdae908e5",
+  "rawContent": "2026-09-06T08:07:39.198618+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: [drm] Initialized simpledrm 1.0.0 for simple-framebuffer.0 on minor 0",
+  "rawHash": "d5f766ff270b5cddfb00fffa9b9a3c23f7d0b5045c78afea5ef664c6f1bce014",
+  "ingestedAt": "2026-09-11T04:36:49.920Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

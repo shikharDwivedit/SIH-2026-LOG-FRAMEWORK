@@ -1,0 +1,17 @@
+{
+  "eventId": "85553eeb-1ef1-4fae-9b3a-44ff92d669d8",
+  "rawContent": "2026-09-07T09:13:46.590350+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: tmp-snap\\x2dprivate\\x2dtmp-snap.rootfs_M55bOa.mount: Deactivated successfully.",
+  "rawHash": "1bed3dfbf2061ed67fc71e9fa88c6556a47b60ae2183eeec4132550e8255abac",
+  "ingestedAt": "2026-09-11T04:36:55.254Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

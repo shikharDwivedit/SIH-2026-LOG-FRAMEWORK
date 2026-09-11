@@ -1,0 +1,16 @@
+{
+  "eventId": "de84f0c1-3dc9-42db-9b26-03e42852aff6",
+  "rawContent": "2026-09-06T09:01:38.980011+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting fprintd.service - Fingerprint Authentication Daemon...",
+  "rawHash": "b395505435cf56c88543be51e660db9cfe0e7d42d08051dd8b6fa39826eaa6a2",
+  "ingestedAt": "2026-09-11T04:36:51.121Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "018fc0ba-e0cb-4fe0-891c-53834dcff991",
+  "rawContent": "2026-09-06T09:43:55.792257+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Stopping org.freedesktop.IBus.session.GNOME.service - IBus Daemon for GNOME...",
+  "rawHash": "887a14eabd7b4b138309705ae991a7f337d488d0fe7af7126409a4a8c776950d",
+  "ingestedAt": "2026-09-11T04:36:51.501Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

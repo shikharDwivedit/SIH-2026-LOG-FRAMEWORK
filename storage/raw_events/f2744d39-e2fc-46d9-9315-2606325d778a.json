@@ -1,0 +1,17 @@
+{
+  "eventId": "f2744d39-e2fc-46d9-9315-2606325d778a",
+  "rawContent": "2026-09-06T08:07:39.198889+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.",
+  "rawHash": "ad5ff5ae6dd64feef0df223e44b54d234d0e9b94ea127f4b27e74882fd49190a",
+  "ingestedAt": "2026-09-11T04:36:49.978Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

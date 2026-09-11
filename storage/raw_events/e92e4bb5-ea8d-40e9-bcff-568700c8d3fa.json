@@ -1,0 +1,17 @@
+{
+  "eventId": "e92e4bb5-ea8d-40e9-bcff-568700c8d3fa",
+  "rawContent": "2026-09-06T08:07:39.196655+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20251212/psobject-220)",
+  "rawHash": "9979f1532453eb749c70e8ea2b70c2f103d4c59d511392026f2b0b709eb5b8d5",
+  "ingestedAt": "2026-09-11T04:36:49.593Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

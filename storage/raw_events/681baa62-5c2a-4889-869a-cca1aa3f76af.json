@@ -1,0 +1,17 @@
+{
+  "eventId": "681baa62-5c2a-4889-869a-cca1aa3f76af",
+  "rawContent": "2026-09-06T08:24:35.533704+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx brave-browser.desktop[11983]: [11984:11984:0906/082435.533176:ERROR:ui/ozone/platform/wayland/host/wayland_data_drag_controller.cc:179] Invalid state when trying to start drag. source=kMouse",
+  "rawHash": "d7e59dc40f846ab8cfeaf00a4ee5e928f2a1ece435839684c6faa588ff74c0dc",
+  "ingestedAt": "2026-09-11T04:36:51.081Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

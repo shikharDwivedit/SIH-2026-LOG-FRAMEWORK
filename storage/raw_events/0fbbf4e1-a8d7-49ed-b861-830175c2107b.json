@@ -1,0 +1,16 @@
+{
+  "eventId": "0fbbf4e1-a8d7-49ed-b861-830175c2107b",
+  "rawContent": "2026-09-06T21:52:11.057781+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[2785]: Using public X11 display :1024, (using unix:/tmp/.X11-unix/X1025 for managed services)",
+  "rawHash": "b8b102b3b2b4c24c669283942214c3b9a85db97b86f8fd78c9c79d8ed3336449",
+  "ingestedAt": "2026-09-11T04:36:53.586Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "364e8912-db7c-4fa7-9f38-ff06aa0e2fd9",
+  "rawContent": "2026-09-07T09:13:45.382758+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: systemd-tpm2-setup.service - TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-uki",
+  "rawHash": "94525700de1844f0e77374b4ed90aef7211a8d481b4f13a40fd2045b186e9259",
+  "ingestedAt": "2026-09-11T04:36:54.585Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

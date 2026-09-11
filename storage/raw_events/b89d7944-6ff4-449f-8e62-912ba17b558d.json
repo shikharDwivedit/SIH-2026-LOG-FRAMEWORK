@@ -1,0 +1,17 @@
+{
+  "eventId": "b89d7944-6ff4-449f-8e62-912ba17b558d",
+  "rawContent": "2026-09-06T23:30:27.642999+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7084]: DING: (gjs:9702): GVFS-RemoteVolumeMonitor-WARNING **: 23:30:27.642: Owner of volume monitor org.gtk.vfs.GPhoto2VolumeMonitor disconnected from the bus; removing drives/volumes/mounts",
+  "rawHash": "147dfe7f69fbe500a4a2a9b0bb75d71fda7c255bc3ec10908aa46a48b19e73e1",
+  "ingestedAt": "2026-09-11T04:36:54.124Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

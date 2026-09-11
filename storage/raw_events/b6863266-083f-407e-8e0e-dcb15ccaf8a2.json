@@ -1,0 +1,16 @@
+{
+  "eventId": "b6863266-083f-407e-8e0e-dcb15ccaf8a2",
+  "rawContent": "2026-09-06T21:51:46.304255+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: smpboot: CPU0: 13th Gen Intel(R) Core(TM) i7-13700HX (family: 0x6, model: 0xbf, stepping: 0x2)",
+  "rawHash": "b5c323b6d2cd0104b300056461ead36abc2ac3340953465bc30ea90b2613a9a9",
+  "ingestedAt": "2026-09-11T04:36:51.850Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "778914dc-1c8e-44bf-aea8-3cb825572905",
+  "rawContent": "2026-09-06T23:30:27.703369+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Stopped app-gnome-org.gnome.SettingsDaemon.DiskUtilityNotify-8132.scope - Application launched by gnome-session-service.",
+  "rawHash": "b7bbb9bb4d9bf68d6d2866fee141ae26ebea6a759ee48de8b3a24753e785c64a",
+  "ingestedAt": "2026-09-11T04:36:54.201Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

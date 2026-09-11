@@ -1,0 +1,16 @@
+{
+  "eventId": "06dc345e-dd77-4ec2-8724-2adc867e1898",
+  "rawContent": "2026-09-07T09:13:45.383297+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: sssd.service - System Security Services Daemon skipped, no trigger condition checks were met.",
+  "rawHash": "60614b57a4c63954fe3ae07bd2777f460862807857a071e0d51473959be59fa5",
+  "ingestedAt": "2026-09-11T04:36:54.748Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

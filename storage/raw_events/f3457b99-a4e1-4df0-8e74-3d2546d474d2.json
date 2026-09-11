@@ -1,0 +1,17 @@
+{
+  "eventId": "f3457b99-a4e1-4df0-8e74-3d2546d474d2",
+  "rawContent": "2026-09-06T08:07:39.198911+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ppdev: user-space parallel port driver",
+  "rawHash": "5224e265d97d29745ae762f6ca1d93ae0ff593f4fdc6e05591ee08e9b0d4a0e2",
+  "ingestedAt": "2026-09-11T04:36:49.978Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

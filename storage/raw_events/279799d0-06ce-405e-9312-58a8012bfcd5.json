@@ -1,0 +1,16 @@
+{
+  "eventId": "279799d0-06ce-405e-9312-58a8012bfcd5",
+  "rawContent": "2026-09-06T21:51:51.881143+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Started org.freedesktop.IBus.session.GNOME.service - IBus Daemon for GNOME.",
+  "rawHash": "58338246075e3698cd6d02c2301d2599be659f6220c6e22e3f6e95f284fcb8b3",
+  "ingestedAt": "2026-09-11T04:36:52.671Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

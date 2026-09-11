@@ -1,0 +1,16 @@
+{
+  "eventId": "5c1b3ec5-3a91-4c70-b7fb-738fd5e6c4cd",
+  "rawContent": "2026-09-06T08:07:41.955259+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2904]: time=\"2026-09-06T08:07:41+05:30\" level=info msg=\"Generated CDI spec with version 0.7.0\"",
+  "rawHash": "ea2a06aa9d59eff9f221cf7b2ff64e16cb28241d32dbbf9c4d0f462a16cdf06b",
+  "ingestedAt": "2026-09-11T04:36:50.414Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

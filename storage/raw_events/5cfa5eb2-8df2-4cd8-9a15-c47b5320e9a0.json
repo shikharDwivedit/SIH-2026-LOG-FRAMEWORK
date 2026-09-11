@@ -1,0 +1,17 @@
+{
+  "eventId": "5cfa5eb2-8df2-4cd8-9a15-c47b5320e9a0",
+  "rawContent": "2026-09-07T09:13:45.383804+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: hid-generic 0003:32C2:0018.0003: input,hidraw2: USB HID v1.10 Keyboard [HS6209 2.4G Wireless Receiver] on usb-0000:00:14.0-2/input0",
+  "rawHash": "ef54b36d709bf4360851dcfbb1b33bbf993989d66210c2b5688d298ae380cbb7",
+  "ingestedAt": "2026-09-11T04:36:54.961Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

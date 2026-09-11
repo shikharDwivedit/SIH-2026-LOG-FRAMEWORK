@@ -1,0 +1,17 @@
+{
+  "eventId": "7166106f-4828-45e4-964b-9f8a7642a0e7",
+  "rawContent": "2026-09-06T08:07:54.920531+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Started gnome-keyring-daemon.service - GNOME Keyring daemon.",
+  "rawHash": "23cf69c2348a8893d5d46fbd0f28779eee2cf50e2b944ccd16334c5991f7ffa4",
+  "ingestedAt": "2026-09-11T04:36:50.540Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

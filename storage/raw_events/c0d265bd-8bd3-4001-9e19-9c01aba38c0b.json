@@ -1,0 +1,16 @@
+{
+  "eventId": "c0d265bd-8bd3-4001-9e19-9c01aba38c0b",
+  "rawContent": "2026-09-06T09:43:55.800773+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Connection to xwayland lost",
+  "rawHash": "a6f247c4539e4d36e28f1176c0417d504170e8d0611cd2d4e99c5032ec367547",
+  "ingestedAt": "2026-09-11T04:36:51.534Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

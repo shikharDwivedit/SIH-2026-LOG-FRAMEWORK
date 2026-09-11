@@ -1,0 +1,16 @@
+{
+  "eventId": "87e50fed-9c25-43b9-bccc-1bcebe3341e8",
+  "rawContent": "2026-09-07T09:13:49.818855+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2311]: <info>  [1788752629.8184] Config: added 'password' value '<hidden>'",
+  "rawHash": "11ff47ad108129ad233b4b6adcd40cd82b2a9588476aa9945d2ac03d9af53c5f",
+  "ingestedAt": "2026-09-11T04:36:55.828Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

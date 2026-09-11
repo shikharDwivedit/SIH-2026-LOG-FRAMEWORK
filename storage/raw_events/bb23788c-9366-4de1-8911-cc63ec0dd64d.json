@@ -1,0 +1,16 @@
+{
+  "eventId": "bb23788c-9366-4de1-8911-cc63ec0dd64d",
+  "rawContent": "2026-09-06T08:07:41.489952+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2452]: Waiting for device to become available: /dev/nvidiactl",
+  "rawHash": "f24963274035f64d37ad8a83cc7a51c9bf78a62e9b2f3559e13cfc8e9be04804",
+  "ingestedAt": "2026-09-11T04:36:50.296Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

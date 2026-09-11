@@ -1,0 +1,17 @@
+{
+  "eventId": "139ad04c-3fa1-402b-b30c-0a74554dec08",
+  "rawContent": "2026-09-06T21:51:46.308912+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: input: Intel HID events as /devices/platform/INTC1070:00/input/input20",
+  "rawHash": "0080323a1890ccbb6f6f8b3cd8fb580b390cf1df0c72937bae2b97841dfa116f",
+  "ingestedAt": "2026-09-11T04:36:52.346Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

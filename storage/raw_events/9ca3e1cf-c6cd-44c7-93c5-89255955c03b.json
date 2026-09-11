@@ -1,0 +1,17 @@
+{
+  "eventId": "9ca3e1cf-c6cd-44c7-93c5-89255955c03b",
+  "rawContent": "2026-09-06T08:07:58.774955+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Reached target org.gnome.SettingsDaemon.Keyboard.target - GNOME keyboard configuration target.",
+  "rawHash": "e3d98bb2e26a07a1245144b1e0be510a4ca46e7ecbe62857736ea0c3799faae5",
+  "ingestedAt": "2026-09-11T04:36:50.680Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

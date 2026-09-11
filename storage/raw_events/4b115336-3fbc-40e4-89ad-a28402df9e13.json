@@ -1,0 +1,17 @@
+{
+  "eventId": "4b115336-3fbc-40e4-89ad-a28402df9e13",
+  "rawContent": "2026-09-06T08:07:39.199843+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: [drm] Initialized i915 1.6.0 for 0000:00:02.0 on minor 2",
+  "rawHash": "2b3098402fcbe42874e4b9d18fb4598c7b5b53e1443cf12ed88d1da8acf3979c",
+  "ingestedAt": "2026-09-11T04:36:50.115Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

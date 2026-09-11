@@ -1,0 +1,16 @@
+{
+  "eventId": "1cf02558-6b91-4fe4-b6e9-635cf5d552b7",
+  "rawContent": "2026-09-06T21:51:46.380954+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Generic FE-GE Realtek PHY r8169-0-4300:00: attached PHY driver (mii_bus:phy_addr=r8169-0-4300:00, irq=MAC)",
+  "rawHash": "938205fb534e465eb4e4e7f1d81313853a5aa284b62a1d5e32c8dbad1d44c698",
+  "ingestedAt": "2026-09-11T04:36:52.511Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

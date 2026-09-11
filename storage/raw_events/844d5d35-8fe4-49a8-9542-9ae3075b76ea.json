@@ -1,0 +1,16 @@
+{
+  "eventId": "844d5d35-8fe4-49a8-9542-9ae3075b76ea",
+  "rawContent": "2026-09-06T21:51:46.303304+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounted snap-core24-1643.mount - Mount unit for core24, revision 1643.",
+  "rawHash": "4b833a41a020aa9d2280e40510d05485b257e6ae7112ffd9910530567417bdf1",
+  "ingestedAt": "2026-09-11T04:36:51.772Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "39786f31-aab8-470b-a12b-90ec3a1448ff",
+  "rawContent": "2026-09-06T08:07:52.755082+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788662272.7550] device (br-c3a8af4a3ba6): state change: secondaries -> activated (reason 'none', managed-type: 'external')",
+  "rawHash": "fda9e9dd631850fa0cd2f4841455816bfa78bfea8cb29e6d3b2d711fc9ae09ca",
+  "ingestedAt": "2026-09-11T04:36:50.509Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

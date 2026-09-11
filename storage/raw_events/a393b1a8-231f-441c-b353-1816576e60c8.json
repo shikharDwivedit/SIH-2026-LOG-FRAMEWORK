@@ -1,0 +1,17 @@
+{
+  "eventId": "a393b1a8-231f-441c-b353-1816576e60c8",
+  "rawContent": "2026-09-06T21:53:41.944899+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2369]: wlo1: CTRL-EVENT-SSID-TEMP-DISABLED id=0 ssid=\"VITAP-HOSTEL\" auth_failures=1 duration=10 reason=AUTH_FAILED",
+  "rawHash": "890c8b7d4055644bf26de0ca8b837e02f8861836ca88a4b84e4c2d0db44134f7",
+  "ingestedAt": "2026-09-11T04:36:53.799Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

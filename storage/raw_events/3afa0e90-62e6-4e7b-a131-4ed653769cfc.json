@@ -1,0 +1,16 @@
+{
+  "eventId": "3afa0e90-62e6-4e7b-a131-4ed653769cfc",
+  "rawContent": "2026-09-07T09:13:45.382679+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Listening on systemd-sysext.socket - System Extension Image Management.",
+  "rawHash": "767606dd183faac7f14e746310a7a057fee58c3a399467a77da3fb27737256e2",
+  "ingestedAt": "2026-09-11T04:36:54.526Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

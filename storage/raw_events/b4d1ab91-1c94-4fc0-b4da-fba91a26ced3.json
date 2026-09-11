@@ -1,0 +1,16 @@
+{
+  "eventId": "b4d1ab91-1c94-4fc0-b4da-fba91a26ced3",
+  "rawContent": "2026-09-07T09:13:45.384151+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Bluetooth: hci0: API lock is enabled",
+  "rawHash": "7a08bb73e7a3b0fa2ee6c35705f4a43846a93aa605b2e301c86d1c21fa04ad34",
+  "ingestedAt": "2026-09-11T04:36:55.117Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

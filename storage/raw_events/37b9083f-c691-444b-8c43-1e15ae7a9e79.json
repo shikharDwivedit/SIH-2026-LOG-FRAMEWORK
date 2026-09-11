@@ -1,0 +1,16 @@
+{
+  "eventId": "37b9083f-c691-444b-8c43-1e15ae7a9e79",
+  "rawContent": "2026-09-06T21:51:46.307372+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Freeing unused kernel image (initmem) memory: 5292K",
+  "rawHash": "82e25b330469459dae82d5b375f4d4af1c07210dc3fbd5d04f9843b095d85939",
+  "ingestedAt": "2026-09-11T04:36:52.238Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

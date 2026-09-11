@@ -1,0 +1,16 @@
+{
+  "eventId": "9e039448-d7bf-4b1d-9dfa-f8c81461a161",
+  "rawContent": "2026-09-07T09:13:47.267271+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[2673]: GPU /dev/dri/card2 selected primary from builtin panel presence",
+  "rawHash": "5f636921eedd8f80dbdf52ce666d8291471b6eef6efab5c0ac8efbf4319e3fd5",
+  "ingestedAt": "2026-09-11T04:36:55.273Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

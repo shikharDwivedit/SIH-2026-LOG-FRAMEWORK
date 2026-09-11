@@ -1,0 +1,17 @@
+{
+  "eventId": "55999d4b-446b-4611-ac59-854316444c78",
+  "rawContent": "2026-09-06T09:43:55.792191+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Removed slice system-modprobe.slice - Slice /system/modprobe.",
+  "rawHash": "bc61b63ecccb6670e6e255dc431fb19a997a7d73bc14d9b9d9b28359f80b2049",
+  "ingestedAt": "2026-09-11T04:36:51.494Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

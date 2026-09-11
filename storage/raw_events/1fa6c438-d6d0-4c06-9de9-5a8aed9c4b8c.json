@@ -1,0 +1,16 @@
+{
+  "eventId": "1fa6c438-d6d0-4c06-9de9-5a8aed9c4b8c",
+  "rawContent": "2026-09-06T08:07:39.225746+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788662259.2256] ifupdown: interfaces file /etc/network/interfaces doesn't exist",
+  "rawHash": "b18014315bd153d7f7a5c99ba480a3e59a4bb743dfbf4c3105a39d900a73b477",
+  "ingestedAt": "2026-09-11T04:36:50.180Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

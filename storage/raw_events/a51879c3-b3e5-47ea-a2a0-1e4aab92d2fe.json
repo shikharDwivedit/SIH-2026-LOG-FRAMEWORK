@@ -1,0 +1,16 @@
+{
+  "eventId": "a51879c3-b3e5-47ea-a2a0-1e4aab92d2fe",
+  "rawContent": "2026-09-06T21:51:46.304116+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: tpm-udev.path - Handle dynamically added tpm devices skipped, unmet condition check ConditionVirtualization=container",
+  "rawHash": "1f2c40f1336232dbc3a68ebdc092878efc9de914a2cf20388558626410e53f4f",
+  "ingestedAt": "2026-09-11T04:36:51.839Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "b9b24dae-0fa0-4544-9c88-80f6b78d5754",
+  "rawContent": "2026-09-06T08:07:41.352520+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Bluetooth: RFCOMM socket layer initialized",
+  "rawHash": "02604a2472650fa00b3e6e13876656712b289acf2596eae49abab01565325479",
+  "ingestedAt": "2026-09-11T04:36:50.278Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "dbe5168f-8301-4ded-b7b8-7d49d80ebaa0",
+  "rawContent": "2026-09-06T08:07:39.195776+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Initmem setup node 0 [mem 0x0000000000001000-0x0000000497bfffff]",
+  "rawHash": "31b7b65c51655b7940423daabd514bf7a5dcf115b0ffe87dfdec3c7411d09afc",
+  "ingestedAt": "2026-09-11T04:36:49.497Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

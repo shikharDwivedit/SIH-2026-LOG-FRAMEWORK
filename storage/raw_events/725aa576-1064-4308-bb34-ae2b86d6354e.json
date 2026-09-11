@@ -1,0 +1,16 @@
+{
+  "eventId": "725aa576-1064-4308-bb34-ae2b86d6354e",
+  "rawContent": "2026-09-06T21:53:07.665866+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Started app-org.chromium.Chromium-10054.scope.",
+  "rawHash": "e14672e06cfb30cece4e7861f67dd37eab6a168a7a2ba49d873b5ebd68046b5b",
+  "ingestedAt": "2026-09-11T04:36:53.718Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

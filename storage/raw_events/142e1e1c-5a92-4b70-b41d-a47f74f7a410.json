@@ -1,0 +1,17 @@
+{
+  "eventId": "142e1e1c-5a92-4b70-b41d-a47f74f7a410",
+  "rawContent": "2026-09-06T08:07:54.844631+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Listening on gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.",
+  "rawHash": "9562f67f1b982785a3965afcd30f1026aacb20c10245a299ea0b132e3e55a665",
+  "ingestedAt": "2026-09-11T04:36:50.529Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

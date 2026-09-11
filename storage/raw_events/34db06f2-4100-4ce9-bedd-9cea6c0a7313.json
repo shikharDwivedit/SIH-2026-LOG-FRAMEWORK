@@ -1,0 +1,16 @@
+{
+  "eventId": "34db06f2-4100-4ce9-bedd-9cea6c0a7313",
+  "rawContent": "2026-09-07T09:13:45.382442+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: thermal_sys: Registered thermal governor 'step_wise'",
+  "rawHash": "07de59c93c68dc6d61ca6c2dc67fa09d0506ef29eb8cf733527a20b161abce64",
+  "ingestedAt": "2026-09-11T04:36:54.475Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "569e84b1-363f-4346-8d4d-5d8f8661fe5f",
+  "rawContent": "2026-09-06T21:52:09.120905+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-session-service[7049]: Could not create transient scope for PID 8112: GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Failed to set unit properties: No such process",
+  "rawHash": "dfed09cb555529ee768a4de1f3baec0732f0605129273001838b66289fe20e5c",
+  "ingestedAt": "2026-09-11T04:36:53.336Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

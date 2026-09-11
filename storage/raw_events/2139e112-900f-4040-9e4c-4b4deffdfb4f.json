@@ -1,0 +1,16 @@
+{
+  "eventId": "2139e112-900f-4040-9e4c-4b4deffdfb4f",
+  "rawContent": "2026-09-06T23:30:27.701939+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped gdm.service - GNOME Display Manager.",
+  "rawHash": "930b93c2b140c83b94554311999fd3f5f959042d570d47c437c705169d727dca",
+  "ingestedAt": "2026-09-11T04:36:54.200Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "1bfbff1b-2438-42f0-8036-72db4213c2b2",
+  "rawContent": "2026-09-07T09:13:45.382672+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Reached target snapd.mounts.target - Mounted snaps.",
+  "rawHash": "7415762c0c6d70b0de2ac5b07143ed15114f5dfe0e398828fa3d62579bdadf68",
+  "ingestedAt": "2026-09-11T04:36:54.519Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

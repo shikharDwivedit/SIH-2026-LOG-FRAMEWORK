@@ -1,0 +1,16 @@
+{
+  "eventId": "ba7da13f-134d-45f7-8ab4-8b681591beae",
+  "rawContent": "2026-09-06T21:51:46.302298+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving TPM2 table memory at [mem 0x5cae4000-0x5cae404b]",
+  "rawHash": "a3e8c99f37d23f39845698ec89e56e3b11bcb79277a8dc98a011c1b379e1b7f8",
+  "ingestedAt": "2026-09-11T04:36:51.681Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

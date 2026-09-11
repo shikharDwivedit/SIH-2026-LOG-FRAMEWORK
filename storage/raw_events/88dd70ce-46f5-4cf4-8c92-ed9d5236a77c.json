@@ -1,0 +1,16 @@
+{
+  "eventId": "88dd70ce-46f5-4cf4-8c92-ed9d5236a77c",
+  "rawContent": "2026-09-06T08:07:39.196496+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounted snap-gnome\\x2d42\\x2d2204-247.mount - Mount unit for gnome-42-2204, revision 247.",
+  "rawHash": "74f8f038a7f4f76dce5da9a6d6f3fc8c6e0774f4016cc2c18f279f4dbfb980d7",
+  "ingestedAt": "2026-09-11T04:36:49.569Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

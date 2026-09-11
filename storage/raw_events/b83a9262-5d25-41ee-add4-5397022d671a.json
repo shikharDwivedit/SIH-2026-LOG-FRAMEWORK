@@ -1,0 +1,16 @@
+{
+  "eventId": "b83a9262-5d25-41ee-add4-5397022d671a",
+  "rawContent": "2026-09-07T09:13:45.383167+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available skipped, unmet condition check ConditionPathExists=!/usr/bin/dbus-daemon",
+  "rawHash": "998c613dba133121d05445cf1b2e1cf62a5bf10b725abdd29b9a0e40df5ebfeb",
+  "ingestedAt": "2026-09-11T04:36:54.735Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

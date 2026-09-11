@@ -1,0 +1,17 @@
+{
+  "eventId": "75069097-a691-492b-a0f6-0e2ca7d58c85",
+  "rawContent": "2026-09-06T09:43:55.761580+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Stopped gnome-session-manager@ubuntu.service - GNOME Session Manager (session: ubuntu).",
+  "rawHash": "36ca66cb944b468f43f8e2e51beb8d6bde511434cb9a50665c2c583ee4cb723f",
+  "ingestedAt": "2026-09-11T04:36:51.441Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

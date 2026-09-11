@@ -1,0 +1,16 @@
+{
+  "eventId": "c93fa0f1-1b5e-4904-936d-694b5e45eea9",
+  "rawContent": "2026-09-06T21:51:46.304123+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Yama: becoming mindful.",
+  "rawHash": "81096b817469b88444cf88e4b3515b41b7e90b35bdc154c6e93fbe26f3d7cfa5",
+  "ingestedAt": "2026-09-11T04:36:51.840Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

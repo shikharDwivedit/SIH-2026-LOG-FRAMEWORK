@@ -1,0 +1,17 @@
+{
+  "eventId": "bc26f8f2-90b1-401b-9792-6469905cc571",
+  "rawContent": "2026-09-07T09:13:45.383457+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: e2scrub_reap.service: Deactivated successfully.",
+  "rawHash": "018ada2b1b38f36c7a3d78ffd7a21394ff5debefb8751c65a9b82b2cc4f19c28",
+  "ingestedAt": "2026-09-11T04:36:54.810Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "0f61de34-bada-4815-bd28-d42544695e2c",
+  "rawContent": "2026-09-06T08:07:39.195319+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx rsyslogd: rsyslogd's groupid changed to 101",
+  "rawHash": "15c993ac37db97683593f09d318a62dfc11e4c33c7c7c6ab3e2ad5922df91b35",
+  "ingestedAt": "2026-09-11T04:36:49.976Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

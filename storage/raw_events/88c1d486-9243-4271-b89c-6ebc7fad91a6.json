@@ -1,0 +1,17 @@
+{
+  "eventId": "88c1d486-9243-4271-b89c-6ebc7fad91a6",
+  "rawContent": "2026-09-07T09:13:45.382432+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: DMA: preallocated 2048 KiB GFP_KERNEL pool for atomic allocations",
+  "rawHash": "b444a2616c10aacccd90dc88b90493f9fa0404dd63422564d0fc72bbf9da7f1b",
+  "ingestedAt": "2026-09-11T04:36:54.459Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

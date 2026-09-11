@@ -1,0 +1,16 @@
+{
+  "eventId": "d4bb05dd-c53b-4759-bb7a-ac4b3d3e6212",
+  "rawContent": "2026-09-06T08:07:59.598605+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Type GITypeInfo of property NM.Object::client does not match return type GITypeInfo of getter get_client. Falling back to slow path",
+  "rawHash": "859f530cda1dc2817963e916e8daa756414f5f793210fa2465c048cd1f263a78",
+  "ingestedAt": "2026-09-11T04:36:50.750Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

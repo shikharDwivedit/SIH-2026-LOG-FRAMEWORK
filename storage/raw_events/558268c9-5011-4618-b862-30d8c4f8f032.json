@@ -1,0 +1,16 @@
+{
+  "eventId": "558268c9-5011-4618-b862-30d8c4f8f032",
+  "rawContent": "2026-09-06T21:51:46.305548+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx boltd[2266]: config: loading user config",
+  "rawHash": "e526929ff2f5ba95a19c25569c6ab880665b316192ba2f8e652b6549e2ceeaeb",
+  "ingestedAt": "2026-09-11T04:36:51.996Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

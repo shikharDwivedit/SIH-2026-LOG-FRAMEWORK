@@ -1,0 +1,17 @@
+{
+  "eventId": "1b523d3d-73b4-4e6a-8a6f-c9f692761e81",
+  "rawContent": "2026-09-06T23:30:27.639655+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Stopping gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor...",
+  "rawHash": "0eb86ca812736525c4637c97e70b91d35f8d34b22762737314ad5fae32ccf249",
+  "ingestedAt": "2026-09-11T04:36:54.124Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

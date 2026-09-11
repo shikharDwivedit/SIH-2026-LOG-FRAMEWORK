@@ -1,0 +1,17 @@
+{
+  "eventId": "12bee4b0-47eb-467d-90d4-4a4b85e9f5cd",
+  "rawContent": "2026-09-06T21:51:51.669321+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx bluetoothd[2265]: Endpoint registered: sender=:1.53 path=/MediaEndpoint/A2DPSource/opus_g",
+  "rawHash": "6cb49243bd590ca3a4d891df76252f502a45db5e3f10350333337890ac8e7267",
+  "ingestedAt": "2026-09-11T04:36:52.641Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

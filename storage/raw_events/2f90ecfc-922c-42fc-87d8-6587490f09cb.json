@@ -1,0 +1,16 @@
+{
+  "eventId": "2f90ecfc-922c-42fc-87d8-6587490f09cb",
+  "rawContent": "2026-09-07T09:13:45.382677+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]",
+  "rawHash": "48159b0e4753beb7d30f95e8c5249d94fde42608a151c06d5f433c5cfee6391d",
+  "ingestedAt": "2026-09-11T04:36:54.521Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

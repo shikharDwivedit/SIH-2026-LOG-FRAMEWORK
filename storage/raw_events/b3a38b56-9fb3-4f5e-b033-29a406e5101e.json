@@ -1,0 +1,17 @@
+{
+  "eventId": "b3a38b56-9fb3-4f5e-b033-29a406e5101e",
+  "rawContent": "2026-09-06T21:51:46.302354+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving APIC table memory at [mem 0x5cabd000-0x5cabd1db]",
+  "rawHash": "38cf147a8524d250f59c5eefdc78ccbd60712ada9bb54051a5794684be2f6fc6",
+  "ingestedAt": "2026-09-11T04:36:51.683Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

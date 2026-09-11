@@ -1,0 +1,17 @@
+{
+  "eventId": "a3ac21c9-fa16-411a-81b3-4c6a61b64513",
+  "rawContent": "2026-09-06T21:52:09.390026+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[6504]: [session uid=1000 pid=6504 pidfd=5] Successfully activated service 'org.gnome.evolution.dataserver.AddressBook10'",
+  "rawHash": "bea70729a311df0afacffe3ea7bdbfd6248926f04aef47f7178aa9a45415b418",
+  "ingestedAt": "2026-09-11T04:36:53.399Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

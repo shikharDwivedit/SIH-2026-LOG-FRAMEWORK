@@ -1,0 +1,16 @@
+{
+  "eventId": "de3272ad-da7f-4ef2-84c3-d712e1ac093b",
+  "rawContent": "2026-09-06T08:07:39.199449+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Starting systemd-udev-load-credentials.service - Load udev Rules from Credentials...",
+  "rawHash": "fc9c9b9ad7e90b4c9b14c4d6d5cfc8d9cb6c7c16cb7741f14c7e8ce2beafbeff",
+  "ingestedAt": "2026-09-11T04:36:50.066Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

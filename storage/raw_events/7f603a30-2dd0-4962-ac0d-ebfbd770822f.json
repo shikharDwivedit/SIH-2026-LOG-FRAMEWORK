@@ -1,0 +1,16 @@
+{
+  "eventId": "7f603a30-2dd0-4962-ac0d-ebfbd770822f",
+  "rawContent": "2026-09-06T08:08:12.234400+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Stopped target paths.target - Paths.",
+  "rawHash": "84d0fd65560e84fd95699fbb74cc2d6ede6dd169f90cacf254d068d4b521c3eb",
+  "ingestedAt": "2026-09-11T04:36:50.937Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

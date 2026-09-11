@@ -1,0 +1,16 @@
+{
+  "eventId": "fc0a3f6c-fc07-4892-93ec-ae88825174e7",
+  "rawContent": "2026-09-06T23:30:27.666114+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Stopped gvfs-metadata.service - Virtual filesystem metadata service.",
+  "rawHash": "c98c8c059c135fbe5d65f468234a6a0ae5ee9abf51f3b5aefe940d279bb78d0b",
+  "ingestedAt": "2026-09-11T04:36:54.158Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

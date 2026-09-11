@@ -1,0 +1,16 @@
+{
+  "eventId": "aaa8671e-c1b8-407c-8d87-2e98d0434f44",
+  "rawContent": "2026-09-06T21:52:10.938528+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Stopped target org.gnome.SettingsDaemon.Sharing.target - GNOME file sharing target.",
+  "rawHash": "fe557b1ae4d8844517738a1734df3725453f49f236bf3e78a7794d9ce2206091",
+  "ingestedAt": "2026-09-11T04:36:53.573Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

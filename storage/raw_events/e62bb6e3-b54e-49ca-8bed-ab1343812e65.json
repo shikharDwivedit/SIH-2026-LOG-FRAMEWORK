@@ -1,0 +1,16 @@
+{
+  "eventId": "e62bb6e3-b54e-49ca-8bed-ab1343812e65",
+  "rawContent": "2026-09-07T09:13:45.383550+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ima: No architecture policies found",
+  "rawHash": "ebd99b3edd3d0f7df095e31cf0098e1fb9bb7430d0212ab34ca55e72c19f8a52",
+  "ingestedAt": "2026-09-11T04:36:54.866Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

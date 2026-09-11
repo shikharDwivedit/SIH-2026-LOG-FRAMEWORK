@@ -1,0 +1,16 @@
+{
+  "eventId": "3703652b-db7f-474e-a154-f0d2e1630e4e",
+  "rawContent": "2026-09-07T09:13:49.818585+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2311]: <info>  [1788752629.8183] Config: added 'bgscan' value 'simple:30:-65:300'",
+  "rawHash": "46c6d0b4906406bd3c4ef818fd612ec5ec62bfa7cf1615a187128a9f0b8ea852",
+  "ingestedAt": "2026-09-11T04:36:55.827Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "438bbadd-129e-4ad7-982b-78256c31bd35",
+  "rawContent": "2026-09-06T21:51:53.349876+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: audit: type=1400 audit(1788711713.348:254): apparmor=\"DENIED\" operation=\"open\" class=\"file\" profile=\"snap.docker.nvidia-container-toolkit\" name=\"/var/lib/snapd/hostfs/usr/lib/x86_64-linux-gnu/libm.so.6\" pid=4672 comm=\"nvidia-ctk\" requested_mask=\"r\" denied_mask=\"r\" fsuid=0 ouid=0",
+  "rawHash": "36954ce5a867d81f2eecfc74b05f82d19b62b942abea8e186e4d836f3560d5a1",
+  "ingestedAt": "2026-09-11T04:36:52.733Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

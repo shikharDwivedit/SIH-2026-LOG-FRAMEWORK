@@ -1,0 +1,16 @@
+{
+  "eventId": "f399a529-8587-4d47-a8c2-b13b31344546",
+  "rawContent": "2026-09-06T21:51:46.303897+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.",
+  "rawHash": "ce433d24c8099a9a193860ccdd24b765f06e8dace5b5d4a421f96cb4253a230a",
+  "ingestedAt": "2026-09-11T04:36:51.811Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

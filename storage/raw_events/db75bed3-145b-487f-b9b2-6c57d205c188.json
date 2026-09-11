@@ -1,0 +1,16 @@
+{
+  "eventId": "db75bed3-145b-487f-b9b2-6c57d205c188",
+  "rawContent": "2026-09-06T08:07:39.195837+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: KHO: Failed to reserve scratch area, disabling kexec handover",
+  "rawHash": "e53ca7178e011e9f9d6f130d0ee369ceba01c96196eb1c76539a126f2ed71cb7",
+  "ingestedAt": "2026-09-11T04:36:49.510Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

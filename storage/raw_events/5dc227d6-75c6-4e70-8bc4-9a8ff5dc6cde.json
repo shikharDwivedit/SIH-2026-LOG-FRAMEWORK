@@ -1,0 +1,17 @@
+{
+  "eventId": "5dc227d6-75c6-4e70-8bc4-9a8ff5dc6cde",
+  "rawContent": "2026-09-06T08:07:43.370142+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[4969]: > Warning:          Unsupported maximum keycode 708, clipping.",
+  "rawHash": "cb4e8922c4ed9d1b656773192ec2e73353f8fde41082a775fb4dce05a7229e2b",
+  "ingestedAt": "2026-09-11T04:36:50.431Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

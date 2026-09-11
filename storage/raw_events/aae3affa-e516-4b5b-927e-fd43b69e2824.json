@@ -1,0 +1,16 @@
+{
+  "eventId": "aae3affa-e516-4b5b-927e-fd43b69e2824",
+  "rawContent": "2026-09-06T09:43:55.855420+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: upower.service: Deactivated successfully.",
+  "rawHash": "9baf6d6816fc639cb9a3108feb2932153f1ea9fef39939a6dcec06f17c92b9cc",
+  "ingestedAt": "2026-09-11T04:36:51.575Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

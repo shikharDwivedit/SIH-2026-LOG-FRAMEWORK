@@ -1,0 +1,16 @@
+{
+  "eventId": "e2542ef6-d69c-4748-a260-44150b6083f3",
+  "rawContent": "2026-09-06T21:51:46.303532+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounted snap-winebar-9.mount - Mount unit for winebar, revision 9.",
+  "rawHash": "06cd0addac33e674415eb9a3bc3800b407bf3be5910e95d4c233b66cd8144cc4",
+  "ingestedAt": "2026-09-11T04:36:51.782Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

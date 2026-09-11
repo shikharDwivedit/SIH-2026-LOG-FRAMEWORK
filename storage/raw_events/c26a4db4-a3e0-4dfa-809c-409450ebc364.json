@@ -1,0 +1,17 @@
+{
+  "eventId": "c26a4db4-a3e0-4dfa-809c-409450ebc364",
+  "rawContent": "2026-09-06T09:43:33.698078+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: grub-initrd-fallback.service: Deactivated successfully.",
+  "rawHash": "7473068bcd975f4b5b420f5a716914ebc79fc3a990049ba72b45ef421969a5ce",
+  "ingestedAt": "2026-09-11T04:36:51.278Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

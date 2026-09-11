@@ -1,0 +1,17 @@
+{
+  "eventId": "e88c9099-30d2-4fbe-89ae-263c363f2b80",
+  "rawContent": "2026-09-06T08:07:39.195595+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-fsck[903]: /dev/nvme0n1p1: 664 files, 64632/193919 clusters",
+  "rawHash": "070542c675624fcc34147da0fd4c4f42283f7642cf3aa5d71cf2b7c88bca2191",
+  "ingestedAt": "2026-09-11T04:36:49.467Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

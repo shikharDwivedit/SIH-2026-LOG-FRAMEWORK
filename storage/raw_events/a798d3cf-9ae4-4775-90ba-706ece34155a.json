@@ -1,0 +1,16 @@
+{
+  "eventId": "a798d3cf-9ae4-4775-90ba-706ece34155a",
+  "rawContent": "2026-09-06T21:52:13.077988+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Stopped dbus.service - D-Bus User Message Bus.",
+  "rawHash": "36167e7736c60d19831b31a5424912cd7cb1396258a0fef25fef137c78d93265",
+  "ingestedAt": "2026-09-11T04:36:53.649Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

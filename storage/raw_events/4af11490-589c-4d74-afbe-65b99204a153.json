@@ -1,0 +1,16 @@
+{
+  "eventId": "4af11490-589c-4d74-afbe-65b99204a153",
+  "rawContent": "2026-09-06T08:07:39.196456+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: smpboot: x86: Booting SMP configuration:",
+  "rawHash": "30dc7e8b2cefbb0900bb509f506c483bbe37c61429abdce58318ee0964d9d9d5",
+  "ingestedAt": "2026-09-11T04:36:49.566Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

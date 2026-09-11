@@ -1,0 +1,17 @@
+{
+  "eventId": "89fc8fd4-1466-4c42-b3c0-dd4dde9bcb75",
+  "rawContent": "2026-09-06T09:43:55.790712+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Stopped target org.gnome.SettingsDaemon.Color.target - GNOME color management target.",
+  "rawHash": "c47d0436961a39d6cdfecd167f85cad7f19840480306ddc06b953e4a501d25c6",
+  "ingestedAt": "2026-09-11T04:36:51.472Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

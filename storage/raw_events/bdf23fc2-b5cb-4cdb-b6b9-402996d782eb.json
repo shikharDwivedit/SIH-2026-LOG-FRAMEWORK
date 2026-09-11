@@ -1,0 +1,16 @@
+{
+  "eventId": "bdf23fc2-b5cb-4cdb-b6b9-402996d782eb",
+  "rawContent": "2026-09-06T08:07:39.197780+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started dmesg.service - Save initial kernel messages after boot.",
+  "rawHash": "8d791bdb3ac88c7f5901ed15118d115c8f7421624fa585f11596f622690ea1a8",
+  "ingestedAt": "2026-09-11T04:36:49.778Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

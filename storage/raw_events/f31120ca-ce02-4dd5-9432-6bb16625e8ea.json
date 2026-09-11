@@ -1,0 +1,16 @@
+{
+  "eventId": "f31120ca-ce02-4dd5-9432-6bb16625e8ea",
+  "rawContent": "2026-09-06T08:08:10.191712+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788662290.1908] manager: NetworkManager state is now CONNECTED_GLOBAL",
+  "rawHash": "d5b1a0dcf9b6367854eac5a24becd46110f3da043dc74a27282a4909a132ae8f",
+  "ingestedAt": "2026-09-11T04:36:50.931Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "46abae5b-5aac-49ae-8f68-98d7f37904c1",
+  "rawContent": "2026-09-06T21:52:10.538407+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Reached target gnome-session-x11-services-ready.target - GNOME session X11 services.",
+  "rawHash": "20bad43cdce278b2b6c762924135b70c60bbcd687cb4a9baf6c0af163be9319c",
+  "ingestedAt": "2026-09-11T04:36:53.517Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

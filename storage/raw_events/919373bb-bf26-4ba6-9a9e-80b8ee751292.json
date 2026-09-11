@@ -1,0 +1,17 @@
+{
+  "eventId": "919373bb-bf26-4ba6-9a9e-80b8ee751292",
+  "rawContent": "2026-09-07T09:13:47.267232+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[2673]: Created gbm renderer for '/dev/dri/card2'",
+  "rawHash": "3f8ba6becd09aa601f04ae62c8fa6ed983cca3fcef50ed635caf9f3f9b38578b",
+  "ingestedAt": "2026-09-11T04:36:55.268Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

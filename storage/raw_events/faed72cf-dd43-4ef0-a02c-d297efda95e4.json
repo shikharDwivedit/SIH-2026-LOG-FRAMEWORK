@@ -1,0 +1,16 @@
+{
+  "eventId": "faed72cf-dd43-4ef0-a02c-d297efda95e4",
+  "rawContent": "2026-09-06T08:07:58.771434+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Started app-gnome-ubuntu\\x2dadvantage\\x2dnotification-8100.scope - Application launched by gnome-session-service.",
+  "rawHash": "aebf77184e581f92f0da47f0676779432a4a3f228403643992be76322f544b04",
+  "ingestedAt": "2026-09-11T04:36:50.681Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

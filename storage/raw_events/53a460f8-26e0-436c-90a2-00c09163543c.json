@@ -1,0 +1,16 @@
+{
+  "eventId": "53a460f8-26e0-436c-90a2-00c09163543c",
+  "rawContent": "2026-09-06T08:07:39.195836+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounting boot-efi.mount - /boot/efi...",
+  "rawHash": "cb5a5bc7ad20099fca853d7f4597b07689ffd8c2df37f7ba4cff72ccfbb0e60e",
+  "ingestedAt": "2026-09-11T04:36:49.510Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

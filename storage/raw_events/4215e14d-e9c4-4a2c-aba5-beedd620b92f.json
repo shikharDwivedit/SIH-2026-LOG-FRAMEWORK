@@ -1,0 +1,16 @@
+{
+  "eventId": "4215e14d-e9c4-4a2c-aba5-beedd620b92f",
+  "rawContent": "2026-09-06T08:08:00.139816+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Registering display with GDM",
+  "rawHash": "39b74c1d77f29cb2bc9c6e0c5c3384789c4123e6a659b65c7f93062555793a76",
+  "ingestedAt": "2026-09-11T04:36:50.765Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

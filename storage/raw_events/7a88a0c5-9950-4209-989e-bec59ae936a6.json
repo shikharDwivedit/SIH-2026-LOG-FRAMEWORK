@@ -1,0 +1,16 @@
+{
+  "eventId": "7a88a0c5-9950-4209-989e-bec59ae936a6",
+  "rawContent": "2026-09-06T09:43:40.595920+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: DING: DBus interface for Nautilus (org.freedesktop.FileManager1) is now available.",
+  "rawHash": "d87d4068a469e54d0ca8bdc61bdf869353b3311bf7bf34f299dd113ed446fc87",
+  "ingestedAt": "2026-09-11T04:36:51.389Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

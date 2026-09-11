@@ -1,0 +1,17 @@
+{
+  "eventId": "7b42bb87-df73-4fa1-9bfb-e9bd3c3c1738",
+  "rawContent": "2026-09-06T08:08:02.108309+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: mpris-proxy.service: Main process exited, code=exited, status=1/FAILURE",
+  "rawHash": "bf7a5626873bd716f33e0a41bdb467f1d156c5467d27ff3daad121973d2ac3cb",
+  "ingestedAt": "2026-09-11T04:36:50.828Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

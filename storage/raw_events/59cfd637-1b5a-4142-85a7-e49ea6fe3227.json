@@ -1,0 +1,16 @@
+{
+  "eventId": "59cfd637-1b5a-4142-85a7-e49ea6fe3227",
+  "rawContent": "2026-09-06T21:51:46.304741+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: SSDT 0xFFFF8D8003553800 0004B5 (v02 PmRef  Cpu0Hwp  00003000 INTL 20200717)",
+  "rawHash": "a7983b5f7c5fac77b795c36bf4f10e47f0f196a9ef3720c00ed89c178862489f",
+  "ingestedAt": "2026-09-11T04:36:51.904Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

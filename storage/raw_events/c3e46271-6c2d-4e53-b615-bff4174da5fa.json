@@ -1,0 +1,16 @@
+{
+  "eventId": "c3e46271-6c2d-4e53-b615-bff4174da5fa",
+  "rawContent": "2026-09-06T21:51:50.888771+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting systemd-timedated.service - Time & Date Service...",
+  "rawHash": "b67afc04f541c6db7a000c9c1c7a05f0a232998c5c8b7ea8bc10282c14b51de5",
+  "ingestedAt": "2026-09-11T04:36:52.605Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

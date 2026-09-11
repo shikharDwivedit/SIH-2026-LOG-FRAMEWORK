@@ -1,0 +1,16 @@
+{
+  "eventId": "ff8afa4e-f020-4c8a-9cb3-6d88c2ae0561",
+  "rawContent": "2026-09-07T09:13:45.903711+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2311]: <info>  [1788752625.9036] failed to open /run/network/ifstate",
+  "rawHash": "cd4b111b629521fdbad3270efb9c7e98ceb72299d5d7f94f861e10670f67a004",
+  "ingestedAt": "2026-09-11T04:36:55.192Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "eventId": "2666a5c1-f656-4a8c-8bf6-0c95054e3fb9",
+  "rawContent": "{\"vendor\":\"Acme\",\"action\":\"allow\",\"src_ip\":\"192.0.2.10\",\"dst_ip\":\"198.51.100.20\",\"severity\":\"low\"}",
+  "rawHash": "0d38a2d17bfc9f5cc5e387574917b3e25aacbeaba16c15f1b42fc935b5afa27d",
+  "ingestedAt": "2026-09-11T05:23:30.265Z",
+  "sourceId": "unknown",
+  "transport": "file",
+  "metadata": {}
+}

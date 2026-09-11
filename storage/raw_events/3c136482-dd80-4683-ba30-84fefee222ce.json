@@ -1,0 +1,17 @@
+{
+  "eventId": "3c136482-dd80-4683-ba30-84fefee222ce",
+  "rawContent": "2026-09-07T09:13:45.382581+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Dynamic OEM Table Load:",
+  "rawHash": "8bd69db3d94134a85a866ce547de9762d8b4945c7ce3a94a81cb06f30cb56b0c",
+  "ingestedAt": "2026-09-11T04:36:54.483Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

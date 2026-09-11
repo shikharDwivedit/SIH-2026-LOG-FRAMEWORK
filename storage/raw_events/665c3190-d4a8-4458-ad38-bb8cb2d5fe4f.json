@@ -1,0 +1,17 @@
+{
+  "eventId": "665c3190-d4a8-4458-ad38-bb8cb2d5fe4f",
+  "rawContent": "2026-09-06T08:08:12.232229+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Stopping gcr-ssh-agent.service - GCR ssh-agent wrapper...",
+  "rawHash": "813dfe5f0dd7eb52021d269a7fcad7c2d151e5c516c58a53a5944d125255799e",
+  "ingestedAt": "2026-09-11T04:36:50.930Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

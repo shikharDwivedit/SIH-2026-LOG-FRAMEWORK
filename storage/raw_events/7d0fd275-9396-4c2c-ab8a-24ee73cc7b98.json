@@ -1,0 +1,16 @@
+{
+  "eventId": "7d0fd275-9396-4c2c-ab8a-24ee73cc7b98",
+  "rawContent": "2026-09-06T21:52:09.838951+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx xdg-desktop-portal-gnome[8356]: Theme parser error: gtk.css:8661:39-43: Expected a valid color.",
+  "rawHash": "3abafddcd085495b26e34fbbeb1449cd423f1474da7f98a32b2d38481c5cc29e",
+  "ingestedAt": "2026-09-11T04:36:53.504Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

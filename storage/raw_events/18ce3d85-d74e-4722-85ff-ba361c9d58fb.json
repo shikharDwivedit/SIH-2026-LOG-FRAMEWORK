@@ -1,0 +1,16 @@
+{
+  "eventId": "18ce3d85-d74e-4722-85ff-ba361c9d58fb",
+  "rawContent": "2026-09-06T21:51:46.304034+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Register File Data Sampling: Mitigation: Clear Register File",
+  "rawHash": "e2768f896eb52a7a2ecd32b6d191b9a8f485f5fa27c8cb660eb5e54d9d145d43",
+  "ingestedAt": "2026-09-11T04:36:51.829Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

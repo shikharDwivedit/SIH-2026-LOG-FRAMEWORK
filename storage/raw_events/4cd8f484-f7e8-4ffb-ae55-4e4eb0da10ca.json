@@ -1,0 +1,16 @@
+{
+  "eventId": "4cd8f484-f7e8-4ffb-ae55-4e4eb0da10ca",
+  "rawContent": "2026-09-06T21:52:05.195237+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-session-service[7049]: App gnome-keyring-pkcs11.desktop sets X-GNOME-Autostart-Phase, but gnome-session no longer manages session services",
+  "rawHash": "ef5d5c5d755e88e8684d02606935dbaf960c40815b5e3670cd8943c3a5c087f4",
+  "ingestedAt": "2026-09-11T04:36:53.205Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "4d5ffab8-921a-462b-9847-117cc1af4123",
+  "rawContent": "2026-09-07T09:13:45.383921+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Stopped plymouth-switch-root.service - Plymouth switch root service.",
+  "rawHash": "720fe2720cc0dae776a846e5bdf5ee443bbe3e829d8328189d4eea98f5173dca",
+  "ingestedAt": "2026-09-11T04:36:55.004Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

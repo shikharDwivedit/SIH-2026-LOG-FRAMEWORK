@@ -1,0 +1,17 @@
+{
+  "eventId": "27c8a47a-8fbe-48f5-bda0-179e34e3037e",
+  "rawContent": "2026-09-06T08:08:09.752656+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-resolved[684]: wlo1: Bus client set default route setting: yes",
+  "rawHash": "26b8ee64b854ced4e1e0a1896bf5557d566545758733e5b33c5d17fab5a54f5b",
+  "ingestedAt": "2026-09-11T04:36:50.918Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

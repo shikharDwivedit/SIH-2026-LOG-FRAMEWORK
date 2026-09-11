@@ -1,0 +1,16 @@
+{
+  "eventId": "4e32fa96-b8f9-4f3c-8d22-15f6d53585a6",
+  "rawContent": "2026-09-06T09:43:32.552304+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-resolved[684]: Clock change detected. Flushing caches.",
+  "rawHash": "d0767e329ccb3fca3051e71278e796a0220774416745a11e6a91fb557d5fd8f9",
+  "ingestedAt": "2026-09-11T04:36:51.251Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

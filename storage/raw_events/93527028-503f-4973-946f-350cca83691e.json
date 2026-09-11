@@ -1,0 +1,16 @@
+{
+  "eventId": "93527028-503f-4973-946f-350cca83691e",
+  "rawContent": "2026-09-06T08:07:39.199238+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Stopped target initrd-root-fs.target - Initrd Root File System.",
+  "rawHash": "ade7d993d068a7c16e7c83eb95e20ea3568bc81fb02db7ce18d6a87b1bd09cbd",
+  "ingestedAt": "2026-09-11T04:36:50.042Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

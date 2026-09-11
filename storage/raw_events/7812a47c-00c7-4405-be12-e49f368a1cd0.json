@@ -1,0 +1,17 @@
+{
+  "eventId": "7812a47c-00c7-4405-be12-e49f368a1cd0",
+  "rawContent": "2026-09-06T21:51:46.303724+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 1800 (systemd-binfmt)",
+  "rawHash": "c3d79dae9555cf0ff40b1690bb945b11f9ad3262970e3330dd6c233222e98bfd",
+  "ingestedAt": "2026-09-11T04:36:51.785Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

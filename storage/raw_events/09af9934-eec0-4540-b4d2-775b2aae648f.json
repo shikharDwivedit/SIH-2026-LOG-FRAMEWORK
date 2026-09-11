@@ -1,0 +1,16 @@
+{
+  "eventId": "09af9934-eec0-4540-b4d2-775b2aae648f",
+  "rawContent": "2026-09-06T08:07:39.196168+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounting snap-snapd-27738.mount - Mount unit for snapd, revision 27738...",
+  "rawHash": "72247ffa44abb3d944840f1150ef528329c6e6ce235c95023b7f90f1c870b745",
+  "ingestedAt": "2026-09-11T04:36:49.547Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

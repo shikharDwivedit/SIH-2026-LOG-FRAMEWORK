@@ -1,0 +1,17 @@
+{
+  "eventId": "d4ad5da7-1b5a-4a85-80a9-7f72b6616089",
+  "rawContent": "2026-09-06T21:51:46.552335+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788711706.5521] modem-manager: oFono is not available",
+  "rawHash": "774c7833b8cc4b792b7d3fd1e6abf2b3a4ddffa765ea67c308bfd7d57ae1075d",
+  "ingestedAt": "2026-09-11T04:36:52.511Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

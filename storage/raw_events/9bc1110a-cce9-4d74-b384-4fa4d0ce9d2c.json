@@ -1,0 +1,16 @@
+{
+  "eventId": "9bc1110a-cce9-4d74-b384-4fa4d0ce9d2c",
+  "rawContent": "2026-09-06T08:07:39.195205+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting systemd-udevd.service - Rule-based Manager for Device Events and Files...",
+  "rawHash": "00a43d09cd6e77a8f489e083e40eeb5a4e8be07470abfb77fcdce72494a9ebbf",
+  "ingestedAt": "2026-09-11T04:36:49.409Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

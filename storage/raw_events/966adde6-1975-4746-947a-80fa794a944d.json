@@ -1,0 +1,16 @@
+{
+  "eventId": "966adde6-1975-4746-947a-80fa794a944d",
+  "rawContent": "2026-09-07T09:13:46.339631+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2551]: Started launchpadlib-cache-clean.timer - Clean up old files in the Launchpadlib cache.",
+  "rawHash": "8a3a28ee2c7dab5fb5b2d87e2f931eddd476760a44186c21f25d99491d48af4a",
+  "ingestedAt": "2026-09-11T04:36:55.218Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "72d828fd-4fb8-4605-8d4f-c6b20a1c2330",
+  "rawContent": "2026-09-07T09:13:45.382793+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished systemd-binfmt.service - Set Up Additional Binary Formats.",
+  "rawHash": "e54c72c17c943b9a9ebc46d0ea4c1c4864566ca915fd64dc481a6ecb3c3e4e4e",
+  "ingestedAt": "2026-09-11T04:36:54.591Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

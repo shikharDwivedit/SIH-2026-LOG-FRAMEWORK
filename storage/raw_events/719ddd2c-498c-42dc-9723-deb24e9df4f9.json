@@ -1,0 +1,16 @@
+{
+  "eventId": "719ddd2c-498c-42dc-9723-deb24e9df4f9",
+  "rawContent": "2026-09-06T22:35:34.630683+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-resolved[651]: Using degraded feature set UDP instead of UDP+EDNS0 for DNS server 10.236.151.74.",
+  "rawHash": "498183657b831202abd5eb7fa9335eaab7ec95e2942dfddd45109da88b146e0e",
+  "ingestedAt": "2026-09-11T04:36:54.007Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

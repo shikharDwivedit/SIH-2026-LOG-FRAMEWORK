@@ -1,0 +1,17 @@
+{
+  "eventId": "61c0b438-ae21-4c4a-92dd-1d642ce344b7",
+  "rawContent": "2026-09-06T21:51:50.415962+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[2785]: Using Wayland display name 'wayland-0'",
+  "rawHash": "b1ea488090ee211440859d2ac8bdafc64adab183694772b819da5634b104602c",
+  "ingestedAt": "2026-09-11T04:36:52.582Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

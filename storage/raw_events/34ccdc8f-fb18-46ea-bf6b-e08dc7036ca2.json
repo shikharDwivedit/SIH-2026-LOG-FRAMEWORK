@@ -1,0 +1,16 @@
+{
+  "eventId": "34ccdc8f-fb18-46ea-bf6b-e08dc7036ca2",
+  "rawContent": "2026-09-06T21:52:09.563754+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Starting gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor...",
+  "rawHash": "bb8ac38d3abb5c16e6d60970d4335724d1662d025d44ddba5c82f62254f85db1",
+  "ingestedAt": "2026-09-11T04:36:53.487Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "0b8c9b09-3b8d-42d2-bc8b-0f10d5ff2081",
+  "rawContent": "2026-09-07T09:13:45.445241+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx boltd[2141]: power: force power support: no",
+  "rawHash": "75e288944fe4ecf41bff80e2d29bd919497e8efdf584cd6939100c5d62f36f47",
+  "ingestedAt": "2026-09-11T04:36:55.163Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

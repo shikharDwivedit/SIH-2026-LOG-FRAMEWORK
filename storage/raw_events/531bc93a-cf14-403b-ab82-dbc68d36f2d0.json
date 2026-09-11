@@ -1,0 +1,16 @@
+{
+  "eventId": "531bc93a-cf14-403b-ab82-dbc68d36f2d0",
+  "rawContent": "2026-09-06T21:51:46.303927+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: systemd-update-done.service - Update is Completed skipped, no trigger condition checks were met.",
+  "rawHash": "19acf86a89ffeeade22fa0f4d8b7b4f230d8408e4b986a1fc8da9855513a5a2e",
+  "ingestedAt": "2026-09-11T04:36:51.820Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "3df79228-4fd7-4c14-b63d-ac334935586b",
+  "rawContent": "2026-09-07T09:13:45.908453+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2311]: <warn>  [1788752625.9083] device (E4:EC:E8:93:63:BA): error setting IPv4 forwarding to '0': Invalid argument",
+  "rawHash": "71c0785878332ab634b25b95223fb9c3175ae2e85d6fa07b7b44950cc2ad8b5f",
+  "ingestedAt": "2026-09-11T04:36:55.202Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

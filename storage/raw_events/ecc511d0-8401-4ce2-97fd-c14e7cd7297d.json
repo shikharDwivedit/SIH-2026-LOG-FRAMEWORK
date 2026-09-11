@@ -1,0 +1,16 @@
+{
+  "eventId": "ecc511d0-8401-4ce2-97fd-c14e7cd7297d",
+  "rawContent": "2026-09-06T08:08:00.146001+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: xdg-document-portal.service: Failed to kill control group /user.slice/user-60578.slice/user@60578.service/session.slice/xdg-document-portal.service, ignoring: Operation not permitted",
+  "rawHash": "93666a5c7c1e10c9253423efe2fec1ff5fdc9937bb1c268e709fe859573c7131",
+  "ingestedAt": "2026-09-11T04:36:50.768Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

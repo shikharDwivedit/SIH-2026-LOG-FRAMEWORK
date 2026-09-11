@@ -1,0 +1,16 @@
+{
+  "eventId": "78becdfd-c808-4a28-ad96-55b90cebc3a4",
+  "rawContent": "2026-09-07T09:13:45.382322+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounted snap-docker-3579.mount - Mount unit for docker, revision 3579.",
+  "rawHash": "4ac36a0858b04cdfdeea02eb70d5cdc7a8ee9c54142969a54424093ce820b9a8",
+  "ingestedAt": "2026-09-11T04:36:54.488Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "eb8fd09e-ded6-429d-a3e0-a1247cc7be1e",
+  "rawContent": "2026-09-06T23:30:27.701100+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped udisks2.service - Disk Manager.",
+  "rawHash": "37384ebfd2eb05def7054eb20521742dfa85d47cc0e0d6ebf604c871e8e46a07",
+  "ingestedAt": "2026-09-11T04:36:54.178Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

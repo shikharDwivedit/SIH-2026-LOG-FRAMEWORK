@@ -1,0 +1,17 @@
+{
+  "eventId": "280ef770-adef-4711-b7b6-f848f0e56c1e",
+  "rawContent": "2026-09-06T21:51:46.306790+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: button: Lid Switch [LID0]",
+  "rawHash": "eb9da8e6099aa87b0b010783a1c8bdf6cc038f47ddac64e9d2445dbc1e2639db",
+  "ingestedAt": "2026-09-11T04:36:52.168Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "2816c689-3dfc-4f65-bec1-83c54a547fab",
+  "rawContent": "2026-09-06T21:53:43.271161+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788711823.2709] device (p2p-dev-wlo1): supplicant management interface state: authenticating -> associating",
+  "rawHash": "7deb42045041fff38c50991c8595eb52082b5cc32e29a3cdc9c01ef44f9cd415",
+  "ingestedAt": "2026-09-11T04:36:53.828Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

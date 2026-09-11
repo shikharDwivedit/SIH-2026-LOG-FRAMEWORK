@@ -1,0 +1,17 @@
+{
+  "eventId": "aa047585-8137-4d57-bf4c-607460cae07f",
+  "rawContent": "2026-09-06T08:08:00.538076+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Stopping gnome-session-manager@gnome-login.service - GNOME Session Manager (session: gnome-login)...",
+  "rawHash": "442e041bdf2dadb74064235b1827153b64604d4f02f6661cea8f0bba9314f615",
+  "ingestedAt": "2026-09-11T04:36:50.794Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

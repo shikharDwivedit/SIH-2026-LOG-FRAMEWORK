@@ -1,0 +1,17 @@
+{
+  "eventId": "befc9b67-2496-4b30-b8a8-bef1b5d18ef1",
+  "rawContent": "2026-09-06T08:07:41.792207+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Reached target org.gnome.SettingsDaemon.UsbProtection.target - GNOME USB protection target.",
+  "rawHash": "5187e020880c6ec976d7afa4bbb94db996a479283bc7f6b38a9fd90f9c87e861",
+  "ingestedAt": "2026-09-11T04:36:50.317Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

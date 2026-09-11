@@ -1,0 +1,16 @@
+{
+  "eventId": "721b3789-5ba0-4fc1-85f8-e31da3f54460",
+  "rawContent": "2026-09-06T08:07:55.257856+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Reached target sound.target - Sound Card.",
+  "rawHash": "9b788cb44af15641553813d03914832eb58e6061ddb6719cfde01d84014d447a",
+  "ingestedAt": "2026-09-11T04:36:50.569Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

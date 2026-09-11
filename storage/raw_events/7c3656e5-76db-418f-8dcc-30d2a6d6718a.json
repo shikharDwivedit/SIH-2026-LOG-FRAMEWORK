@@ -1,0 +1,16 @@
+{
+  "eventId": "7c3656e5-76db-418f-8dcc-30d2a6d6718a",
+  "rawContent": "2026-09-06T08:07:39.200103+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: skl_hda_dsp_generic skl_hda_dsp_generic: hda_dsp_hdmi_build_controls: no PCM in topology for HDMI converter 3",
+  "rawHash": "fc04a8fedbcf26b1b4c9813ee1c8a386cffbce0d101f4a8ae6afa60bbeab91f2",
+  "ingestedAt": "2026-09-11T04:36:50.163Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

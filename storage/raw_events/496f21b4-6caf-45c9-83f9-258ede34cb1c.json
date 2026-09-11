@@ -1,0 +1,16 @@
+{
+  "eventId": "496f21b4-6caf-45c9-83f9-258ede34cb1c",
+  "rawContent": "2026-09-06T21:51:46.305698+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting polkit.service - Authorization Manager...",
+  "rawHash": "a65eb966a5d25b14af57931e5f2216b042fce072113f8b23d16cf9217ea33409",
+  "ingestedAt": "2026-09-11T04:36:52.016Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

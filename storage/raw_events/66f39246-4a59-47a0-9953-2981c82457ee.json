@@ -1,0 +1,16 @@
+{
+  "eventId": "66f39246-4a59-47a0-9953-2981c82457ee",
+  "rawContent": "2026-09-07T09:13:45.383800+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 235",
+  "rawHash": "b420681f37868d7e36e78ec8919373cd199e298bcfc992d65a93707dc6b63c58",
+  "ingestedAt": "2026-09-11T04:36:54.959Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "6766ccef-5231-4e53-aa8b-aadfc6f2cc02",
+  "rawContent": "2026-09-06T08:07:39.198718+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx chronyd[2335]: Loaded seccomp filter (level 1)",
+  "rawHash": "97d39c1970010a89846624ae25f534bbd0449df3b108262eaedc0b3ced1c9e18",
+  "ingestedAt": "2026-09-11T04:36:49.948Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "c43b6b93-9b52-48cc-a190-9dc37fd5de22",
+  "rawContent": "2026-09-06T23:30:27.700640+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: udisks2.service: Deactivated successfully.",
+  "rawHash": "0d4db66275d62b8ae4535688cd7359366a2f3917b8c76aca645f88825dd1d3b6",
+  "ingestedAt": "2026-09-11T04:36:54.199Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

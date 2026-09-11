@@ -1,0 +1,16 @@
+{
+  "eventId": "597a48b0-91c0-4575-b720-a54fe3f3c180",
+  "rawContent": "2026-09-07T09:13:45.932900+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished systemd-user-sessions.service - Permit User Sessions.",
+  "rawHash": "cc1cbb2245c22278a113b84776249c8368d970239e47af1cd457698c7df5e85b",
+  "ingestedAt": "2026-09-11T04:36:55.205Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

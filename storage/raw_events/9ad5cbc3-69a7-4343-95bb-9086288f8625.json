@@ -1,0 +1,17 @@
+{
+  "eventId": "9ad5cbc3-69a7-4343-95bb-9086288f8625",
+  "rawContent": "2026-09-06T21:53:09.559232+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx brave-browser.desktop[10053]: [10099:10099:0906/215309.558104:ERROR:media/gpu/vaapi/vaapi_wrapper.cc:1801] vaInitialize failed: unknown libva error",
+  "rawHash": "4e8f68f03020b27a9503e4f52005ff3cdc9bc0ac85a3b3ee3d6a10485b720c5e",
+  "ingestedAt": "2026-09-11T04:36:53.684Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "bcf866c7-58f4-41c9-b9a1-bf302abfedf3",
+  "rawContent": "2026-09-06T09:43:55.792681+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped target timers.target - Timer Units.",
+  "rawHash": "b95a8df26362ce668a69cc0d2c233014fb21da8dfb5abe5388877c7047313b23",
+  "ingestedAt": "2026-09-11T04:36:51.504Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

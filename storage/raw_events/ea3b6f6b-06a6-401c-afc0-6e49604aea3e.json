@@ -1,0 +1,16 @@
+{
+  "eventId": "ea3b6f6b-06a6-401c-afc0-6e49604aea3e",
+  "rawContent": "2026-09-06T21:52:23.302118+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2609]: Stopping ssh-agent.socket - OpenSSH Agent socket...",
+  "rawHash": "dc4b8b3539402612a70f408cb38addbd5397fc6787fbd8886edeaebdc8c4de3b",
+  "ingestedAt": "2026-09-11T04:36:53.677Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "aedc51a6-99d4-4e6a-ba8a-92b7a0d3920e",
+  "rawContent": "2026-09-06T21:51:46.308789+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...",
+  "rawHash": "d34a9ef546291f730b37601491a4693ccdcc3e2c3dc4d09925ec26d230b653c1",
+  "ingestedAt": "2026-09-11T04:36:52.337Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

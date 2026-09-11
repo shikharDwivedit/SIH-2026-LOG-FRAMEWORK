@@ -1,0 +1,16 @@
+{
+  "eventId": "e7ccc88b-9474-47f3-bb20-8af2769b74fa",
+  "rawContent": "2026-09-06T08:07:41.967191+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[2688]: Unset XDG_SESSION_ID, getCurrentSessionProxy() called outside a user session. Asking logind directly.",
+  "rawHash": "efc98c97f34bf590e36910ce96a2d07c85baacdec6fac6a73ea2a2ab2aaf9b22",
+  "ingestedAt": "2026-09-11T04:36:50.415Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

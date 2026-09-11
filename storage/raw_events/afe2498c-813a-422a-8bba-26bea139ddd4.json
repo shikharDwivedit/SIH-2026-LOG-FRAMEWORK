@@ -1,0 +1,16 @@
+{
+  "eventId": "afe2498c-813a-422a-8bba-26bea139ddd4",
+  "rawContent": "2026-09-07T09:13:48.228083+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2551]: Reached target org.gnome.SettingsDaemon.Power.target - GNOME power management target.",
+  "rawHash": "47a9c2576d6890db176c2649d2946ec34c9ab6b5af14213687396823d3959172",
+  "ingestedAt": "2026-09-11T04:36:55.752Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

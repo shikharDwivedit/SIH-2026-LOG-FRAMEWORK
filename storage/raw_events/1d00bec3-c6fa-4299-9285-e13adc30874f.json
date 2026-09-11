@@ -1,0 +1,17 @@
+{
+  "eventId": "1d00bec3-c6fa-4299-9285-e13adc30874f",
+  "rawContent": "2026-09-07T09:13:45.382772+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished console-setup.service - Set console font and keymap.",
+  "rawHash": "a639aaabe1412600ab897fc9913ac6ff0a7c8a88911c4040f35899461133ce09",
+  "ingestedAt": "2026-09-11T04:36:54.583Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "34b395bf-63c5-48a3-a2e8-bb64e76f69cb",
+  "rawContent": "2026-09-06T08:07:56.679261+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-shell[7881]: Device '/dev/dri/card1' prefers shadow buffer",
+  "rawHash": "763e5ebad6874ac61cf847bf0f14c64a3d907e959ce6610c8e8480d73b643f65",
+  "ingestedAt": "2026-09-11T04:36:50.598Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

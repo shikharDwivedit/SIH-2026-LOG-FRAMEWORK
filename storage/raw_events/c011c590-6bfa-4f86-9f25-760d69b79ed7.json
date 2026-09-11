@@ -1,0 +1,16 @@
+{
+  "eventId": "c011c590-6bfa-4f86-9f25-760d69b79ed7",
+  "rawContent": "2026-09-06T23:30:27.664353+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Stopped target getty-pre.target - Preparation for Logins.",
+  "rawHash": "1e883d5aa5e84c61e1ae3962792683aa9d268bd02eed07a576caf707fa5ae072",
+  "ingestedAt": "2026-09-11T04:36:54.142Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

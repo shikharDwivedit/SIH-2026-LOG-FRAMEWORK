@@ -1,0 +1,12 @@
+{
+  "eventId": "22b49b1a-3f7e-48ba-977e-6895e932ae96",
+  "rawContent": "acme_edge=1 src=192.0.2.10 dst=198.51.100.20 action=allow ticket=INC-42",
+  "rawHash": "f4582345099e6d9cda70363f9bdcb626aa030e57d4d5da03a2080d58a507abba",
+  "ingestedAt": "2026-09-11T05:24:49.903Z",
+  "sourceId": "unknown",
+  "transport": "plug-and-play-test",
+  "metadata": {
+    "parserName": "acme-edge-firewall",
+    "transport": "plug-and-play-test"
+  }
+}

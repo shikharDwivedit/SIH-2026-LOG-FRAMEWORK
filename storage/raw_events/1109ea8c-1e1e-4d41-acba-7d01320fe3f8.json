@@ -1,0 +1,16 @@
+{
+  "eventId": "1109ea8c-1e1e-4d41-acba-7d01320fe3f8",
+  "rawContent": "2026-09-06T08:07:41.925135+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2904]: time=\"2026-09-06T08:07:41+05:30\" level=info msg=\"Using driver version 595.84\"",
+  "rawHash": "d4b6c7d8ca7948db9e1878c1b4a9e2991de8880a804d8a715478abf1f2623350",
+  "ingestedAt": "2026-09-11T04:36:50.335Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

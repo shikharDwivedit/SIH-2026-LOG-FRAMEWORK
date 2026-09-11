@@ -1,0 +1,16 @@
+{
+  "eventId": "105a35ad-7c5b-4654-88b3-bfd9d849ff78",
+  "rawContent": "2026-09-06T08:07:58.639629+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[7363]: [session uid=1000 pid=7363 pidfd=5] Activating service name='org.gnome.OnlineAccounts' requested by ':1.28' (uid=1000 pid=7965 comm=\"/usr/libexec/evolution-source-registry\" label=\"unconfined\")",
+  "rawHash": "5e687ccc6c2b525b6e19f929b56cfc9bcfbb3d64ebd2b3ae6451e53a4ee4a612",
+  "ingestedAt": "2026-09-11T04:36:50.645Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

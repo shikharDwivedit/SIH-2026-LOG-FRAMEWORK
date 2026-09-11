@@ -1,0 +1,16 @@
+{
+  "eventId": "dee8dc14-b646-40bd-b33a-52cee959830d",
+  "rawContent": "2026-09-06T09:43:52.817177+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2337]: rfkill: WLAN soft blocked",
+  "rawHash": "d9054bf994eb5ebbfb1209e637d69285412f63e2a110df1f275c936b39aa8ad9",
+  "ingestedAt": "2026-09-11T04:36:51.426Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

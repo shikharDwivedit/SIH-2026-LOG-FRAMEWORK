@@ -1,0 +1,16 @@
+{
+  "eventId": "8331bb1e-317c-4021-a6b7-791cefdd53c6",
+  "rawContent": "2026-09-06T09:34:38.170392+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: nvidia-suspend.service: Deactivated successfully.",
+  "rawHash": "4c5d30df179e56b5facc469394b46dc75859d3acb5caabf66cc087338557e4c0",
+  "ingestedAt": "2026-09-11T04:36:51.240Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

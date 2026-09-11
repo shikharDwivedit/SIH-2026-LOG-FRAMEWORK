@@ -1,0 +1,17 @@
+{
+  "eventId": "cc8d233c-feda-4285-9c84-c2b94e12d9e5",
+  "rawContent": "2026-09-07T09:13:47.307063+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx snapd[2167]: autorepair.go:177: WARNING: the system booted with an old initrd without unlocked status reporting",
+  "rawHash": "f93763dace863e2ee8d28fae114929e9c054e8a464378db93e0fa8125686fdd4",
+  "ingestedAt": "2026-09-11T04:36:55.268Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

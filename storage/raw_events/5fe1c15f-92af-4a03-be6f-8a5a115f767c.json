@@ -1,0 +1,16 @@
+{
+  "eventId": "5fe1c15f-92af-4a03-be6f-8a5a115f767c",
+  "rawContent": "2026-09-06T09:43:32.551678+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Restarting tasks: Starting",
+  "rawHash": "0a7b084dec1d19336df8a532b24e7667ea19e3378c375fdbae53e397eea0099c",
+  "ingestedAt": "2026-09-11T04:36:51.250Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "cf0f8350-befb-4c8a-9c37-e95b3fbf5250",
+  "rawContent": "2026-09-06T08:07:39.199223+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.",
+  "rawHash": "054f940a76538fbaaaeb3aed0c05a3d4b89521077864b5105aac48ce6062f8da",
+  "ingestedAt": "2026-09-11T04:36:50.038Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

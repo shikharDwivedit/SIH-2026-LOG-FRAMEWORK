@@ -1,0 +1,17 @@
+{
+  "eventId": "8b69782a-fdcc-44ea-ba10-5cc64cd86168",
+  "rawContent": "2026-09-06T21:52:09.181892+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Reached target org.gnome.SettingsDaemon.ScreensaverProxy.target - GNOME FreeDesktop screensaver target.",
+  "rawHash": "70162caa97beb366afe599c034816ecbd6ef29d85b5a807c695e5d7e47a972db",
+  "ingestedAt": "2026-09-11T04:36:53.375Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

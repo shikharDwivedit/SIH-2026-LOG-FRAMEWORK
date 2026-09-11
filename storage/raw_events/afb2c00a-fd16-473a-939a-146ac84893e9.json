@@ -1,0 +1,16 @@
+{
+  "eventId": "afb2c00a-fd16-473a-939a-146ac84893e9",
+  "rawContent": "2026-09-06T08:07:41.894923+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2904]: time=\"2026-09-06T08:07:41+05:30\" level=info msg=\"Auto-detected mode as 'nvml'\"",
+  "rawHash": "d14cf811bf8cca97b0e9488bf53adc84f77949e2ee3784e1000defe9086bb5f9",
+  "ingestedAt": "2026-09-11T04:36:50.326Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

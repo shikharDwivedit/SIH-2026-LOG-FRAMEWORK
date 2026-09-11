@@ -1,0 +1,16 @@
+{
+  "eventId": "e85555cd-524b-4d9d-a8f8-40473cf7d512",
+  "rawContent": "2026-09-06T08:07:39.239803+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2314]: <info>  [1788662259.2397] manager: (eno1): new Ethernet device (/org/freedesktop/NetworkManager/Devices/2)",
+  "rawHash": "030e3120871646564376cb7b39a79b71c7d03ae7e7ed6ce222529305332861e7",
+  "ingestedAt": "2026-09-11T04:36:50.194Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

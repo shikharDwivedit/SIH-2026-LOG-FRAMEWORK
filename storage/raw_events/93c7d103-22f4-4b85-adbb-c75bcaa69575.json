@@ -1,0 +1,16 @@
+{
+  "eventId": "93c7d103-22f4-4b85-adbb-c75bcaa69575",
+  "rawContent": "2026-09-06T08:07:39.195642+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: systemd-hwdb-update.service - Rebuild Hardware Database skipped, unmet condition check ConditionNeedsUpdate=/etc",
+  "rawHash": "d6e55c53465945b11730231f5ae14df02f134cf83597893d6018568a9420153e",
+  "ingestedAt": "2026-09-11T04:36:49.479Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

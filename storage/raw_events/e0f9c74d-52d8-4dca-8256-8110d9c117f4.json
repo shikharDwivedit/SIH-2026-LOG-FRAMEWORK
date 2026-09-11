@@ -1,0 +1,16 @@
+{
+  "eventId": "e0f9c74d-52d8-4dca-8256-8110d9c117f4",
+  "rawContent": "2026-09-06T08:07:39.197585+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Listening on systemd-logind-varlink.socket - User Login Management Varlink Socket.",
+  "rawHash": "d9278d0b93cacf13ddf4a3aba5f58880da08e01b3b1340614c5076fe7027f18a",
+  "ingestedAt": "2026-09-11T04:36:49.755Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

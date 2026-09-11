@@ -1,0 +1,16 @@
+{
+  "eventId": "64327768-5a41-4d37-a84e-615ab684ed44",
+  "rawContent": "2026-09-06T08:07:39.197833+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Reached target getty.target - Login Prompts.",
+  "rawHash": "bd5bc9a147bd6edddc7e34cbc6ddecb5c3c9b74c30be69cc02765dcc869149f1",
+  "ingestedAt": "2026-09-11T04:36:49.795Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

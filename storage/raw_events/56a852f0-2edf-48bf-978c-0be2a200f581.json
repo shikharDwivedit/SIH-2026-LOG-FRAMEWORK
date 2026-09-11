@@ -1,0 +1,16 @@
+{
+  "eventId": "56a852f0-2edf-48bf-978c-0be2a200f581",
+  "rawContent": "2026-09-06T08:07:39.199204+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Created slice system-systemd\\x2dfsck.slice - Slice /system/systemd-fsck.",
+  "rawHash": "147ce1f18d543e3c975d806451d6e1d8fc52a588497502462ebd68cd086136a8",
+  "ingestedAt": "2026-09-11T04:36:50.036Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

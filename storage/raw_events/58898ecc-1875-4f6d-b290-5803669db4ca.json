@@ -1,0 +1,17 @@
+{
+  "eventId": "58898ecc-1875-4f6d-b290-5803669db4ca",
+  "rawContent": "2026-09-06T09:43:33.480626+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: systemd-suspend.service: Consumed 1.412s CPU time over 4.369s wall clock time, 12.1M memory peak.",
+  "rawHash": "337aa30f8df99e2019ef5a3f97ecbf7e6498e3eb4b1d7917eaf4979a5b53778d",
+  "ingestedAt": "2026-09-11T04:36:51.266Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

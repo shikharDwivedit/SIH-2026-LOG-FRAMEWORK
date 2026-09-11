@@ -1,0 +1,16 @@
+{
+  "eventId": "72bb2a0d-2a63-481e-8f28-442cfea80b0a",
+  "rawContent": "2026-09-06T21:52:08.852313+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Starting evolution-source-registry.service - Evolution source registry...",
+  "rawHash": "20b9de099e49f01f0df58d9e86411ff10a232adec0a965924a1921f549f78d62",
+  "ingestedAt": "2026-09-11T04:36:53.284Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

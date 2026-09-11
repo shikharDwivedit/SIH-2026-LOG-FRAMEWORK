@@ -1,0 +1,16 @@
+{
+  "eventId": "42714a3d-5eab-470e-be70-5a53f658bd54",
+  "rawContent": "2026-09-06T08:07:39.198711+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Freeing initrd memory: 124892K",
+  "rawHash": "2e9b96a002ec89b02edd6342087858789260c619b01e9175f7c3fef90c6ba2d6",
+  "ingestedAt": "2026-09-11T04:36:49.946Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

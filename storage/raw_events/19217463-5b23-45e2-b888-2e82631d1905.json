@@ -1,0 +1,16 @@
+{
+  "eventId": "19217463-5b23-45e2-b888-2e82631d1905",
+  "rawContent": "2026-09-06T08:07:39.195863+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.",
+  "rawHash": "1d4a931941409df86390c77cad1e114f5cd26a516e36c3c6929e0a7beefc4714",
+  "ingestedAt": "2026-09-11T04:36:49.515Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

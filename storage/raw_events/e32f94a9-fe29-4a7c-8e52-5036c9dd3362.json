@@ -1,0 +1,16 @@
+{
+  "eventId": "e32f94a9-fe29-4a7c-8e52-5036c9dd3362",
+  "rawContent": "2026-09-06T21:51:46.304166+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started dpkg-db-backup.timer - Daily dpkg database backup timer.",
+  "rawHash": "f588e30ea21c648b2b7027c3b04eb89f141264016ab75f5dd530d7a3c5b4cc02",
+  "ingestedAt": "2026-09-11T04:36:51.843Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

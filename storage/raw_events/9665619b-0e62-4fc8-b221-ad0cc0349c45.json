@@ -1,0 +1,17 @@
+{
+  "eventId": "9665619b-0e62-4fc8-b221-ad0cc0349c45",
+  "rawContent": "2026-09-06T08:07:39.244981+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished grub-initrd-fallback.service - GRUB failed boot detection.",
+  "rawHash": "2f8a806d8ac0f810d2c2e21ffd1d839eef115ec03e6af7604c4ddc71196918e3",
+  "ingestedAt": "2026-09-11T04:36:50.188Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

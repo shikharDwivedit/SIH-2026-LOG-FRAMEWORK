@@ -1,0 +1,16 @@
+{
+  "eventId": "00502a8f-4b09-4639-af5b-13cdfdd55aa9",
+  "rawContent": "2026-09-06T21:51:46.562661+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting snap.docker.nvidia-container-toolkit.service - Service for snap application docker.nvidia-container-toolkit...",
+  "rawHash": "0c0065cf61ed1a57b22659b1db9ff9d48daa0fb26ae9836c5e1d4f946e67515b",
+  "ingestedAt": "2026-09-11T04:36:52.526Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

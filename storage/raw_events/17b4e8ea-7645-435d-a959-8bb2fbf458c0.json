@@ -1,0 +1,16 @@
+{
+  "eventId": "17b4e8ea-7645-435d-a959-8bb2fbf458c0",
+  "rawContent": "2026-09-07T09:13:45.381498+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd-resolved[647]: Using system hostname 'shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx'.",
+  "rawHash": "b909a2f96e8944daca065b01ecacf6f8e7dd02fd58d9fb13f5ec29e883897819",
+  "ingestedAt": "2026-09-11T04:36:54.313Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

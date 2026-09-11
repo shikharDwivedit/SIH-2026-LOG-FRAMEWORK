@@ -1,0 +1,16 @@
+{
+  "eventId": "440e6c8e-c4e1-4575-8e2c-62fc1b85bacf",
+  "rawContent": "2026-09-06T08:07:39.238184+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started bolt.service - Thunderbolt system service.",
+  "rawHash": "2d71b89950f5fe3e8794c3156916c7b35240125479094c220a28730e99df7283",
+  "ingestedAt": "2026-09-11T04:36:50.193Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "6d828c7f-d0ae-4a6d-8973-52da62a0a448",
+  "rawContent": "2026-09-06T08:37:02.678609+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Starting apt-daily-upgrade.service - Daily apt upgrade and clean activities...",
+  "rawHash": "f8a0080a672489606759a2001987562da4c98c1ea7111f73b1eabca5d07c99fd",
+  "ingestedAt": "2026-09-11T04:36:51.096Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

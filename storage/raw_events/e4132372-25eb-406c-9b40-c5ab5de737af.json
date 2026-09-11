@@ -1,0 +1,16 @@
+{
+  "eventId": "e4132372-25eb-406c-9b40-c5ab5de737af",
+  "rawContent": "2026-09-06T21:52:09.177235+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: app-gnome-ubuntu\\x2dreport\\x2don\\x2dupgrade-8140.scope: Failed with result 'resources'.",
+  "rawHash": "9a18d6ec5937e3d7cdbe1634c4c84d2f24b4b3811c8bb89c93c4d8af59682624",
+  "ingestedAt": "2026-09-11T04:36:53.372Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

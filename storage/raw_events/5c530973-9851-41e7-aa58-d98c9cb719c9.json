@@ -1,0 +1,16 @@
+{
+  "eventId": "5c530973-9851-41e7-aa58-d98c9cb719c9",
+  "rawContent": "2026-09-06T09:43:55.976222+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx bluetoothd[2181]: Exit",
+  "rawHash": "9e009182d89c9b9cd9a0073c57637337f4a413d767b030adf8cef16af8d9e759",
+  "ingestedAt": "2026-09-11T04:36:51.593Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

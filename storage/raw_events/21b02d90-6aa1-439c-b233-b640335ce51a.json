@@ -1,0 +1,16 @@
+{
+  "eventId": "21b02d90-6aa1-439c-b233-b640335ce51a",
+  "rawContent": "2026-09-06T23:30:27.635783+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Stopped org.gnome.SettingsDaemon.Wwan.service - GNOME WWan support service.",
+  "rawHash": "36e18abf45020fa5cac83c7721fa5e00e018f93f2e0335247174057e6a0cc49c",
+  "ingestedAt": "2026-09-11T04:36:54.121Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

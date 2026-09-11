@@ -1,0 +1,17 @@
+{
+  "eventId": "84ffee60-5314-4dc8-8668-ae58c1259fb9",
+  "rawContent": "2026-09-06T08:08:12.233029+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx ssh-agent[2635]: exiting on signal 15",
+  "rawHash": "c5d32c0b2b6fe00b71b3fd72632e2ff75fb39090d78756b2c1825e2992cbf635",
+  "ingestedAt": "2026-09-11T04:36:50.930Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

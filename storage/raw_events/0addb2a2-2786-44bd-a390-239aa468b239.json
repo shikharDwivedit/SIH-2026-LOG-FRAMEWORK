@@ -1,0 +1,16 @@
+{
+  "eventId": "0addb2a2-2786-44bd-a390-239aa468b239",
+  "rawContent": "2026-09-06T21:51:53.784934+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: tlp: vm.laptop_mode is deprecated. Ignoring setting.",
+  "rawHash": "3c679e2d09c448b4cf38a2a111586e0d6a6c6a6bda3dd7c412856335deb0c96b",
+  "ingestedAt": "2026-09-11T04:36:53.023Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

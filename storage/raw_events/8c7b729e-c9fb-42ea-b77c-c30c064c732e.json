@@ -1,0 +1,16 @@
+{
+  "eventId": "8c7b729e-c9fb-42ea-b77c-c30c064c732e",
+  "rawContent": "2026-09-06T09:43:37.962737+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2337]: wlo1: CTRL-EVENT-EAP-PEER-CERT depth=0 subject='/CN=jaze.volsap.ovh' hash=7e657ffaeb6d6e603adb60e896ca3de6897010653cc237c840c6b183120d712d",
+  "rawHash": "ee52a8db42a385b394d3da7fb7fd0b7b75f3516394703f2c73151d26d7ab4e36",
+  "ingestedAt": "2026-09-11T04:36:51.354Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

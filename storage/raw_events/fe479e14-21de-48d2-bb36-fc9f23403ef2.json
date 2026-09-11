@@ -1,0 +1,16 @@
+{
+  "eventId": "fe479e14-21de-48d2-bb36-fc9f23403ef2",
+  "rawContent": "2026-09-07T09:13:47.845719+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started colord.service - Manage, Install and Generate Color Profiles.",
+  "rawHash": "c6bd440b07a0ab99ad8013a3dbacbba34fe4b12ac5f7e4859c7fbadcfafb22ed",
+  "ingestedAt": "2026-09-11T04:36:55.307Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

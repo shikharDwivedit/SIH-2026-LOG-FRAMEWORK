@@ -1,0 +1,17 @@
+{
+  "eventId": "acc82e2b-0373-42d1-88b0-4281007e2316",
+  "rawContent": "2026-09-06T21:57:12.566131+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: ubuntu-insights-collect.service: Consumed 982ms CPU time over 1.069s wall clock time, 71.3M memory peak.",
+  "rawHash": "fb4a4fb725e7074096def33e1c2d324cc0501ac09c18a917f6e8458a1cc6354b",
+  "ingestedAt": "2026-09-11T04:36:53.949Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

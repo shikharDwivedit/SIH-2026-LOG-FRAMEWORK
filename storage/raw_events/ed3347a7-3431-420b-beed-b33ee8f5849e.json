@@ -1,0 +1,16 @@
+{
+  "eventId": "ed3347a7-3431-420b-beed-b33ee8f5849e",
+  "rawContent": "2026-09-06T08:07:39.198983+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: input: HS6209 2.4G Wireless Receiver as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0/0003:32C2:0018.0003/input/input10",
+  "rawHash": "4017d611b2e68f1f594970b42a97dd8ae601fc86f5dd217014472d51bded71c9",
+  "ingestedAt": "2026-09-11T04:36:50.007Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

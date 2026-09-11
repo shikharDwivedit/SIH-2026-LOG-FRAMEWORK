@@ -1,0 +1,17 @@
+{
+  "eventId": "fe5503b2-a3c8-45ff-b447-64c60d84f516",
+  "rawContent": "2026-09-06T21:54:08.962749+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[6504]: [session uid=1000 pid=6504 pidfd=5] Activating service name='org.gnome.DejaDup' requested by ':1.46' (uid=1000 pid=8089 comm=\"/usr/libexec/deja-dup/deja-dup-monitor\" label=\"unconfined\")",
+  "rawHash": "a3de89c6609055034cb332784baaa1d79750ff87de1acbd2eb4b45c04fad44bf",
+  "ingestedAt": "2026-09-11T04:36:53.847Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

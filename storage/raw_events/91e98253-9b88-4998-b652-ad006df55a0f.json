@@ -1,0 +1,17 @@
+{
+  "eventId": "91e98253-9b88-4998-b652-ad006df55a0f",
+  "rawContent": "2026-09-06T08:07:41.947993+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: gnome-initial-setup-first-login.service - GNOME Initial Setup skipped, unmet condition check ConditionEnvironment=XDG_SESSION_CLASS=user",
+  "rawHash": "4f2c2053c9968d1034c72423c40a3814e04dd28916655ebf64ea9f010df1edfe",
+  "ingestedAt": "2026-09-11T04:36:50.386Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "19c25640-e6a1-4e24-a486-a144a1667c58",
+  "rawContent": "2026-09-06T08:07:55.589808+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gnome-session-service[7870]: Desktop file /etc/xdg/autostart/xapp-sn-watcher.desktop couldn't be parsed, or references a missing TryExec binary",
+  "rawHash": "07c1f0d84502710cd3eac64b5e70352897e7670b538ecb976949f0d9fd0d258c",
+  "ingestedAt": "2026-09-11T04:36:50.591Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

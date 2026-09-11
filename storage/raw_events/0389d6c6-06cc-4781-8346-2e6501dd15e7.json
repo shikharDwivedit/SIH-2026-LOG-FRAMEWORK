@@ -1,0 +1,17 @@
+{
+  "eventId": "0389d6c6-06cc-4781-8346-2e6501dd15e7",
+  "rawContent": "2026-09-06T08:07:39.199498+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd-journald[633]: File /var/log/journal/819353b6bfe4437d9547ae841991177a/system.journal corrupted or uncleanly shut down, renaming and replacing.",
+  "rawHash": "84962204ee6a7a0a3a109face9c7b5565b90efdc3db655c7545bc4fe17ead9da",
+  "ingestedAt": "2026-09-11T04:36:50.070Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

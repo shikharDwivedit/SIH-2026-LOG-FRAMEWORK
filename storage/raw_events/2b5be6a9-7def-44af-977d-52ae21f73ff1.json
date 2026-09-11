@@ -1,0 +1,16 @@
+{
+  "eventId": "2b5be6a9-7def-44af-977d-52ae21f73ff1",
+  "rawContent": "2026-09-07T09:13:45.381607+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving MSDM table memory at [mem 0x5cad7000-0x5cad7054]",
+  "rawHash": "695cf38513f3e00c1cbe1f6a303ad7c31995bfb8ed95ac3c3161feb7dccfdbc4",
+  "ingestedAt": "2026-09-11T04:36:54.330Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "87d249c4-94e5-4f69-8ea5-ee8c4a5be215",
+  "rawContent": "2026-09-06T21:51:52.877450+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Created slice system-getty.slice - Slice /system/getty.",
+  "rawHash": "53d5e203d89ef74ac3b6b36c04ebf3540b508c3d90c56b42f7cb1a76e554a64e",
+  "ingestedAt": "2026-09-11T04:36:52.712Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

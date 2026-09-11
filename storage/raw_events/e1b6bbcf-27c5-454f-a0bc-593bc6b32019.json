@@ -1,0 +1,16 @@
+{
+  "eventId": "e1b6bbcf-27c5-454f-a0bc-593bc6b32019",
+  "rawContent": "2026-09-06T08:07:39.196565+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Mounted snap-ngrok-424.mount - Mount unit for ngrok, revision 424.",
+  "rawHash": "3260ec8e6f3e6ba29ca59a8d02aaa29e9f6d6d801a70fa7181982c757b8404c7",
+  "ingestedAt": "2026-09-11T04:36:49.576Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

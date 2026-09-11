@@ -1,0 +1,17 @@
+{
+  "eventId": "8ba0a01d-2e5a-4ce7-bbd7-9c5f0406e517",
+  "rawContent": "2026-09-07T09:13:45.382702+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: modprobe@efi_pstore.service - Load Kernel Module efi_pstore skipped, unmet condition check ConditionKernelModuleLoaded=!efi_pstore",
+  "rawHash": "24e74e46f45b19ac45df8921a57bd795dcdcb4808931c3871a21c5e1a1332b70",
+  "ingestedAt": "2026-09-11T04:36:54.525Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

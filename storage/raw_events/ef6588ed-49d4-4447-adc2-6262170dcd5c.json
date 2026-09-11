@@ -1,0 +1,16 @@
+{
+  "eventId": "ef6588ed-49d4-4447-adc2-6262170dcd5c",
+  "rawContent": "2026-09-06T23:30:14.690930+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: wlo1: deauthenticated from be:63:52:a2:ff:44 (Reason: 1=UNSPECIFIED)",
+  "rawHash": "1be86454c57d78e60fcc1505f06bb55b13336f1f076a65f732b7a2fb55377bef",
+  "ingestedAt": "2026-09-11T04:36:54.098Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

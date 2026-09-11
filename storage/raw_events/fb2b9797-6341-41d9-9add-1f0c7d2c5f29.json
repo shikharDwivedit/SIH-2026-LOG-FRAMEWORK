@@ -1,0 +1,16 @@
+{
+  "eventId": "fb2b9797-6341-41d9-9add-1f0c7d2c5f29",
+  "rawContent": "2026-09-06T21:51:46.305503+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx nvidia-powerd: DBus Connection is established",
+  "rawHash": "f82b58296ad0dad0292d0789570a77f94e5149af54b258e8d9ec268f24325a86",
+  "ingestedAt": "2026-09-11T04:36:51.994Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

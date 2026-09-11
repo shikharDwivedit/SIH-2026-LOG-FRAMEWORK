@@ -1,0 +1,17 @@
+{
+  "eventId": "342abce3-a595-4414-b086-ecb1b3fccc13",
+  "rawContent": "2026-09-07T09:13:45.469408+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: block nvme0n1: No UUID available providing old NGUID",
+  "rawHash": "440dd7fbd5f411e00f2941a9d5442734293bd18a27be2a175ec514bb491937a8",
+  "ingestedAt": "2026-09-11T04:36:55.168Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

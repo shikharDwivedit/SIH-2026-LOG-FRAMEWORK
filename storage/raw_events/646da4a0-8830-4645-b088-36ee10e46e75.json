@@ -1,0 +1,16 @@
+{
+  "eventId": "646da4a0-8830-4645-b088-36ee10e46e75",
+  "rawContent": "2026-09-07T09:13:46.447599+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2551]: Starting gnome-session-monitor.service - Monitor Session leader for GNOME Session...",
+  "rawHash": "be31692f7b3318a1915706f5837844e4c7f49cc4c9310672741e8c9bb5b64505",
+  "ingestedAt": "2026-09-11T04:36:55.250Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

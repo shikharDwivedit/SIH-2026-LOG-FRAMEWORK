@@ -1,0 +1,16 @@
+{
+  "eventId": "a3546fb4-704a-4fbf-9aca-af37159c32af",
+  "rawContent": "2026-09-06T09:43:33.522532+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Finished nvidia-resume.service - NVIDIA system resume actions.",
+  "rawHash": "f0c5b1e16a32d86e14544d1532c73aa47ba410dca4e9b856a02938d44732d9ff",
+  "ingestedAt": "2026-09-11T04:36:51.283Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

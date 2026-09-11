@@ -1,0 +1,17 @@
+{
+  "eventId": "d1768eff-bc4a-4b79-ac96-90ddcb0ed9b1",
+  "rawContent": "2026-09-06T09:34:37.406607+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx rtkit-daemon[2615]: Demoting known real-time threads.",
+  "rawHash": "19363376f4281b82229f45ffe55900b735b7aad42d83731b1d993f988d4db108",
+  "ingestedAt": "2026-09-11T04:36:51.192Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

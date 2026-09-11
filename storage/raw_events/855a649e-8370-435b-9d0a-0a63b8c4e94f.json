@@ -1,0 +1,17 @@
+{
+  "eventId": "855a649e-8370-435b-9d0a-0a63b8c4e94f",
+  "rawContent": "2026-09-06T09:43:55.793230+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: fstrim.timer: Deactivated successfully.",
+  "rawHash": "3c2c787baf0083ba30d3c2c3dedaa9fd641cd34d0f197761fa43970aa31ee3eb",
+  "ingestedAt": "2026-09-11T04:36:51.506Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

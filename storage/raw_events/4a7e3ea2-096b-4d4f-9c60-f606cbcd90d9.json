@@ -1,0 +1,16 @@
+{
+  "eventId": "4a7e3ea2-096b-4d4f-9c60-f606cbcd90d9",
+  "rawContent": "2026-09-07T09:13:48.647672+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[2146]: [system] Activating via systemd: service name='org.freedesktop.Avahi' unit='dbus-org.freedesktop.Avahi.service' requested by ':1.58' (uid=109 pid=4216 comm=\"/usr/libexec/geoclue\" label=\"/usr/libexec/geoclue (enforce)\")",
+  "rawHash": "b3d6a630725352102db22d3295991c1fed7914bf9d6dff386c392d641dac7d75",
+  "ingestedAt": "2026-09-11T04:36:55.789Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

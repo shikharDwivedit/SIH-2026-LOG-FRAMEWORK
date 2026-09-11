@@ -1,0 +1,16 @@
+{
+  "eventId": "e242b011-bc9f-4a96-ac3d-4dd7c36a5838",
+  "rawContent": "2026-09-06T21:51:46.308244+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd-journald[273]: Received SIGTERM from PID 1 (systemd).",
+  "rawHash": "8a4fc3e16141b9a9d875e8870e7bd8aa07c352bfb85b123108bb25c13e22a6da",
+  "ingestedAt": "2026-09-11T04:36:52.311Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "eventId": "567ffeda-40e2-49c3-9b27-c358c43f54f3",
+  "rawContent": "2026-09-07T09:13:45.382445+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: cpuidle: using governor ladder",
+  "rawHash": "4d43d9a6d54519edaeb95677552ab49b82f9d4e21131387e16208e18d4b8b1f1",
+  "ingestedAt": "2026-09-11T04:36:54.468Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

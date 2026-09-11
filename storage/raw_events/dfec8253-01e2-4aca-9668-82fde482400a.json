@@ -1,0 +1,17 @@
+{
+  "eventId": "dfec8253-01e2-4aca-9668-82fde482400a",
+  "rawContent": "2026-09-06T21:52:04.733399+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wireplumber[6518]: [0:00:26.761293314] [6665]  INFO DeviceEnumerator device_enumerator.cpp:269 Unable to populate media device /dev/media0 (Permission denied), skipping",
+  "rawHash": "9e0574049b0c7ff8c2fb19840cdb01aac4e01551fce283145c9900a49a7a70ee",
+  "ingestedAt": "2026-09-11T04:36:53.167Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

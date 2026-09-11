@@ -1,0 +1,16 @@
+{
+  "eventId": "e83305b6-7546-4b00-824f-dde7352b640a",
+  "rawContent": "2026-09-06T08:08:00.163193+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: run-user-60578-doc.mount: Deactivated successfully.",
+  "rawHash": "93dd47696d60464d77dfb33bd31036cec0235fff24bb6345ba5a6c19a5719be4",
+  "ingestedAt": "2026-09-11T04:36:50.777Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

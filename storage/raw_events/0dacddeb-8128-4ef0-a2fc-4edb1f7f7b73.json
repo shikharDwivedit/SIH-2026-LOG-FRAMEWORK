@@ -1,0 +1,17 @@
+{
+  "eventId": "0dacddeb-8128-4ef0-a2fc-4edb1f7f7b73",
+  "rawContent": "2026-09-06T21:51:46.302362+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788711706.3017] rfkill1: found Wi-Fi radio killswitch (at /sys/devices/pci0000:00/0000:00:14.3/ieee80211/phy0/rfkill1) (driver iwlwifi)",
+  "rawHash": "499a26f3a661ac6b9b61ef1a4a84fe6a65db8a766ce5c0e752d6905f622ae7f7",
+  "ingestedAt": "2026-09-11T04:36:52.085Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

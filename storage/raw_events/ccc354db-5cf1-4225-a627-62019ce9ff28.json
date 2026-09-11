@@ -1,0 +1,17 @@
+{
+  "eventId": "ccc354db-5cf1-4225-a627-62019ce9ff28",
+  "rawContent": "2026-09-06T21:51:53.539276+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started snap.docker.dockerd.service - Service for snap application docker.dockerd.",
+  "rawHash": "0f0c41dd167d6602b4d654ccfa173edf2a8da4293dfdba3f8b960ad48549ba31",
+  "ingestedAt": "2026-09-11T04:36:53.006Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

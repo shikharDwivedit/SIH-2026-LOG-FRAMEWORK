@@ -1,0 +1,16 @@
+{
+  "eventId": "ad3e337a-2be2-4dd3-a95d-f98cf95be4cd",
+  "rawContent": "2026-09-06T21:51:46.308942+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules",
+  "rawHash": "9eedce23a51b6420a46e9c165002950f21c1cd62ff472b6cbcc152900a49728c",
+  "ingestedAt": "2026-09-11T04:36:52.357Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

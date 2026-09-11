@@ -1,0 +1,16 @@
+{
+  "eventId": "cdd05896-b1da-47e4-99ec-314e1276a4ee",
+  "rawContent": "2026-09-06T21:51:46.301928+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: MTRR map: 5 entries (3 fixed + 2 variable; max 23), built from 10 variable MTRRs",
+  "rawHash": "88b82a49cead3e6ff523c40311ad3807d1a1c3fcde574945463ffcb4e0537b36",
+  "ingestedAt": "2026-09-11T04:36:51.632Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

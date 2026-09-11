@@ -1,0 +1,16 @@
+{
+  "eventId": "96456e09-595a-49e1-ad71-18507596d1d4",
+  "rawContent": "2026-09-06T08:30:01.116792+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx CRON[14624]: (root) CMD (if [ -x /etc/init.d/anacron ] && ! [ -d /run/systemd/system ]; then exec /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)",
+  "rawHash": "d734651f29fcad618397099ec627a008a7973fa53bd030b48cdfcd0f7ede87e4",
+  "ingestedAt": "2026-09-11T04:36:51.094Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

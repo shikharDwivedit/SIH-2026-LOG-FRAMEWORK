@@ -1,0 +1,16 @@
+{
+  "eventId": "1f1a5d9d-f5d5-48b8-8217-ae35343f0aea",
+  "rawContent": "2026-09-06T21:51:46.302422+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Reserving BGRT table memory at [mem 0x5c9f7000-0x5c9f7037]",
+  "rawHash": "7c003b91eadb797ae1d2cc7e858036e473dae58553338eb31caf2b2f8b17b571",
+  "ingestedAt": "2026-09-11T04:36:51.701Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

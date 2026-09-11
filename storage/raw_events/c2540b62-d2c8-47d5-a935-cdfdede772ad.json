@@ -1,0 +1,16 @@
+{
+  "eventId": "c2540b62-d2c8-47d5-a935-cdfdede772ad",
+  "rawContent": "2026-09-06T08:07:39.196442+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: rcu: \tMax phase no-delay instances is 400.",
+  "rawHash": "a6f2716bf918d5140d1904d6820284f84d8fa29b5933bbbb40fa42a341414a18",
+  "ingestedAt": "2026-09-11T04:36:49.564Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

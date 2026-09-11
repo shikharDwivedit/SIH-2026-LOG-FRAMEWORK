@@ -1,0 +1,16 @@
+{
+  "eventId": "4d893522-b0b6-490b-bc0d-87fd52ebd25f",
+  "rawContent": "2026-09-06T08:07:39.196107+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization",
+  "rawHash": "8ef272bb5e8de9a2bd6774732e31f8f15983432737f64de7fac34b3dae8a7ac1",
+  "ingestedAt": "2026-09-11T04:36:49.537Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

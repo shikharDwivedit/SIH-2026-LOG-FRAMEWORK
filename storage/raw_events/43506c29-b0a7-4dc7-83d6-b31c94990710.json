@@ -1,0 +1,17 @@
+{
+  "eventId": "43506c29-b0a7-4dc7-83d6-b31c94990710",
+  "rawContent": "2026-09-06T21:52:09.231957+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx dbus-daemon[6504]: [session uid=1000 pid=6504 pidfd=5] Successfully activated service 'org.gnome.ScreenSaver'",
+  "rawHash": "5426b309b454f9b53721bebfd8457a872edf1feeef3abbe95eeb6f248447348f",
+  "ingestedAt": "2026-09-11T04:36:53.376Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

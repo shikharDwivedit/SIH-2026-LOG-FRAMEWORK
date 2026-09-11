@@ -1,0 +1,17 @@
+{
+  "eventId": "fa3d53c1-134a-4303-9fcc-060914f5a06d",
+  "rawContent": "2026-09-06T21:51:46.301961+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Early table checksum verification disabled",
+  "rawHash": "50f33195827be2051f82439fd985cf65088ce501ae601593f475f90156f21c5e",
+  "ingestedAt": "2026-09-11T04:36:51.636Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "f3e11217-55af-4f4a-b83f-03ee00a78d66",
+  "rawContent": "2026-09-06T08:07:39.199995+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: using HDA machine driver skl_hda_dsp_generic now",
+  "rawHash": "ac90eddd9131f96ffa080cf5c0ea80d42fb6e3fd54ea703faf67c27434fb7e7c",
+  "ingestedAt": "2026-09-11T04:36:50.147Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

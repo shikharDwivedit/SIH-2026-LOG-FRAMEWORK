@@ -1,0 +1,16 @@
+{
+  "eventId": "b6a794ac-c1fc-4ff7-ab8e-764ec44a0b99",
+  "rawContent": "2026-09-06T08:07:39.195827+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Fallback order for Node 0: 0",
+  "rawHash": "88d7fd23278ac1bc452ab74cd26096e2c821e9962f83937dd7d9fbca6aaec7d2",
+  "ingestedAt": "2026-09-11T04:36:49.506Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

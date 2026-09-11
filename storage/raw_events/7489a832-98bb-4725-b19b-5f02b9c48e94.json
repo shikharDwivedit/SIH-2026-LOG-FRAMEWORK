@@ -1,0 +1,16 @@
+{
+  "eventId": "7489a832-98bb-4725-b19b-5f02b9c48e94",
+  "rawContent": "2026-09-06T21:51:46.306787+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: AC: AC Adapter [ACAD] (off-line)",
+  "rawHash": "0c6cf387312f660a70e14b8ce35fe2311706747f7f4f10417b41ea04253e6157",
+  "ingestedAt": "2026-09-11T04:36:52.170Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

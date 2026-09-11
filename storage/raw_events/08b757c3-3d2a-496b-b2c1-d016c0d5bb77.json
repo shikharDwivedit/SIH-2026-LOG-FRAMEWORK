@@ -1,0 +1,16 @@
+{
+  "eventId": "08b757c3-3d2a-496b-b2c1-d016c0d5bb77",
+  "rawContent": "2026-09-07T09:13:45.381176+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-7.0.0-31-generic root=UUID=a8a5a758-f200-4390-be61-ed84246bfde7 ro quiet splash crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M",
+  "rawHash": "bf76f61f1faa30827c23df339b3c0eafae246ce49acd2ed56cfd06e26569daac",
+  "ingestedAt": "2026-09-11T04:36:54.251Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

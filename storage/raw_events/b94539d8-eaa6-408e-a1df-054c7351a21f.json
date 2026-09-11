@@ -1,0 +1,16 @@
+{
+  "eventId": "b94539d8-eaa6-408e-a1df-054c7351a21f",
+  "rawContent": "2026-09-06T21:53:43.073363+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788711823.0728] Config: added 'psk' value '<hidden>'",
+  "rawHash": "f0913d79b5d37dff35c103e24aad1aee00bb1826132516e8905c5f7854272a45",
+  "ingestedAt": "2026-09-11T04:36:53.824Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

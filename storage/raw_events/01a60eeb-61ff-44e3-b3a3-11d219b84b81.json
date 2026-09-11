@@ -1,0 +1,17 @@
+{
+  "eventId": "01a60eeb-61ff-44e3-b3a3-11d219b84b81",
+  "rawContent": "2026-09-06T09:43:37.751382+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx wpa_supplicant[2337]: p2p-dev-wlo1: Channel list changed: 6 GHz was enabled",
+  "rawHash": "6bb06222d10c411a99a45b51519b6cceca3c0482d1450743065cb752b7ce2c2f",
+  "ingestedAt": "2026-09-11T04:36:51.300Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "0471dcaa-e5b2-45d0-a3f0-52a9ee17a475",
+  "rawContent": "2026-09-06T21:52:04.447748+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Listening on snapd.session-agent.socket - REST API socket for snapd user session agent.",
+  "rawHash": "5ffbaf432bbc898369413e84a8f86b60d1b45c505869f7cd11a2867b4ef15529",
+  "ingestedAt": "2026-09-11T04:36:53.146Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

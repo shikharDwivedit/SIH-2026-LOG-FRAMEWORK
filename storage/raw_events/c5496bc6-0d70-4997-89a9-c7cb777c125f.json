@@ -1,0 +1,16 @@
+{
+  "eventId": "c5496bc6-0d70-4997-89a9-c7cb777c125f",
+  "rawContent": "2026-09-07T09:13:45.383087+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Reached target sockets.target - Socket Units.",
+  "rawHash": "b22396712ed1377141715e75db6d2dd2f614569ee06ba37685af298d90f25aec",
+  "ingestedAt": "2026-09-11T04:36:54.699Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

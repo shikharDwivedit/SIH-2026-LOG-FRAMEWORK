@@ -1,0 +1,16 @@
+{
+  "eventId": "60bd686c-1bb0-467a-b06f-73975707274e",
+  "rawContent": "2026-09-06T21:51:46.305009+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Dependency failed for sssd-pac.socket - SSSD PAC Service responder socket.",
+  "rawHash": "34e56198ff5c32106ebbeeb1310d1b82fe55c5b25898907348d6db54ebc9fe3d",
+  "ingestedAt": "2026-09-11T04:36:51.926Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

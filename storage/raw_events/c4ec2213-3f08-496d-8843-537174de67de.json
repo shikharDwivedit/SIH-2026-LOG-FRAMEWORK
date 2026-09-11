@@ -1,0 +1,16 @@
+{
+  "eventId": "c4ec2213-3f08-496d-8843-537174de67de",
+  "rawContent": "2026-09-06T21:51:46.309218+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Bluetooth: hci0: OTP lock is enabled",
+  "rawHash": "bba8f23bf375706a456499bed79d3645a810aca562efd51e206a1692c266f098",
+  "ingestedAt": "2026-09-11T04:36:52.409Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

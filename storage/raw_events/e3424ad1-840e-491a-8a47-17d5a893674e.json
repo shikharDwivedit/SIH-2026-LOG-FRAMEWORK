@@ -1,0 +1,17 @@
+{
+  "eventId": "e3424ad1-840e-491a-8a47-17d5a893674e",
+  "rawContent": "2026-09-06T21:51:46.308930+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: input: Intel HID 5 button array as /devices/platform/INTC1070:00/input/input22",
+  "rawHash": "f190c9649d027f5be6ee852bc06a2f03685a6ea1728675f8f1b5d1293aa60b81",
+  "ingestedAt": "2026-09-11T04:36:52.347Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

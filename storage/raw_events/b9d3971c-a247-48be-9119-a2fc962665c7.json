@@ -1,0 +1,17 @@
+{
+  "eventId": "b9d3971c-a247-48be-9119-a2fc962665c7",
+  "rawContent": "2026-09-06T00:50:14.455976+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx gdm3: GLib: Source ID 113 was not found when attempting to remove it",
+  "rawHash": "4e7bb890252634df4fab57591b70fe9674f52da98c21c8c2fb621cdbf73a0e64",
+  "ingestedAt": "2026-09-11T04:36:49.337Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "8393e27e-271b-4a20-bb29-ed1967dc8c2c",
+  "rawContent": "2026-09-06T08:07:39.199993+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: sof-audio-pci-intel-tgl 0000:00:1f.3: use msi interrupt mode",
+  "rawHash": "6d1c344d940214b26cad53b08ad8b5286989faaad1d6916ac003eeb9db043fef",
+  "ingestedAt": "2026-09-11T04:36:50.146Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

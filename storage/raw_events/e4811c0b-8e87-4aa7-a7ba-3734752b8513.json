@@ -1,0 +1,16 @@
+{
+  "eventId": "e4811c0b-8e87-4aa7-a7ba-3734752b8513",
+  "rawContent": "2026-09-06T21:51:46.305338+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold",
+  "rawHash": "c2e462652f1c2a0cb37b6773c2fd5f38743d8158599c5044ae33d6028d651be4",
+  "ingestedAt": "2026-09-11T04:36:51.969Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "578c6d7c-f604-4735-a360-3814c2ea193c",
+  "rawContent": "2026-09-06T21:51:46.304232+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: snapd.snap-repair.timer - Timer to automatically fetch and run repair assertions skipped, no trigger condition checks were met.",
+  "rawHash": "f24d63b2b07a1267e50667ddb07ef909096def0bf184307cd5efac371593333f",
+  "ingestedAt": "2026-09-11T04:36:51.845Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

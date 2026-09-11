@@ -1,0 +1,17 @@
+{
+  "eventId": "c24ec5de-6433-4281-96c1-09d65e3d4a13",
+  "rawContent": "2026-09-06T21:53:43.020090+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx NetworkManager[2367]: <info>  [1788711823.0196] device (wlo1): disconnecting for new activation request.",
+  "rawHash": "2f7821d2e5c162159b8f9f90c8f4815c5bf34ea6627b6c26f95fbd35c1ef3ba5",
+  "ingestedAt": "2026-09-11T04:36:53.799Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

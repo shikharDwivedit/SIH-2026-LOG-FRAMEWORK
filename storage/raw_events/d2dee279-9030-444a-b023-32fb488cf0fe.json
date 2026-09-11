@@ -1,0 +1,16 @@
+{
+  "eventId": "d2dee279-9030-444a-b023-32fb488cf0fe",
+  "rawContent": "2026-09-06T08:08:02.111197+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: session-c1.scope: Deactivated successfully.",
+  "rawHash": "9af0474bf5d52c8214864eab2d113a9b63632ad2df2c1bea258f1e70c391e866",
+  "ingestedAt": "2026-09-11T04:36:50.835Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "eventId": "b1a510eb-5129-47d4-9f9a-4789e177b9b2",
+  "rawContent": "2026-09-06T08:07:39.198051+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: DMAR: No ATSR found",
+  "rawHash": "93aba3995ae6da34d32c9aab52435e9d30eaf2234fd6d9d71d398f4c83426732",
+  "ingestedAt": "2026-09-11T04:36:49.832Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

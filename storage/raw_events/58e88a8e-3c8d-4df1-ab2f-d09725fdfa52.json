@@ -1,0 +1,16 @@
+{
+  "eventId": "58e88a8e-3c8d-4df1-ab2f-d09725fdfa52",
+  "rawContent": "2026-09-06T08:08:12.269523+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[2579]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).",
+  "rawHash": "b7f016303f21bb71c2a4fa9e4f88c7af6459a5afb9ae3c3c158d0efd64ad116c",
+  "ingestedAt": "2026-09-11T04:36:50.946Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

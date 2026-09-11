@@ -1,0 +1,17 @@
+{
+  "eventId": "e9fcf2a8-5134-4d9b-b54e-cc1303d989ce",
+  "rawContent": "2026-09-07T09:13:45.443806+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx accounts-daemon[2173]: started daemon version 23.13.9",
+  "rawHash": "63663f7a83cec33401eaf8197e1320d1176423a523711290b0432e47d6b73e39",
+  "ingestedAt": "2026-09-11T04:36:55.157Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

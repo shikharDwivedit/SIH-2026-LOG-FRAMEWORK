@@ -1,0 +1,17 @@
+{
+  "eventId": "b32d3df2-13a7-4df0-b555-ddf92054c282",
+  "rawContent": "2026-09-07T09:13:48.024845+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx docker.nvidia-container-toolkit[2848]: time=\"2026-09-07T09:13:48+05:30\" level=warning msg=\"Could not locate libnvidia-vulkan-producer.so.595.84: libnvidia-vulkan-producer.so.595.84: not found\"",
+  "rawHash": "f4a7437f98b18fda1f8deb23a3b8d1dcbe7c4e2b10c469d116fe8c076e56571e",
+  "ingestedAt": "2026-09-11T04:36:55.354Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

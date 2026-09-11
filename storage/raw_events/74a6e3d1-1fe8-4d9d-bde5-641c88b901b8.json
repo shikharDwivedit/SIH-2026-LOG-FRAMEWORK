@@ -1,0 +1,17 @@
+{
+  "eventId": "74a6e3d1-1fe8-4d9d-bde5-641c88b901b8",
+  "rawContent": "2026-09-07T09:13:45.382464+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: Skipping parse of AML opcode: Device (0x5B82)",
+  "rawHash": "25e218d0966ac2021908e8f0d05a333b3fdf348d40fb5b5baefdc0bc43e6b447",
+  "ingestedAt": "2026-09-11T04:36:54.482Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

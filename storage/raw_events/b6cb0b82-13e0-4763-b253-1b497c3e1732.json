@@ -1,0 +1,16 @@
+{
+  "eventId": "b6cb0b82-13e0-4763-b253-1b497c3e1732",
+  "rawContent": "2026-09-07T09:13:45.383445+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx cron[2177]: (CRON) INFO (Running @reboot jobs)",
+  "rawHash": "cfa4c4e12497fa04583c8b75fe97ae8182133827f28e77ec4e69c09498f27f3a",
+  "ingestedAt": "2026-09-11T04:36:54.821Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

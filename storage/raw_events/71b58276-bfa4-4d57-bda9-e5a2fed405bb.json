@@ -1,0 +1,16 @@
+{
+  "eventId": "71b58276-bfa4-4d57-bda9-e5a2fed405bb",
+  "rawContent": "2026-09-06T22:31:33.534115+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started anacron.service - Run anacron jobs.",
+  "rawHash": "64daf5beb3339e64ab28f4ab690e7159e73e733894d45ce151ecfacac176f8ec",
+  "ingestedAt": "2026-09-11T04:36:54.005Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

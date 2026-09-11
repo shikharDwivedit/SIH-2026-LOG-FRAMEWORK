@@ -1,0 +1,17 @@
+{
+  "eventId": "4357cb9d-4634-4895-90ff-d36b5349d463",
+  "rawContent": "2026-09-07T09:13:45.446488+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx boltd[2141]: [74b98780-002c-domain0                    ] udev: failed to determine if uid is stable: unknown NHI PCI id '0x1137'",
+  "rawHash": "89c659ce2db2ffa51228a83cb6e0b1950336033875659ed34f266786ce91d296",
+  "ingestedAt": "2026-09-11T04:36:55.158Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

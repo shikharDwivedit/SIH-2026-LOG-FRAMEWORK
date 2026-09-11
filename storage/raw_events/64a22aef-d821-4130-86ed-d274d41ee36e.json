@@ -1,0 +1,16 @@
+{
+  "eventId": "64a22aef-d821-4130-86ed-d274d41ee36e",
+  "rawContent": "2026-09-06T21:51:46.305554+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[1]: Started bluetooth.service - Bluetooth service.",
+  "rawHash": "18d06cc217fe12cde573ff45d56df09af553b3405b759079f3ae8a8a5a5a5227",
+  "ingestedAt": "2026-09-11T04:36:51.996Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

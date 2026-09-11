@@ -1,0 +1,16 @@
+{
+  "eventId": "ea1b4df1-e5a5-4297-9522-e40e418db85d",
+  "rawContent": "2026-09-06T08:07:39.196770+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: ACPI: \\_SB_.PC00.CNVW.WRST: New power resource",
+  "rawHash": "6672218eb9c84f135c20e6e982286be174ddb60df1e7e4eebad643ad572c843c",
+  "ingestedAt": "2026-09-11T04:36:49.612Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

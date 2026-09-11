@@ -1,0 +1,16 @@
+{
+  "eventId": "8b9479c3-8a1f-48f6-b358-1e3f24eef25e",
+  "rawContent": "2026-09-07T09:13:45.384140+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: Bluetooth: L2CAP socket layer initialized",
+  "rawHash": "8b76ab75fd2451e794adcaaed767444eea0547f3340ea0e493b91b12cb0e9bc2",
+  "ingestedAt": "2026-09-11T04:36:55.114Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

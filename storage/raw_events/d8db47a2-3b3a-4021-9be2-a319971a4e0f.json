@@ -1,0 +1,17 @@
+{
+  "eventId": "d8db47a2-3b3a-4021-9be2-a319971a4e0f",
+  "rawContent": "2026-09-06T21:53:06.629239+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[6329]: Started app-gnome-brave\\x2dbrowser-10048.scope - Application launched by gnome-shell.",
+  "rawHash": "112bbbd8b2057d0bf449f73d08c614673c594ef51c3070c548818340e48cd730",
+  "ingestedAt": "2026-09-11T04:36:53.683Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

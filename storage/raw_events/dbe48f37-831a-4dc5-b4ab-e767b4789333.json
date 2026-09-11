@@ -1,0 +1,16 @@
+{
+  "eventId": "dbe48f37-831a-4dc5-b4ab-e767b4789333",
+  "rawContent": "2026-09-06T21:51:46.304340+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.",
+  "rawHash": "8b4c78e9967c6d4253b25860546039ab6a22da83f292110abdba049ff7daf005",
+  "ingestedAt": "2026-09-11T04:36:51.863Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}

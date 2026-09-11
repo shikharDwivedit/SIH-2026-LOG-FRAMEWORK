@@ -1,0 +1,17 @@
+{
+  "eventId": "17a51eb2-ee11-4232-ae9d-6b5c9851465b",
+  "rawContent": "2026-09-06T08:07:39.198901+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx kernel: systemd[1]: Starting systemd-journald.service - Journal Service...",
+  "rawHash": "4af54f5dbb7bde08f34a0e4b4d92eeec6955b5569d977f68504c90edccdedf6a",
+  "ingestedAt": "2026-09-11T04:36:49.978Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop",
+    "transport": "file",
+    "file_path": "/var/log/syslog"
+  }
+}

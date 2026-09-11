@@ -1,0 +1,16 @@
+{
+  "eventId": "8ace247c-a459-4b55-9c81-be3364ad6636",
+  "rawContent": "2026-09-06T09:43:55.763162+05:30 shikhar-OMEN-by-HP-Gaming-Laptop-16-wf0xxx systemd[7207]: Stopping gvfs-daemon.service - Virtual filesystem service...",
+  "rawHash": "26ed01141735c0c27e27bc82c99f1c523e5639f091fed9ad5d02d5084bbd179c",
+  "ingestedAt": "2026-09-11T04:36:51.448Z",
+  "sourceId": "/var/log/syslog",
+  "transport": "file",
+  "metadata": {
+    "transport": "file",
+    "source_id": "/var/log/syslog",
+    "source_vendor": "Canonical",
+    "source_product": "Ubuntu Linux",
+    "source_device_type": "operating-system",
+    "source_name": "This laptop"
+  }
+}
