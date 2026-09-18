@@ -2,7 +2,7 @@ const dgram = require("dgram");
 const { logger } = require("../../src/utils/logger");
 
 class SyslogUdpListener {
-  constructor(ingestionManager, port = 5140, host = "0.0.0.0") {
+  constructor(ingestionManager, port = 55140, host = "0.0.0.0") {
     this.ingestionManager = ingestionManager;
     this.port = port;
     this.host = host;

@@ -3068,3 +3068,57 @@ When you discover that the document is outdated:
 4. Never leave the project-state document knowingly stale.
 
 The goal is that a new agent should be able to understand the architecture, available functionality, API surface, data flow, test coverage, limitations, and next work **from this document first**, then inspect only the files relevant to its assigned task.
+
+---
+
+# 61. FRONTEND CONSOLE REPLACEMENT — 2026-09-18
+
+## Task
+
+Replaced the legacy dashboard with the ULPF enterprise security/log-engineering console specified in `SIH_2026_ULPF_FRONTEND_PRODUCT_SPECIFICATION.md`.
+
+## Files modified
+
+- `frontend/src/main.js`
+- `frontend/src/styles.css`
+- `frontend/src/services/api.js` (added)
+
+## Existing behavior preserved
+
+- Backend API remains the source of truth.
+- Server-side event pagination and search remain bounded.
+- Event ingestion, parser testing, source registration, parser registration/reload, replay, dead-letter viewing, traceability, and output preview remain available.
+- Raw event content is escaped before rendering.
+
+## New frontend functionality
+
+- ULPF application shell with Operations, Engineering, and Delivery navigation.
+- Runtime environment and API status in the sidebar/top bar.
+- Operational overview with real backend metrics, pipeline stages, format distribution, parser activity, and recent events.
+- Dense event explorer table with server-side pagination and search.
+- Event detail view with normalized fields, raw event trace, hash, transport, lineage, and replay action.
+- Pipeline health, source registry, parser registry, parser test bench, replay center, quarantine, output delivery, analytics, and diagnostics views.
+- Explicit backend-dependency panels for queue depth, p95 telemetry, risk, anomaly, correlation, ATT&CK, schema drift, and downstream acknowledgement data that are not currently exposed by the API.
+- Centralized frontend request wrapper and endpoint map in `frontend/src/services/api.js`.
+
+## Visual/component changes
+
+- Replaced the previous generic dashboard styling with a restrained dark enterprise console.
+- Added compact operational metrics, dense tables, status text plus semantic color, structured detail panels, pipeline flow, empty/error states, and responsive layouts.
+- Removed the external font dependency; the frontend now uses local system font fallbacks for air-gapped operation.
+
+## Tests and build
+
+- `npm run build` passed with Vite production output.
+- VS Code diagnostics reported no errors in `frontend/src/main.js`, `frontend/src/services/api.js`, or `frontend/src/styles.css`.
+- `GET http://localhost:8080/api/v1/healthcheck` returned HTTP 200 from the running backend.
+
+## Known limitations
+
+- The current backend has no dedicated queue, worker, p95 latency, output acknowledgement, analytics, risk, anomaly, correlation, ATT&CK, schema-drift, or search-health endpoints. The frontend labels these as dependencies instead of fabricating values.
+- Event detail deep links now load records through `GET /api/v1/events/:id` when the event is not already in the explorer page.
+- The project currently stores the living knowledge file at the repository root as `docs_CURRENT_IMPLEMENTATION_KNOWLEDGE.md`; no duplicate `docs/CURRENT_IMPLEMENTATION_KNOWLEDGE.md` was created.
+
+## Next recommended task
+
+Add a backend-backed event detail loader and bounded time-series metrics endpoint, then connect those to the existing console without introducing synthetic production data.

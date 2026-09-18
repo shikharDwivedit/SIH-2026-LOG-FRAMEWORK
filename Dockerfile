@@ -8,6 +8,7 @@ COPY package*.json ./
 RUN npm ci
 
 # Copy application source code & configurations
+COPY apps/ ./apps/
 COPY packages/ ./packages/
 COPY src/ ./src/
 COPY public/ ./public/

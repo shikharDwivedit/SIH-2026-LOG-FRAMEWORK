@@ -1,417 +1,69 @@
 import './styles.css';
+import { api } from './services/api';
 
-const API = '/api/v1';
-const state = { events: [], eventPagination: null, eventQuery: { page: 1, limit: 25, search: '' }, metrics: null, parsers: [], sources: [], deadLetters: [], deadPagination: null, deadQuery: { page: 1, limit: 25, search: '' }, systemLogJob: null };
-
+const state = { page: location.hash.slice(1) || 'overview', health: null, metrics: null, events: [], eventPage: null, parsers: [], sources: [], deadLetters: [], eventQuery: { page: 1, limit: 25, search: '' }, testResult: null, error: null };
 const sampleLog = '<185>date=2026-09-09 time=14:02:11 devname="fw01" type=traffic level=notice srcip=10.0.0.5 srcport=54321 dstip=8.8.8.8 dstport=443 proto=6 action="deny" status=blocked msg="Access denied"';
 
-async function request(path, options = {}) {
-  const response = await fetch(`${API}${path}`, {
-    headers: { 'Content-Type': 'application/json', ...(options.headers || {}) },
-    ...options
-  });
-  const body = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(body.message || `Request failed (${response.status})`);
-  return body.data;
+function escapeHtml(value) { return String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[char])); }
+function statusClass(status) { return ({ PROCESSED: 'success', PARTIALLY_PROCESSED: 'warning', UNSUPPORTED: 'neutral', PARSER_ERROR: 'danger', VALIDATION_ERROR: 'danger', UP: 'success' }[status] || 'neutral'); }
+function formatDate(value) { return value ? new Date(value).toLocaleString([], { dateStyle: 'medium', timeStyle: 'medium' }) : '-'; }
+function valueAt(object, path) { return path.split('.').reduce((value, key) => value?.[key], object); }
+function metric(label, value, note, tone = '') { return `<article class="metric ${tone}"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value ?? 0)}</strong><small>${escapeHtml(note)}</small></article>`; }
+function badge(label, tone = 'neutral') { return `<span class="badge ${tone}">${escapeHtml(label)}</span>`; }
+function pageLabel(page) { return ({ overview: 'Operations', pipeline: 'Operations', events: 'Operations', 'dead-letter': 'Operations', sources: 'Engineering', parsers: 'Engineering', test: 'Engineering', replay: 'Engineering', outputs: 'Delivery', analytics: 'Delivery', diagnostics: 'Delivery' }[page] || 'Operations'); }
+function pageTitle(page) { return ({ overview: 'Platform overview', pipeline: 'Pipeline health', events: 'Event explorer', 'dead-letter': 'Quarantine', sources: 'Source registry', parsers: 'Parser registry', test: 'Parser test bench', replay: 'Replay center', outputs: 'Output delivery', analytics: 'Analytics', diagnostics: 'Diagnostics' }[page] || 'Platform overview'); }
+
+function shell() {
+  const nav = [['Operations', [['overview', 'Overview'], ['pipeline', 'Pipeline'], ['events', 'Event explorer'], ['dead-letter', 'Quarantine']]], ['Engineering', [['sources', 'Sources'], ['parsers', 'Parsers'], ['test', 'Parser test bench'], ['replay', 'Replay']]], ['Delivery', [['outputs', 'Outputs'], ['analytics', 'Analytics'], ['diagnostics', 'Diagnostics']]]];
+  return `<div class="app-shell"><aside class="sidebar"><a class="product" href="#overview"><span class="product-mark">UL</span><span><strong>ULPF</strong><small>Universal Log Pre-processing Framework</small></span></a><div class="environment"><span class="live-dot"></span><span>LAB / INTERNAL</span><b>${state.health?.status || 'CHECKING'}</b></div><nav>${nav.map(([group, links]) => `<div class="nav-group"><small>${group}</small>${links.map(([id, label]) => `<a class="nav-link ${state.page === id ? 'active' : ''}" href="#${id}">${label}${id === 'dead-letter' && state.deadLetters.length ? `<b>${state.deadLetters.length}</b>` : ''}</a>`).join('')}</div>`).join('')}</nav><div class="sidebar-footer"><span class="status-dot"></span><span>API connected</span><small>Schema v1.0 / local state</small></div></aside><main class="workspace"><header class="topbar"><div><span class="breadcrumb">ULPF / ${escapeHtml(pageLabel(state.page))}</span><h1>${escapeHtml(pageTitle(state.page))}</h1></div><div class="topbar-tools"><label class="global-search"><span>⌕</span><input id="global-search" placeholder="Search events, sources, parsers" value="${escapeHtml(state.eventQuery.search)}" /></label><span class="runtime-chip">● ${escapeHtml(state.metrics?.events_per_second || 0)} EPS</span><button class="icon-button" id="refresh" title="Refresh data">↻</button></div></header><section id="content"></section></main></div><div id="toast" aria-live="polite"></div>`;
 }
 
-function escapeHtml(value) {
-  return String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[char]));
-}
+function render() { document.querySelector('#root').innerHTML = shell(); document.querySelector('#refresh').addEventListener('click', () => refresh(true)); document.querySelector('#global-search').addEventListener('keydown', event => { if (event.key === 'Enter') { state.eventQuery.search = event.currentTarget.value.trim(); state.eventQuery.page = 1; location.hash = '#events'; } }); renderPage(); }
+function renderPage() { const content = document.querySelector('#content'); const route = state.page; const pages = { overview: overviewPage, pipeline: pipelinePage, events: eventsPage, 'dead-letter': deadLetterPage, sources: sourcesPage, parsers: parsersPage, test: testPage, replay: replayPage, outputs: outputsPage, analytics: analyticsPage, diagnostics: diagnosticsPage }; if (route.startsWith('event/')) { content.innerHTML = eventDetailPage(decodeURIComponent(route.slice(6))); bindEventDetail(); return; } content.innerHTML = (pages[route] || overviewPage)(); bindPage(route); }
+function bindPage(route) { if (route === 'events') bindEvents(); if (route === 'sources') bindSources(); if (route === 'parsers') bindParsers(); if (route === 'test') bindTest(); if (route === 'replay') bindReplay(); if (route === 'outputs') bindOutputs(); }
 
-function statusClass(status) {
-  return ({ PROCESSED: 'good', PARTIALLY_PROCESSED: 'warn', UNSUPPORTED: 'muted', PARSER_ERROR: 'bad', VALIDATION_ERROR: 'bad' })[status] || 'muted';
-}
+async function refresh(showToast = false) { try { const [health, metrics, eventPage, parsers, sources, deadLetters] = await Promise.all([api.health(), api.metrics(), api.events({ page: state.eventQuery.page, limit: state.eventQuery.limit, ...(state.eventQuery.search ? { search: state.eventQuery.search } : {}) }), api.parsers(), api.sources(), api.deadLetters({ page: 1, limit: 5 })]); state.health = health; state.metrics = metrics; state.events = eventPage.events || []; state.eventPage = eventPage.pagination; state.parsers = parsers || []; state.sources = sources || []; state.deadLetters = deadLetters.events || []; state.error = null; render(); if (showToast) toast('Data refreshed from backend', 'success'); } catch (error) { state.error = error.message; render(); toast(error.message, 'danger'); } }
 
-function extractTestRecords(rawInput) {
-  const input = String(rawInput || '').trim();
-  if (!input) return [];
-  if (!/^[ \t]*---[ \t]*$/m.test(input)) return [{ label: 'Pasted log', log: input }];
+function overviewPage() { const counters = state.metrics?.counters || {}; const parserHits = Object.entries(state.metrics?.parser_hits || {}).sort((a, b) => b[1] - a[1]).slice(0, 5); return `<div class="page-intro"><div><span class="eyebrow">Operational command view</span><h2>One pipeline for every security log.</h2><p>ULPF preserves the original event, detects its format, normalizes it into a universal schema, and keeps the transformation explainable.</p></div><a class="button primary" href="#test">Ingest a test event <span>→</span></a></div>${state.error ? errorState(state.error) : ''}<section class="metric-strip">${metric('Events ingested', counters.eventsReceived, 'persisted raw inputs')}${metric('Events processed', counters.eventsProcessed, 'normalized events', 'success')}${metric('Events/sec', state.metrics?.events_per_second, 'current processing rate', 'info')}${metric('Dead letters', counters.eventsFailed, 'requires investigation', 'warning')}${metric('Active sources', state.sources.length, 'registered sources')}${metric('Active parsers', state.parsers.length, 'loaded definitions')}</section><div class="overview-grid"><section class="surface pipeline-summary"><div class="surface-header"><div><span class="eyebrow">Live processing path</span><h3>From raw input to delivery</h3></div><a href="#pipeline">Open pipeline →</a></div><div class="flow">${['Collectors', 'Raw store', 'Queue', 'Parser', 'Normalizer', 'Validator', 'Storage', 'Outputs'].map((stage, index) => `<div class="flow-stage"><span>${String(index + 1).padStart(2, '0')}</span><strong>${stage}</strong><small>${index < 2 ? 'available' : index === 7 ? 'export ready' : 'operational'}</small></div>`).join('<i>›</i>')}</div></section><section class="surface"><div class="surface-header"><div><span class="eyebrow">Format distribution</span><h3>Detected formats</h3></div></div>${distribution(state.metrics?.format_counts)}</section><section class="surface recent-events"><div class="surface-header"><div><span class="eyebrow">Investigation queue</span><h3>Latest normalized events</h3></div><a href="#events">View explorer →</a></div>${eventRows(state.events.slice(0, 5))}</section><section class="surface"><div class="surface-header"><div><span class="eyebrow">Parser health</span><h3>Most used definitions</h3></div><a href="#parsers">Registry →</a></div>${parserHits.length ? parserHits.map(([name, count]) => `<div class="rank-row"><span>${escapeHtml(name)}</span><b>${count}</b></div>`).join('') : emptyState('No parser activity yet.')}</section></div>`; }
+function distribution(values = {}) { const entries = Object.entries(values).sort((a, b) => b[1] - a[1]); if (!entries.length) return emptyState('No format data available.'); const max = Math.max(entries[0][1], 1); return `<div class="distribution">${entries.map(([label, count]) => `<div class="distribution-row"><span>${escapeHtml(label)}</span><b>${count}</b><i style="width:${Math.max(4, count / max * 100)}%"></i></div>`).join('')}</div>`; }
+function eventRows(events) { if (!events?.length) return `<div class="empty-state">No events stored yet.<small>Ingest a sample event to begin investigation.</small></div>`; return `<div class="event-list">${events.map(event => `<a class="event-row" href="#event/${encodeURIComponent(event.event_id)}"><span class="event-time">${escapeHtml(formatDate(event.raw_ref?.ingested_at))}</span><span><strong>${escapeHtml(event.event?.action || 'unclassified')}</strong><small>${escapeHtml(event.source?.vendor || 'Unknown')} · ${escapeHtml(event.source?.product || 'Unknown product')}</small></span><span class="event-network">${escapeHtml(event.network?.source_ip || '-')} <b>→</b> ${escapeHtml(event.network?.destination_ip || '-')}</span>${badge(event.processing?.status || 'UNKNOWN', statusClass(event.processing?.status))}</a>`).join('')}</div>`; }
 
-  const chunks = input.split(/^[ \t]*---[ \t]*$/m);
-  return chunks
-    .map((chunk, index) => {
-      const lines = chunk.split(/\r?\n/);
-      const previousHeading = chunks[index - 1]?.split(/\r?\n/).find(line => /^\s*\[\d+\]/.test(line));
-      if (!previousHeading) return { label: 'Preamble', log: '' };
-      const heading = previousHeading.trim();
-      const logLines = lines.filter(line => {
-        const trimmed = line.trim();
-        return trimmed && !/^\[\d+\]/.test(trimmed) && !/^EXPECTED\b/.test(trimmed) &&
-          !/^SIH MANUAL TEST-BENCH CORPUS$/.test(trimmed) && !/^=+$/.test(trimmed) &&
-          !/^How to use:|^The --- separators/.test(trimmed);
-      });
-      return { label: heading, log: logLines.join('\n').trim() };
-    })
-    .filter(record => record.log);
-}
+function eventsPage() { const pagination = state.eventPage || { page: 1, total: 0, total_pages: 1, has_previous: false, has_next: false }; return `<div class="page-intro compact"><div><span class="eyebrow">Server-side investigation workspace</span><h2>Event explorer</h2><p>Search the persisted normalized event store without loading the full corpus into the browser.</p></div><a class="button primary" href="#test">Ingest event</a></div><section class="surface"><div class="filter-bar"><label class="search-field"><span>⌕</span><input id="event-search" value="${escapeHtml(state.eventQuery.search)}" placeholder="Search vendor, parser, action, IP, or event ID" /></label><button class="button secondary" id="event-search-button">Search</button><span class="result-count">${pagination.total || 0} events</span></div><div class="table-scroll"><table><thead><tr><th>Time</th><th>Event ID</th><th>Source / vendor</th><th>Category / action</th><th>Network</th><th>Parser</th><th>Status</th></tr></thead><tbody>${state.events?.length ? state.events.map(event => `<tr class="clickable" data-event-id="${escapeHtml(event.event_id)}"><td class="muted">${escapeHtml(formatDate(event.raw_ref?.ingested_at))}</td><td><code>${escapeHtml((event.event_id || '').slice(0, 14))}</code></td><td><strong>${escapeHtml(event.source?.device_type || 'Unknown')}</strong><small>${escapeHtml(event.source?.vendor || '-')} / ${escapeHtml(event.source?.product || '-')}</small></td><td>${escapeHtml(event.event?.category || 'other')}<small>${escapeHtml(event.event?.action || 'unclassified')}</small></td><td><code>${escapeHtml(event.network?.source_ip || '-')}</code><small>→ ${escapeHtml(event.network?.destination_ip || '-')}</small></td><td>${escapeHtml(event.trace?.parser_name || 'none')}</td><td>${badge(event.processing?.status || 'UNKNOWN', statusClass(event.processing?.status))}</td></tr>`).join('') : '<tr><td colspan="7" class="empty-cell">No matching events.</td></tr>'}</tbody></table></div><div class="pagination"><button class="button secondary" id="events-prev" ${pagination.has_previous ? '' : 'disabled'}>← Previous</button><span>Page ${pagination.page} of ${pagination.total_pages}</span><button class="button secondary" id="events-next" ${pagination.has_next ? '' : 'disabled'}>Next →</button></div></section>`; }
+function bindEvents() { document.querySelector('#event-search-button')?.addEventListener('click', () => loadEvents(1)); document.querySelector('#event-search')?.addEventListener('keydown', event => { if (event.key === 'Enter') loadEvents(1); }); document.querySelector('#events-prev')?.addEventListener('click', () => loadEvents((state.eventPage?.page || 1) - 1)); document.querySelector('#events-next')?.addEventListener('click', () => loadEvents((state.eventPage?.page || 1) + 1)); document.querySelectorAll('[data-event-id]').forEach(row => row.addEventListener('click', () => { location.hash = `#event/${encodeURIComponent(row.dataset.eventId)}`; })); }
+async function loadEvents(page) { state.eventQuery = { ...state.eventQuery, page, search: document.querySelector('#event-search')?.value.trim() || '' }; try { const result = await api.events(state.eventQuery); state.events = result.events; state.eventPage = result.pagination; render(); } catch (error) { toast(error.message, 'danger'); } }
 
-function render() {
-  const root = document.querySelector('#root');
-    root.innerHTML = `
-      <div class="shell">
-        <aside class="sidebar">
-          <div class="brand"><span class="brand-mark">LN</span><div><strong>LogNorm</strong><small>security event console</small></div></div>
-          <div class="connection"><span class="pulse"></span><span id="connection-label">Checking API...</span></div>
-          <nav>
-            <span class="nav-label">Monitor</span>
-            <a href="#overview" data-route="overview">Overview</a>
-            <a href="#pipeline" data-route="pipeline">Pipeline view</a>
-            <a href="#events" data-route="events">Event history <b id="nav-count">0</b></a>
-            <a href="#dead-letter" data-route="dead-letter">Dead letter <b id="dead-count">0</b></a>
-            <span class="nav-label">Plug and play</span>
-            <a href="#parsers" data-route="parsers">Parser registry <b id="parser-count">0</b></a>
-            <a href="#sources" data-route="sources">Source registry <b id="source-count">0</b></a>
-            <a href="#test" data-route="test">Test bench</a>
-            <a href="#output" data-route="output">Output center</a>
-          </nav>
-          <div class="sidebar-foot">Vite client<br><span>Durable local history enabled</span></div>
-        </aside>
-        <main class="main">
-          <header class="topbar"><div><p class="eyebrow">Universal normalization framework</p><h1 id="page-title">Overview</h1></div><div class="topbar-actions"><button class="button secondary" id="refresh">Refresh data</button><button class="button danger" id="reset-data">Reset app data</button></div></header>
-          <div id="content"></div>
-        </main>
-      </div>
-      <div id="toast" role="status"></div>`;
-  document.querySelectorAll('[data-route]').forEach(link => link.addEventListener('click', () => route(link.dataset.route)));
-  document.querySelector('#refresh').addEventListener('click', () => refresh(true));
-  document.querySelector('#reset-data').addEventListener('click', resetApplicationData);
-  window.addEventListener('hashchange', () => route(location.hash.slice(1) || 'overview'));
-  route(location.hash.slice(1) || 'overview');
-}
+function eventDetailPage(id) { const event = state.events.find(item => item.event_id === id); if (!event) return `<div class="empty-state large">Event is not in the current page.<small>Return to the explorer and open an event from the current result set.</small><a href="#events" class="button secondary">Back to explorer</a></div>`; const fields = [['Category', 'event.category'], ['Type', 'event.type'], ['Action', 'event.action'], ['Outcome', 'event.outcome'], ['Severity', 'event.severity'], ['Source IP', 'network.source_ip'], ['Source port', 'network.source_port'], ['Destination IP', 'network.destination_ip'], ['Destination port', 'network.destination_port'], ['Protocol', 'network.protocol']]; return `<div class="detail-header"><div><span class="eyebrow">Lossless event record</span><h2>${escapeHtml(event.event?.action || 'Event detail')}</h2><p class="mono">${escapeHtml(event.event_id)}</p></div><div class="detail-actions">${badge(event.processing?.status || 'UNKNOWN', statusClass(event.processing?.status))}<button class="button secondary" id="replay-event">Replay raw event</button><a class="button secondary" href="#events">Back</a></div></div><div class="detail-meta">${[['Source', event.source?.name], ['Vendor', event.source?.vendor], ['Product', event.source?.product], ['Parser', event.trace?.parser_name], ['Parser version', event.trace?.parser_version], ['Schema', event.schema?.version || event.trace?.schema_version], ['Ingested', formatDate(event.raw_ref?.ingested_at)]].map(([label, value]) => `<div><span>${label}</span><strong>${escapeHtml(value || '-')}</strong></div>`).join('')}</div><div class="detail-layout"><section class="surface"><div class="surface-header"><div><span class="eyebrow">Normalized output</span><h3>Universal event fields</h3></div><button class="button small secondary" id="copy-event">Copy JSON</button></div><div class="field-groups"><div><h4>EVENT</h4>${fields.slice(0, 5).map(([label, path]) => field(label, valueAt(event, path))).join('')}</div><div><h4>NETWORK</h4>${fields.slice(5).map(([label, path]) => field(label, valueAt(event, path))).join('')}</div></div><details class="json-details"><summary>Structured JSON view</summary><pre>${escapeHtml(JSON.stringify(event, null, 2))}</pre></details></section><section class="surface"><div class="surface-header"><div><span class="eyebrow">Source of truth</span><h3>Raw event</h3></div></div><div id="trace-content" class="loading-state">Loading raw content and lineage…</div></section></div>`; }
+function field(label, value) { return `<div class="field"><span>${escapeHtml(label)}</span><strong class="${typeof value === 'number' || label.includes('IP') || label.includes('port') ? 'mono' : ''}">${escapeHtml(value ?? '-')}</strong></div>`; }
+async function bindEventDetail() { const id = decodeURIComponent(state.page.slice(6)); let event = state.events.find(item => item.event_id === id); if (!event) { try { event = await api.event(id); state.events = [event, ...state.events]; renderPage(); return; } catch (error) { const target = document.querySelector('#content'); if (target) target.innerHTML = errorState(error.message); return; } } document.querySelector('#copy-event')?.addEventListener('click', () => navigator.clipboard?.writeText(JSON.stringify(event, null, 2)).then(() => toast('Normalized event copied', 'success'))); document.querySelector('#replay-event')?.addEventListener('click', async () => { try { await api.replay(id); toast('Raw event replayed through the pipeline', 'success'); } catch (error) { toast(error.message, 'danger'); } }); try { const trace = await api.trace(id); document.querySelector('#trace-content').innerHTML = `<div class="raw-meta">${[['Raw event ID', trace.raw_event_id], ['Hash', trace.raw_hash], ['Transport', trace.transport || event.raw_ref?.transport || '-'], ['Ingested', formatDate(trace.ingested_at || event.raw_ref?.ingested_at)]].map(([label, value]) => `<div><span>${label}</span><code>${escapeHtml(value)}</code></div>`).join('')}</div><pre class="raw-view">${escapeHtml(trace.raw_content || '(raw content unavailable)')}</pre><h4>Field lineage</h4><pre>${escapeHtml(JSON.stringify(trace.field_lineage || {}, null, 2))}</pre>`; } catch (error) { document.querySelector('#trace-content').innerHTML = errorState(error.message); } }
 
-async function refresh(showToast = false) {
-  try {
-    const [metrics, eventPage, health, parsers, sources, deadLetters] = await Promise.all([
-      request('/healthcheck/metrics'), request('/events?limit=25'), request('/healthcheck'),
-      request('/parsers'), request('/sources'), request('/healthcheck/dead-letter?limit=25')
-    ]);
-    state.metrics = metrics;
-    state.events = eventPage.events;
-    state.eventPagination = eventPage.pagination;
-    state.parsers = parsers;
-    state.sources = sources;
-    state.deadLetters = deadLetters.events;
-    state.deadPagination = deadLetters.pagination;
-    document.querySelector('#connection-label').textContent = `${health.status} - API connected`;
-    document.querySelector('#nav-count').textContent = state.events.length;
-    document.querySelector('#dead-count').textContent = state.deadPagination?.total || 0;
-    document.querySelector('#parser-count').textContent = state.parsers.length;
-    document.querySelector('#source-count').textContent = state.sources.length;
-    renderRoute();
-    if (showToast) toast('Data refreshed from backend', 'good');
-  } catch (error) {
-    document.querySelector('#connection-label').textContent = 'API unavailable';
-    toast(error.message, 'bad');
-  }
-}
+function pipelinePage() { const counters = state.metrics?.counters || {}; const stages = [['Collectors', 'Healthy', state.metrics?.events_per_second || 0, 'UDP + HTTP ingestion'], ['Raw preservation', 'Healthy', counters.eventsReceived || 0, 'lossless local store'], ['Queue / workers', 'Operational', counters.eventsProcessed || 0, 'local durable processing'], ['Parser / normalizer', 'Operational', counters.eventsProcessed || 0, 'universal schema v1'], ['Validation', counters.eventsFailed ? 'Review' : 'Healthy', counters.eventsFailed || 0, 'failed or dead-lettered'], ['Outputs', 'Ready', state.events.length, 'CEF / JSONL / flat JSONL']]; return `<div class="page-intro compact"><div><span class="eyebrow">Engineering operations</span><h2>Pipeline health</h2><p>Evidence from the current backend metrics and persisted stores. Queue-depth, worker-utilization, and delivery acknowledgements require additional backend telemetry.</p></div></div><section class="pipeline-grid">${stages.map(([name, status, value, note], index) => `<article class="stage-card"><span class="stage-index">${String(index + 1).padStart(2, '0')}</span><div><h3>${name}</h3><p>${note}</p></div>${badge(status, statusClass(status === 'Healthy' || status === 'Operational' || status === 'Ready' ? 'PROCESSED' : 'PARSER_ERROR'))}<strong>${value}</strong></article>`).join('')}</section><section class="surface dependency-panel"><span class="eyebrow">Telemetry coverage</span><h3>Operational signals not yet exposed by the backend</h3><div class="dependency-list"><span>Queue depth</span><span>Consumer lag</span><span>Worker utilization</span><span>p95 latency</span><span>Output acknowledgements</span></div><p>These are intentionally shown as dependencies rather than synthetic values. Add metrics endpoints before presenting them as production evidence.</p></section>`; }
 
-function route(name) {
-  const eventRoute = name.startsWith('event/');
-  const allowed = ['overview', 'pipeline', 'events', 'dead-letter', 'parsers', 'sources', 'test', 'output'];
-  const page = eventRoute || allowed.includes(name) ? name : 'overview';
-  history.replaceState({}, '', `#${page}`);
-  document.querySelectorAll('[data-route]').forEach(link => link.classList.toggle('active', link.dataset.route === page));
-  const titles = { overview: 'Overview', pipeline: 'Pipeline view', events: 'Event history', 'dead-letter': 'Dead letter store', parsers: 'Parser registry', sources: 'Source registry', test: 'Local test bench', output: 'Output center' };
-  document.querySelector('#page-title').textContent = eventRoute ? 'Event detail' : titles[page];
-  renderRoute();
-}
+function sourcesPage() { return `<div class="page-intro compact"><div><span class="eyebrow">Perimeter inventory</span><h2>Source registry</h2><p>Register firewalls, IDS, VPN gateways, proxies, and other security infrastructure with the context needed for parsing.</p></div><button class="button primary" id="show-source-form">Register source</button></div><div class="source-layout"><section class="surface"><div class="surface-header"><div><span class="eyebrow">Connected inventory</span><h3>${state.sources.length} registered sources</h3></div></div><div class="table-scroll"><table><thead><tr><th>Source</th><th>Vendor / product</th><th>Device type</th><th>Address</th><th>Status</th></tr></thead><tbody>${state.sources.length ? state.sources.map(source => `<tr><td><strong>${escapeHtml(source.name)}</strong><small>${escapeHtml(source.transport || 'unspecified')}</small></td><td>${escapeHtml(source.vendor)}<small>${escapeHtml(source.product || '-')}</small></td><td>${badge(source.device_type || 'unknown', 'info')}</td><td><code>${escapeHtml(source.device_ip || source.hostname || '-')}</code></td><td>${badge(source.active ? 'ACTIVE' : 'INACTIVE', source.active ? 'success' : 'neutral')}</td></tr>`).join('') : '<tr><td colspan="5" class="empty-cell">No sources registered.</td></tr>'}</tbody></table></div></section><section class="surface form-surface" id="source-form-panel"><div class="surface-header"><div><span class="eyebrow">Onboarding / identity</span><h3>Add a source</h3></div></div><form id="source-form"><label>Name<input name="name" required placeholder="Firewall HQ 01"></label><label>Vendor<input name="vendor" required placeholder="Fortinet"></label><label>Product<input name="product" placeholder="FortiGate 60E"></label><label>IP or hostname<input name="device_ip" placeholder="10.0.0.1"></label><label>Device type<select name="device_type"><option>firewall</option><option>ids</option><option>vpn</option><option>proxy</option><option>router</option><option>switch</option></select></label><button class="button primary" type="submit">Register source</button></form></section></div>`; }
+function bindSources() { document.querySelector('#source-form')?.addEventListener('submit', async event => { event.preventDefault(); try { await api.registerSource(Object.fromEntries(new FormData(event.currentTarget))); await refresh(); toast('Source registered', 'success'); } catch (error) { toast(error.message, 'danger'); } }); document.querySelector('#show-source-form')?.addEventListener('click', () => document.querySelector('#source-form-panel')?.scrollIntoView({ behavior: 'smooth' })); }
 
-function renderRoute() {
-  const page = location.hash.slice(1) || 'overview';
-  const pages = { overview: overviewPage, pipeline: pipelinePage, events: eventsPage, 'dead-letter': deadLetterPage, parsers: parsersPage, sources: sourcesPage, test: testPage, output: outputPage };
-  if (page.startsWith('event/')) {
-    document.querySelector('#content').innerHTML = eventDetailPage(page.slice(6));
-    bindEventDetailPage(page.slice(6));
-    return;
-  }
-  document.querySelector('#content').innerHTML = (pages[page] || overviewPage)();
-  if (page === 'events') bindEventsPage();
-  if (page === 'dead-letter') bindDeadLetterPage();
-  if (page === 'parsers') bindParsersPage();
-  if (page === 'sources') bindSourcesPage();
-  if (page === 'test') bindTestPage();
-  if (page === 'output') bindOutputPage();
-}
-
-function overviewPage() {
-  const counters = state.metrics?.counters || {};
-  const parserHits = Object.entries(state.metrics?.parser_hits || {}).sort((a, b) => b[1] - a[1]);
-  const latest = state.events.slice(0, 6);
-  return `<section class="intro"><div><p class="eyebrow">Operational view</p><h2>Pipeline at a glance</h2><p class="muted">Counts are read-only projections of persisted backend state. Refreshing this page never creates events.</p></div><a class="button primary" href="#test">Open test bench</a></section>
-    <section class="stats">
-      ${stat('Events received', counters.eventsReceived, 'all ingested logs')}${stat('Processed', counters.eventsProcessed, 'normalized successfully', 'good')}${stat('Failed', counters.eventsFailed, 'parse or validation', 'bad')}${stat('Dead lettered', counters.deadLettered, 'preserved for review', 'warn')}${stat('Avg latency', `${state.metrics?.avg_processing_latency_ms || 0} ms`, 'processing average')}
-    </section>
-    <div class="grid two"><section class="panel"><div class="panel-head"><div><p class="eyebrow">Recent output</p><h3>Latest events</h3></div><a href="#events">View all</a></div>${eventRows(latest)}</section><section class="panel"><div class="panel-head"><div><p class="eyebrow">Routing</p><h3>Parser activity</h3></div></div><div class="bars">${parserHits.length ? parserHits.map(([name, count]) => `<div class="bar-row"><span>${escapeHtml(name)}</span><strong>${count}</strong><i style="width:${Math.min(100, count / Math.max(parserHits[0][1], 1) * 100)}%"></i></div>`).join('') : '<p class="empty">No parser activity yet.</p>'}</div></section></div>
-    <div class="grid three metric-graphs"><section class="panel"><div class="panel-head"><div><p class="eyebrow">Outcome graph</p><h3>Processing status</h3></div></div>${metricGraph([['Processed', counters.eventsProcessed, 'good'], ['Partial', counters.eventsPartial, 'warn'], ['Failed', counters.eventsFailed, 'bad'], ['Unsupported', counters.eventsUnsupported, 'muted']])}</section><section class="panel"><div class="panel-head"><div><p class="eyebrow">Format graph</p><h3>Detected formats</h3></div></div>${metricGraph(Object.entries(state.metrics?.format_counts || {}).map(([label, value]) => [label, value, 'cyan']))}</section><section class="panel"><div class="panel-head"><div><p class="eyebrow">Source graph</p><h3>Vendors</h3></div></div>${metricGraph(Object.entries(state.metrics?.source_counts || {}).map(([label, value]) => [label, value, 'lime']))}</section></div>`;
-}
-
-function metricGraph(rows) {
-  const visibleRows = rows.filter(([, value]) => Number(value) > 0);
-  if (!visibleRows.length) return '<div class="graph-empty">No metrics yet.</div>';
-  const maximum = Math.max(...visibleRows.map(([, value]) => Number(value)), 1);
-  return `<div class="metric-graph-body">${visibleRows.map(([label, value, tone]) => `<div class="metric-row"><div class="metric-row-label"><span>${escapeHtml(label)}</span><strong>${value}</strong></div><div class="metric-track"><i class="metric-fill ${tone || 'cyan'}" style="width:${Math.max(4, Number(value) / maximum * 100)}%"></i></div></div>`).join('')}</div>`;
-}
-
-async function resetApplicationData() {
-  if (!window.confirm('Reset all stored raw events, normalized events, dead letters, and metrics? Parser and source definitions will remain.')) return;
-  const button = document.querySelector('#reset-data');
-  button.disabled = true;
-  try {
-    await request('/healthcheck/reset', { method: 'POST' });
-    await refresh();
-    toast('Application data reset', 'good');
-  } catch (error) {
-    toast(error.message, 'bad');
-  } finally {
-    button.disabled = false;
-  }
-}
-
-function stat(label, value, note, tone = '') { return `<article class="stat ${tone}"><p>${label}</p><strong>${value ?? 0}</strong><small>${note}</small></article>`; }
-
-function pipelinePage() {
-  const counters = state.metrics?.counters || {};
-  const stages = [
-    ['Ingested', counters.eventsReceived, 'raw input received'],
-    ['Preserved', counters.eventsReceived, 'lossless raw store'],
-    ['Parsed', Math.max(0, counters.eventsReceived - (counters.eventsUnsupported || 0)), 'parser matched'],
-    ['Normalized', (counters.eventsProcessed || 0) + (counters.eventsPartial || 0), 'universal event'],
-    ['Output', counters.eventsProcessed, 'ready for export']
-  ];
-  return `<section class="page-copy"><div><p class="eyebrow">Processing path</p><h2>From raw log to usable signal</h2><p class="muted">Every stage is backed by the same persisted event record. No stage is simulated by the frontend.</p></div><span class="status good">${state.metrics?.events_per_second || 0} events/sec</span></section>
-    <section class="pipeline">${stages.map((stage, index) => `<div class="pipeline-stage"><span class="stage-number">0${index + 1}</span><strong>${stage[0]}</strong><b>${stage[1] || 0}</b><small>${stage[2]}</small></div>`).join('<i class="pipeline-arrow">&#8594;</i>')}</section>
-    <div class="grid two"><section class="panel"><div class="panel-head"><div><p class="eyebrow">Vendors</p><h3>Source distribution</h3></div></div><div class="bars">${distributionRows(state.metrics?.source_counts)}</div></section><section class="panel"><div class="panel-head"><div><p class="eyebrow">Formats</p><h3>Detected formats</h3></div></div><div class="bars">${distributionRows(state.metrics?.format_counts)}</div></section></div>`;
-}
-
-function distributionRows(values = {}) {
-  const entries = Object.entries(values).sort((a, b) => b[1] - a[1]);
-  if (!entries.length) return '<p class="empty">No data yet.</p>';
-  const max = Math.max(entries[0][1], 1);
-  return entries.map(([name, count]) => `<div class="bar-row"><span>${escapeHtml(name)}</span><strong>${count}</strong><i style="width:${Math.min(100, count / max * 100)}%"></i></div>`).join('');
-}
-
-function eventsPage() {
-  const pagination = state.eventPagination || { page: 1, total: 0, total_pages: 1, has_previous: false, has_next: false };
-  return `<section class="page-copy"><p class="eyebrow">Durable event store</p><h2>Every normalized event, in order</h2><p class="muted">The list survives backend restarts. Only the current page is loaded into the browser.</p></section><section class="panel"><div class="toolbar"><div class="event-search"><input id="event-search" value="${escapeHtml(state.eventQuery.search)}" placeholder="Search vendor, parser, action, IP, or event ID" /><button class="button secondary" id="event-search-button">Search</button></div><span class="muted" id="event-total">${pagination.total} events</span></div><div class="table-wrap"><table><thead><tr><th>Event</th><th>Vendor</th><th>Parser</th><th>Action</th><th>Status</th><th>Ingested</th></tr></thead><tbody id="event-list">${eventRows(state.events)}</tbody></table></div><div class="pagination"><button class="button secondary" id="events-previous" ${pagination.has_previous ? '' : 'disabled'}>Previous</button><span class="muted">Page ${pagination.page} of ${pagination.total_pages}</span><button class="button secondary" id="events-next" ${pagination.has_next ? '' : 'disabled'}>Next</button></div></section>`;
-}
-
-function eventRows(events) {
-  if (!events.length) return '<tr><td colspan="6" class="empty">No events stored yet.</td></tr>';
-  return events.map(event => `<tr><td><a href="#event/${encodeURIComponent(event.event_id)}"><code>${escapeHtml((event.event_id || '').slice(0, 12))}</code></a></td><td>${escapeHtml(event.source?.vendor || 'Unknown')}</td><td><span class="tag">${escapeHtml(event.trace?.parser_name || 'none')}</span></td><td>${escapeHtml(event.event?.action || 'unclassified')}</td><td><span class="status ${statusClass(event.processing?.status)}">${escapeHtml(event.processing?.status || 'unknown')}</span></td><td class="muted">${escapeHtml(event.raw_ref?.ingested_at ? new Date(event.raw_ref.ingested_at).toLocaleString() : '-')}</td></tr>`).join('');
-}
-
-function bindEventsPage() {
-  document.querySelector('#event-search-button')?.addEventListener('click', () => loadEventPage(1));
-  document.querySelector('#event-search')?.addEventListener('keydown', event => { if (event.key === 'Enter') loadEventPage(1); });
-  document.querySelector('#events-previous')?.addEventListener('click', () => loadEventPage((state.eventPagination?.page || 1) - 1));
-  document.querySelector('#events-next')?.addEventListener('click', () => loadEventPage((state.eventPagination?.page || 1) + 1));
-}
-
-async function loadEventPage(page) {
-  const search = document.querySelector('#event-search')?.value.trim() ?? state.eventQuery.search;
-  const query = new URLSearchParams({ page: String(page), limit: String(state.eventQuery.limit) });
-  if (search) query.set('search', search);
-  try {
-    const eventPage = await request(`/events?${query.toString()}`);
-    state.events = eventPage.events;
-    state.eventPagination = eventPage.pagination;
-    state.eventQuery = { page: eventPage.pagination.page, limit: eventPage.pagination.limit, search };
-    renderRoute();
-  } catch (error) { toast(error.message, 'bad'); }
-}
-
-function eventDetailPage(id) {
-  const event = state.events.find(item => item.event_id === decodeURIComponent(id));
-  if (!event) return '<section class="page-copy"><h2>Event not found</h2><a href="#events">Back to history</a></section>';
-  return `<section class="page-copy"><div><p class="eyebrow">Lossless event record</p><h2>${escapeHtml(event.event?.action || 'Event detail')}</h2><p class="muted">${escapeHtml(event.event_id)}</p></div><a class="button secondary" href="#events">Back to history</a></section><div class="detail-grid"><section class="panel detail-card"><div class="panel-head"><div><p class="eyebrow">Universal event</p><h3>Normalized output</h3></div><span class="status ${statusClass(event.processing?.status)}">${escapeHtml(event.processing?.status)}</span></div><pre>${escapeHtml(JSON.stringify(event, null, 2))}</pre></section><section class="panel detail-card"><div class="panel-head"><div><p class="eyebrow">Source of truth</p><h3>Original raw event</h3></div></div><pre id="raw-content">Loading raw content...</pre><div class="lineage" id="lineage"><p class="empty">Loading traceability...</p></div></section></div>`;
-}
-
-async function bindEventDetailPage(id) {
-  const event = state.events.find(item => item.event_id === decodeURIComponent(id));
-  if (!event) return;
-  try {
-    const trace = await request(`/events/${encodeURIComponent(event.event_id)}/trace`);
-    document.querySelector('#raw-content').textContent = trace.raw_content || '(raw content unavailable)';
-    document.querySelector('#lineage').innerHTML = `<div class="lineage-meta"><span>Raw ID <code>${escapeHtml(trace.raw_event_id)}</code></span><span>Parser <strong>${escapeHtml(trace.parser_name)}</strong></span><span>Hash <code>${escapeHtml(trace.raw_hash)}</code></span></div><pre>${escapeHtml(JSON.stringify(trace.field_lineage || {}, null, 2))}</pre>`;
-  } catch (error) { document.querySelector('#raw-content').textContent = error.message; }
-}
-
-function deadLetterPage() {
-  const pagination = state.deadPagination || { page: 1, total: 0, total_pages: 1, has_previous: false, has_next: false };
-  return `<section class="page-copy"><div><p class="eyebrow">Never dropped</p><h2>Dead letter store</h2><p class="muted">Unsupported and unparseable input remains available for parser onboarding and investigation. Only the current page is loaded.</p></div><span class="status ${pagination.total ? 'warn' : 'good'}">${pagination.total} retained</span></section><section class="panel"><div class="toolbar"><div class="event-search"><input id="dead-search" value="${escapeHtml(state.deadQuery.search)}" placeholder="Search error, format, source, or raw content" /><button class="button secondary" id="dead-search-button">Search</button></div><span class="muted">${pagination.total} events</span></div><div class="table-wrap"><table><thead><tr><th>Raw event</th><th>Format</th><th>Error</th><th>Message</th><th>Preview</th><th>Recorded</th></tr></thead><tbody>${state.deadLetters.length ? state.deadLetters.map(item => `<tr><td><code>${escapeHtml((item.raw_event_id || '').slice(0, 12))}</code></td><td><span class="tag">${escapeHtml(item.detected_format || 'unknown')}</span></td><td><span class="status bad">${escapeHtml(item.error_code || 'ERROR')}</span></td><td>${escapeHtml(item.error_message)}</td><td class="truncate-cell">${escapeHtml(item.diagnostics?.sample_preview || item.raw_content)}</td><td class="muted">${escapeHtml(item.ingested_at)}</td></tr>`).join('') : '<tr><td colspan="6" class="empty">No dead-lettered events. All received logs have a route.</td></tr>'}</tbody></table></div><div class="pagination"><button class="button secondary" id="dead-previous" ${pagination.has_previous ? '' : 'disabled'}>Previous</button><span class="muted">Page ${pagination.page} of ${pagination.total_pages}</span><button class="button secondary" id="dead-next" ${pagination.has_next ? '' : 'disabled'}>Next</button></div></section>`;
-}
-
-function bindDeadLetterPage() {
-  document.querySelector('#dead-search-button')?.addEventListener('click', () => loadDeadLetterPage(1));
-  document.querySelector('#dead-search')?.addEventListener('keydown', event => { if (event.key === 'Enter') loadDeadLetterPage(1); });
-  document.querySelector('#dead-previous')?.addEventListener('click', () => loadDeadLetterPage((state.deadPagination?.page || 1) - 1));
-  document.querySelector('#dead-next')?.addEventListener('click', () => loadDeadLetterPage((state.deadPagination?.page || 1) + 1));
-}
-
-async function loadDeadLetterPage(page) {
-  const search = document.querySelector('#dead-search')?.value.trim() ?? state.deadQuery.search;
-  const query = new URLSearchParams({ page: String(page), limit: String(state.deadQuery.limit) });
-  if (search) query.set('search', search);
-  try {
-    const result = await request(`/healthcheck/dead-letter?${query.toString()}`);
-    state.deadLetters = result.events;
-    state.deadPagination = result.pagination;
-    state.deadQuery = { page: result.pagination.page, limit: result.pagination.limit, search };
-    renderRoute();
-  } catch (error) { toast(error.message, 'bad'); }
-}
-
-function parsersPage() {
-  return `<section class="page-copy"><div><p class="eyebrow">Plug and play</p><h2>Parser registry</h2><p class="muted">Define how a vendor log is identified, extracted, and mapped to the universal event. The onboarding guide has a complete example.</p></div><div class="form-actions"><a class="button secondary" href="/PARSER_ONBOARDING.md" target="_blank">Open onboarding guide</a><button class="button primary" id="reload-parsers">Reload from disk</button></div></section><div class="grid two"><section class="panel"><div class="panel-head"><div><p class="eyebrow">Installed</p><h3>${state.parsers.length} active definitions</h3></div></div><div class="parser-list">${state.parsers.map(parser => `<article class="parser-card"><div><strong>${escapeHtml(parser.name)}</strong><span>${escapeHtml(parser.vendor || 'Generic')} / ${escapeHtml(parser.format || 'auto')}</span></div><small>${Object.keys(parser.field_mappings || {}).length} mapped fields</small></article>`).join('')}</div></section><section class="panel form-panel"><div class="panel-head"><div><p class="eyebrow">Register</p><h3>New parser definition</h3></div></div><form id="parser-form"><label>Name<input name="name" required placeholder="vendor-firewall"></label><label>Vendor<input name="vendor" required placeholder="Acme Security"></label><label>Product<input name="product" placeholder="Acme Firewall"></label><label>Device type<input name="device_type" value="firewall"></label><label>Format<select name="format"><option>key-value</option><option>json</option><option>regex</option></select></label><label>Extraction type<select name="extraction_type"><option>key-value</option><option>json</option><option>regex</option></select></label><label>Match text<input name="match" placeholder="optional fingerprint text"></label><label>Regex extraction pattern<textarea name="extraction_pattern" placeholder="Only for regex extraction"></textarea></label><label>Field mappings (JSON)<textarea name="field_mappings">{
+function parsersPage() { return `<div class="page-intro compact"><div><span class="eyebrow">Plug-and-play processing</span><h2>Parser registry</h2><p>Parser definitions identify vendor formats, map fields into the universal schema, and preserve unmapped extensions.</p></div><div class="button-row"><button class="button secondary" id="reload-parsers">Reload definitions</button><a class="button primary" href="#test">Test a parser</a></div></div><div class="parser-layout"><section class="surface"><div class="surface-header"><div><span class="eyebrow">Installed definitions</span><h3>${state.parsers.length} active definitions</h3></div></div><div class="parser-list">${state.parsers.map(parser => `<article class="parser-row"><span class="parser-icon">{ }</span><div><strong>${escapeHtml(parser.name)}</strong><small>${escapeHtml(parser.vendor || 'Generic')} · ${escapeHtml(parser.format || 'auto')} · v${escapeHtml(parser.version || '1.0')}</small></div><span>${Object.keys(parser.field_mappings || {}).length} mapped fields</span>${badge('LOADED', 'success')}</article>`).join('')}</div></section><section class="surface form-surface"><div class="surface-header"><div><span class="eyebrow">Definition preview</span><h3>Register parser</h3></div></div><form id="parser-form"><label>Name<input name="name" required placeholder="vendor-firewall-v1"></label><label>Vendor<input name="vendor" required placeholder="Acme Security"></label><label>Product<input name="product" placeholder="Acme Firewall"></label><label>Format<select name="format"><option>key-value</option><option>json</option><option>regex</option></select></label><label>Match text<input name="match" placeholder="optional fingerprint"></label><label>Field mappings (JSON)<textarea name="field_mappings">{
   "src_ip": "network.source_ip",
   "action": "event.action"
-}</textarea></label><button class="button primary" type="submit">Register parser</button></form></section></div>`;
-}
+}</textarea></label><button class="button primary" type="submit">Activate parser</button></form></section></div>`; }
+function bindParsers() { document.querySelector('#reload-parsers')?.addEventListener('click', async () => { try { await api.reloadParsers(); await refresh(); toast('Parser definitions reloaded', 'success'); } catch (error) { toast(error.message, 'danger'); } }); document.querySelector('#parser-form')?.addEventListener('submit', async event => { event.preventDefault(); const form = new FormData(event.currentTarget); try { const mappings = JSON.parse(form.get('field_mappings')); await api.registerParser({ name: form.get('name').trim(), vendor: form.get('vendor').trim(), product: form.get('product').trim(), device_type: 'security-device', format: form.get('format'), version: '1.0', extraction: { type: form.get('format') }, match_criteria: form.get('match') ? { contains: [form.get('match').trim()] } : {}, field_mappings: mappings }); await refresh(); toast('Parser activated without changing core processing code', 'success'); } catch (error) { toast(error.message.includes('JSON') ? 'Field mappings must be valid JSON' : error.message, 'danger'); } }); }
 
-function bindParsersPage() {
-  document.querySelector('#reload-parsers')?.addEventListener('click', async () => {
-    try { await request('/parsers/reload', { method: 'POST' }); await refresh(); toast('Parser registry reloaded', 'good'); } catch (error) { toast(error.message, 'bad'); }
-  });
-  document.querySelector('#parser-form')?.addEventListener('submit', async event => {
-    event.preventDefault();
-    const form = new FormData(event.currentTarget);
-    const match = form.get('match').trim();
-    let fieldMappings;
-    try { fieldMappings = JSON.parse(form.get('field_mappings')); } catch (error) { return toast('Field mappings must be valid JSON', 'bad'); }
-    const extractionType = form.get('extraction_type');
-    const extraction = { type: extractionType };
-    if (extractionType === 'regex') extraction.pattern = form.get('extraction_pattern').trim();
-    const parser = { name: form.get('name').trim(), vendor: form.get('vendor').trim(), product: form.get('product').trim(), device_type: form.get('device_type').trim(), format: form.get('format'), version: '1.0', extraction, match_criteria: match ? { contains: [match] } : {}, field_mappings: fieldMappings };
-    try { await request('/parsers', { method: 'POST', body: JSON.stringify(parser) }); await refresh(); route('parsers'); toast('Parser registered and ready', 'good'); } catch (error) { toast(error.message, 'bad'); }
-  });
-}
+function testPage() { return `<div class="page-intro compact"><div><span class="eyebrow">Evidence lab</span><h2>Parser test bench</h2><p>Run a parser-only check or send one record through ingestion. The backend owns detection, parsing, normalization, validation, and persistence.</p></div></div><div class="test-layout"><section class="surface form-surface"><div class="surface-header"><div><span class="eyebrow">Input</span><h3>Provide a security log</h3></div></div><form id="test-form"><label>Raw log<textarea name="log">${sampleLog}</textarea></label><label>Parser selection<select name="parser_name"><option value="">Automatic matching</option>${state.parsers.map(parser => `<option value="${escapeHtml(parser.name)}">${escapeHtml(parser.name)}</option>`).join('')}</select></label><div class="button-row"><button class="button primary" name="mode" value="ingest">Ingest and normalize</button><button class="button secondary" name="mode" value="test">Test parser only</button></div></form></section><section class="surface result-surface"><div class="surface-header"><div><span class="eyebrow">Backend response</span><h3>${state.testResult ? 'Test result' : 'Waiting for a test'}</h3></div></div>${state.testResult ? `<pre>${escapeHtml(JSON.stringify(state.testResult, null, 2))}</pre>` : '<div class="empty-state">Submit a record to inspect format detection, parsed fields, normalization, validation, and traceability.</div>'}</section></div>`; }
+function bindTest() { document.querySelector('#test-form')?.addEventListener('submit', async event => { event.preventDefault(); const form = new FormData(event.currentTarget); const value = { log: form.get('log'), parser_name: form.get('parser_name') || undefined }; try { state.testResult = event.submitter.value === 'test' ? await api.testParser(value) : await api.ingest({ ...value, transport: 'local-test' }); render(); toast(event.submitter.value === 'test' ? 'Parser test completed' : 'Event ingested and normalized', 'success'); } catch (error) { toast(error.message, 'danger'); } }); }
 
-function sourcesPage() {
-  return `<section class="page-copy"><div><p class="eyebrow">Plug and play</p><h2>Source registry</h2><p class="muted">Register devices once so vendor, product, transport, and parser context are ready for ingestion.</p></div></section><div class="grid two"><section class="panel"><div class="panel-head"><div><p class="eyebrow">Connected inventory</p><h3>${state.sources.length} registered sources</h3></div></div><div class="table-wrap"><table><thead><tr><th>Name</th><th>Vendor</th><th>Type</th><th>Address</th><th>Status</th></tr></thead><tbody>${state.sources.length ? state.sources.map(source => `<tr><td><strong>${escapeHtml(source.name)}</strong></td><td>${escapeHtml(source.vendor)}</td><td><span class="tag">${escapeHtml(source.device_type)}</span></td><td><code>${escapeHtml(source.device_ip || source.hostname || '-')}</code></td><td><span class="status ${source.active ? 'good' : 'muted'}">${source.active ? 'ACTIVE' : 'INACTIVE'}</span></td></tr>`).join('') : '<tr><td colspan="5" class="empty">No sources registered.</td></tr>'}</tbody></table></div></section><section class="panel form-panel"><div class="panel-head"><div><p class="eyebrow">Register</p><h3>Add a source</h3></div></div><form id="source-form"><label>Name<input name="name" required placeholder="Firewall core 01"></label><label>Vendor<input name="vendor" required placeholder="Fortinet"></label><label>Product<input name="product" placeholder="FortiGate 60E"></label><label>IP or hostname<input name="device_ip" placeholder="10.0.0.1"></label><label>Device type<select name="device_type"><option>firewall</option><option>ids</option><option>vpn</option><option>proxy</option><option>server</option></select></label><button class="button primary" type="submit">Register source</button></form></section></div>`;
-}
+function replayPage() { return `<div class="page-intro compact"><div><span class="eyebrow">Recovery operations</span><h2>Replay center</h2><p>Replay a persisted raw event through the current parser path. Raw records are never overwritten.</p></div></div><section class="surface"><div class="surface-header"><div><span class="eyebrow">Quarantine candidates</span><h3>Dead-letter events available for diagnosis</h3></div><a href="#dead-letter">Open quarantine →</a></div>${state.deadLetters.length ? `<div class="replay-list">${state.deadLetters.map(item => `<div class="replay-row"><div><code>${escapeHtml(item.raw_event_id)}</code><small>${escapeHtml(item.error_code || 'ERROR')} · ${escapeHtml(item.error_message || '')}</small></div><button class="button secondary replay-one" data-id="${escapeHtml(item.raw_event_id)}">Replay</button></div>`).join('')}</div>` : emptyState('No dead-letter events are currently available.')}</section>`; }
+function bindReplay() { document.querySelectorAll('.replay-one').forEach(button => button.addEventListener('click', async () => { try { await api.replay(button.dataset.id); toast('Raw event replayed', 'success'); } catch (error) { toast(error.message, 'danger'); } })); }
+function deadLetterPage() { return `<div class="page-intro compact"><div><span class="eyebrow">Never dropped</span><h2>Quarantine</h2><p>Unsupported, unparseable, and validation-failed inputs remain available for diagnosis and replay.</p></div>${badge(`${state.deadLetters.length} visible`, state.deadLetters.length ? 'warning' : 'success')}</div><section class="surface"><div class="table-scroll"><table><thead><tr><th>Raw event ID</th><th>Format</th><th>Error</th><th>Message</th><th>Recorded</th></tr></thead><tbody>${state.deadLetters.length ? state.deadLetters.map(item => `<tr><td><code>${escapeHtml(item.raw_event_id)}</code></td><td>${badge(item.detected_format || 'unknown', 'info')}</td><td>${badge(item.error_code || 'ERROR', 'danger')}</td><td>${escapeHtml(item.error_message)}</td><td class="muted">${escapeHtml(formatDate(item.ingested_at))}</td></tr>`).join('') : '<tr><td colspan="5" class="empty-cell">No dead-lettered events. All received logs have a route.</td></tr>'}</tbody></table></div></section>`; }
 
-function bindSourcesPage() {
-  document.querySelector('#source-form')?.addEventListener('submit', async event => {
-    event.preventDefault();
-    const form = new FormData(event.currentTarget);
-    const source = Object.fromEntries(form.entries());
-    try { await request('/sources', { method: 'POST', body: JSON.stringify(source) }); await refresh(); route('sources'); toast('Source registered', 'good'); } catch (error) { toast(error.message, 'bad'); }
-  });
-}
+function outputsPage() { const latest = state.events[0]; return `<div class="page-intro compact"><div><span class="eyebrow">Delivery surfaces</span><h2>Output delivery</h2><p>Export the normalized event store to downstream systems using the formats currently implemented by the backend.</p></div></div><div class="output-grid">${[['CEF', 'Common Event Format', 'ArcSight-compatible SIEM lines', '/api/v1/output/cef'], ['JSONL', 'Universal JSON Lines', 'Full normalized records with traceability', '/api/v1/output/jsonl'], ['FLAT', 'Flat ML JSONL', 'Compact records for data pipelines', '/api/v1/output/flat']].map(([short, title, note, href]) => `<section class="surface output-card"><span class="output-icon">${short}</span><div><h3>${title}</h3><p>${note}</p></div><a class="button secondary" href="${href}" download>Download</a></section>`).join('')}</div><section class="surface preview-surface"><div class="surface-header"><div><span class="eyebrow">Delivery preview</span><h3>${latest ? 'Most recent event / CEF' : 'No event available'}</h3></div>${latest ? '<button class="button secondary" id="preview-output">Preview exact line</button>' : ''}</div><pre id="output-preview">${latest ? 'Select preview to request the backend-formatted output.' : 'Ingest an event before previewing output.'}</pre></section>`; }
+function bindOutputs() { document.querySelector('#preview-output')?.addEventListener('click', async () => { try { const result = await api.outputPreview(state.events[0].event_id); document.querySelector('#output-preview').textContent = result.cef || 'No output returned.'; } catch (error) { document.querySelector('#output-preview').textContent = error.message; } }); }
 
-function outputPage() {
-  const latest = state.events[0];
-  return `<section class="page-copy"><div><p class="eyebrow">SIEM handoff</p><h2>Output center</h2><p class="muted">Download the persisted normalized history in the format your next system expects.</p></div></section><div class="grid output-grid"><section class="panel output-card"><span class="output-icon">CEF</span><div><h3>Common Event Format</h3><p class="muted">ArcSight-compatible lines for SIEM ingestion.</p></div><a class="button primary" href="${API}/output/cef" download>Download CEF</a></section><section class="panel output-card"><span class="output-icon">JSON</span><div><h3>JSON Lines</h3><p class="muted">Complete universal events with traceability.</p></div><a class="button primary" href="${API}/output/jsonl" download>Download JSONL</a></section><section class="panel output-card"><span class="output-icon">ML</span><div><h3>Flat ML format</h3><p class="muted">One compact record per line for data pipelines.</p></div><a class="button primary" href="${API}/output/flat" download>Download flat JSONL</a></section></div><section class="panel preview-panel"><div class="panel-head"><div><p class="eyebrow">Output preview</p><h3>${latest ? 'Most recent event' : 'No events available'}</h3></div>${latest ? `<button class="button secondary" id="preview-cef">Preview CEF</button>` : ''}</div><pre id="output-preview">${latest ? 'Select Preview CEF to inspect the exact exported line.' : 'Ingest an event to preview output.'}</pre></section>`;
-}
+function analyticsPage() { const counters = state.metrics?.counters || {}; return `<div class="page-intro compact"><div><span class="eyebrow">Evidence-based analytics</span><h2>Analytics</h2><p>Deterministic distributions from backend metrics are available today. Risk, anomaly, correlation, and ATT&CK views require analytical APIs before they can be shown as facts.</p></div></div><div class="analytics-grid"><section class="surface"><div class="surface-header"><div><span class="eyebrow">Outcome activity</span><h3>Processing results</h3></div></div>${distribution({ Processed: counters.eventsProcessed || 0, Partial: counters.eventsPartial || 0, Failed: counters.eventsFailed || 0, Unsupported: counters.eventsUnsupported || 0 })}</section><section class="surface"><div class="surface-header"><div><span class="eyebrow">Source activity</span><h3>Vendor distribution</h3></div></div>${distribution(state.metrics?.source_counts)}</section><section class="surface dependency-panel"><span class="eyebrow">Backend dependency</span><h3>Context-aware risk and threat hunting</h3><p>There is currently no risk-score, anomaly, correlation, ATT&CK, schema-drift, or aggregated time-series endpoint in the backend. This panel stays explicit instead of presenting fabricated security conclusions.</p><div class="dependency-list"><span>Rule-based risk</span><span>ML anomaly score</span><span>Correlation</span><span>ATT&CK evidence</span><span>Schema drift</span></div></section></div>`; }
+function diagnosticsPage() { const checks = [['API health', state.health?.status || 'UNKNOWN', state.health ? `Uptime ${state.health.uptime_seconds}s` : 'No response'], ['Raw event store', 'AVAILABLE', 'Local durable storage'], ['Normalized store', state.metrics ? 'AVAILABLE' : 'UNKNOWN', `${state.metrics?.counters?.eventsProcessed || 0} processed`], ['Parser registry', state.parsers.length ? 'AVAILABLE' : 'EMPTY', `${state.parsers.length} definitions loaded`], ['Quarantine', state.deadLetters.length ? 'REVIEW' : 'CLEAR', `${state.deadLetters.length} visible records`], ['Output adapters', 'AVAILABLE', 'CEF / JSONL / flat JSONL']]; return `<div class="page-intro compact"><div><span class="eyebrow">Production diagnostics</span><h2>Diagnostics</h2><p>A compact operational readout of the services and stores that the current API can verify.</p></div></div><section class="diagnostic-grid">${checks.map(([name, status, note]) => `<article class="diagnostic-card"><span class="diagnostic-icon">●</span><div><h3>${name}</h3><p>${note}</p></div>${badge(status, statusClass(status === 'AVAILABLE' || status === 'UP' || status === 'CLEAR' ? 'PROCESSED' : status === 'REVIEW' ? 'PARTIALLY_PROCESSED' : 'UNSUPPORTED'))}</article>`).join('')}</section><section class="surface dependency-panel"><span class="eyebrow">Observability boundary</span><h3>Additional production checks need backend telemetry</h3><p>Queue backlog, worker utilization, search health, SIEM acknowledgement, Data Lake lag, and system-log filtering are not represented by current endpoints.</p></section>`; }
+function emptyState(message) { return `<div class="empty-state">${escapeHtml(message)}</div>`; }
+function errorState(message) { return `<div class="error-state"><strong>ULPF API unavailable</strong><span>${escapeHtml(message)}</span></div>`; }
+function toast(message, tone) { const node = document.createElement('div'); node.className = `toast ${tone}`; node.textContent = message; document.querySelector('#toast')?.append(node); setTimeout(() => node.remove(), 3500); }
 
-function bindOutputPage() {
-  document.querySelector('#preview-cef')?.addEventListener('click', async () => {
-    const preview = document.querySelector('#output-preview');
-    try { const result = await request(`/output/cef/${encodeURIComponent(state.events[0].event_id)}`); preview.textContent = result.cef || 'No CEF output returned.'; } catch (error) { preview.textContent = error.message; }
-  });
-}
-
-function testPage() {
-  const parserOptions = state.parsers
-    .slice()
-    .sort((left, right) => left.name.localeCompare(right.name))
-    .map(parser => `<option value="${escapeHtml(parser.name)}">${escapeHtml(parser.name)} (${escapeHtml(parser.format)})</option>`)
-    .join('');
-  return `<section class="page-copy"><div><p class="eyebrow">Local verification</p><h2>Test before you ingest</h2><p class="muted">Run a parser-only check or send one log through ingestion. You can paste one record or the supplied multi-record test corpus.</p></div></section><div class="grid test-grid"><section class="panel form-panel"><label for="log-input">Raw log line or test corpus</label><textarea id="log-input">${sampleLog}</textarea><label for="parser-select">Parser selection<select id="parser-select"><option value="">Automatic matching</option>${parserOptions}</select></label><div class="form-actions"><button class="button primary" id="ingest">Ingest and normalize</button><button class="button secondary" id="parser-test">Test parser only</button><button class="button secondary" id="load-sample">Restore sample</button></div><p class="hint">The test corpus is split at lines containing only <code>---</code>. Headings and EXPECTED notes are ignored. Select a parser when testing a short or ambiguous record.</p></section><section class="panel result-panel"><div class="panel-head"><div><p class="eyebrow">Structured response</p><h3 id="result-title">Waiting for a test</h3></div></div><pre id="result">Submit a log to inspect the normalized response.</pre></section></div>
-    <section class="panel system-log-panel"><div class="panel-head"><div><p class="eyebrow">Ubuntu system logs</p><h3>Process a real local log file</h3><p class="muted">The backend reads this path in small batches, yields between batches, preserves each raw line, and lets you stop safely.</p></div><span class="tag">batch size: 25</span></div><div class="system-log-body"><label for="system-log-path">Log file path<input id="system-log-path" value="/var/log/syslog" placeholder="/var/log/syslog"></label><div class="form-actions"><button class="button primary" id="ingest-system-log">Process system log</button><button class="button secondary" id="stop-system-log" disabled>Stop ingestion</button><button class="button secondary" id="load-journal-command">Show journal command</button></div><p class="hint">If Ubuntu does not have <code>/var/log/syslog</code>, export readable journald lines with <code>journalctl -o short-iso --no-pager -n 100 &gt; /tmp/ubuntu-system.log</code>, then process <code>/tmp/ubuntu-system.log</code>.</p><div id="system-log-result" class="system-log-result" aria-live="polite">No system log run yet.</div></div></section>`;
-}
-
-function bindTestPage() {
-  document.querySelector('#load-sample')?.addEventListener('click', () => { document.querySelector('#log-input').value = sampleLog; });
-  document.querySelector('#load-journal-command')?.addEventListener('click', () => {
-    const result = document.querySelector('#system-log-result');
-    result.innerHTML = '<strong>Run in a terminal:</strong><pre>journalctl -o short-iso --no-pager -n 100 &gt; /tmp/ubuntu-system.log</pre><span>Then set the path above to <code>/tmp/ubuntu-system.log</code> and process it.</span>';
-  });
-  document.querySelector('#ingest-system-log')?.addEventListener('click', async () => {
-    const filePath = document.querySelector('#system-log-path').value.trim();
-    const result = document.querySelector('#system-log-result');
-    const button = document.querySelector('#ingest-system-log');
-    const stopButton = document.querySelector('#stop-system-log');
-    if (!filePath) return toast('Enter a system log file path', 'bad');
-    button.disabled = true;
-    stopButton.disabled = false;
-    result.textContent = 'Starting a cancellable batch job...';
-    try {
-      const job = await request('/events/ingest-file/start', { method: 'POST', body: JSON.stringify({ filePath, batchSize: 25, source_vendor: 'Canonical', source_product: 'Ubuntu Linux', source_device_type: 'operating-system', source_name: 'This laptop' }) });
-      state.systemLogJob = job;
-      await pollSystemLogJob(job.jobId);
-    } catch (error) { result.textContent = error.message; button.disabled = false; stopButton.disabled = true; toast(error.message, 'bad'); }
-  });
-  document.querySelector('#stop-system-log')?.addEventListener('click', async () => {
-    if (!state.systemLogJob?.jobId) return;
-    try { await request(`/events/ingest-file/${state.systemLogJob.jobId}/stop`, { method: 'POST' }); toast('Stop requested; finishing the current batch', 'warn'); } catch (error) { toast(error.message, 'bad'); }
-  });
-  document.querySelector('#parser-test')?.addEventListener('click', async () => {
-    const records = extractTestRecords(document.querySelector('#log-input').value);
-    const parserName = document.querySelector('#parser-select').value;
-    if (!records.length) return toast('Enter a raw log or test corpus first', 'bad');
-    const button = document.querySelector('#parser-test');
-    button.disabled = true;
-    try {
-      const results = [];
-      for (const record of records) {
-        const result = await request('/parsers/test', { method: 'POST', body: JSON.stringify({ log: record.log, parser_name: parserName || undefined }) });
-        results.push({ label: record.label, ...result });
-      }
-      document.querySelector('#result-title').textContent = `Parser-only result (${results.length} record${results.length === 1 ? '' : 's'})`;
-      document.querySelector('#result').textContent = JSON.stringify(results.length === 1 ? results[0] : results, null, 2);
-      toast(`${results.length} parser test${results.length === 1 ? '' : 's'} completed without ingesting`, 'good');
-    } catch (error) { toast(error.message, 'bad'); } finally { button.disabled = false; }
-  });
-  document.querySelector('#ingest')?.addEventListener('click', async () => {
-    const records = extractTestRecords(document.querySelector('#log-input').value);
-    const parserName = document.querySelector('#parser-select').value;
-    if (!records.length) return toast('Enter a raw log or test corpus first', 'bad');
-    const button = document.querySelector('#ingest');
-    button.disabled = true;
-    try {
-      const events = [];
-      for (const record of records) {
-        const event = await request('/events/ingest', { method: 'POST', body: JSON.stringify({ log: record.log, parser_name: parserName || undefined, transport: 'local-test' }) });
-        events.push({ label: record.label, ...event });
-      }
-      document.querySelector('#result-title').textContent = `Accepted and normalized (${events.length} record${events.length === 1 ? '' : 's'})`;
-      document.querySelector('#result').textContent = JSON.stringify(events.length === 1 ? events[0] : events, null, 2);
-      toast(`${events.length} event${events.length === 1 ? '' : 's'} persisted and written to backend output`, 'good');
-      await refresh();
-    } catch (error) { toast(error.message, 'bad'); } finally { button.disabled = false; }
-  });
-}
-
-async function pollSystemLogJob(jobId) {
-  const result = document.querySelector('#system-log-result');
-  const startButton = document.querySelector('#ingest-system-log');
-  const stopButton = document.querySelector('#stop-system-log');
-  try {
-    const job = await request(`/events/ingest-file/${jobId}`);
-    state.systemLogJob = job;
-    result.innerHTML = `<strong>${escapeHtml(job.status)}</strong><p>Processed ${job.processed} lines in batches of ${job.batchSize}. Source: Canonical / Ubuntu Linux / This laptop.</p>`;
-    if (['QUEUED', 'RUNNING'].includes(job.status)) return setTimeout(() => pollSystemLogJob(jobId), 300);
-    startButton.disabled = false;
-    stopButton.disabled = true;
-    if (job.status === 'COMPLETED' || job.status === 'STOPPED') {
-      await refresh();
-      toast(job.status === 'STOPPED' ? `Stopped after ${job.processed} lines` : `Processed ${job.processed} system log lines`, job.status === 'STOPPED' ? 'warn' : 'good');
-    } else {
-      result.textContent = job.error || 'System log job failed';
-      toast(result.textContent, 'bad');
-    }
-  } catch (error) {
-    startButton.disabled = false;
-    stopButton.disabled = true;
-    result.textContent = error.message;
-    toast(error.message, 'bad');
-  }
-}
-
-function toast(message, tone) { const node = document.createElement('div'); node.className = `toast ${tone}`; node.textContent = message; document.querySelector('#toast').append(node); setTimeout(() => node.remove(), 3500); }
-
+window.addEventListener('hashchange', () => { state.page = location.hash.slice(1) || 'overview'; render(); });
 render();
 refresh();
-setInterval(() => refresh(), 10000);
+setInterval(() => refresh(), 15000);

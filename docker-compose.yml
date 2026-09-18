@@ -8,9 +8,10 @@ services:
     container_name: sih-lognorm-framework
     ports:
       - "8000:8000"
-      - "5140:5140/udp"
+      - "55140:55140/udp"
     environment:
       - PORT=8000
+      - SYSLOG_UDP_PORT=55140
       - NODE_ENV=production
     volumes:
       - ./storage:/app/storage
