@@ -14,16 +14,29 @@ const { LocalNormalizedEventStore } = require("../../../packages/storage/normali
 class EventProcessingService {
   constructor() {
     this.normalizedEventsMap = new Map();
+    this.processedRawEvents = new Map();
     this.store = new LocalNormalizedEventStore();
-    this.store.loadAll().forEach(event => this.normalizedEventsMap.set(event.event_id, event));
+    this.store.loadAll().forEach(event => {
+      this.normalizedEventsMap.set(event.event_id, event);
+      if (event.raw_ref?.raw_event_id) {
+        this.processedRawEvents.set(event.raw_ref.raw_event_id, event);
+      }
+    });
   }
 
   processSingleRawLog(rawLogContent, metadata = {}) {
+    const rawEventId = metadata.raw_event_id || metadata.rawEventId;
+    if (rawEventId && this.processedRawEvents.has(rawEventId)) {
+      return this.processedRawEvents.get(rawEventId);
+    }
+
     metricsService.recordReceived();
     const t0 = Date.now();
 
     // ── 1. Raw Event Preservation (always first, never skipped) ──────────────
-    const rawEvent = rawStoreService.createRawEvent(rawLogContent, metadata);
+    const rawEvent = rawEventId
+      ? rawStoreService.getRawEventById(rawEventId) || rawStoreService.createRawEvent(rawLogContent, metadata)
+      : rawStoreService.createRawEvent(rawLogContent, metadata);
 
     // ── 2. Format Detection ──────────────────────────────────────────────────
     const detectedFormat = formatDetectorService.detectFormat(rawEvent.raw_content);
@@ -79,10 +92,9 @@ class EventProcessingService {
     }
 
     // ── 8. Store normalized event ─────────────────────────────────────────────
+    this.store.saveSync(normalizedEvent);
     this.normalizedEventsMap.set(normalizedEvent.event_id, normalizedEvent);
-    this.store.save(normalizedEvent).catch(err => {
-      logger.error(`Failed to persist normalized event ${normalizedEvent.event_id}: ${err.message}`);
-    });
+    this.processedRawEvents.set(normalizedEvent.raw_ref.raw_event_id, normalizedEvent);
 
     // ── 9. Metrics ────────────────────────────────────────────────────────────
     const durationMs = Date.now() - t0;
@@ -135,6 +147,15 @@ class EventProcessingService {
 
   getNormalizedEventById(eventId) {
     return this.normalizedEventsMap.get(eventId) || null;
+  }
+
+  resetData() {
+    this.normalizedEventsMap.clear();
+    this.processedRawEvents.clear();
+    this.store.reset();
+    rawStoreService.store.reset();
+    deadLetterService.reset();
+    metricsService.resetAndPersist();
   }
 
   getAllNormalizedEvents() {

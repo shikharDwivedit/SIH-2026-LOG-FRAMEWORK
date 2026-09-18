@@ -94,6 +94,13 @@ class LocalRawEventStore {
   async list() {
     return this.listSync();
   }
+
+  reset() {
+    this.cache.clear();
+    for (const file of fs.readdirSync(this.baseDir)) {
+      if (file.endsWith(".json")) fs.rmSync(path.join(this.baseDir, file), { force: true });
+    }
+  }
 }
 
 module.exports = { LocalRawEventStore };

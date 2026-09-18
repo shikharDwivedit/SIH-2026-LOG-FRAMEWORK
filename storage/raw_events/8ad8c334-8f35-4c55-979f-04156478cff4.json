@@ -1,9 +1,0 @@
-{
-  "eventId": "8ad8c334-8f35-4c55-979f-04156478cff4",
-  "rawContent": "CEF:0|Acme|Edge|1.0|42|Blocked request|7|src=192.0.2.10 dst=198.51.100.20 act=deny",
-  "rawHash": "8433e83fd6ffaf58cb6e5d3dcf50277bde46597f1317c508c7b6f4d194d4347d",
-  "ingestedAt": "2026-09-11T05:23:58.641Z",
-  "sourceId": "unknown",
-  "transport": "file",
-  "metadata": {}
-}

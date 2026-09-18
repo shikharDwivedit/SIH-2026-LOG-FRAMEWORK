@@ -59,10 +59,10 @@ class ParserRegistryService {
     for (const parser of allParsers) {
       if (parser.match_criteria) {
         if (Array.isArray(parser.match_criteria.contains) && parser.match_criteria.contains.length > 0) {
-          const allMatch = parser.match_criteria.contains.every((substr) =>
+          const anyMatch = parser.match_criteria.contains.some((substr) =>
             rawContent.includes(substr)
           );
-          if (allMatch) return parser;
+          if (anyMatch) return parser;
         }
 
         if (parser.match_criteria.regex) {
@@ -79,7 +79,9 @@ class ParserRegistryService {
     if (detectedFormat) {
       const formatMatch = allParsers.find(p => 
         p.format === detectedFormat && 
-        (!p.match_criteria?.contains?.length || p.match_criteria.contains.every(s => rawContent.includes(s)))
+        (!p.match_criteria || (
+          !p.match_criteria.contains?.length && !p.match_criteria.regex
+        ))
       );
       if (formatMatch) return formatMatch;
     }

@@ -1,0 +1,117 @@
+SIH MANUAL TEST-BENCH CORPUS
+=============================
+
+How to use:
+1. Open Dashboard -> Test bench.
+2. Paste ONE record at a time, without the section heading.
+3. Submit it and inspect detected_format, matched_parser, extracted_fields,
+   normalized_event, mapped_fields, and vendor_specific_retained.
+4. The lines beginning with EXPECTED are notes only; do not paste them.
+
+The --- separators are not part of any log record.
+
+[01] FortiGate key-value
+EXPECTED format: key-value
+EXPECTED parser: fortigate
+EXPECTED status: PROCESSED
+---
+<185>date=2026-09-11 time=14:02:11 devname="edge-fw-01" devid="FGT60D4614000001" logid="0000000013" type=traffic level=notice srcip=10.0.0.5 srcport=54321 dstip=8.8.8.8 dstport=443 proto=6 action="deny" status="blocked" msg="Access denied by policy" user="admin" policyid=10 custom_field_x="kept"
+---
+
+[02] Palo Alto Networks key-value
+EXPECTED format: key-value
+EXPECTED parser: paloalto
+EXPECTED status: PROCESSED
+---
+receive_time=2026/09/11 14:03:12,serial=PA-VM-001,TRAFFIC,type=TRAFFIC,src=10.10.1.25,sport=51522,dst=203.0.113.40,dport=443,proto=tcp,action=allow,threatid=0,threatname=web-access,category=network,srcuser=analyst,rulename=Internet-Allow
+---
+
+[03] Check Point Firewall-1 key-value
+EXPECTED format: key-value
+EXPECTED parser: checkpoint-fw
+EXPECTED status: PROCESSED
+---
+time=14:35:00 product=VPN-1 action=Drop src=192.168.10.15 s_port=51200 dst=10.0.0.1 service=443 proto=tcp user=jdoe rule_name=Rule-Default-Drop origin=cp-gateway-01 policy_id=99
+---
+
+[04] Cisco ASA syslog / regex parser
+EXPECTED format: syslog
+EXPECTED parser: cisco-asa
+EXPECTED status: PROCESSED
+---
+<134>Sep 11 14:04:00 asa-fw01 %ASA-6-106100: access-list cached type TCP connection from 10.0.0.100/41234 to 172.16.0.5/80
+---
+
+[05] Generic syslog parser
+EXPECTED format: syslog
+EXPECTED parser: generic-syslog
+EXPECTED status: PROCESSED
+---
+<134>Sep 11 14:05:00 router-01 link-state changed on interface ge-0/0/1
+---
+
+[06] OpenVPN syslog / regex parser
+EXPECTED format: syslog
+EXPECTED parser: openvpn
+EXPECTED status: PROCESSED or PARTIALLY_PROCESSED depending on capture details
+---
+Sep 11 14:06:00 vpn01 openvpn[4242]: TLS: Initial packet from 198.51.100.25:51822
+---
+
+[07] Snort IDS alert / regex parser
+EXPECTED format: regex
+EXPECTED parser: snort-ids
+EXPECTED status: PROCESSED
+---
+Sep 11 14:07:00 ids01 snort[1337]: [1:1000001:1] Suspicious inbound connection {TCP} 198.51.100.25:4444 -> 10.0.0.15:22
+---
+
+[08] Squid proxy access log / regex parser
+EXPECTED format: regex
+EXPECTED parser: squid-proxy
+EXPECTED status: PROCESSED
+---
+1726056420.123 245 10.0.0.25 TCP_MISS/200 1240 GET http://example.test/index.html - example.test/203.0.113.10 text/html
+---
+
+[09] Generic JSON
+EXPECTED format: json
+EXPECTED parser: generic-json
+EXPECTED status: PROCESSED
+---
+{"timestamp":"2026-09-11T14:08:00Z","vendor":"Acme Security","product":"Edge Firewall","action":"deny","outcome":"blocked","severity":"high","src_ip":"192.0.2.10","src_port":54321,"dst_ip":"198.51.100.20","dst_port":443,"protocol":"TCP","username":"alice","rule_id":"RULE-42","custom_field":"retained"}
+---
+
+[10] CEF
+EXPECTED format: cef
+EXPECTED parser: generic-cef
+EXPECTED status: PROCESSED
+---
+CEF:0|Acme Security|Edge Firewall|1.0|RULE-42|Blocked outbound request|8|src=192.0.2.10 spt=54321 dst=198.51.100.20 dpt=443 proto=TCP act=deny outcome=blocked suser=alice customField=retained
+---
+
+[11] Short key-value regression case
+EXPECTED format: key-value
+EXPECTED parser: fortigate when parser_name is explicitly selected; otherwise likely unparsed
+EXPECTED status: PROCESSED when parser_name=fortigate is selected
+---
+srcip=192.0.2.10 action=deny
+---
+
+[12] Unknown vendor for dead-letter / quarantine behavior
+EXPECTED format: key-value
+EXPECTED parser: unparsed
+EXPECTED status: UNSUPPORTED
+EXPECTED: raw content should remain preserved in the dead-letter store
+---
+2026-09-11 14:10:00 NEW_CUSTOM_VENDOR data="device_status_ok" code=777 action="permit" src=10.5.5.5 dst=10.5.5.1
+---
+
+[13] Malformed JSON for failure handling
+EXPECTED format: regex
+EXPECTED parser: unparsed
+EXPECTED status: UNSUPPORTED
+EXPECTED: raw content should remain preserved in the dead-letter store
+---
+{"timestamp":"2026-09-11T14:11:00Z","action":"deny",
+---

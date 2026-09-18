@@ -35,6 +35,7 @@ class IngestionManager {
       rawContent,
       metadata: {
         sourceId: rawEvent.sourceId,
+        raw_event_id: rawEvent.eventId,
         transport: rawEvent.transport,
         sourceIp: payload.sourceIp,
         ...(payload.metadata || {})

@@ -5,6 +5,7 @@ const path   = require("path");
 const { LocalEventQueue }       = require("../../packages/queue/event-queue");
 const { EventWorker }           = require("../../apps/worker/event-worker");
 const { eventProcessingService }= require("../../src/services/event/event-processing.service");
+const { rawStoreService }       = require("../../src/services/ingestion/raw-store.service");
 
 console.log("==================================================================");
 console.log("🧪 RUNNING STAGE 3 & 4 QUEUE + WORKER SEPARATION TESTS");
@@ -41,6 +42,60 @@ if (fs.existsSync(testQueueDir)) {
   const lastEvent = eventProcessingService.getAllNormalizedEvents().slice(-1)[0];
   assert.strictEqual(lastEvent.source.vendor, "Fortinet", "Normalized event vendor must be Fortinet");
   console.log("  ✅ Worker successfully consumed job from queue and processed event through framework pipeline!");
+
+  const acceptedRawEvent = rawStoreService.createRawEvent(sampleLog, { transport: "idempotency-test" });
+  const beforeDuplicate = eventProcessingService.getAllNormalizedEvents().length;
+  const firstProcessing = eventProcessingService.processSingleRawLog(sampleLog, {
+    raw_event_id: acceptedRawEvent.raw_event_id,
+    transport: "idempotency-test"
+  });
+  const secondProcessing = eventProcessingService.processSingleRawLog(sampleLog, {
+    raw_event_id: acceptedRawEvent.raw_event_id,
+    transport: "idempotency-test"
+  });
+  assert.strictEqual(secondProcessing.event_id, firstProcessing.event_id, "Repeated processing must return the existing normalized event");
+  assert.strictEqual(
+    eventProcessingService.getAllNormalizedEvents().length,
+    beforeDuplicate + 1,
+    "Repeated processing must not create a duplicate normalized event"
+  );
+  console.log("  ✅ Reprocessing an accepted raw event is idempotent!");
+
+  const delayedQueueDir = path.join(__dirname, "..", "..", "storage", "test_queue_delayed");
+  if (fs.existsSync(delayedQueueDir)) {
+    fs.rmSync(delayedQueueDir, { recursive: true, force: true });
+  }
+
+  const delayedQueue = new LocalEventQueue(delayedQueueDir);
+  const delayedWorker = new EventWorker(delayedQueue);
+  await delayedQueue.publish({
+    rawEventId: "raw-uuid-worker-delay-test",
+    rawContent: sampleLog,
+    metadata: { transport: "queue-worker-delay-test" }
+  });
+
+  const originalProcessSingleRawLog = eventProcessingService.processSingleRawLog;
+  let releaseProcessing;
+  let processingCompleted = false;
+  eventProcessingService.processSingleRawLog = () => new Promise((resolve) => {
+    releaseProcessing = () => {
+      processingCompleted = true;
+      resolve();
+    };
+  });
+
+  try {
+    const processing = delayedWorker.processQueue();
+    await Promise.resolve();
+    assert.strictEqual(processingCompleted, false, "Worker must wait for event processing before completing the queue job");
+    releaseProcessing();
+    await processing;
+    assert.strictEqual(processingCompleted, true, "Worker must resolve after event processing completes");
+    console.log("  ✅ Worker waits for processing completion before acknowledging a queue job!");
+  } finally {
+    eventProcessingService.processSingleRawLog = originalProcessSingleRawLog;
+    fs.rmSync(delayedQueueDir, { recursive: true, force: true });
+  }
 
   // Cleanup test queue dir
   fs.rmSync(testQueueDir, { recursive: true, force: true });

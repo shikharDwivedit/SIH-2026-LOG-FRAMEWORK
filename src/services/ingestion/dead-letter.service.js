@@ -62,6 +62,12 @@ class DeadLetterService {
     return this.store.size;
   }
 
+  reset() {
+    this.store.clear();
+    fs.mkdirSync(path.dirname(this.storagePath), { recursive: true });
+    fs.writeFileSync(this.storagePath, "[]", "utf8");
+  }
+
   getPage({ page = 1, limit = 25, search = "" } = {}) {
     const currentPage = Math.max(1, Number.parseInt(page, 10) || 1);
     const pageSize = Math.min(100, Math.max(1, Number.parseInt(limit, 10) || 25));

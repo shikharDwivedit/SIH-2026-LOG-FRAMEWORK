@@ -1,0 +1,22 @@
+# SYNTHETIC DEMO LOG — derived from the attached Windows error-screen image.
+# Purpose: demonstrate ingestion -> raw preservation -> parsing -> normalization.
+# Source: Windows legacy system error / crash screen
+# Host: DEMO-WIN-01
+# Format: plain-text vendor/application-specific event
+
+[2026-09-11 12:45:03] SOURCE=DEMO-WIN-01 VENDOR=Microsoft PRODUCT=Windows DEVICE_TYPE=workstation EVENT_TYPE=system_error
+Windows
+
+[2026-09-11 12:45:04] SOURCE=DEMO-WIN-01 VENDOR=Microsoft PRODUCT=Windows DEVICE_TYPE=workstation EVENT_TYPE=system_error
+An error has occurred. To continue:
+Press Enter to return to Windows, or
+
+[2026-09-11 12:45:05] SOURCE=DEMO-WIN-01 VENDOR=Microsoft PRODUCT=Windows DEVICE_TYPE=workstation EVENT_TYPE=system_error
+Press CTRL+ALT+DEL to restart your computer.
+If you do this, you will lose any unsaved information in all open applications.
+
+[2026-09-11 12:45:06] SOURCE=DEMO-WIN-01 VENDOR=Microsoft PRODUCT=Windows DEVICE_TYPE=workstation EVENT_TYPE=system_error
+Error: 0E : 016F : BFF9B3D4
+
+[2026-09-11 12:45:07] SOURCE=DEMO-WIN-01 VENDOR=Microsoft PRODUCT=Windows DEVICE_TYPE=workstation EVENT_TYPE=system_error
+Press any key to continue _

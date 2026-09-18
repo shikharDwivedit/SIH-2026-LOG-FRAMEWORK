@@ -23,6 +23,29 @@ function statusClass(status) {
   return ({ PROCESSED: 'good', PARTIALLY_PROCESSED: 'warn', UNSUPPORTED: 'muted', PARSER_ERROR: 'bad', VALIDATION_ERROR: 'bad' })[status] || 'muted';
 }
 
+function extractTestRecords(rawInput) {
+  const input = String(rawInput || '').trim();
+  if (!input) return [];
+  if (!/^[ \t]*---[ \t]*$/m.test(input)) return [{ label: 'Pasted log', log: input }];
+
+  const chunks = input.split(/^[ \t]*---[ \t]*$/m);
+  return chunks
+    .map((chunk, index) => {
+      const lines = chunk.split(/\r?\n/);
+      const previousHeading = chunks[index - 1]?.split(/\r?\n/).find(line => /^\s*\[\d+\]/.test(line));
+      if (!previousHeading) return { label: 'Preamble', log: '' };
+      const heading = previousHeading.trim();
+      const logLines = lines.filter(line => {
+        const trimmed = line.trim();
+        return trimmed && !/^\[\d+\]/.test(trimmed) && !/^EXPECTED\b/.test(trimmed) &&
+          !/^SIH MANUAL TEST-BENCH CORPUS$/.test(trimmed) && !/^=+$/.test(trimmed) &&
+          !/^How to use:|^The --- separators/.test(trimmed);
+      });
+      return { label: heading, log: logLines.join('\n').trim() };
+    })
+    .filter(record => record.log);
+}
+
 function render() {
   const root = document.querySelector('#root');
     root.innerHTML = `
@@ -45,13 +68,14 @@ function render() {
           <div class="sidebar-foot">Vite client<br><span>Durable local history enabled</span></div>
         </aside>
         <main class="main">
-          <header class="topbar"><div><p class="eyebrow">Universal normalization framework</p><h1 id="page-title">Overview</h1></div><button class="button secondary" id="refresh">Refresh data</button></header>
+          <header class="topbar"><div><p class="eyebrow">Universal normalization framework</p><h1 id="page-title">Overview</h1></div><div class="topbar-actions"><button class="button secondary" id="refresh">Refresh data</button><button class="button danger" id="reset-data">Reset app data</button></div></header>
           <div id="content"></div>
         </main>
       </div>
       <div id="toast" role="status"></div>`;
   document.querySelectorAll('[data-route]').forEach(link => link.addEventListener('click', () => route(link.dataset.route)));
   document.querySelector('#refresh').addEventListener('click', () => refresh(true));
+  document.querySelector('#reset-data').addEventListener('click', resetApplicationData);
   window.addEventListener('hashchange', () => route(location.hash.slice(1) || 'overview'));
   route(location.hash.slice(1) || 'overview');
 }
@@ -118,7 +142,30 @@ function overviewPage() {
     <section class="stats">
       ${stat('Events received', counters.eventsReceived, 'all ingested logs')}${stat('Processed', counters.eventsProcessed, 'normalized successfully', 'good')}${stat('Failed', counters.eventsFailed, 'parse or validation', 'bad')}${stat('Dead lettered', counters.deadLettered, 'preserved for review', 'warn')}${stat('Avg latency', `${state.metrics?.avg_processing_latency_ms || 0} ms`, 'processing average')}
     </section>
-    <div class="grid two"><section class="panel"><div class="panel-head"><div><p class="eyebrow">Recent output</p><h3>Latest events</h3></div><a href="#events">View all</a></div>${eventRows(latest)}</section><section class="panel"><div class="panel-head"><div><p class="eyebrow">Routing</p><h3>Parser activity</h3></div></div><div class="bars">${parserHits.length ? parserHits.map(([name, count]) => `<div class="bar-row"><span>${escapeHtml(name)}</span><strong>${count}</strong><i style="width:${Math.min(100, count / Math.max(parserHits[0][1], 1) * 100)}%"></i></div>`).join('') : '<p class="empty">No parser activity yet.</p>'}</div></section></div>`;
+    <div class="grid two"><section class="panel"><div class="panel-head"><div><p class="eyebrow">Recent output</p><h3>Latest events</h3></div><a href="#events">View all</a></div>${eventRows(latest)}</section><section class="panel"><div class="panel-head"><div><p class="eyebrow">Routing</p><h3>Parser activity</h3></div></div><div class="bars">${parserHits.length ? parserHits.map(([name, count]) => `<div class="bar-row"><span>${escapeHtml(name)}</span><strong>${count}</strong><i style="width:${Math.min(100, count / Math.max(parserHits[0][1], 1) * 100)}%"></i></div>`).join('') : '<p class="empty">No parser activity yet.</p>'}</div></section></div>
+    <div class="grid three metric-graphs"><section class="panel"><div class="panel-head"><div><p class="eyebrow">Outcome graph</p><h3>Processing status</h3></div></div>${metricGraph([['Processed', counters.eventsProcessed, 'good'], ['Partial', counters.eventsPartial, 'warn'], ['Failed', counters.eventsFailed, 'bad'], ['Unsupported', counters.eventsUnsupported, 'muted']])}</section><section class="panel"><div class="panel-head"><div><p class="eyebrow">Format graph</p><h3>Detected formats</h3></div></div>${metricGraph(Object.entries(state.metrics?.format_counts || {}).map(([label, value]) => [label, value, 'cyan']))}</section><section class="panel"><div class="panel-head"><div><p class="eyebrow">Source graph</p><h3>Vendors</h3></div></div>${metricGraph(Object.entries(state.metrics?.source_counts || {}).map(([label, value]) => [label, value, 'lime']))}</section></div>`;
+}
+
+function metricGraph(rows) {
+  const visibleRows = rows.filter(([, value]) => Number(value) > 0);
+  if (!visibleRows.length) return '<div class="graph-empty">No metrics yet.</div>';
+  const maximum = Math.max(...visibleRows.map(([, value]) => Number(value)), 1);
+  return `<div class="metric-graph-body">${visibleRows.map(([label, value, tone]) => `<div class="metric-row"><div class="metric-row-label"><span>${escapeHtml(label)}</span><strong>${value}</strong></div><div class="metric-track"><i class="metric-fill ${tone || 'cyan'}" style="width:${Math.max(4, Number(value) / maximum * 100)}%"></i></div></div>`).join('')}</div>`;
+}
+
+async function resetApplicationData() {
+  if (!window.confirm('Reset all stored raw events, normalized events, dead letters, and metrics? Parser and source definitions will remain.')) return;
+  const button = document.querySelector('#reset-data');
+  button.disabled = true;
+  try {
+    await request('/healthcheck/reset', { method: 'POST' });
+    await refresh();
+    toast('Application data reset', 'good');
+  } catch (error) {
+    toast(error.message, 'bad');
+  } finally {
+    button.disabled = false;
+  }
 }
 
 function stat(label, value, note, tone = '') { return `<article class="stat ${tone}"><p>${label}</p><strong>${value ?? 0}</strong><small>${note}</small></article>`; }
@@ -266,7 +313,12 @@ function bindOutputPage() {
 }
 
 function testPage() {
-  return `<section class="page-copy"><div><p class="eyebrow">Local verification</p><h2>Test before you ingest</h2><p class="muted">Run a parser-only check or send one log through ingestion. Results stay readable and the ingest response is saved to history.</p></div></section><div class="grid test-grid"><section class="panel form-panel"><label for="log-input">Raw log line</label><textarea id="log-input">${sampleLog}</textarea><div class="form-actions"><button class="button primary" id="ingest">Ingest and normalize</button><button class="button secondary" id="parser-test">Test parser only</button><button class="button secondary" id="load-sample">Restore sample</button></div><p class="hint">Parser-only checks never create history. Ingest creates exactly one durable event.</p></section><section class="panel result-panel"><div class="panel-head"><div><p class="eyebrow">Structured response</p><h3 id="result-title">Waiting for a test</h3></div></div><pre id="result">Submit a log to inspect the normalized response.</pre></section></div>
+  const parserOptions = state.parsers
+    .slice()
+    .sort((left, right) => left.name.localeCompare(right.name))
+    .map(parser => `<option value="${escapeHtml(parser.name)}">${escapeHtml(parser.name)} (${escapeHtml(parser.format)})</option>`)
+    .join('');
+  return `<section class="page-copy"><div><p class="eyebrow">Local verification</p><h2>Test before you ingest</h2><p class="muted">Run a parser-only check or send one log through ingestion. You can paste one record or the supplied multi-record test corpus.</p></div></section><div class="grid test-grid"><section class="panel form-panel"><label for="log-input">Raw log line or test corpus</label><textarea id="log-input">${sampleLog}</textarea><label for="parser-select">Parser selection<select id="parser-select"><option value="">Automatic matching</option>${parserOptions}</select></label><div class="form-actions"><button class="button primary" id="ingest">Ingest and normalize</button><button class="button secondary" id="parser-test">Test parser only</button><button class="button secondary" id="load-sample">Restore sample</button></div><p class="hint">The test corpus is split at lines containing only <code>---</code>. Headings and EXPECTED notes are ignored. Select a parser when testing a short or ambiguous record.</p></section><section class="panel result-panel"><div class="panel-head"><div><p class="eyebrow">Structured response</p><h3 id="result-title">Waiting for a test</h3></div></div><pre id="result">Submit a log to inspect the normalized response.</pre></section></div>
     <section class="panel system-log-panel"><div class="panel-head"><div><p class="eyebrow">Ubuntu system logs</p><h3>Process a real local log file</h3><p class="muted">The backend reads this path in small batches, yields between batches, preserves each raw line, and lets you stop safely.</p></div><span class="tag">batch size: 25</span></div><div class="system-log-body"><label for="system-log-path">Log file path<input id="system-log-path" value="/var/log/syslog" placeholder="/var/log/syslog"></label><div class="form-actions"><button class="button primary" id="ingest-system-log">Process system log</button><button class="button secondary" id="stop-system-log" disabled>Stop ingestion</button><button class="button secondary" id="load-journal-command">Show journal command</button></div><p class="hint">If Ubuntu does not have <code>/var/log/syslog</code>, export readable journald lines with <code>journalctl -o short-iso --no-pager -n 100 &gt; /tmp/ubuntu-system.log</code>, then process <code>/tmp/ubuntu-system.log</code>.</p><div id="system-log-result" class="system-log-result" aria-live="polite">No system log run yet.</div></div></section>`;
 }
 
@@ -296,20 +348,37 @@ function bindTestPage() {
     try { await request(`/events/ingest-file/${state.systemLogJob.jobId}/stop`, { method: 'POST' }); toast('Stop requested; finishing the current batch', 'warn'); } catch (error) { toast(error.message, 'bad'); }
   });
   document.querySelector('#parser-test')?.addEventListener('click', async () => {
-    const log = document.querySelector('#log-input').value.trim();
-    if (!log) return toast('Enter a raw log first', 'bad');
-    try { const result = await request('/parsers/test', { method: 'POST', body: JSON.stringify({ log }) }); document.querySelector('#result-title').textContent = 'Parser-only result'; document.querySelector('#result').textContent = JSON.stringify(result, null, 2); toast('Parser test completed without ingesting', 'good'); } catch (error) { toast(error.message, 'bad'); }
+    const records = extractTestRecords(document.querySelector('#log-input').value);
+    const parserName = document.querySelector('#parser-select').value;
+    if (!records.length) return toast('Enter a raw log or test corpus first', 'bad');
+    const button = document.querySelector('#parser-test');
+    button.disabled = true;
+    try {
+      const results = [];
+      for (const record of records) {
+        const result = await request('/parsers/test', { method: 'POST', body: JSON.stringify({ log: record.log, parser_name: parserName || undefined }) });
+        results.push({ label: record.label, ...result });
+      }
+      document.querySelector('#result-title').textContent = `Parser-only result (${results.length} record${results.length === 1 ? '' : 's'})`;
+      document.querySelector('#result').textContent = JSON.stringify(results.length === 1 ? results[0] : results, null, 2);
+      toast(`${results.length} parser test${results.length === 1 ? '' : 's'} completed without ingesting`, 'good');
+    } catch (error) { toast(error.message, 'bad'); } finally { button.disabled = false; }
   });
   document.querySelector('#ingest')?.addEventListener('click', async () => {
-    const log = document.querySelector('#log-input').value.trim();
-    if (!log) return toast('Enter a raw log first', 'bad');
+    const records = extractTestRecords(document.querySelector('#log-input').value);
+    const parserName = document.querySelector('#parser-select').value;
+    if (!records.length) return toast('Enter a raw log or test corpus first', 'bad');
     const button = document.querySelector('#ingest');
     button.disabled = true;
     try {
-      const event = await request('/events/ingest', { method: 'POST', body: JSON.stringify({ log, transport: 'local-test' }) });
-      document.querySelector('#result-title').textContent = 'Accepted and normalized';
-      document.querySelector('#result').textContent = JSON.stringify(event, null, 2);
-      toast('Event persisted and written to backend output', 'good');
+      const events = [];
+      for (const record of records) {
+        const event = await request('/events/ingest', { method: 'POST', body: JSON.stringify({ log: record.log, parser_name: parserName || undefined, transport: 'local-test' }) });
+        events.push({ label: record.label, ...event });
+      }
+      document.querySelector('#result-title').textContent = `Accepted and normalized (${events.length} record${events.length === 1 ? '' : 's'})`;
+      document.querySelector('#result').textContent = JSON.stringify(events.length === 1 ? events[0] : events, null, 2);
+      toast(`${events.length} event${events.length === 1 ? '' : 's'} persisted and written to backend output`, 'good');
       await refresh();
     } catch (error) { toast(error.message, 'bad'); } finally { button.disabled = false; }
   });

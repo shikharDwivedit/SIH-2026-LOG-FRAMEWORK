@@ -3,6 +3,7 @@ const { ApiResponse }  = require("../utils/ApiResponse");
 const { ApiError }     = require("../utils/ApiError");
 const { metricsService }    = require("../services/metrics/metrics.service");
 const { deadLetterService } = require("../services/ingestion/dead-letter.service");
+const { eventProcessingService } = require("../services/event/event-processing.service");
 
 // GET /api/v1/healthcheck — basic liveness probe
 const getHealthStatus = asyncHandler(async (req, res) => {
@@ -29,4 +30,9 @@ const getDeadLetterEvents = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, events, `${events.pagination.total} dead-lettered events retrieved`));
 });
 
-module.exports = { getHealthStatus, getMetrics, getDeadLetterEvents };
+const resetApplicationData = asyncHandler(async (req, res) => {
+  eventProcessingService.resetData();
+  return res.status(200).json(new ApiResponse(200, { reset: true }, "Application event data reset"));
+});
+
+module.exports = { getHealthStatus, getMetrics, getDeadLetterEvents, resetApplicationData };

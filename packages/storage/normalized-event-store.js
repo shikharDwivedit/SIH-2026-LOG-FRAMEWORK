@@ -27,6 +27,20 @@ class LocalNormalizedEventStore {
       "utf8"
     );
   }
+
+  saveSync(event) {
+    fs.writeFileSync(
+      path.join(this.baseDir, `${event.event_id}.json`),
+      JSON.stringify(event, null, 2),
+      "utf8"
+    );
+  }
+
+  reset() {
+    for (const file of fs.readdirSync(this.baseDir)) {
+      if (file.endsWith(".json")) fs.rmSync(path.join(this.baseDir, file), { force: true });
+    }
+  }
 }
 
 module.exports = { LocalNormalizedEventStore };

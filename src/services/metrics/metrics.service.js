@@ -25,6 +25,11 @@ class MetricsService {
     this._startTime = Date.now();
   }
 
+  resetAndPersist() {
+    this.reset();
+    this.persist();
+  }
+
   get storagePath() {
     return path.join(process.cwd(), "storage", "metrics.json");
   }
